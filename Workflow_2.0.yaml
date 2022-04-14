@@ -1,0 +1,2062 @@
+openapi: "3.0.0"
+info:
+  version: 1.0.0
+  title: Workflow 2.0
+  description: Workflow swagger definiton
+paths:
+  '/adminrest/design/process-definitions':
+    get:
+      summary: Get List of Processes in design time(Studio)
+      tags:
+        - 'ProcessDefinitionService'
+      operationId: getStudioProcessDefinitions
+      parameters:
+        - name: Accept
+          description: The value for the Accept header should be __application/json;vnd.asg.services.workflow.process-definitions.version=v1. This includes the version information of the API. Currently, only v1 is supported.
+          in: header
+          required: true
+          schema:
+            type: string
+            enum:
+              - application/json;vnd.asg.services.workflow.process-definitions.version=v1
+        - name: projectId
+          description: Id of the project
+          in: query
+          schema:
+            type: string
+        - name: projectName
+          description: Name of the project
+          in: query
+          schema:
+            type: string
+          example: ekyc*, ekycFlo*, ekycFlow
+        - name: modelId
+          description: Process Model id to search
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: modelName
+          description: Process Model name to search
+          in: query
+          required: false
+          schema:
+            type: string
+          example: insuranceCla*, insuranceClaim
+        - name: definitionKey
+          description: definitionKey to search all the results [search]
+          in: query
+          required: false
+          schema:
+            type: string
+          example: DecisionModel1-DecisionPm1
+        - name: version
+          description: version to get the process definition of particular version
+          in: query
+          required: false
+          schema:
+            type: string
+          example: 1 , 2
+        - name: limit
+          description: limit for the pagination
+          in: query
+          schema:
+            type: integer
+        - name: offset
+          description: offset for the pagination
+          in: query
+          schema:
+            type: integer
+        - name: sortBy
+          description: paramter to sort the result
+          in: query
+          schema:
+            type: string
+          example: '-modelName, +modelName'
+        - name: Content-Type
+          description: content type of the request
+          in: header
+          schema:
+            default: application/json
+            type: string
+            
+      responses:
+        '200':
+          description: Successful
+          content:
+            application/vnd.asg.services.workflow.process-definition.response.v1+json:
+              schema:
+                $ref: '#/components/schemas/processDefinitionList'
+        '400':
+          description: Your request could not be processed
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/errorResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found 
+        '405':
+          description: Method not allowed
+        '406':
+          description: Not acceptable
+        '415':
+          description: Unsupported Media Type
+        '500':
+          description: >-
+            An unexpected internal error has occurred. Please contact Support
+            for more information.
+            
+
+  /adminrest/design/process-definitions/{definitionId}:
+    get:
+      summary: Fetch details for the given process in design time(Studio)
+      tags:
+        - 'ProcessDefinitionService'
+      operationId: getStudioProcessDefinition
+      parameters:
+        - name: Accept
+          description: The value for the Accept header should be __application/json;vnd.asg.services.workflow.process-definitions.version=v1. This includes the version information of the API. Currently, only v1 is supported.
+          in: header
+          required: true
+          schema:
+            type: string
+            enum:
+              - application/json;vnd.asg.services.workflow.process-definitions.version=v1
+        - name: definitionId
+          description: Process definition id
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: Content-Type
+          description: content type of the request
+          in: header
+          schema:
+            default: application/json
+            type: string
+        
+            
+      responses:
+        '200':
+          description: Successful
+          content:
+            application/json;vnd.asg.services.workflow.process-definitions.version=v1:
+              schema:
+                $ref: '#/components/schemas/processDetails'
+        '400':
+          description: Your request could not be processed
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/errorResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found 
+        '405':
+          description: Method not allowed
+        '406':
+          description: Not acceptable
+        '415':
+          description: Unsupported Media Type
+        '500':
+          description: >-
+            An unexpected internal error has occurred. Please contact Support
+            for more information.
+            
+            
+  '/adminrest/process-definitions':
+    get:
+      summary: Get List of Processes in runtime(PRS)
+      tags:
+        - 'ProcessDefinitionService'
+      operationId: getPrsProcessDefinitions
+      parameters:
+        - name: Accept
+          description: The value for the Accept header should be __application/json;vnd.asg.services.workflow.process-definitions.version=v1. This includes the version information of the API. Currently, only v1 is supported.
+          in: header
+          required: true
+          schema:
+            type: string
+            enum:
+              - application/json;vnd.asg.services.workflow.process-definitions.version=v1
+        - name: contextId
+          description: Id of the context
+          in: query
+          schema:
+            type: string
+        - name: contextName
+          description: Name of the context
+          in: query
+          schema:
+            type: string 
+        - name: applicationId
+          description: Id of the application
+          in: query
+          schema:
+            type: string
+        - name: applicationName
+          description: Name of the application
+          in: query
+          schema:
+            type: string
+        - name: modelId
+          description: Process Model id to search
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: modelName
+          description: Process Model name to search
+          in: query
+          required: false
+          schema:
+            type: string
+          example: insuranceCla*, insuranceClaim
+        - name: definitionKey
+          description: definitionKey to search all the results [search]
+          in: query
+          required: false
+          schema:
+            type: string
+          example: 7fc3eaf3b0cc45e58fe24e48d874e8ee-DecisionModel1-DecisionPm1
+        - name: version
+          description: version to get the process definition of particular version
+          in: query
+          required: false
+          schema:
+            type: string
+          example: 1 , 2
+        - name: limit
+          description: limit for the pagination
+          in: query
+          schema:
+            type: integer
+        - name: offset
+          description: offset for the pagination
+          in: query
+          schema:
+            type: integer
+        - name: sortBy
+          description: paramter to sort the result
+          in: query
+          schema:
+            type: string
+          example: '-modelName, +modelName'
+        - name: Content-Type
+          description: content type of the request
+          in: header
+          schema:
+            default: application/json
+            type: string
+
+      responses:
+        '200':
+          description: Successful
+          content:
+            application/json;vnd.asg.services.workflow.process-definitions.version=v1:
+              schema:
+                $ref: '#/components/schemas/processDefinitionList'
+        '400':
+          description: Your request could not be processed
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/errorResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found 
+        '405':
+          description: Method not allowed
+        '406':
+          description: Not acceptable
+        '415':
+          description: Unsupported Media Type
+        '500':
+          description: >-
+            An unexpected internal error has occurred. Please contact Support
+            for more information.
+            
+            
+  /adminrest/process-definitions/{definitionId}:
+    get:
+      summary: Fetch details for the given process in runtime(PRS)
+      tags:
+        - 'ProcessDefinitionService'
+      operationId: getPrsProcessDefinition
+      parameters:
+        - name: Accept
+          description: The value for the Accept header should be __application/json;vnd.asg.services.workflow.process-definitions.version=v1. This includes the version information of the API. Currently, only v1 is supported.
+          in: header
+          required: true
+          schema:
+            type: string
+            enum:
+              - application/json;vnd.asg.services.workflow.process-definitions.version=v1
+        - name: definitionId
+          description: Process definition id
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: Content-Type
+          description: content type of the request
+          in: header
+          schema:
+            default: application/json
+            type: string
+            
+      responses:
+        '200':
+          description: Successful
+          content:
+            application/json;vnd.asg.services.workflow.process-definitions.version=v1:
+              schema:
+                $ref: '#/components/schemas/processDetails'
+        '400':
+          description: Your request could not be processed
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/errorResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found 
+        '405':
+          description: Method not allowed
+        '406':
+          description: Not acceptable
+        '415':
+          description: Unsupported Media Type
+        '500':
+          description: >-
+            An unexpected internal error has occurred. Please contact Support
+            for more information.
+            
+
+
+  '/adminrest/design/process-instances':
+    get:
+      summary: Get list of instances for the Processes in design time(Studio)
+      description: Get list of instances for the Processes in design time(Studio)
+      tags:
+        - 'ProcessInstanceService'
+      operationId: getStudioProcessInstances
+      parameters:
+        - name: Accept
+          description: The value for the Accept header should be __application/json;vnd.asg.services.workflow.process-instances.version=v1. This includes the version information of the API. Currently, only v1 is supported.
+          in: header
+          required: true
+          schema:
+            type: string
+            enum:
+              - application/json;vnd.asg.services.workflow.process-instances.version=v1
+        - name: businessKey
+          description: Value of businessKey to search all the results with [search]
+          in: query
+          required: false
+          schema:
+            type: string
+          example: EKYCDemo1-KYCFlow_1626259197400
+        - name: initiator
+          description: Initiator name to search all the results with [search]
+          in: query
+          required: false
+          schema:
+            type: string
+          example: Admin, Manager
+        - name: definitionName
+          description: Definition name to search all the results with [search]
+          in: query
+          required: false
+          schema:
+            type: string
+          example: Att_Ref_Tes*, Att_Ref_Test4
+        - name: status
+          description: Status filter to fetch records with [filter]
+          in: query
+          required: false
+          schema:
+            type: string
+            enum: [In Progress, Waiting, Suspended, Terminated, Completed, Error]
+        - name: priority
+          description: Priority filter to fetch records with [filter]
+          in: query
+          required: false
+          schema:
+            type: string
+            enum: [High, Medium, Low]
+        - name: includeDebug
+          description: Boolean that determines to return debug instances along with normal instances
+          in: query
+          schema:
+            type: boolean
+        - name: limit
+          description: limit for the pagination
+          in: query
+          schema:
+            type: integer
+        - name: offset
+          description: offset for the pagination
+          in: query
+          schema:
+            type: integer
+        - name: sortBy
+          description: Parameter to sort the results
+          in: query
+          required: false
+          schema:
+            type: string
+          example: '-priority, +priority'
+        - name: Content-Type
+          description: content type of the request
+          in: header
+          schema:
+            default: application/json
+            type: string
+            
+      responses:
+        '200':
+          description: Successful
+          content:
+            application/json;vnd.asg.services.workflow.process-instances.version=v1:
+              schema:
+                $ref: '#/components/schemas/processInstanceList'
+        '400':
+          description: Your request could not be processed
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/errorResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found 
+        '405':
+          description: Method not allowed
+        '406':
+          description: Not acceptable
+        '415':
+          description: Unsupported Media Type
+        '500':
+          description: >-
+            An unexpected internal error has occurred. Please contact Support
+            for more information.
+  
+  '/rest/design/process-instances':
+    post:
+      summary: Start a new process instance based on the definition id passed in designtime(Studio)
+      description: Start a new process instance based on the definition id passed in designtime(Studio)
+      tags:
+        - 'ProcessInstanceService'
+      operationId: executeProcessInStudio
+      parameters:
+        - name: Accept
+          description: The value for the Accept header should be __application/json;vnd.asg.services.workflow.process-instances.version=v1. This includes the version information of the API. Currently, only v1 is supported.
+          in: header
+          required: true
+          schema:
+            type: string
+            enum:
+              - application/json;vnd.asg.services.workflow.process-instances.version=v1
+        - name: Content-Type
+          description: content type of the request
+          in: header
+          schema:
+            default: application/json
+            type: string
+            
+      requestBody:
+        content:
+          'multipart/form-data':
+            schema:
+              type: object
+              properties:
+                variables:
+                  type: string
+                  format: binary
+                processDefinitionKey:
+                  type: string
+                  format: binary
+      responses:
+        '200':
+          description: Successful
+          content:
+            application/json;vnd.asg.services.workflow.process-instances.version=v1:
+              schema:
+                $ref: '#/components/schemas/executeProcess'
+        '400':
+          description: Your request could not be processed
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/errorResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found 
+        '405':
+          description: Method not allowed
+        '406':
+          description: Not acceptable
+        '415':
+          description: Unsupported Media Type
+        '500':
+          description: >-
+            An unexpected internal error has occurred. Please contact Support
+            for more information.
+            
+  '/adminrest/design/process-instances/{processInstanceId}':
+     put:
+      summary: To change the state of the process instance including restarting process instance in designtime(Studio)
+      tags:
+        - 'ProcessInstanceService'
+      operationId: restartProcessInStudio
+      parameters:
+        - name: Accept
+          description: The value for the Accept header should be __application/json;vnd.asg.services.workflow.process-instances.version=v1 or __application/json;vnd.asg.services.workflow.process-instances.version=v2. This includes the version information of the API.Currently, only v1 and v2 are supported.v1 is for restarting the process instance and v2 is to update the state.
+          in: header
+          required: true
+          schema:
+            type: string
+            enum:
+              - application/json;vnd.asg.services.workflow.process-instances.version=v1
+              - application/json;vnd.asg.services.workflow.process-instances.version=v2
+        - name: processInstanceId
+          description: Id of process indtance
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: Content-Type
+          description: content type of the request
+          in: header
+          schema:
+            default: application/json
+            type: string
+        
+      requestBody:
+        content:
+          'multipart/form-data':
+            schema:
+              type: object
+              properties:
+                variables:
+                  type: string
+                  format: binary
+                status:
+                  type: string
+                  format: binary
+
+      responses:
+        '200':
+          description: Successful
+          content:
+            application/json;vnd.asg.services.workflow.process-instances.version=v1:
+              schema:
+                $ref: '#/components/schemas/restartProcess'
+            application/json;vnd.asg.services.workflow.process-instances.version=v2:
+              schema:
+                $ref: '#/components/schemas/updateProcess'
+        '400':
+          description: Your request could not be processed
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/errorResponse'
+        '401':
+          description: Unauthorized
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/errorResponse'
+        '403':
+          description: Forbidden
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/errorResponse'
+        '404':
+          description: Entity Not Found
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/errorResponse'
+        '405':
+          description: Method not allowed
+        '406':
+          description: Not acceptable
+        '415':
+          description: Unsupported Media Type
+        '500':
+          description: >-
+            An unexpected internal error has occurred. Please contact Support
+            for more information.
+            
+            
+  '/adminrest/process-instances':
+     get:
+      summary: Get list of instances for the Processes in runtime(PRS)
+      description: Get list of instances for the Processes in runtime(PRS)
+      tags:
+        - 'ProcessInstanceService'
+      operationId: getPrsProcessInstances
+      parameters:
+        - name: Accept
+          description: The value for the Accept header should be __application/json;vnd.asg.services.workflow.process-instances.version=v1. This includes the version information of the API. Currently, only v1 is supported.
+          in: header
+          required: true
+          schema:
+            type: string
+            enum:
+              - application/json;vnd.asg.services.workflow.process-instances.version=v1
+        - name: businessKey
+          description: Value of businessKey to search all the results with [search]
+          in: query
+          required: false
+          schema:
+            type: string
+          example: EKYCDemo1-KYCFlow_1626259197400
+        - name: initiator
+          description: Initiator name to search all the results with [search]
+          in: query
+          required: false
+          schema:
+            type: string
+          example: Admin, Manager
+        - name: definitionName
+          description: Definition name to search all the results with [search]
+          in: query
+          required: false
+          schema:
+            type: string
+          example: Att_Ref_Tes*, Att_Ref_Test4
+        - name: status
+          description: Status filter to fetch records with [filter]
+          in: query
+          required: false
+          schema:
+            type: string
+            enum: [In Progress, Waiting, Suspended, Terminated, Completed, Error]
+        - name: priority
+          description: Priority filter to fetch records with [filter]
+          in: query
+          required: false
+          schema:
+            type: string
+            enum: [High, Medium, Low]
+        - name: includeDebug
+          description: Boolean that determines to return debug instances along with normal instances
+          in: query
+          schema:
+            type: boolean
+        - name: limit
+          description: limit for the pagination
+          in: query
+          schema:
+            type: integer
+        - name: offset
+          description: offset for the pagination
+          in: query
+          schema:
+            type: integer
+        - name: sortBy
+          description: Parameter to sort the results
+          in: query
+          required: false
+          schema:
+            type: string
+          example: '-priority, +priority'
+        - name: Content-Type
+          description: content type of the request
+          in: header
+          schema:
+            default: application/json
+            type: string
+            
+      responses:
+        '200':
+          description: Successful
+          content:
+            application/json;vnd.asg.services.workflow.process-instances.version=v1:
+              schema:
+                $ref: '#/components/schemas/processInstanceList'
+        '400':
+          description: Your request could not be processed
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/errorResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found 
+        '405':
+          description: Method not allowed
+        '406':
+          description: Not acceptable
+        '415':
+          description: Unsupported Media Type
+        '500':
+          description: >-
+            An unexpected internal error has occurred. Please contact Support
+            for more information.
+  
+  '/rest/process-instances':
+     post:
+      summary: Start a new process instance based on the definition id passed in runtime(PRS)
+      description: Start a new process instance based on the definition id passed in runtime(PRS)
+      tags:
+        - 'ProcessInstanceService'
+      operationId: executeProcessInPrs
+      parameters:
+        - name: Accept
+          description: The value for the Accept header should be __application/json;vnd.asg.services.workflow.process-instances.version=v1. This includes the version information of the API. Currently, only v1 is supported.
+          in: header
+          required: true
+          schema:
+            type: string
+            enum:
+              - application/json;vnd.asg.services.workflow.process-instances.version=v1
+        - name: Content-Type
+          description: content type of the request
+          in: header
+          schema:
+            default: application/json
+            type: string
+            
+      requestBody:
+        content:
+          'multipart/form-data':
+            schema:
+              type: object
+              properties:
+                variables:
+                  type: string
+                  format: binary
+                processDefinitionKey:
+                  type: string
+                  format: binary
+      responses:
+        '200':
+          description: Successful
+          content:
+            application/json;vnd.asg.services.workflow.process-instances.version=v1:
+              schema:
+                $ref: '#/components/schemas/executeProcess'
+        '400':
+          description: Your request could not be processed
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/errorResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found 
+        '405':
+          description: Method not allowed
+        '406':
+          description: Not acceptable
+        '415':
+          description: Unsupported Media Type
+        '500':
+          description: >-
+            An unexpected internal error has occurred. Please contact Support
+            for more information.
+            
+            
+  '/adminrest/process-instances/{processInstanceId}':
+     put:
+      summary: To change the state of the process instance including restarting process instance in runtime(PRS)
+      tags:
+        - 'ProcessInstanceService'
+      operationId: restartProcessInPrs
+      parameters:
+        - name: Accept
+          description: The value for the Accept header should be __application/json;vnd.asg.services.workflow.process-instances.version=v1 or __application/json;vnd.asg.services.workflow.process-instances.version=v2. This includes the version information of the API.Currently, only v1 and v2 are supported.v1 is for restarting the process instance and v2 is to update the state.
+          in: header
+          required: true
+          schema:
+            type: string
+            enum:
+              - application/json;vnd.asg.services.workflow.process-instances.version=v1
+              - application/json;vnd.asg.services.workflow.process-instances.version=v2
+        - name: processInstanceId
+          description: Id of process instance
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: restart
+          description: Should restart the process
+          in: query
+          required: false
+          schema:
+            type: boolean
+          example: true
+        - name: Content-Type
+          description: content type of the request
+          in: header
+          schema:
+            default: application/json
+            type: string
+        
+      requestBody:
+        content:
+          'multipart/form-data':
+            schema:
+              type: object
+              properties:
+                variables:
+                  type: string
+                  format: binary
+                status:
+                  type: string
+                  format: binary
+      responses:
+        '200':
+          description: Successful
+          content:
+            application/json;vnd.asg.services.workflow.process-instances.version=v1:
+              schema:
+                $ref: '#/components/schemas/restartProcess'
+            application/json;vnd.asg.services.workflow.process-instances.version=v2:
+              schema:
+                $ref: '#/components/schemas/updateProcess'
+        '400':
+          description: Your request could not be processed
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/errorResponse'
+        '401':
+          description: Unauthorized
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/errorResponse'
+        '403':
+          description: Forbidden
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/errorResponse'
+        '404':
+          description: Entity Not Found
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/errorResponse'
+        '405':
+          description: Method not allowed
+        '406':
+          description: Not acceptable
+        '415':
+          description: Unsupported Media Type
+        '500':
+          description: >-
+            An unexpected internal error has occurred. Please contact Support
+            for more information.
+            
+  '/rest/design/process-notifications':
+     get:
+      summary: Get list of notifications in designtime(Studio)
+      description: Get list of notifications in designtime(Studio)
+      tags:
+        - 'ProcessNotificationService'
+      operationId: getStudioProcessNotifications
+      parameters:
+        - name: Accept
+          description: The value for the Accept header should be __application/json;vnd.asg.services.workflow.process-notifications.version=v1 or __application/json;vnd.asg.services.workflow.process-notifications.version=v2. This includes the version information of the API.Currently, only v1 and v2 are supported.v1 is for getting the notifications list and v2 is to get the count.
+          in: header
+          required: true
+          schema:
+            type: string
+            enum:
+              - application/json;vnd.asg.services.workflow.process-notifications.version=v1
+              - application/json;vnd.asg.services.workflow.process-notifications.version=v2
+        - name: fromUser
+          description: Sender name to filter all the results
+          in: query
+          required: false
+          schema:
+            type: string
+          example: MailUs*, MailUser2
+        - name: subject
+          description: Subject as filter
+          in: query
+          required: false
+          schema:
+            type: string
+          example: Your insurance claim sta*, Your insurance claim status
+        - name: definitionName
+          description: Definition name to filter all the results
+          in: query
+          required: false
+          schema:
+            type: string
+          example: Att_Ref_Tes*, Att_Ref_Test4
+        - name: status
+          description: Status filter to fetch read or unread notifications
+          in: query
+          required: false
+          schema:
+            type: string
+          example: Read, Unread
+        - name: activityStatus
+          description: activity status to filer the different user actions required like completed, pending, invalid.
+          in: query
+          required: false
+          schema:
+            type: string
+          example: completed, Termintaed, Pending, Invalid
+        - name: claimStatus
+          description: claim status to fetch the different user actions required like NA, NotClaimed, Claimed.
+          in: query
+          required: false
+          schema:
+            type: string
+          example: NA, NotClaimed, Claimed
+        - name: priority
+          description: Priority filter to fetch records with
+          in: query
+          required: false
+          schema:
+            type: string
+          example: High, Low, Medium
+        - name: limit
+          description: No. of notifications to be retrieved
+          in: query
+          required: false
+          schema:
+            type: integer
+          example: 20
+        - name: offset
+          description: Offset position to retrieve records from a specific position
+          in: query
+          required: false
+          schema:
+            type: integer
+          example: 1
+        - name: sortBy
+          description: Parameter to sort the results
+          in: query
+          required: false
+          example: -/+fromuser, -/+createdon, -/+definition_name, -/+priority, -/+due_date, -/+status
+          schema:
+            type: string
+        - name: Content-Type
+          description: content type of the request
+          in: header
+          schema:
+            default: application/json
+            type: string
+            
+      responses:
+        '200':
+          description: Successful
+          content:
+            application/json;vnd.asg.services.workflow.process-notifications.version=v1:
+              schema:
+                $ref: '#/components/schemas/processNotificationList'
+            application/json;vnd.asg.services.workflow.process-notifications.version=v2:
+              schema:
+                $ref: '#/components/schemas/processNotificationCount'
+        '400':
+          description: Your request could not be processed
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/errorResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found 
+        '405':
+          description: Method not allowed
+        '406':
+          description: Not acceptable
+        '415':
+          description: Unsupported Media Type
+        '500':
+          description: >-
+            An unexpected internal error has occurred. Please contact Support
+            for more information.
+            
+            
+  '/rest/process-notifications':
+     get:
+      summary: Get list of notifications in runtime(PRS)
+      description: Get list of notifications in runtime(PRS)
+      tags:
+        - 'ProcessNotificationService'
+      operationId: getPrsProcessNotifications
+      parameters:
+        - name: Accept
+          description: The value for the Accept header should be __application/json;vnd.asg.services.workflow.process-notifications.version=v1 or __application/json;vnd.asg.services.workflow.process-notifications.version=v2. This includes the version information of the API.Currently, only v1 and v2 are supported.v1 is for getting the notifications list and v2 is to get the count.
+          in: header
+          required: true
+          schema:
+            type: string
+            enum:
+              - application/json;vnd.asg.services.workflow.process-notifications.version=v1
+              - application/json;vnd.asg.services.workflow.process-notifications.version=v2
+        - name: fromUser
+          description: Sender name to filter all the results
+          in: query
+          required: false
+          schema:
+            type: string
+          example: MailUs*, MailUser2
+        - name: subject
+          description: Subject as filter
+          in: query
+          required: false
+          schema:
+            type: string
+          example: Your insurance claim sta*, Your insurance claim status
+        - name: definitionName
+          description: Definition name to filter all the results
+          in: query
+          required: false
+          schema:
+            type: string
+          example: Att_Ref_Tes*, Att_Ref_Test4
+        - name: status
+          description: Status filter to fetch read or unread notifications
+          in: query
+          required: false
+          schema:
+            type: string
+          example: Read, Unread
+        - name: activityStatus
+          description: activity status to filer the different user actions required like completed, pending, invalid.
+          in: query
+          required: false
+          schema:
+            type: string
+          example: completed, Termintaed, Pending, Invalid
+        - name: claimStatus
+          description: claim status to fetch the different user actions required like NA, NotClaimed, Claimed.
+          in: query
+          required: false
+          schema:
+            type: string
+          example: NA, NotClaimed, Claimed
+        - name: priority
+          description: Priority filter to fetch records with
+          in: query
+          required: false
+          schema:
+            type: string
+          example: High, Low, Medium
+        - name: limit
+          description: No. of notifications to be retrieved
+          in: query
+          required: false
+          schema:
+            type: integer
+          example: 20
+        - name: offset
+          description: Offset position to retrieve records from a specific position
+          in: query
+          required: false
+          schema:
+            type: integer
+          example: 1
+        - name: sortBy
+          description: Parameter to sort the results
+          in: query
+          required: false
+          example: -/+fromuser, -/+createdon, -/+definition_name, -/+priority, -/+due_date, -/+status
+          schema:
+            type: string
+        - name: Content-Type
+          description: content type of the request
+          in: header
+          schema:
+            default: application/json
+            type: string
+            
+      responses:
+        '200':
+          description: Successful
+          content:
+            application/json;vnd.asg.services.workflow.process-notifications.version=v1:
+              schema:
+                $ref: '#/components/schemas/processNotificationList'
+            application/json;vnd.asg.services.workflow.process-notifications.version=v2:
+              schema:
+                $ref: '#/components/schemas/processNotificationCount'
+        '400':
+          description: Your request could not be processed
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/errorResponse'
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found 
+        '405':
+          description: Method not allowed
+        '406':
+          description: Not acceptable
+        '415':
+          description: Unsupported Media Type
+        '500':
+          description: >-
+            An unexpected internal error has occurred. Please contact Support
+            for more information.
+            
+####################
+components:
+  schemas:
+          
+    processDefinitionList:
+      description: The general response structure
+      type: object
+      properties:
+        code:
+          description: The custom zenith code for the response
+          type: string
+        message:
+          description: The custom zenith message for the response
+          type: string
+        links: 
+          type: array
+          items: 
+            type: object
+            properties: 
+              rel: 
+               type: string
+              method: 
+               type: string
+              href: 
+                type: string
+        result:
+          description: The actual object which consists of response data
+          type: object
+          properties:
+            data:
+              description: The response data object/array
+              type : array
+              items:
+                  $ref: '#/components/schemas/processDefinitionObject'
+                  
+    processDefinitionObject:
+      description: Configuration of the bot to be mapped to group
+      type: object
+      properties:
+        id: 
+         type: string
+        name: 
+         type: string
+        createdBy: 
+         type: string
+        createdOn: 
+         type: string
+        modifiedBy: 
+         type: string
+        modifiedOn: 
+         type: string
+        script: 
+         type: string
+         format: nullable
+        definitionKey: 
+         type: string
+        definitionSchema: 
+         type: string
+         format: nullable
+        startVariables: 
+         type: object
+         properties: 
+          default_priority: 
+            type: string
+          set_due_date: 
+            type: boolean
+          has_start_form: 
+            type: boolean
+          set_priority: 
+            type: boolean
+        definitionVersion: 
+          type: integer
+          format: int32
+        publishedProcessModel: 
+         type: object
+         properties: 
+          id: 
+           type: string
+          name: 
+           type: string
+          description: 
+           type: string
+           format: nullable
+          createdBy: 
+           type: string
+          createdOn: 
+           type: string
+          modifiedBy: 
+           type: string
+          modifiedOn: 
+           type: string
+          processModelMetadata: 
+           type: string
+           format: nullable
+          tenantId: 
+           type: integer
+           format: int32
+          isWorkflow: 
+           type: boolean
+          designMemory: 
+           type: string
+           format: nullable
+          model: 
+           type: string
+           format: nullable
+          processModel: 
+           type: object
+           properties: 
+            name: 
+             type: string
+            description: 
+             type: string
+             format: nullable
+            designMemory: 
+             type: string
+             format: nullable
+            model: 
+             type: string
+             format: nullable
+            processModelMetadata: 
+             type: string
+             format: nullable
+            id: 
+             type: string
+            createdBy: 
+             type: string
+            createdOn: 
+             type: string
+            modifiedBy: 
+             type: string
+            modifiedOn: 
+             type: string
+            tenantId: 
+             type: integer
+             format: int32
+            published: 
+             type: boolean
+            deleted: 
+             type: boolean
+            workflow: 
+             type: boolean
+          deleted: 
+           type: boolean
+        tenantId: 
+         type: integer
+         format: int32
+        deleted: 
+         type: boolean
+         
+    processDetails:
+      description: The general response structure
+      type: object
+      properties:
+        code: 
+         type: string
+        message: 
+         type: string
+        links: 
+          type: array
+          items: 
+            type: object
+            properties: 
+              rel: 
+               type: string
+              method: 
+               type: string
+              href: 
+                type: string
+        result: 
+         type: object
+         properties: 
+          data: 
+           type: object
+           properties: 
+            id: 
+             type: string
+            name: 
+             type: string
+            createdBy: 
+             type: string
+            createdOn: 
+             type: string
+            modifiedBy: 
+             type: string
+            modifiedOn: 
+             type: string
+            script: 
+             type: string
+            definitionKey: 
+             type: string
+            definitionSchema: 
+             type: string
+            startVariables: 
+             type: object
+             properties: 
+              default_priority: 
+                type: string
+              set_due_date: 
+                type: boolean
+              has_start_form: 
+                type: boolean
+              set_priority: 
+                type: boolean
+            definitionVersion: 
+              type: integer
+              format: int32
+            tenantId: 
+              type: integer
+              format: int32
+            deleted: 
+              type: boolean
+            publishedProcessModel: 
+              type: object
+              properties: 
+                id: 
+                 type: string
+                name: 
+                 type: string
+                description: 
+                 type: string
+                createdBy: 
+                 type: string
+                createdOn: 
+                 type: string
+                modifiedBy: 
+                 type: string
+                modifiedOn: 
+                 type: string
+                processModelMetadata: 
+                 type: object
+                 properties: 
+                  process: 
+                    type: object
+                    properties: 
+                      sequenceFlow: 
+                        type: array
+                        items: 
+                          type: object
+                          properties: 
+                            targetRef: 
+                              type: string
+                            businessProp: 
+                              type: object
+                              properties: 
+                                key:
+                                 type: string
+                            name: 
+                              type: string
+                            id: 
+                              type: string
+                            sourceRef: 
+                              type: string
+                            type: 
+                              type: string
+                      scriptTask: 
+                        type: object
+                        properties: 
+                          outgoing: 
+                            type: string
+                          incoming: 
+                            type: string
+                          businessProp: 
+                            type: object
+                            properties: 
+                              exec-script: 
+                                type: string
+                          name: 
+                            type: string
+                          id: 
+                            type: string
+                          type: 
+                            type: string
+                      startEvent: 
+                        type: object
+                        properties: 
+                          outgoing: 
+                            type: string
+                          businessProp: 
+                            type: object
+                            properties: 
+                              defaultPriority: 
+                                type: string
+                              due-date: 
+                                type: boolean
+                              due-date-type: 
+                                type: string
+                              priority: 
+                                type: boolean
+                              start-payload-variables: 
+                                type: array
+                                items: 
+                                 type: object
+                                 properties: 
+                                  var1: 
+                                    type: string
+                                  var2: 
+                                    type: boolean
+                          name: 
+                            type: string
+                          id: 
+                            type: string
+                          type: 
+                            type: string
+                      id: 
+                       type: string
+                  BPMNDiagram: 
+                    type: object
+                    properties: 
+                      bpmnElement: 
+                        type: string
+                      BPMNPlane: 
+                        type: object
+                        properties: 
+                          BPMNShape: 
+                            type: array
+                            items: 
+                             type: object
+                             properties: 
+                              key: 
+                               type: string
+                          BPMNEdge: 
+                            type: array
+                            items: 
+                             type: object
+                             properties: 
+                              key: 
+                               type: string
+                      id: 
+                        type: string
+                  collaboration: 
+                    type: object
+                    properties: 
+                      key: 
+                        type: string
+                tenantId: 
+                 type: integer
+                 format: int32
+                isWorkflow: 
+                 type: boolean
+                designMemory: 
+                 type: object
+                 properties: 
+                  key: 
+                    type: string
+                model: 
+                 type: object
+                 properties: 
+                  process: 
+                    type: object
+                    properties: 
+                      key: 
+                        type: string
+                  BPMNDiagram: 
+                    type: object
+                    properties: 
+                      key: 
+                        type: string
+                  collaboration: 
+                    type: object
+                    properties: 
+                      key: 
+                        type: string
+                processModel: 
+                 type: string
+                deleted: 
+                 type: boolean
+                 
+    processInstanceList:
+      description: The general response structure
+      type: object
+      properties:
+        code: 
+         type: string
+        message: 
+         type: string
+        links: 
+          type: array
+          items: 
+            type: object
+            properties: 
+              rel: 
+               type: string
+              method: 
+               type: string
+              href: 
+                type: string
+        result: 
+         type: object
+         properties: 
+          data: 
+           type: array
+           items: 
+             type: object
+             properties: 
+              id: 
+               type: string
+              createdBy: 
+               type: string
+              createdOn: 
+               type: string
+              modifiedBy: 
+               type: string
+              modifiedOn: 
+               type: string
+              businessKey: 
+               type: string
+              parentInstance: 
+               type: string
+               format: nullable
+              processDefinition: 
+               type: object
+               properties: 
+                id: 
+                 type: string
+                name: 
+                  type: string
+                createdBy: 
+                  type: string
+                createdOn: 
+                  type: string
+                modifiedBy: 
+                  type: string
+                modifiedOn: 
+                  type: string
+                script: 
+                  type: string
+                  format: nullable
+                definitionKey: 
+                  type: string
+                definitionSchema: 
+                  type: string
+                  format: nullable
+                startVariables: 
+                  type: string
+                  format: nullable
+                definitionVersion: 
+                  type: integer
+                  format: int32
+                publishedProcessModel: 
+                  type: object
+                  properties: 
+                    id: 
+                      type: string
+                    name: 
+                      type: string
+                    description: 
+                      type: string
+                      format: nullable
+                    createdBy: 
+                      type: string
+                    createdOn: 
+                      type: string
+                    modifiedBy: 
+                      type: string
+                    modifiedOn: 
+                      type: string
+                    processModelMetadata: 
+                      type: string
+                      format: nullable
+                    tenantId: 
+                      type: integer
+                      format: int32
+                    isWorkflow: 
+                      type: boolean
+                    designMemory: 
+                      type: string
+                      format: nullable
+                    model: 
+                      type: string
+                      format: nullable
+                    processModel: 
+                      type: object
+                      properties: 
+                        name: 
+                          type: string
+                        description: 
+                          type: string
+                          format: nullable
+                        designMemory: 
+                          type: string
+                          format: nullable
+                        model: 
+                          type: string
+                          format: nullable
+                        processModelMetadata: 
+                          type: string
+                          format: nullable
+                        id: 
+                          type: string
+                        createdBy: 
+                          type: string
+                        createdOn: 
+                          type: string
+                        modifiedBy: 
+                          type: string
+                        modifiedOn: 
+                          type: string
+                        tenantId: 
+                          type: integer
+                          format: int32
+                        published: 
+                          type: boolean
+                        deleted: 
+                          type: boolean
+                        workflow: 
+                          type: boolean
+                    deleted: 
+                      type: boolean
+                tenantId: 
+                  type: integer
+                  format: int32
+                deleted: 
+                  type: boolean
+              status: 
+               type: string
+              tenantId: 
+               type: integer
+               format: int32
+              revision: 
+               type: integer
+               format: int32
+              initiator: 
+               type: string
+              currentParticipants: 
+               type: string
+               format: nullable
+              errorMessage: 
+               type: string
+              logMessageId: 
+               type: string
+              processMemory: 
+               type: object
+               properties: 
+                resp: 
+                  type: object
+                  properties: 
+                    code: 
+                      type: integer
+                      format: int32
+                    data: 
+                      type: array
+                      items: 
+                        type: string
+                age: 
+                  type: integer
+                  format: int32
+              dueDate: 
+               type: string
+              priority: 
+               type: string
+              debugInstance: 
+               type: boolean
+               
+    processNotificationList:
+      description: The general response structure
+      type: object
+      properties:
+        code: 
+         type: string
+        message: 
+         type: string
+        links: 
+          type: array
+          items: 
+            type: object
+            properties: 
+              rel: 
+               type: string
+              method: 
+               type: string
+              href: 
+                type: string
+        result: 
+         type: object
+         properties: 
+          data: 
+            type: array
+            items: 
+             type: object
+             properties: 
+              claim_status: 
+               type: string
+              identifier1: 
+               type: string
+              subject: 
+               type: string
+              due_date: 
+               type: integer
+               format: int32
+              messageid: 
+               type: string
+              taskname: 
+               type: string
+              fromuser: 
+               type: string
+              contextid: 
+               type: string
+              claim_type: 
+               type: string
+              priority: 
+               type: string
+              createdon: 
+               type: integer
+               format: int64
+              modifiedon: 
+               type: integer
+               format: int64
+              instanceid: 
+               type: string
+              createdby: 
+               type: string
+              process_status: 
+               type: string
+              definition_name: 
+               type: string
+              recipient: 
+               type: string
+              modifiedby: 
+               type: string
+              id: 
+               type: integer
+               format: int32
+              taskid: 
+               type: string
+              activity_status: 
+               type: string
+              status: 
+               type: integer
+               format: int32
+               
+    processNotificationCount:
+      description: The general response structure
+      type: object
+      properties:
+        code: 
+         type: string
+        message: 
+         type: string
+        links: 
+          type: array
+          items: 
+            type: object
+            properties: 
+              rel: 
+               type: string
+              method: 
+               type: string
+              href: 
+                type: string
+        result: 
+         type: object
+         properties: 
+          data: 
+           type: object
+           properties: 
+            count: 
+             type: integer
+             format: int32
+
+    executeProcess:
+      description: The general response structure
+      type: object
+      properties:
+        code: 
+         type: string
+        message: 
+         type: string
+        links: 
+          type: array
+          items: 
+            type: object
+            properties: 
+              rel: 
+               type: string
+              method: 
+               type: string
+              href: 
+                type: string
+        result: 
+         type: object
+         properties: 
+          data: 
+           type: object
+           properties: 
+            id: 
+             type: string
+            createdBy: 
+             type: string
+            createdOn: 
+             type: string
+            modifiedBy: 
+             type: string
+            modifiedOn: 
+             type: string
+            businessKey: 
+             type: string
+            parentInstance: 
+             type: string
+             format: nullable
+            processDefinition: 
+             type: string
+             format: nullable
+            status: 
+             type: string
+            tenantId: 
+             type: integer
+             format: int32
+            revision: 
+             type: integer
+             format: int32
+            initiator: 
+             type: string
+            currentParticipants: 
+             type: string
+             format: nullable
+            errorMessage: 
+             type: string
+             format: nullable
+            logMessageId: 
+             type: string
+             format: nullable
+            processMemory: 
+             type: object
+             properties: 
+              age: 
+               type: integer
+               format: int32
+            dueDate: 
+             type: string
+             format: nullable
+            priority: 
+             type: string
+            debugInstance: 
+             type: boolean
+             
+    restartProcess:
+      description: The general response structure
+      type: object
+      properties:
+        code: 
+         type: string
+        message: 
+         type: string
+        links: 
+          type: array
+          items: 
+            type: object
+            properties: 
+              rel: 
+               type: string
+              method: 
+               type: string
+              href: 
+                type: string
+        result: 
+         type: object
+         properties: 
+          data: 
+           type: object
+           properties: 
+            id: 
+             type: string
+            createdBy: 
+             type: string
+            createdOn: 
+             type: string
+             format: nullable
+            modifiedBy: 
+             type: string
+            modifiedOn: 
+             type: string
+             format: nullable
+            businessKey: 
+             type: string
+            parentInstance: 
+             type: string
+             format: nullable
+            processDefinition: 
+             type: string
+             format: nullable
+            status: 
+             type: string
+            tenantId: 
+             type: integer
+             format: int32
+            revision: 
+             type: integer
+             format: int32
+            initiator: 
+             type: string
+            currentParticipants: 
+             type: string
+             format: nullable
+            errorMessage: 
+             type: string
+             format: nullable
+            logMessageId: 
+             type: string
+             format: nullable
+            processMemory: 
+             type: object
+             properties: 
+              age: 
+                type: integer
+                format: int32
+            dueDate: 
+             type: string
+             format: nullable
+            priority: 
+             type: string
+            debugInstance: 
+             type: boolean
+             
+    updateProcess:
+      description: The general response structure
+      type: object
+      properties:
+        code: 
+         type: string
+        message: 
+         type: string
+        links: 
+          type: array
+          items: 
+            type: object
+            properties: 
+              rel: 
+               type: string
+              method: 
+               type: string
+              href: 
+                type: string
+        result: 
+         type: object
+         properties: 
+          data: 
+           type: object
+           properties: 
+            id: 
+             type: string
+            createdBy: 
+             type: string
+            createdOn: 
+             type: string
+             format: nullable
+            modifiedBy: 
+             type: string
+            modifiedOn: 
+             type: string
+             format: nullable
+            businessKey: 
+             type: string
+            parentInstance: 
+             type: string
+             format: nullable
+            processDefinition: 
+             type: string
+             format: nullable
+            status: 
+             type: string
+            tenantId: 
+             type: integer
+             format: int32
+            revision: 
+             type: integer
+             format: int32
+            initiator: 
+             type: string
+            currentParticipants: 
+             type: string
+             format: nullable
+            errorMessage: 
+             type: string
+             format: nullable
+            logMessageId: 
+             type: string
+             format: nullable
+            processMemory: 
+             type: object
+             properties: 
+              age: 
+                type: integer
+                format: int32
+            dueDate: 
+             type: string
+             format: nullable
+            priority: 
+             type: string
+            debugInstance: 
+             type: boolean
+
+             
+    errorResponse:
+      description: The general response structure for Error Response
+      type: object
+      properties:
+        code:
+          description: The custom zenith code for the response
+          type: string
+        errorMessage:
+          description: The custom zenith message for the response
+          type: string
+        result:
+          description: The actual object which consists of response data
+          type: object
+          properties:
+            data:
+              description: The response data object/array
+              type: object
+        link:
+          description: Web link for further description of error
+          type: string
+        correlationId:
+          description: The unique identifier allocated to the particular transaction
+          type: string
+             
+  
+
+
+
+
+
+  
+
+  
+          

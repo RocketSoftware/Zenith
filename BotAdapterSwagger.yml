@@ -1,0 +1,2145 @@
+openapi: "3.0.0"
+info:
+  version: 1.0.0
+  title: Botadapter
+  description: Botadapter swagger definiton
+paths:
+  '/bots':
+    get:
+      summary: Fetches all the bot details in the system
+      tags:
+        - 'Botservice'
+      operationId: getBots
+      parameters:
+        - name: contextName
+          description: name of the context
+          in: query
+          schema:
+            type: string
+        - name: applicationName
+          description: name of the application
+          in: query
+          schema:
+            type: string
+        - name: botName
+          description: name of the bot
+          in: query
+          schema:
+            type: string
+        - name: contextId
+          description: id of the context
+          in: query
+          schema:
+            type: string
+        - name: appId
+          description: id of the application
+          in: query
+          schema:
+            type: string
+        - name: botId
+          description: id of the bot
+          in: query
+          schema:
+            type: string
+        - name: limit
+          description: limit for the pagination
+          in: query
+          schema:
+            type: integer
+        - name: offset
+          description: offset for the pagination
+          in: query
+          schema:
+            type: integer
+        - name: Content-Type
+          description: content type of the request
+          in: header
+          required: true
+          schema:
+            default: application/vnd.asg-botdetails.v1+json
+            type: string
+        - name: sortBy
+          description: paramter to sort the result
+          in: query
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/BotsResponse'
+              example:
+                $ref: '#/components/examples/botsSuccessResponse/value'
+        '400':
+          description: Your request could not be processed
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                $ref: '#/components/examples/botsFetchFailedResponse/value'
+        '405':
+          description: Method not allowed
+        '415':
+          description: Unsupported Media Type
+        '500':
+          description: >-
+            An unexpected internal error has occurred. Please contact Support
+            for more information.
+  '/external/bots':
+    get:
+      summary: Fetches all the bot details in the system
+      tags:
+        - 'External'
+      operationId: getExternalBots
+      parameters:
+        - name: contextName
+          description: name of the context
+          in: query
+          schema:
+            type: string
+        - name: applicationName
+          description: name of the application
+          in: query
+          schema:
+            type: string
+        - name: botName
+          description: name of the bot
+          in: query
+          schema:
+            type: string
+        - name: contextId
+          description: id of the context
+          in: query
+          schema:
+            type: string
+        - name: appId
+          description: id of the application
+          in: query
+          schema:
+            type: string
+        - name: botId
+          description: id of the bot
+          in: query
+          schema:
+            type: string
+        - name: limit
+          description: limit for the pagination
+          in: query
+          schema:
+            type: integer
+        - name: offset
+          description: offset for the pagination
+          in: query
+          schema:
+            type: integer
+        - name: Content-Type
+          description: content type of the request
+          in: header
+          required: true
+          schema:
+            default: application/vnd.asg-botdetails.v1+json
+            type: string
+        - name: sortBy
+          description: paramter to sort the result
+          in: query
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/BotsResponse'
+              example:
+                $ref: '#/components/examples/botsSuccessResponse/value'
+        '400':
+          description: Your request could not be processed
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                $ref: '#/components/examples/botsFetchFailedResponse/value'
+        '405':
+          description: Method not allowed
+        '415':
+          description: Unsupported Media Type
+        '500':
+          description: >-
+            An unexpected internal error has occurred. Please contact Support
+            for more information.
+
+  /bots/{botid}:
+    get:
+      summary: Fetch bot details for the gien bot id
+      tags:
+        - 'BotIdservice'
+      operationId: getBotById
+      parameters:
+        - name: botid
+          description: Bot id
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: contextName
+          description: name of the context
+          in: query
+          schema:
+            type: string
+        - name: applicationName
+          description: name of the application
+          in: query
+          schema:
+            type: string
+        - name: botName
+          description: name of the bot
+          in: query
+          schema:
+            type: string
+        - name: contextId
+          description: id of the context
+          in: query
+          schema:
+            type: string
+        - name: appId
+          description: id of the application
+          in: query
+          schema:
+            type: string
+        - name: limit
+          description: limit for the pagination
+          in: query
+          schema:
+           type: integer
+        - name: offset
+          description: offset for the pagination
+          in: query
+          schema:
+            type: integer
+        - name: Content-Type
+          description: content type of the request
+          in: header
+          required: true
+          schema:
+            default: application/vnd.asg-botdetails.v1+json
+            type: string
+        - name: sortBy
+          description: paramter to sort the result
+          in: query
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/BotsResponse'
+              example:
+                $ref: '#/components/examples/botsSuccessResponse1/value'
+        '400':
+          description: Your request could not be processed
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                $ref: '#/components/examples/botsFetchFailedResponse/value'
+        '405':
+          description: Method not allowed
+        '415':
+          description: Unsupported Media Type
+        '500':
+          description: >-
+            An unexpected internal error has occurred. Please contact Support
+            for more information.
+    put:
+      summary: Update the bot
+      tags:
+        - 'BotUpdateService'
+      description: Update the bot
+      operationId: updateBotById
+      parameters:
+        - name: botid
+          description: the id of rpa model
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: Content-Type
+          description: content type of the request
+          in: header
+          required: true
+          schema:
+            default: application/vnd.asg-botdetails.v1+json
+            type: string
+      requestBody:
+        content:
+          application/vnd.asg-botdetails.v1+json:
+            schema:
+              $ref: '#/components/schemas/botUpdateRequest'
+            example:
+              $ref: '#/components/examples/botUpdateRequest/value'
+      responses:
+        '200':
+          description: Successful
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/BotsResponse'
+              example:
+                $ref: '#/components/examples/botUpdateSuccessful/value'
+        '400':
+          description: Your request could not be processed
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                $ref: '#/components/examples/botUpdationFailed/value'
+        '403':
+          description: Forbidden
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                $ref: '#/components/examples/notAuthorizedResponse/value'
+        '404':
+          description: Entity Not Found
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                oneOf:
+                  - $ref: '#/components/examples/contextNotFound/value'
+                  - $ref: '#/components/examples/applicationNotFound/value'
+        '405':
+          description: Method not allowed
+        '415':
+          description: Unsupported Media Type
+        '500':
+          description: >-
+            An unexpected internal error has occurred. Please contact Support
+            for more information.
+  '/bots/{botid}/vaultkeys':
+    get:
+      summary: Get list of vaultkey in particular bot script.
+      tags:
+        - 'botvault'
+      description: Get list of vaultkey in particular bot script.
+      operationId: getvaultkeyFromBotScript
+      parameters:
+        - name: botid
+          description: Bot id
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: Content-Type
+          description: content type of the request
+          in: header
+          required: true
+          schema:
+            default: application/vnd.asg-botdetails.v1+json
+            type: string
+        - name: contextId
+          description: contextId of the bot
+          in: query
+          schema:
+            type: string
+        - name: applicationId
+          description: applicationId of the bot
+          in: query
+          schema:
+            type: string
+        - name: applicationVersionId
+          description: applicationVersionId of the bot
+          in: query
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/BotsResponse'
+              example:
+                $ref: '#/components/examples/vaultkeyFromVaultRetriveSuccessful/value'
+        '400':
+          description: Your request could not be processed
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                $ref: '#/components/examples/vaultkeyFromVaultFailed/value'
+        '403':
+          description: Forbidden
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                $ref: '#/components/examples/notAuthorizedResponse/value'
+        '404':
+          description: Entity Not Found
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                oneOf:
+                  - $ref: '#/components/examples/contextNotFound/value'
+        '405':
+          description: Method not allowed
+        '415':
+          description: Unsupported Media Type
+        '500':
+          description: >-
+            An unexpected internal error has occurred. Please contact Support
+            for more information.
+  '/management/vaultkeys':
+    get:
+      summary: Get list of vaultkey in particular context.
+      tags:
+        - 'Managervault'
+      description: Get list of vaultkey in particular context.
+      operationId: getvaultkeyFromBotEngine
+      parameters:
+        - name: contextId
+          description: Context id for which vault key needs to be retrieved.
+          in: query
+          required: true
+          schema:
+            type: string
+        - name: Content-Type
+          description: content type of the request
+          in: header
+          required: true
+          schema:
+            default: application/vnd.asg-botdetails.v1+json
+            type: string
+      responses:
+        '200':
+          description: Successful
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/BotsResponse'
+              example:
+                $ref: '#/components/examples/vaultkeyFromVaultRetriveSuccessful/value'
+        '400':
+          description: Your request could not be processed
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                $ref: '#/components/examples/vaultkeyFromVaultFailed/value'
+        '403':
+          description: Forbidden
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                $ref: '#/components/examples/notAuthorizedResponse/value'
+        '404':
+          description: Entity Not Found
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                oneOf:
+                  - $ref: '#/components/examples/contextNotFound/value'
+        '405':
+          description: Method not allowed
+        '415':
+          description: Unsupported Media Type
+        '500':
+          description: >-
+            An unexpected internal error has occurred. Please contact Support
+            for more information.
+
+  '/bots/{botname}/artifact':
+    get:
+      summary: Download the artifact
+      tags:
+        - 'BotArtifact'
+      description: Download the artifact
+      operationId: getBotArtifact
+      parameters:
+        - name: contextName
+          description: the name of the context
+          in: query
+          required: true
+          schema:
+            type: string
+        - name: applicationName
+          description: the name of the application
+          in: query
+          required: true
+          schema:
+            type: string
+        - name: botname
+          description: the name of artifact
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: Content-Type
+          description: content type of the request
+          in: header
+          required: true
+          schema:
+            default: application/vnd.asg-botdetails.v1+json
+            type: string
+      responses:
+        '200':
+          description: Successful
+          content:
+            application/octet-stream:
+              schema:
+                $ref: '#/components/schemas/BotsResponse'
+              example:
+                $ref: '#/components/examples/artifact/value'
+        '400':
+          description: Your request could not be processed
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                $ref: '#/components/examples/artifactDownloadFailed/value'
+        '403':
+          description: Forbidden
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                $ref: '#/components/examples/notAuthorizedResponse/value'
+        '404':
+          description: Entity Not Found
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                oneOf:
+                  - $ref: '#/components/examples/contextNotFound/value'
+                  - $ref: '#/components/examples/applicationNotFound/value'
+        '405':
+          description: Method not allowed
+        '415':
+          description: Unsupported Media Type
+        '500':
+          description: >-
+            An unexpected internal error has occurred. Please contact Support
+            for more information.
+
+  '/management/botnodegroups/{botnodegroupid}/bots':
+    get:
+      summary: Admin activity - Fetches all the bots in group
+      description: Fetches all the bots in group
+      tags:
+        - 'BotGroup'
+      operationId: getBotsInGroup
+      parameters:
+        - name: contextId
+          description: id of the context
+          in: query
+          schema:
+            type: string
+        - name: botnodegroupid
+          description: id of the group
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: limit
+          description: limit for the pagination
+          in: query
+          schema:
+            type: integer
+        - name: offset
+          description: offset for the pagination
+          in: query
+          schema:
+            type: integer
+        - name: sortBy
+          description: Parameter to sort the results
+          in: query
+          required: false
+          schema:
+            type: string
+          example: '-modifiedon'
+        - name: Content-Type
+          description: content type of the request
+          in: header
+          required: true
+          schema:
+            default: application/vnd.asg-botdetails.v1+json
+            type: string
+      responses:
+        '200':
+          description: Successful
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/BotsResponse'
+              example:
+                $ref: '#/components/examples/botListInGroupSuccess/value'
+        '400':
+          description: Your request could not be processed
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                $ref: '#/components/examples/botListInGroupFetchFailed/value'
+        '405':
+          description: Method not allowed
+        '415':
+          description: Unsupported Media Type
+        '500':
+          description: >-
+            An unexpected internal error has occurred. Please contact Support
+            for more information.
+
+    post:
+      summary: Admin activity - Maps list of bots to group
+      description: Maps list of bots to group
+      tags:
+        - 'BotGroup'
+      operationId: mapBotsToGroup
+      parameters:
+        - name: botnodegroupid
+          description: id of the group
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: Content-Type
+          description: content type of the request
+          in: header
+          required: true
+          schema:
+            default: application/vnd.asg-botdetails.v1+json
+            type: string
+      requestBody:
+        content:
+          application/vnd.asg-botdetails.v1+json:
+            schema:
+              $ref: '#/components/schemas/botGroupMaps'
+            example:
+              $ref: '#/components/examples/mapBotsToGroup/value'
+          application/vnd.asg-botdetails.v2+json:
+            schema:
+              $ref: '#/components/schemas/botGroupMaps'
+            example:
+              $ref: '#/components/examples/mapBotsToGroup/value'
+      responses:
+        '200':
+          description: Successful
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/BotsResponse'
+              example:
+                $ref: '#/components/examples/mapBotsToGroupSuccess/value'
+        '400':
+          description: Your request could not be processed
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                $ref: '#/components/examples/mapBotsToGroupFailed/value'
+        '405':
+          description: Method not allowed
+        '415':
+          description: Unsupported Media Type
+        '500':
+          description: >-
+            An unexpected internal error has occurred. Please contact Support
+            for more information.
+
+  '/management/botnodegroups/{botnodegroupid}/bots/{botid}':
+    get:
+      summary: Admin activity - Fetches the details of bot in group
+      description: Fetches the details of bot in group
+      tags:
+        - 'BotGroup'
+      operationId: getBotInGroupById
+      parameters:
+        - name: contextId
+          description: id of the context
+          in: query
+          schema:
+            type: string
+        - name: botnodegroupid
+          description: id of the group
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: botid
+          description: id of the bot
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: limit
+          description: limit for the pagination
+          in: query
+          schema:
+            type: integer
+        - name: offset
+          description: offset for the pagination
+          in: query
+          schema:
+            type: integer
+        - name: sortBy
+          description: Parameter to sort the results
+          in: query
+          required: false
+          schema:
+            type: string
+          example: '-modifiedon'
+        - name: Content-Type
+          description: content type of the request
+          in: header
+          required: true
+          schema:
+            default: application/vnd.asg-botdetails.v1+json
+            type: string
+      responses:
+        '200':
+          description: Successful
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/BotsResponse'
+              example:
+                $ref: '#/components/examples/botInGroupByIdSuccess/value'
+        '400':
+          description: Your request could not be processed
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                $ref: '#/components/examples/botInGroupByIdFetchFailed/value'
+        '405':
+          description: Method not allowed
+        '415':
+          description: Unsupported Media Type
+        '500':
+          description: >-
+            An unexpected internal error has occurred. Please contact Support
+            for more information.
+
+    post:
+      summary: Admin activity - Maps a bot to group
+      description: Maps a bot to group
+      tags:
+        - 'BotGroup'
+      operationId: mapBotToGroupById
+      parameters:
+        - name: botnodegroupid
+          description: id of the group
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: botid
+          description: id of the bot
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: Content-Type
+          description: content type of the request
+          in: header
+          required: true
+          schema:
+            default: application/vnd.asg-botdetails.v1+json
+            type: string
+      requestBody:
+        content:
+          application/vnd.asg-botdetails.v1+json:
+            schema:
+              $ref: '#/components/schemas/botGroupMap'
+            example:
+              $ref: '#/components/examples/mapBotsToGroup/value'
+          application/vnd.asg-botdetails.v2+json:
+            schema:
+              $ref: '#/components/schemas/botGroupMap'
+            example:
+              $ref: '#/components/examples/mapBotsToGroup/value'
+      responses:
+        '200':
+          description: Successful
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/BotsResponse'
+              example:
+                $ref: '#/components/examples/mapBotToGroupSuccess/value'
+        '400':
+          description: Your request could not be processed
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                $ref: '#/components/examples/mapBotsToGroupFailed/value'
+        '405':
+          description: Method not allowed
+        '415':
+          description: Unsupported Media Type
+        '500':
+          description: >-
+            An unexpected internal error has occurred. Please contact Support
+            for more information.
+
+    delete:
+      summary: Admin activity - Unmaps a bot from group
+      description: Unmaps a bot from group
+      tags:
+        - 'BotGroup'
+      operationId: unmapBotFromGroup
+      parameters:
+        - name: botnodegroupid
+          description: id of the group
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: botid
+          description: id of the bot
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: Content-Type
+          description: content type of the request
+          in: header
+          required: true
+          schema:
+            default: application/vnd.asg-botdetails.v1+json
+            type: string
+      responses:
+        '200':
+          description: Successful
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/BotsResponse'
+              example:
+                $ref: '#/components/examples/unmapBotFromGroupSuccess/value'
+        '400':
+          description: Your request could not be processed
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                $ref: '#/components/examples/botGroupMapInvalidData/value'
+        '404':
+          description: Entity Not Found
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                oneOf:
+                  - $ref: '#/components/examples/groupNotFound/value'
+                  - $ref: '#/components/examples/botGroupMapNotFound/value'
+        '405':
+          description: Method not allowed
+        '415':
+          description: Unsupported Media Type
+        '500':
+          description: >-
+            An unexpected internal error has occurred. Please contact Support
+            for more information.
+  '/management/bot-instances':
+    get:
+      summary: Admin activity - get list of bot instance
+      tags:
+        - 'botinstances'
+      description: Get list of bot instance
+      operationId: getBotInstancesList
+      parameters:
+        - name: limit
+          description: No. of bot instance to be retrieved
+          in: query
+          required: false
+          schema:
+            type: integer
+          example: 20
+        - name: offset
+          description: Offset position to retrieve records from a specific position
+          in: query
+          required: false
+          schema:
+            type: integer
+            default: 0
+          example: 1
+        - name: name
+          description: Name value to filter all the results
+          in: query
+          required: false
+          schema:
+            type: string
+          example: Sample bot instance
+        - name: status
+          description: Status value to filter all the results
+          in: query
+          required: false
+          schema:
+            type: string
+          example: Waiting
+        - name: sortBy
+          description: Parameter to sort the results
+          in: query
+          required: false
+          schema:
+            type: string
+          example: '-modifiedon'
+        - name: Content-Type
+          description: content type of the request
+          in: header
+          required: true
+          schema:
+            default: application/vnd.asg-botdetails.v1+json
+            type: string
+      responses:
+        '200':
+          description: Successful
+          headers:
+            X-Total-Count:
+              description: Total no. of contexts available
+              schema:
+                type: integer
+                format: int64
+                example: 200
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/BotsResponse'
+              example:
+                $ref: '#/components/examples/listOfBotInstances/value'
+        '400':
+          description: Your request could not be processed
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                $ref: '#/components/examples/listOfBotInstancesFetchFailed/value'
+        '403':
+          description: Forbidden
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                $ref: '#/components/examples/notAuthorizedResponse/value'
+        '405':
+          description: Method not allowed
+        '415':
+          description: Unsupported Media Type
+        '500':
+          description: >-
+            An unexpected internal error has occurred. Please contact Support
+            for more information.
+    post:
+      summary: Admin activity - add the botinstance
+      tags:
+        - 'botinstances'
+      description: add the botinstances
+      operationId: addBotInstance
+      parameters:
+        - name: Content-Type
+          description: content type of the request
+          in: header
+          required: true
+          schema:
+            default: application/vnd.asg-botdetails.v1+json
+            type: string
+      requestBody:
+        content:
+          application/vnd.asg-botdetails.v1+json:
+            schema:
+              $ref: '#/components/schemas/botInstanceExecuteRequest'
+            example:
+              $ref: '#/components/examples/botInstanceExecuteRequest/value'
+      responses:
+        '200':
+          description: Successful
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/BotsResponse'
+              example:
+                $ref: '#/components/examples/botInstanceExecuteSuccessful/value'
+        '400':
+          description: Your request could not be processed
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                $ref: '#/components/examples/botInstanceExecutionFailed/value'
+        '403':
+          description: Forbidden
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                $ref: '#/components/examples/notAuthorizedResponse/value'
+        '404':
+          description: Entity Not Found
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                oneOf:
+                  - $ref: '#/components/examples/contextNotFound/value'
+                  - $ref: '#/components/examples/applicationNotFound/value'
+        '405':
+          description: Method not allowed
+        '415':
+          description: Unsupported Media Type
+        '500':
+          description: >-
+            An unexpected internal error has occurred. Please contact Support
+            for more information.
+  '/external/bot-instances':
+    post:
+      summary: add the external botinstances
+      tags:
+        - 'externalbotinstances'
+      description: add the external botinstance
+      operationId: addExternalBotInstance
+      parameters:
+        - name: Content-Type
+          description: content type of the request
+          in: header
+          required: true
+          schema:
+            default: application/vnd.asg-botdetails.v1+json
+            type: string
+      requestBody:
+        content:
+          application/vnd.asg-botdetails.v1+json:
+            schema:
+              $ref: '#/components/schemas/botInstanceExecuteRequest'
+            example:
+              $ref: '#/components/examples/botInstanceExecuteRequest/value'
+      responses:
+        '200':
+          description: Successful
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/BotsResponse'
+              example:
+                $ref: '#/components/examples/botInstanceExecuteSuccessful/value'
+        '400':
+          description: Your request could not be processed
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                $ref: '#/components/examples/botInstanceExecutionFailed/value'
+        '403':
+          description: Forbidden
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                $ref: '#/components/examples/notAuthorizedResponse/value'
+        '404':
+          description: Entity Not Found
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                oneOf:
+                  - $ref: '#/components/examples/contextNotFound/value'
+                  - $ref: '#/components/examples/applicationNotFound/value'
+        '405':
+          description: Method not allowed
+        '415':
+          description: Unsupported Media Type
+        '500':
+          description: >-
+            An unexpected internal error has occurred. Please contact Support
+            for more information.
+  '/management/bot-instances/{botinstanceid}/logs':
+    get:
+      summary: Admin activity - fetch log of specified bot instance
+      tags:
+        - 'botinstances'
+      description: Get log of the specified bot instance
+      operationId: getBotInstancesLog
+      parameters:
+        - name: botinstanceid
+          description: the id of the bot instance
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: Content-Type
+          description: content type of the request
+          in: header
+          required: true
+          schema:
+            default: application/vnd.asg-botdetails.v1+json
+            type: string
+      responses:
+        '200':
+          description: Successful
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/BotsResponse'
+              example:
+                $ref: '#/components/examples/botInstancesLogs/value'
+        '400':
+          description: Your request could not be processed
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                $ref: '#/components/examples/botInstanceInvalidData/value'
+        '403':
+          description: Forbidden
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                $ref: '#/components/examples/notAuthorizedResponse/value'
+        '404':
+          description: Entity Not Found
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                $ref: '#/components/examples/botInstanceNotFound/value'
+        '405':
+          description: Method not allowed
+        '415':
+          description: Unsupported Media Type
+        '500':
+          description: >-
+            An unexpected internal error has occurred. Please contact Support
+            for more information.
+  '/external/bot-instances/{botinstanceid}/logs':
+    get:
+      summary: Fetch log of specified bot instance
+      tags:
+        - 'externalbotinstances'
+      description: Get log of the specified bot instance
+      operationId: getExternalBotInstancesLog
+      parameters:
+        - name: botinstanceid
+          description: the id of the bot instance
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: Content-Type
+          description: content type of the request
+          in: header
+          required: true
+          schema:
+            default: application/vnd.asg-botdetails.v1+json
+            type: string
+      responses:
+        '200':
+          description: Successful
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/BotsResponse'
+              example:
+                $ref: '#/components/examples/botInstancesLogs/value'
+        '400':
+          description: Your request could not be processed
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                $ref: '#/components/examples/botInstanceInvalidData/value'
+        '403':
+          description: Forbidden
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                $ref: '#/components/examples/notAuthorizedResponse/value'
+        '404':
+          description: Entity Not Found
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                $ref: '#/components/examples/botInstanceNotFound/value'
+        '405':
+          description: Method not allowed
+        '415':
+          description: Unsupported Media Type
+        '500':
+          description: >-
+            An unexpected internal error has occurred. Please contact Support
+            for more information.
+  '/management/bot-instances/{botinstanceid}':
+    get:
+      summary: Admin activity - fetch details of specified bot instance
+      tags:
+        - 'botinstances'
+      description: Provides the details of the bot instance
+      operationId: getBotInstanceById
+      parameters:
+        - name: botinstanceid
+          description: the id of the bot instance
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: Content-Type
+          description: content type of the request
+          in: header
+          required: true
+          schema:
+            default: application/vnd.asg-botdetails.v1+json
+            type: string
+      responses:
+        '200':
+          description: Successful
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/BotsResponse'
+              example:
+                $ref: '#/components/examples/botInstanceById/value'
+        '400':
+          description: Your request could not be processed
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                $ref: '#/components/examples/botInstanceInvalidData/value'
+        '403':
+          description: Forbidden
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                $ref: '#/components/examples/notAuthorizedResponse/value'
+        '404':
+          description: Entity Not Found
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                $ref: '#/components/examples/botInstanceNotFound/value'
+        '405':
+          description: Method not allowed
+        '415':
+          description: Unsupported Media Type
+        '500':
+          description: >-
+            An unexpected internal error has occurred. Please contact Support
+            for more information.
+  '/external/bot-instances/{botinstanceid}':
+    get:
+      summary: Fetch details of specified bot instance
+      tags:
+        - 'externalbotinstances'
+      description: Provides the details of the bot instance
+      operationId: getExternalBotInstanceById
+      parameters:
+        - name: botinstanceid
+          description: the id of the bot instance
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: Content-Type
+          description: content type of the request
+          in: header
+          required: true
+          schema:
+            default: application/vnd.asg-botdetails.v1+json
+            type: string
+      responses:
+        '200':
+          description: Successful
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/BotsResponse'
+              example:
+                $ref: '#/components/examples/botInstanceById/value'
+        '400':
+          description: Your request could not be processed
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                $ref: '#/components/examples/botInstanceInvalidData/value'
+        '403':
+          description: Forbidden
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                $ref: '#/components/examples/notAuthorizedResponse/value'
+        '404':
+          description: Entity Not Found
+          content:
+            application/vnd.asg.v1+json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                $ref: '#/components/examples/botInstanceNotFound/value'
+        '405':
+          description: Method not allowed
+        '415':
+          description: Unsupported Media Type
+        '500':
+          description: >-
+            An unexpected internal error has occurred. Please contact Support
+            for more information.
+  '/decisionmodels' :
+    get:
+      summary: Gets list of Decision models
+      tags:
+        - 'decisionModel'
+      description: Provides the collection of Decision Models
+      operationId: getDecisionModels
+      parameters:
+        - name: contextId
+          description: Id of the context
+          in: query
+          schema:
+            type: string
+        - name: contextName
+          description: Name of the context
+          in: query
+          schema:
+            type: string
+        - name: applicationId
+          description: Id of the application
+          in: query
+          schema:
+            type: string
+        - name: applicationName
+          description: Name of the application
+          in: query
+          schema:
+            type: string
+        - name: applicationVersion
+          description: Version of the application
+          in: query
+          schema:
+            type: string
+        - name: limit
+          description: limit for pagination
+          in: query
+          schema:
+            type: integer
+        - name: offset
+          description: offset for pagination
+          in: query
+          schema:
+            type: integer
+        - name: sortBy
+          description: Parameter to sort the results
+          in: query
+          schema:
+            type: string
+          example: '-modifiedon'
+        - name: Content-Type
+          description: content type of the request
+          in: header
+          required: true
+          schema:
+            default: application/vnd.asg-mowbly.v1+json
+            type: string
+      responses:
+        '200':
+          description: Successful
+          headers:
+            X-Total-Count:
+              description: Total no. of Decision Models available
+              schema:
+                type: integer
+                format: int64
+                example: 200
+          content:
+            application/vnd.asg-mowbly.v1+json:
+              schema:
+                $ref: '#/components/schemas/BotsResponse'
+              example:
+                $ref: '#/components/examples/listOfDecisionmodels/value'
+        '400':
+          description: Your request could not be processed
+          content:
+            application/vnd.asg-mowbly.v1+json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                $ref: '#/components/examples/listOfDecsiomodelsFetchFailed/value'
+        '403':
+          description: Forbidden
+          content:
+            application/vnd.asg-mowbly.v1+json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                $ref: '#/components/examples/notAuthorizedResponse/value'
+        '404':
+          description: Entity Not Found
+          content:
+            application/vnd.asg-mowbly.v1+json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                oneOf:
+                  - $ref: '#/components/examples/contextNotFound/value'
+                  - $ref: '#/components/examples/applicationNotFound/value'
+                  - $ref: '#/components/examples/appVersionNotFound/value'
+        '405':
+          description: Method not allowed
+        '415':
+          description: Unsupported Media Type
+        '500':
+          description: >-
+            An unexpected internal error has occurred. Please contact Support
+            for more information.
+  /decisionmodels/{decisionmodelid}/execution :
+    post:
+      summary: Execute Decision table rules with the given input
+      operationId: executeDecisionModel
+      tags:
+        - 'decisionModel'
+      parameters:
+        - name: decisionmodelid
+          description: Id of Decision Model
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: Content-Type
+          description: content type of the request
+          in: header
+          required: true
+          schema:
+            default: application/vnd.asg-mowbly.v1+json
+            type: string
+      requestBody:
+        content:
+          application/vnd.asg-mowbly.v1+json:
+            schema:
+              type: object
+            example:
+              contextName: "context1"
+              applicationName: "app1"
+              decisionTableId: "decisiontable1"
+              input:
+                {
+                  "inputbusinessobjectnameone": {
+                    "day":"6",
+                    "hour":"5"
+                  },
+                  "inputbusinessobjectnametwo": {
+                    "day":"6",
+                    "hour":"5"
+                  }
+                }
+      responses:
+        200:
+          description: The list of decision results.
+          content:
+            application/vnd.asg-services-policies-dmexecutionresults.v1+json:
+              schema:
+                $ref: '#/components/schemas/DMExecutionResults'
+              example:
+                - key: SampleDecisionTable
+                  value:
+                    allowed: false
+                    showWarning: false
+
+    
+####################
+components:
+  schemas:
+    BotsResponse:
+      description: The general response structure
+      type: object
+      properties:
+        code:
+          description: The custom mowbly code for the response
+          type: string
+        message:
+          description: The custom mowbly message for the response
+          type: string
+        contentType:
+          description: The content type of the respone
+          type: string
+        links:
+          $ref: '#/components/schemas/hateoasLinks'
+        result:
+          description: The actual object which consists of response data
+          type: object
+          properties:
+            data:
+              description: The response data object/array
+              oneOf:
+                - type: string
+                - type: object
+                - type: array
+    DMExecutionResults:
+      description: The collection of results returned by the Decision Model execution.
+      type: array
+      items:
+        $ref: '#/components/schemas/DMExecutionResult'
+    DMExecutionResult:
+      description: One of the results returned by the Decision Model execution.
+      type: object
+      properties:
+        key:
+          description: The key, or name, of the result
+          type: string
+        value:
+          description: The value for the result.
+          type: object
+    hateoasLink:
+      description: HATEOAS link object
+      type: object
+      properties:
+        rel:
+          type: string
+          description: |
+            The relationship from the current item to the target specified in
+            the href.
+        method:
+          description: The http method to use when invoking the URL specified in the href.
+          enum:
+            - GET
+            - POST
+            - PUT
+            - DELETE
+          type: string
+        href:
+          type: string
+          description: URL to call the appropriate REST service.
+      required:
+        - rel
+        - method
+        - href
+    hateoasLinks:
+      description: HATEOAS Links
+      type: array
+      items:
+        $ref: '#/components/schemas/hateoasLink'
+    botUpdateRequest:
+      description: Body to update node for a bot
+      type: object
+      properties:
+        node:
+          description: Node url whenre bot intended to run
+          type: string
+        tasktActions:
+          description: task action.
+          type: string
+        contextId:
+          description: the id of the context
+          type: string
+        applicationId:
+          description: the id of the application
+          type: string
+        applicationVersionId:
+          description: the id of application version
+          type: string
+        botId:
+          description: the id of rpa model
+          type: string
+    ErrorResponse:
+      description: The general response structure for Error Response
+      type: object
+      properties:
+        code:
+          description: The custom mowbly code for the response
+          type: string
+        errorMessage:
+          description: The custom mowbly message for the response
+          type: string
+        link:
+          description: Web link for further description of error
+          type: string
+        result:
+          description: The actual object which consists of response data
+          type: object
+          properties:
+            data:
+              description: The response data object/array
+              type: object
+        correlationId:
+          description: The unique identifier allocated to the particular transaction
+          type: string
+    botInstanceExecuteRequest:
+      description: Request body to execute the bot
+      type: object
+      properties:
+        contextName:
+          description: the name of the context
+          type: string
+        applicationName:
+          description: the name of the application
+          type: string
+        botName:
+          description: the name of the bot
+          type: string
+        schedDate:
+          description: scheduled date
+          type: string
+        schedTime:
+          description: scheduled time
+          type: string
+        startOnHold:
+          description: start on hold flag
+          type: boolean
+        perpetual:
+          description: start on hold flag
+          type: boolean
+        executenow:
+          description: flag to indicate execute now
+          type: boolean
+        variables:
+          description: Variable need to pass to bot
+          type: string
+
+    botGroupMaps:
+      description: Configuration of the list of bots to be mapped to group
+      type: array
+      items:
+        $ref: '#/components/schemas/botGroupMap'
+      example:
+        - botId: ibpm_2323efe-23232e-3203-32323g
+          contextId: ibpm_2323efe-23232e-3203-3232yu
+          applicationId: ibpm_2323efe-23232e-3203-35673p
+          botName: excelBot_1
+          applicationName: ExcelBot
+        - botId: ibpm_2323efe-23232e-3203-32323g
+          contextId: ibpm_2323efe-23232e-3203-3232yu
+          applicationId: ibpm_2323efe-23232e-3203-35673p
+          botName: excelBot_1
+          applicationName: ExcelBot
+
+    botGroupMap:
+      description: Configuration of the bot to be mapped to group
+      type: object
+      properties:
+        contextId:
+          description: Id of the context
+          type: string
+        botId:
+          description: Id of the bot
+          type: string
+        applicationId:
+          description: Id of the application
+          type: string
+        botName:
+          description: Name of the bot
+          type: string
+        applicationName:
+          description: Name of the application
+          type: string
+      example:
+        contextId: ibpm_2323efe-23232e-3203-3232yu
+        botId: ibpm_2323efe-23232e-3203-32323g
+        applicationId: ibpm_2323efe-23232e-3203-35673p
+        botName: excelBot_1
+        applicationName: ExcelBot
+    botInstances:
+      description: The collection of bot instance
+      type: object
+      example:
+        data:
+          - id: mowbly-2323efe-23232e-3203-32323e
+            name: Notepad
+            createdby: admin@asg.com
+            createdon: 1540200778354
+            modifiedby: admin@asg.com
+            modifiedon: 1540200778354
+            botId: 177200304131119
+            node: http://localhost:1234
+            instance_status: Waiting
+            additional_info: some text data
+            bot_instance_id: 177200304131119
+          - id: mowbly-2323efe-23232e-3203-32323e
+            name: Notepad
+            createdby: admin@asg.com
+            createdon: 1540200778354
+            modifiedby: admin@asg.com
+            modifiedon: 1540200778354
+            botId: 177200304131119
+            node: http://localhost:1234
+            instance_status: Waiting
+            additional_info: some text data
+            bot_instance_id: 177200304131119
+
+    processmodels:
+      description: The collection of serverscripts
+      type: object
+      example:
+        data:
+          - id: mowbly-2323efe-23232e-ffds8f
+            name: ExpenseClaim.pm
+            contextId: mowbly-2323efe-23232e-3203-32323f
+            applicationId: mowbly-2323efe-23232e-3203-32323g
+            versionId: mowbly-2323efe-23232e-3203-32323j
+            companyId: comp--2323efe-23232e-3203-32323e
+            applicationName: Expense Claim
+            createdby: admin@asg.com
+            createdon: 1540200778354
+            modifiedby: admin@asg.com
+            modifiedon: 1540200778354
+            type: 2
+            links:
+              - rel: self
+                href: /rest/contexts/mowbly-2323efe-23232e-3203-32323f/applications/mowbly-2323efe-23232e-3203-32323g/versions/mowbly-2323efe-23232e-3203-32323j/processmodels/mowbly-2323efe-23232e-ffds8f
+  examples:
+    listOfDecisionmodels:
+      value:
+        code: MSR-2251
+        message: Decision Models List Retrieval Successful
+        result:
+          $ref: '#/components/schemas/processmodels/example'
+    listOfDecsiomodelsFetchFailed:
+      value:
+        code: MSR-1205
+        errorMessage: Decision Models List Retrieval Failed. Limit value provided is not valid.
+        link: Will be updated soon
+        correlationId: d06e4e7e-7d23-4a9a-a7b5-0f3e7bea1c99
+    botsSuccessResponse:
+      value:
+        code: MSR-2210
+        message: Bot Details Fetch Sucessfull
+        contentType: application/vnd.asg-botdetails.v1+json
+        links:  [
+          {"rel": "self",
+           "method": "GET",
+           "href": "/rest/bots"},
+          {"rel": "getByBotId",
+           "method": "GET",
+           "href": "/rest/bots/botid"}
+        ]
+        result:
+          data: [
+            {"contextId" : "testContextId",
+             "contextName": "testContextName",
+             "appId": "testAppId",
+             "applicationName": "testApplication",
+             "projectId": "testProjectId",
+             "projectName": "testProjectName",
+             "botId": "testBotId",
+             "botName": "testBotName" ,
+             "createdOn": "testCreatedOn",
+             "modified":"testModified"},
+            {"contextId": "testContextId1",
+             "contextName": "testContextName1",
+             "appId": "testAppId1",
+             "applicationName": "testApplication1",
+             "projectId": "testProjectId1",
+             "projectName": "testProjectName1",
+             "botId": "testBotId1",
+             "botName": "testBotName1" ,
+             "createdOn": "testCreatedOn1",
+             "modified": "testModified1"}
+          ]
+    botUpdateRequest:
+      value:
+        node: http://10.50.205.62:1234
+        tasktActions: ["test bot update","test bot update2"]
+        contextId: textcontext
+        applicationId: textApplicationid
+        applicationVersionId: textapplicationVersionId
+        botid: textbotid
+    botInstancesLogs:
+      value:
+        code: MSR-6319
+        message: Bot Instance Logs Fetch Successful.
+        result:
+          data:
+            log: { "Logs": "LogStatement" }
+    botInstanceExecuteRequest:
+      value:
+        contextname: testcontextname
+        applicationname: testapplicationname
+        botname: testbotname
+        schedDate: 2019.08.13
+        schedTime: 9.21.59
+        startOnHold: false
+        perpetual: false
+        executenow: true
+        variables: [ { "name": "model_id","value": "40084" },{ "name": "engine_url","value": "nloc:1234" } ]
+    botInstanceExecuteSuccessful:
+      value:
+        code: MSR-6309
+        message: Bot executed successfully
+        links: [
+          { "rel": "self",
+            "method": "POST",
+            "href": "/rest/bot-instances" }
+        ]
+        result:
+          data:
+            $ref: '#/components/examples/botExecutedSucess/value'
+    vaultkeyFromVaultRetriveSuccessful:
+      value:
+        code: MSR-6320
+        message: Vault key retrieved successfully from password vault.
+        contentType: application/vnd.asg-botdetails.v1+json
+        links: [
+          {"rel": "self",
+            "method": "GET",
+            "href": "/rest/bots/001/vaultkeys"},
+          ]
+        result:
+          data:
+            $ref: '#/components/examples/botExecutedSucess/value'
+    mapBotsToGroup:
+      value:
+        - applicationId: ibpm_2323efe-23232e-3203-3276g
+          applicationName: ExcelBot
+          botId: ibpm_2323efe-23232e-3203-6796k
+          botName: excelBot_1
+        - applicationId: ibpm_2323efe-23232e-3203-3276g
+          applicationName: ExcelBot
+          botId: ibpm_2323efe-23232e-3203-6798p
+          botName: excelBot_2
+    botsSuccessResponse1:
+      value:
+        code: MSR-2210
+        message: Bot Details Fetch Sucessfull
+        contentType: application/vnd.asg-botdetails.v1+json
+        links: [
+          {"rel": "self",
+           "method": "GET",
+           "href": "/rest/bots/001"},
+          {"rel": "getBots",
+           "method": "GET",
+           "href": "/rest/bots"}
+        ]
+        result:
+          data:
+            { "contextId": "testContextId",
+              "contextName": "testContextName",
+              "appId": "testAppId",
+              "applicationName": "testApplication",
+              "projectId": "testProjectId",
+              "projectName": "testProjectName",
+              "botId": "testBotId",
+              "botName": "testBotName" ,
+              "createdOn": "testCreatedOn",
+              "modified": "testModified"
+            }
+    botUpdateSuccessful:
+      value:
+        code: MSR-6310
+        message: Bot updated successfully
+        result:
+          data:
+            $ref: '#/components/examples/botUpdatedSucess/value'
+    listOfBotInstances:
+      value:
+        code: MSR-6315
+        message: Bot instance List Retrieval Successful
+        links:
+          - rel: "self"
+            method: "GET"
+            href: "/bot-instances"
+        result:
+          $ref: '#/components/schemas/botInstances/example'
+    botInstanceById:
+      value:
+        code: MSR-6317
+        message: Bot Instance Details Fetch Successful.
+        links:
+          - rel: "self"
+            method: "GET"
+            href: "/bot-instances/871321301131119"
+        result:
+          data:
+            id: eef41906-bba6-4283-aa37-aceab37c024c
+            createdOn: 2019-11-13T13:13:50.237+05:30
+            createdBy: null
+            modifiedOn: 2019-11-13T13:13:50.237+05:30
+            modifiedBy: null
+            name: Test1
+            botId: ibpm_aa792e22-f841-4a61-8464-b45b152a8476
+            applicationName: NotepadC
+            applicationVersion: 3.0
+            node: http://localhost:1234
+            instanceStatus: Error
+            additionalInfo: null
+            botInstanceId: 871321301131119
+
+    botUpdatedSucess:
+      value:
+        msg: bot updated sucessfully
+    artifact:
+      value:
+        code: MSR-111103
+        message: Artifact Retrieval Successful.
+    artifactDownloadFailed:
+      value:
+        code: MSR-1362
+        errorMessage: Download artifact failed.
+        link: Will be updated soon
+        correlationId: d06e4e7e-7d23-4a9a-a7b5-0f3e7bea1c99
+    botsFetchFailedResponse:
+      value:
+        code: MSR-0005
+        errorMessage: bot details fetch failed.
+        link: Will be updated soon
+        correlationId: d06e4e7e-7d23-4a9a-a7b5-0f3e7bea1c99
+    botInstanceExecutionFailed:
+      value:
+        code: MSR-1361
+        errorMessage: Bot execution filed.
+        link: Will be updated soon
+        correlationId: d06e4e7e-7d23-4a9a-a7b5-0f3e7bea1c99
+    botExecutedSucess:
+      value:
+        msg: bot executed sucessfully
+    vaultkeyFromVaultFailed:
+      value:
+        code: MSR-6321
+        errorMessage: Vault key fatching from password vault failed.
+        link: Will be updated soon
+        correlationId: d06e4e7e-7d23-4a9a-a7b5-0f3e7bea1c99
+    notAuthorizedResponse:
+      value:
+        code: MSR-1603
+        errorMessage: You are not authorized to perform this operation
+        link: Will be updated soon
+        correlationId: d06e4e7e-7d23-4a9a-a7b5-0f3e7bea1c99
+    contextNotFound:
+      value:
+        code: MSR-3221
+        errorMessage: >-
+          Context Details Retrieval Failed. No Context is present with provided
+          information.
+        link: Will be updated soon
+        correlationId: d06e4e7e-7d23-4a9a-a7b5-0f3e7bea1c99
+    applicationNotFound:
+      value:
+        code: MSR-3222
+        errorMessage: Application Details Retrieval Failed. No Application is present with provided id.
+        link: Will be updated soon
+        correlationId: d06e4e7e-7d23-4a9a-a7b5-0f3e7bea1c99
+    botInGroupByIdSuccess:
+      value:
+        code : MSR-2210
+        message : Bot details fetched successfully
+        contentType: application/vnd.asg-botdetails.v1+json
+        links:
+          - rel: "self"
+            method: "GET"
+            href: "/management/botnodegroups/{botnodegroupid}/bots/{botid}"
+        result :
+          data :
+            { "id": "ibpm_2323efe-23232e-3203-32323g",
+              "contextId": "ibpm_2323efe-23232e-3306-323238",
+              "applicationId": "ibpm_2323efe-23232e-3306-32323o",
+              "applicationName": "testApp",
+              "botId": "ibpm_2323efe-23232e-3203-32323u",
+              "botName": "testBot" ,
+              "createdOn": "2016-11-11 18:04:09",
+              "modifiedOn": "2016-11-11 18:04:09" }
+
+    botInGroupByIdFetchFailed :
+      value:
+        code: MSR-0005
+        errorMessage: bot details fetch failed.
+        link: Will be updated soon
+        correlationId: d06e4e7e-7d23-4a9a-a7b5-0f3e7bea1c99
+    appVersionNotFound:
+      value:
+        code: MSR-3223
+        errorMessage: Application Version Details Retrieval Failed. No Application version is present with provided id.
+        link: Will be updated soon
+        correlationId: d06e4e7e-7d23-4a9a-a7b5-0f3e7bea1c99
+    listOfBotInstancesFetchFailed:
+      value:
+        code: MSR-6316
+        errorMessage: Bot instance List Retrieval Failed. Limit value provided is not valid.
+        link: Will be updated soon
+        correlationId: d06e4e7e-7d23-4a9a-a7b5-0f3e7bea1c99
+    botInstanceInvalidData:
+      value:
+        code: MSR-6318
+        errorMessage: Bot Instance Details Retrieval Failed.
+        link: Will be updated soon
+        correlationId: d06e4e7e-7d23-4a9a-a7b5-0f3e7bea1c99
+    botInstanceNotFound:
+      value:
+        code: MSR-6314
+        errorMessage: Bot instance Details Retrieval Failed. No bot instance is present with provided id.
+        link: Will be updated soon
+        correlationId: d06e4e7e-7d23-4a9a-a7b5-0f3e7bea1c99
+
+    botListInGroupSuccess :
+      value:
+        code : MSR-2210
+        message : Bots fetched successfully
+        contentType: application/vnd.asg-botdetails.v1+json
+        links:
+          - rel: "self"
+            method: "GET"
+            href: "/management/botnodegroups/{botnodegroupid}/bots"
+        result :
+          data : [
+            { "id": "ibpm_2323efe-23232e-3203-32323g",
+              "contextId": "ibpm_2323efe-23232e-3306-323238",
+              "applicationId": "ibpm_2323efe-23232e-3306-32323o",
+              "applicationName": "testApp",
+              "botId": "ibpm_2323efe-23232e-3203-32323u",
+              "botName": "testBot" ,
+              "createdOn": "2016-11-11 18:04:09",
+              "modifiedOn": "2016-11-11 18:04:09" }
+          ]
+
+    botListInGroupFetchFailed :
+      value:
+        code: MSR-0005
+        errorMessage: bots fetch failed.
+        link: Will be updated soon
+        correlationId: d06e4e7e-7d23-4a9a-a7b5-0f3e7bea1c99
+    botUpdationFailed:
+      value:
+        code: MSR-6311
+        errorMessage: Bot updation failed.
+        link: Will be updated soon
+        correlationId: d06e4e7e-7d23-4a9a-a7b5-0f3e7bea1c99
+
+    mapBotsToGroupSuccess:
+      value:
+        code : MSR-4036
+        message : Bots Mapping To Group Successful
+        contentType: application/vnd.asg-botdetails.v1+json
+        links:
+          - rel: "self"
+            method: "GET"
+            href: "/management/botnodegroups/{botnodegroupid}/bots"
+        result :
+          data : [
+            { "id": "ibpm_2323efe-23232e-3203-32323g",
+              "groupId": "ibpm_2323efe-23232e-3306-323238",
+              "applicationId": "ibpm_2323efe-23232e-3306-32323o",
+              "applicationName": "testApp",
+              "botId": "ibpm_2323efe-23232e-3203-32323u",
+              "botName": "testBot" ,
+              "createdBy": "admin",
+              "modifiedBy": "admin",
+              "createdOn": "2016-11-11 18:04:09",
+              "modifiedOn": "2016-11-11 18:04:09" }
+          ]
+
+    mapBotsToGroupFailed :
+      value:
+        code: MSR-4037
+        errorMessage: Bots Mapping To Group Failed.
+        link: Will be updated soon
+        correlationId: d06e4e7e-7d23-4a9a-a7b5-0f3e7bea1c99
+
+    mapBotToGroupSuccess:
+      value:
+        code : MSR-4039
+        message : Bot Mapping To Group Successful
+        contentType: application/vnd.asg-botdetails.v1+json
+        links:
+          - rel: "self"
+            method: "GET"
+            href: "/management/botnodegroups/{botnodegroupid}/bots/{botid}"
+        result :
+          data :
+            { "id": "ibpm_2323efe-23232e-3203-32323g",
+              "groupId": "ibpm_2323efe-23232e-3306-323238",
+              "applicationId": "ibpm_2323efe-23232e-3306-32323o",
+              "applicationName": "testApp",
+              "botId": "ibpm_2323efe-23232e-3203-32323u",
+              "botName": "testBot" ,
+              "createdBy": "admin",
+              "modifiedBy": "admin",
+              "createdOn": "2016-11-11 18:04:09",
+              "modifiedOn": "2016-11-11 18:04:09" }
+
+    unmapBotFromGroupSuccess:
+      value:
+        code: MSR-4041
+        message: Bot Unmapping from Group Succesful
+        contentType: application/vnd.asg-botdetails.v1+json
+        links:
+          - rel: "self"
+            method: "GET"
+            href: "/management/botnodegroups/{botnodegroupid}/bots/{botid}"
+        result:
+          data:
+            id: ibpm_2323efe-23232e-3203-32323e
+
+    botGroupMapInvalidData:
+      value:
+        code: MSR-4039
+        errorMessage: BotsGroupMap Details Retrieval Failed. BotID provided is not valid.
+        link: Will be updated soon
+        correlationId: d06e4e7e-7d23-4a9a-a7b5-0f3e7bea1c99
+
+    groupNotFound:
+      value:
+        code: MSR-4008
+        errorMessage: Group Details Retrieval Failed. No Group is present with provided id.
+        link: Will be updated soon
+        correlationId: d06e4e7e-7d23-4a9a-a7b5-0f3e7bea1c99
+
+    botGroupMapNotFound:
+      value:
+        code: MSR-4040
+        errorMessage: Bot Group Map Retrieval Failed. No Bot Group Map is present with provided ids.
+        link: Will be updated soon
+        correlationId: d06e4e7e-7d23-4a9a-a7b5-0f3e7bea1c99
