@@ -1,0 +1,1192 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "getDocumentRevisions@11.0_output",
+  "type": "object",
+  "title": "Get Document Revisions Output V11.0",
+  "description": "The Get Document Revisions Output schema Version 11.0.",
+  "default": {},
+  "examples": [
+    {
+      "revisions": [
+        {
+          "checkoutId": "4e1c3346-df94-4d68-a21c-34e8f1ef71e3",
+          "metadata": [
+            {
+              "dataType": null,
+              "displayName": "Document identifier",
+              "keyName": "__docid",
+              "keyValue": "ENC(OC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAxMDE0MDA1MTQxMTAucmVwb3J0c2VjdDQ1Lk5ldyBUZXh0IERvY3VtZW50LnR4dCAgICAgICAgIEFCU1BHMDAwMDAwMDAwMTEwLm9yZ3BhZ2VudW0xLjExMy5udW1iZXJvZnBhZ2VzMS4xNC5uYW1lMzAuTmV3IFRleHQgRG9jdW1lbnQudHh0ICAgICAgICAgMTAucmVwb3NpdG9yeTEyLmxzZGVtb3NlcnZlcjEwLnZlcnNpb25OdW0xLjIxMi5yZXBvc2l0b3J5aWQzNi44OEU5NzEzOC05RUZELTQzMDYtQTcyQi00QjVDNTNEMkE5RTA5LnNpZ25hdHVyZTQzLkxrd19KVjBpdlhqeHFUN0doZVNrMl84OGYxYm9XUUoxOFZ1UVRqai1vNTQxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)",
+              "keyType": null,
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": null,
+              "displayName": "Version number",
+              "keyName": "__versionNumber",
+              "keyValue": 2,
+              "keyType": null,
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": null,
+              "displayName": "Unique checkout identifier",
+              "keyName": "__checkoutId",
+              "keyValue": "4e1c3346-df94-4d68-a21c-34e8f1ef71e3",
+              "keyType": null,
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": null,
+              "displayName": "Checkout Status",
+              "keyName": "__checkoutStatus",
+              "keyValue": "COMPLETED",
+              "keyType": null,
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": null,
+              "displayName": "Checkout date time",
+              "keyName": "__checkoutDate",
+              "keyValue": "2020-10-19T05:17:04.220-04:00",
+              "keyType": null,
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": null,
+              "displayName": "Checkout User",
+              "keyName": "__checkoutUser",
+              "keyValue": "ADMIN",
+              "keyType": null,
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": null,
+              "displayName": "Checkin date time",
+              "keyName": "__checkinDate",
+              "keyValue": "2020-10-19T05:17:20.642-04:00",
+              "keyType": null,
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": null,
+              "displayName": "Checkin User",
+              "keyName": "__checkinUser",
+              "keyValue": "ADMIN",
+              "keyType": null,
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": null,
+              "displayName": "Checkout message",
+              "keyName": "__checkoutMessage",
+              "keyValue": "",
+              "keyType": null,
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": null,
+              "displayName": "Claimed",
+              "keyName": "__claimed",
+              "keyValue": true,
+              "keyType": null,
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": null,
+              "displayName": "Claim Date",
+              "keyName": "__claimDate",
+              "keyValue": "2020-10-19T05:17:20.301-04:00",
+              "keyType": null,
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": null,
+              "displayName": "Page Count",
+              "keyName": "__pageCount",
+              "keyValue": 1,
+              "keyType": null,
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": null,
+              "displayName": "Document identifier",
+              "keyName": "__docid",
+              "keyValue": "ENC(OC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAxMDE0MDA1MTQxMTAucmVwb3J0c2VjdDQ1Lk5ldyBUZXh0IERvY3VtZW50LnR4dCAgICAgICAgIEFCU1BHMDAwMDAwMDAwMTEwLm9yZ3BhZ2VudW0xLjExMy5udW1iZXJvZnBhZ2VzMS4xNC5uYW1lMzAuTmV3IFRleHQgRG9jdW1lbnQudHh0ICAgICAgICAgMTAucmVwb3NpdG9yeTEyLmxzZGVtb3NlcnZlcjEwLnZlcnNpb25OdW0xLjIxMi5yZXBvc2l0b3J5aWQzNi44OEU5NzEzOC05RUZELTQzMDYtQTcyQi00QjVDNTNEMkE5RTA5LnNpZ25hdHVyZTQzLkxrd19KVjBpdlhqeHFUN0doZVNrMl84OGYxYm9XUUoxOFZ1UVRqai1vNTQxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)",
+              "keyType": null,
+              "keyOrdinal": 0
+            }
+          ],
+          "links": [
+            {
+              "rel": "self",
+              "method": "GET",
+              "href": "/mobius/rest/checkouts"
+            },
+            {
+              "rel": "http://www/asg/com/mobius/rel/checkouts/get",
+              "method": "GET",
+              "href": "/mobius/rest/checkouts/4e1c3346-df94-4d68-a21c-34e8f1ef71e3"
+            }
+          ]
+        },
+        {
+          "checkoutId": "abee9a6f-df65-481f-b00c-cc0e1163bb51",
+          "metadata": [
+            {
+              "dataType": null,
+              "displayName": "Document identifier",
+              "keyName": "__docid",
+              "keyValue": "ENC(OC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAxMDE0MDA1MTQxMTAucmVwb3J0c2VjdDQ1Lk5ldyBUZXh0IERvY3VtZW50LnR4dCAgICAgICAgIEFCU1BHMDAwMDAwMDAwMTEwLm9yZ3BhZ2VudW0xLjExMy5udW1iZXJvZnBhZ2VzMS4xNC5uYW1lMzAuTmV3IFRleHQgRG9jdW1lbnQudHh0ICAgICAgICAgMTAucmVwb3NpdG9yeTEyLmxzZGVtb3NlcnZlcjEwLnZlcnNpb25OdW0xLjExMi5yZXBvc2l0b3J5aWQzNi44OEU5NzEzOC05RUZELTQzMDYtQTcyQi00QjVDNTNEMkE5RTA5LnNpZ25hdHVyZTQzLkUzYi1XY1UzZ0FyUHIwaF92SXVyT3FReUZ5VWZjaDluX1Y3UV83YzNZcm8xNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)",
+              "keyType": null,
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": null,
+              "displayName": "Version number",
+              "keyName": "__versionNumber",
+              "keyValue": 1,
+              "keyType": null,
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": null,
+              "displayName": "Unique checkout identifier",
+              "keyName": "__checkoutId",
+              "keyValue": "abee9a6f-df65-481f-b00c-cc0e1163bb51",
+              "keyType": null,
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": null,
+              "displayName": "Checkout Status",
+              "keyName": "__checkoutStatus",
+              "keyValue": "COMPLETED",
+              "keyType": null,
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": null,
+              "displayName": "Checkout date time",
+              "keyName": "__checkoutDate",
+              "keyValue": "2020-10-14T01:58:47.000-04:00",
+              "keyType": null,
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": null,
+              "displayName": "Checkout User",
+              "keyName": "__checkoutUser",
+              "keyValue": "SYSTEM",
+              "keyType": null,
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": null,
+              "displayName": "Checkin date time",
+              "keyName": "__checkinDate",
+              "keyValue": "2020-10-14T01:58:47.000-04:00",
+              "keyType": null,
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": null,
+              "displayName": "Checkin User",
+              "keyName": "__checkinUser",
+              "keyValue": "SYSTEM",
+              "keyType": null,
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": null,
+              "displayName": "Checkout message",
+              "keyName": "__checkoutMessage",
+              "keyValue": "Base document",
+              "keyType": null,
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": null,
+              "displayName": "Claimed",
+              "keyName": "__claimed",
+              "keyValue": false,
+              "keyType": null,
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": null,
+              "displayName": "Page Count",
+              "keyName": "__pageCount",
+              "keyValue": 1,
+              "keyType": null,
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": null,
+              "displayName": "Document identifier",
+              "keyName": "__docid",
+              "keyValue": "ENC(OC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAxMDE0MDA1MTQxMTAucmVwb3J0c2VjdDQ1Lk5ldyBUZXh0IERvY3VtZW50LnR4dCAgICAgICAgIEFCU1BHMDAwMDAwMDAwMTEwLm9yZ3BhZ2VudW0xLjExMy5udW1iZXJvZnBhZ2VzMS4xNC5uYW1lMzAuTmV3IFRleHQgRG9jdW1lbnQudHh0ICAgICAgICAgMTAucmVwb3NpdG9yeTEyLmxzZGVtb3NlcnZlcjEwLnZlcnNpb25OdW0xLjExMi5yZXBvc2l0b3J5aWQzNi44OEU5NzEzOC05RUZELTQzMDYtQTcyQi00QjVDNTNEMkE5RTA5LnNpZ25hdHVyZTQzLkUzYi1XY1UzZ0FyUHIwaF92SXVyT3FReUZ5VWZjaDluX1Y3UV83YzNZcm8xNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)",
+              "keyType": null,
+              "keyOrdinal": 0
+            }
+          ],
+          "links": [
+            {
+              "rel": "self",
+              "method": "GET",
+              "href": "/mobius/rest/checkouts"
+            },
+            {
+              "rel": "http://www/asg/com/mobius/rel/checkouts/get",
+              "method": "GET",
+              "href": "/mobius/rest/checkouts/abee9a6f-df65-481f-b00c-cc0e1163bb51"
+            }
+          ]
+        }
+      ],
+      "hasMoreItems": false,
+      "links": [
+        {
+          "rel": "http://www/asg/com/mobius/rel/checkouts",
+          "method": "GET",
+          "href": "/mobius/rest/checkouts/"
+        },
+        {
+          "rel": "http://www/asg/com/mobius/rel/archivingwrite",
+          "method": "POST",
+          "href": "/mobius/rest/repositories/88E97138-9EFD-4306-A72B-4B5C53D2A9E0/documents"
+        },
+        {
+          "rel": "http://www/asg/com/mobius/rel/checkouts/patch",
+          "method": "PATCH",
+          "href": "/mobius/rest/checkouts/da7fdee1-1695-48c4-b9d4-32cde7b3dadf"
+        },
+        {
+          "rel": "http://www/asg/com/mobius/rel/checkouts/delete",
+          "method": "DELETE",
+          "href": "/mobius/rest/checkouts/da7fdee1-1695-48c4-b9d4-32cde7b3dadf"
+        },
+        {
+          "rel": "http://www/asg/com/mobius/rel/checkouts/get",
+          "method": "GET",
+          "href": "/mobius/rest/checkouts/da7fdee1-1695-48c4-b9d4-32cde7b3dadf"
+        }
+      ],
+      "metadata": [
+        {
+          "dataType": null,
+          "displayName": "Document identifier",
+          "keyName": "__docid",
+          "keyValue": "ENC(OC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAxMDE0MDA1MTQxMTAucmVwb3J0c2VjdDQ1Lk5ldyBUZXh0IERvY3VtZW50LnR4dCAgICAgICAgIEFCU1BHMDAwMDAwMDAwMTEwLm9yZ3BhZ2VudW0xLjExMi5yZXBvc2l0b3J5aWQzNi44OEU5NzEzOC05RUZELTQzMDYtQTcyQi00QjVDNTNEMkE5RTA5LnNpZ25hdHVyZTQzLkNnaEp3QlZWQVpfNzdybEp3X3hzM2Z1LXpUbmxBY2ltZURxajh1NUtkZ2sxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)",
+          "keyType": null,
+          "keyOrdinal": 0
+        },
+        {
+          "dataType": null,
+          "displayName": "Version number",
+          "keyName": "__versionNumber",
+          "keyValue": 2,
+          "keyType": null,
+          "keyOrdinal": 0
+        },
+        {
+          "dataType": null,
+          "displayName": "Unique checkout identifier",
+          "keyName": "__checkoutId",
+          "keyValue": "da7fdee1-1695-48c4-b9d4-32cde7b3dadf",
+          "keyType": null,
+          "keyOrdinal": 0
+        },
+        {
+          "dataType": null,
+          "displayName": "Checkout Status",
+          "keyName": "__checkoutStatus",
+          "keyValue": "CHECKEDOUT",
+          "keyType": null,
+          "keyOrdinal": 0
+        },
+        {
+          "dataType": null,
+          "displayName": "Checkout date time",
+          "keyName": "__checkoutDate",
+          "keyValue": "2020-10-20T04:06:00.436-04:00",
+          "keyType": null,
+          "keyOrdinal": 0
+        },
+        {
+          "dataType": null,
+          "displayName": "Checkout User",
+          "keyName": "__checkoutUser",
+          "keyValue": "ADMIN",
+          "keyType": null,
+          "keyOrdinal": 0
+        },
+        {
+          "dataType": null,
+          "displayName": "Checkin date time",
+          "keyName": "__checkinDate",
+          "keyValue": "2020-10-19T05:17:20.642-04:00",
+          "keyType": null,
+          "keyOrdinal": 0
+        },
+        {
+          "dataType": null,
+          "displayName": "Checkin User",
+          "keyName": "__checkinUser",
+          "keyValue": "ADMIN",
+          "keyType": null,
+          "keyOrdinal": 0
+        },
+        {
+          "dataType": null,
+          "displayName": "Claimed",
+          "keyName": "__claimed",
+          "keyValue": true,
+          "keyType": null,
+          "keyOrdinal": 0
+        },
+        {
+          "dataType": null,
+          "displayName": "Claim Date",
+          "keyName": "__claimDate",
+          "keyValue": "2020-10-19T05:17:20.301-04:00",
+          "keyType": null,
+          "keyOrdinal": 0
+        },
+        {
+          "dataType": null,
+          "displayName": "Page Count",
+          "keyName": "__pageCount",
+          "keyValue": 1,
+          "keyType": null,
+          "keyOrdinal": 0
+        },
+        {
+          "dataType": null,
+          "displayName": "Document identifier",
+          "keyName": "__docid",
+          "keyValue": "ENC(OC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAxMDE0MDA1MTQxMTAucmVwb3J0c2VjdDQ1Lk5ldyBUZXh0IERvY3VtZW50LnR4dCAgICAgICAgIEFCU1BHMDAwMDAwMDAwMTEwLm9yZ3BhZ2VudW0xLjExMi5yZXBvc2l0b3J5aWQzNi44OEU5NzEzOC05RUZELTQzMDYtQTcyQi00QjVDNTNEMkE5RTA5LnNpZ25hdHVyZTQzLkNnaEp3QlZWQVpfNzdybEp3X3hzM2Z1LXpUbmxBY2ltZURxajh1NUtkZ2sxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)",
+          "keyType": null,
+          "keyOrdinal": 0
+        }
+      ]
+    }
+  ],
+  "required": [
+    "revisions",
+    "hasMoreItems",
+    "links",
+    "metadata"
+  ],
+  "properties": {
+    "revisions": {
+      "$id": "#/properties/revisions",
+      "type": "array",
+      "title": "The revisions schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "checkoutId": "4e1c3346-df94-4d68-a21c-34e8f1ef71e3",
+            "metadata": [
+              {
+                "dataType": null,
+                "displayName": "Document identifier",
+                "keyName": "__docid",
+                "keyValue": "ENC(OC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAxMDE0MDA1MTQxMTAucmVwb3J0c2VjdDQ1Lk5ldyBUZXh0IERvY3VtZW50LnR4dCAgICAgICAgIEFCU1BHMDAwMDAwMDAwMTEwLm9yZ3BhZ2VudW0xLjExMy5udW1iZXJvZnBhZ2VzMS4xNC5uYW1lMzAuTmV3IFRleHQgRG9jdW1lbnQudHh0ICAgICAgICAgMTAucmVwb3NpdG9yeTEyLmxzZGVtb3NlcnZlcjEwLnZlcnNpb25OdW0xLjIxMi5yZXBvc2l0b3J5aWQzNi44OEU5NzEzOC05RUZELTQzMDYtQTcyQi00QjVDNTNEMkE5RTA5LnNpZ25hdHVyZTQzLkxrd19KVjBpdlhqeHFUN0doZVNrMl84OGYxYm9XUUoxOFZ1UVRqai1vNTQxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)",
+                "keyType": null,
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": null,
+                "displayName": "Version number",
+                "keyName": "__versionNumber",
+                "keyValue": 2,
+                "keyType": null,
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": null,
+                "displayName": "Unique checkout identifier",
+                "keyName": "__checkoutId",
+                "keyValue": "4e1c3346-df94-4d68-a21c-34e8f1ef71e3",
+                "keyType": null,
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": null,
+                "displayName": "Checkout Status",
+                "keyName": "__checkoutStatus",
+                "keyValue": "COMPLETED",
+                "keyType": null,
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": null,
+                "displayName": "Checkout date time",
+                "keyName": "__checkoutDate",
+                "keyValue": "2020-10-19T05:17:04.220-04:00",
+                "keyType": null,
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": null,
+                "displayName": "Checkout User",
+                "keyName": "__checkoutUser",
+                "keyValue": "ADMIN",
+                "keyType": null,
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": null,
+                "displayName": "Checkin date time",
+                "keyName": "__checkinDate",
+                "keyValue": "2020-10-19T05:17:20.642-04:00",
+                "keyType": null,
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": null,
+                "displayName": "Checkin User",
+                "keyName": "__checkinUser",
+                "keyValue": "ADMIN",
+                "keyType": null,
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": null,
+                "displayName": "Checkout message",
+                "keyName": "__checkoutMessage",
+                "keyValue": "",
+                "keyType": null,
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": null,
+                "displayName": "Claimed",
+                "keyName": "__claimed",
+                "keyValue": true,
+                "keyType": null,
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": null,
+                "displayName": "Claim Date",
+                "keyName": "__claimDate",
+                "keyValue": "2020-10-19T05:17:20.301-04:00",
+                "keyType": null,
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": null,
+                "displayName": "Page Count",
+                "keyName": "__pageCount",
+                "keyValue": 1,
+                "keyType": null,
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": null,
+                "displayName": "Document identifier",
+                "keyName": "__docid",
+                "keyValue": "ENC(OC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAxMDE0MDA1MTQxMTAucmVwb3J0c2VjdDQ1Lk5ldyBUZXh0IERvY3VtZW50LnR4dCAgICAgICAgIEFCU1BHMDAwMDAwMDAwMTEwLm9yZ3BhZ2VudW0xLjExMy5udW1iZXJvZnBhZ2VzMS4xNC5uYW1lMzAuTmV3IFRleHQgRG9jdW1lbnQudHh0ICAgICAgICAgMTAucmVwb3NpdG9yeTEyLmxzZGVtb3NlcnZlcjEwLnZlcnNpb25OdW0xLjIxMi5yZXBvc2l0b3J5aWQzNi44OEU5NzEzOC05RUZELTQzMDYtQTcyQi00QjVDNTNEMkE5RTA5LnNpZ25hdHVyZTQzLkxrd19KVjBpdlhqeHFUN0doZVNrMl84OGYxYm9XUUoxOFZ1UVRqai1vNTQxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)",
+                "keyType": null,
+                "keyOrdinal": 0
+              }
+            ],
+            "links": [
+              {
+                "rel": "self",
+                "method": "GET",
+                "href": "/mobius/rest/checkouts"
+              },
+              {
+                "rel": "http://www/asg/com/mobius/rel/checkouts/get",
+                "method": "GET",
+                "href": "/mobius/rest/checkouts/4e1c3346-df94-4d68-a21c-34e8f1ef71e3"
+              }
+            ]
+          },
+          {
+            "checkoutId": "abee9a6f-df65-481f-b00c-cc0e1163bb51",
+            "metadata": [
+              {
+                "dataType": null,
+                "displayName": "Document identifier",
+                "keyName": "__docid",
+                "keyValue": "ENC(OC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAxMDE0MDA1MTQxMTAucmVwb3J0c2VjdDQ1Lk5ldyBUZXh0IERvY3VtZW50LnR4dCAgICAgICAgIEFCU1BHMDAwMDAwMDAwMTEwLm9yZ3BhZ2VudW0xLjExMy5udW1iZXJvZnBhZ2VzMS4xNC5uYW1lMzAuTmV3IFRleHQgRG9jdW1lbnQudHh0ICAgICAgICAgMTAucmVwb3NpdG9yeTEyLmxzZGVtb3NlcnZlcjEwLnZlcnNpb25OdW0xLjExMi5yZXBvc2l0b3J5aWQzNi44OEU5NzEzOC05RUZELTQzMDYtQTcyQi00QjVDNTNEMkE5RTA5LnNpZ25hdHVyZTQzLkUzYi1XY1UzZ0FyUHIwaF92SXVyT3FReUZ5VWZjaDluX1Y3UV83YzNZcm8xNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)",
+                "keyType": null,
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": null,
+                "displayName": "Version number",
+                "keyName": "__versionNumber",
+                "keyValue": 1,
+                "keyType": null,
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": null,
+                "displayName": "Unique checkout identifier",
+                "keyName": "__checkoutId",
+                "keyValue": "abee9a6f-df65-481f-b00c-cc0e1163bb51",
+                "keyType": null,
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": null,
+                "displayName": "Checkout Status",
+                "keyName": "__checkoutStatus",
+                "keyValue": "COMPLETED",
+                "keyType": null,
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": null,
+                "displayName": "Checkout date time",
+                "keyName": "__checkoutDate",
+                "keyValue": "2020-10-14T01:58:47.000-04:00",
+                "keyType": null,
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": null,
+                "displayName": "Checkout User",
+                "keyName": "__checkoutUser",
+                "keyValue": "SYSTEM",
+                "keyType": null,
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": null,
+                "displayName": "Checkin date time",
+                "keyName": "__checkinDate",
+                "keyValue": "2020-10-14T01:58:47.000-04:00",
+                "keyType": null,
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": null,
+                "displayName": "Checkin User",
+                "keyName": "__checkinUser",
+                "keyValue": "SYSTEM",
+                "keyType": null,
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": null,
+                "displayName": "Checkout message",
+                "keyName": "__checkoutMessage",
+                "keyValue": "Base document",
+                "keyType": null,
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": null,
+                "displayName": "Claimed",
+                "keyName": "__claimed",
+                "keyValue": false,
+                "keyType": null,
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": null,
+                "displayName": "Page Count",
+                "keyName": "__pageCount",
+                "keyValue": 1,
+                "keyType": null,
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": null,
+                "displayName": "Document identifier",
+                "keyName": "__docid",
+                "keyValue": "ENC(OC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAxMDE0MDA1MTQxMTAucmVwb3J0c2VjdDQ1Lk5ldyBUZXh0IERvY3VtZW50LnR4dCAgICAgICAgIEFCU1BHMDAwMDAwMDAwMTEwLm9yZ3BhZ2VudW0xLjExMy5udW1iZXJvZnBhZ2VzMS4xNC5uYW1lMzAuTmV3IFRleHQgRG9jdW1lbnQudHh0ICAgICAgICAgMTAucmVwb3NpdG9yeTEyLmxzZGVtb3NlcnZlcjEwLnZlcnNpb25OdW0xLjExMi5yZXBvc2l0b3J5aWQzNi44OEU5NzEzOC05RUZELTQzMDYtQTcyQi00QjVDNTNEMkE5RTA5LnNpZ25hdHVyZTQzLkUzYi1XY1UzZ0FyUHIwaF92SXVyT3FReUZ5VWZjaDluX1Y3UV83YzNZcm8xNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)",
+                "keyType": null,
+                "keyOrdinal": 0
+              }
+            ],
+            "links": [
+              {
+                "rel": "self",
+                "method": "GET",
+                "href": "/mobius/rest/checkouts"
+              },
+              {
+                "rel": "http://www/asg/com/mobius/rel/checkouts/get",
+                "method": "GET",
+                "href": "/mobius/rest/checkouts/abee9a6f-df65-481f-b00c-cc0e1163bb51"
+              }
+            ]
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/revisions/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/revisions/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "checkoutId": "4e1c3346-df94-4d68-a21c-34e8f1ef71e3",
+                "metadata": [
+                  {
+                    "dataType": null,
+                    "displayName": "Document identifier",
+                    "keyName": "__docid",
+                    "keyValue": "ENC(OC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAxMDE0MDA1MTQxMTAucmVwb3J0c2VjdDQ1Lk5ldyBUZXh0IERvY3VtZW50LnR4dCAgICAgICAgIEFCU1BHMDAwMDAwMDAwMTEwLm9yZ3BhZ2VudW0xLjExMy5udW1iZXJvZnBhZ2VzMS4xNC5uYW1lMzAuTmV3IFRleHQgRG9jdW1lbnQudHh0ICAgICAgICAgMTAucmVwb3NpdG9yeTEyLmxzZGVtb3NlcnZlcjEwLnZlcnNpb25OdW0xLjIxMi5yZXBvc2l0b3J5aWQzNi44OEU5NzEzOC05RUZELTQzMDYtQTcyQi00QjVDNTNEMkE5RTA5LnNpZ25hdHVyZTQzLkxrd19KVjBpdlhqeHFUN0doZVNrMl84OGYxYm9XUUoxOFZ1UVRqai1vNTQxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)",
+                    "keyType": null,
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": null,
+                    "displayName": "Version number",
+                    "keyName": "__versionNumber",
+                    "keyValue": 2,
+                    "keyType": null,
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": null,
+                    "displayName": "Unique checkout identifier",
+                    "keyName": "__checkoutId",
+                    "keyValue": "4e1c3346-df94-4d68-a21c-34e8f1ef71e3",
+                    "keyType": null,
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": null,
+                    "displayName": "Checkout Status",
+                    "keyName": "__checkoutStatus",
+                    "keyValue": "COMPLETED",
+                    "keyType": null,
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": null,
+                    "displayName": "Checkout date time",
+                    "keyName": "__checkoutDate",
+                    "keyValue": "2020-10-19T05:17:04.220-04:00",
+                    "keyType": null,
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": null,
+                    "displayName": "Checkout User",
+                    "keyName": "__checkoutUser",
+                    "keyValue": "ADMIN",
+                    "keyType": null,
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": null,
+                    "displayName": "Checkin date time",
+                    "keyName": "__checkinDate",
+                    "keyValue": "2020-10-19T05:17:20.642-04:00",
+                    "keyType": null,
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": null,
+                    "displayName": "Checkin User",
+                    "keyName": "__checkinUser",
+                    "keyValue": "ADMIN",
+                    "keyType": null,
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": null,
+                    "displayName": "Checkout message",
+                    "keyName": "__checkoutMessage",
+                    "keyValue": "",
+                    "keyType": null,
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": null,
+                    "displayName": "Claimed",
+                    "keyName": "__claimed",
+                    "keyValue": true,
+                    "keyType": null,
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": null,
+                    "displayName": "Claim Date",
+                    "keyName": "__claimDate",
+                    "keyValue": "2020-10-19T05:17:20.301-04:00",
+                    "keyType": null,
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": null,
+                    "displayName": "Page Count",
+                    "keyName": "__pageCount",
+                    "keyValue": 1,
+                    "keyType": null,
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": null,
+                    "displayName": "Document identifier",
+                    "keyName": "__docid",
+                    "keyValue": "ENC(OC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAxMDE0MDA1MTQxMTAucmVwb3J0c2VjdDQ1Lk5ldyBUZXh0IERvY3VtZW50LnR4dCAgICAgICAgIEFCU1BHMDAwMDAwMDAwMTEwLm9yZ3BhZ2VudW0xLjExMy5udW1iZXJvZnBhZ2VzMS4xNC5uYW1lMzAuTmV3IFRleHQgRG9jdW1lbnQudHh0ICAgICAgICAgMTAucmVwb3NpdG9yeTEyLmxzZGVtb3NlcnZlcjEwLnZlcnNpb25OdW0xLjIxMi5yZXBvc2l0b3J5aWQzNi44OEU5NzEzOC05RUZELTQzMDYtQTcyQi00QjVDNTNEMkE5RTA5LnNpZ25hdHVyZTQzLkxrd19KVjBpdlhqeHFUN0doZVNrMl84OGYxYm9XUUoxOFZ1UVRqai1vNTQxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)",
+                    "keyType": null,
+                    "keyOrdinal": 0
+                  }
+                ],
+                "links": [
+                  {
+                    "rel": "self",
+                    "method": "GET",
+                    "href": "/mobius/rest/checkouts"
+                  },
+                  {
+                    "rel": "http://www/asg/com/mobius/rel/checkouts/get",
+                    "method": "GET",
+                    "href": "/mobius/rest/checkouts/4e1c3346-df94-4d68-a21c-34e8f1ef71e3"
+                  }
+                ]
+              }
+            ],
+            "required": [
+              "checkoutId",
+              "metadata",
+              "links"
+            ],
+            "properties": {
+              "checkoutId": {
+                "$id": "#/properties/revisions/items/anyOf/0/properties/checkoutId",
+                "type": "string",
+                "title": "The checkoutId schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "4e1c3346-df94-4d68-a21c-34e8f1ef71e3"
+                ]
+              },
+              "metadata": {
+                "$id": "#/properties/revisions/items/anyOf/0/properties/metadata",
+                "type": "array",
+                "title": "The metadata schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": [],
+                "examples": [
+                  [
+                    {
+                      "dataType": null,
+                      "displayName": "Document identifier",
+                      "keyName": "__docid",
+                      "keyValue": "ENC(OC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAxMDE0MDA1MTQxMTAucmVwb3J0c2VjdDQ1Lk5ldyBUZXh0IERvY3VtZW50LnR4dCAgICAgICAgIEFCU1BHMDAwMDAwMDAwMTEwLm9yZ3BhZ2VudW0xLjExMy5udW1iZXJvZnBhZ2VzMS4xNC5uYW1lMzAuTmV3IFRleHQgRG9jdW1lbnQudHh0ICAgICAgICAgMTAucmVwb3NpdG9yeTEyLmxzZGVtb3NlcnZlcjEwLnZlcnNpb25OdW0xLjIxMi5yZXBvc2l0b3J5aWQzNi44OEU5NzEzOC05RUZELTQzMDYtQTcyQi00QjVDNTNEMkE5RTA5LnNpZ25hdHVyZTQzLkxrd19KVjBpdlhqeHFUN0doZVNrMl84OGYxYm9XUUoxOFZ1UVRqai1vNTQxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)",
+                      "keyType": null,
+                      "keyOrdinal": 0
+                    },
+                    {
+                      "dataType": null,
+                      "displayName": "Version number",
+                      "keyName": "__versionNumber",
+                      "keyValue": 2,
+                      "keyType": null,
+                      "keyOrdinal": 0
+                    }
+                  ]
+                ],
+                "additionalItems": true,
+                "items": {
+                  "$id": "#/properties/revisions/items/anyOf/0/properties/metadata/items",
+                  "anyOf": [
+                    {
+                      "$id": "#/properties/revisions/items/anyOf/0/properties/metadata/items/anyOf/0",
+                      "type": "object",
+                      "title": "The first anyOf schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": {},
+                      "examples": [
+                        {
+                          "dataType": null,
+                          "displayName": "Document identifier",
+                          "keyName": "__docid",
+                          "keyValue": "ENC(OC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAxMDE0MDA1MTQxMTAucmVwb3J0c2VjdDQ1Lk5ldyBUZXh0IERvY3VtZW50LnR4dCAgICAgICAgIEFCU1BHMDAwMDAwMDAwMTEwLm9yZ3BhZ2VudW0xLjExMy5udW1iZXJvZnBhZ2VzMS4xNC5uYW1lMzAuTmV3IFRleHQgRG9jdW1lbnQudHh0ICAgICAgICAgMTAucmVwb3NpdG9yeTEyLmxzZGVtb3NlcnZlcjEwLnZlcnNpb25OdW0xLjIxMi5yZXBvc2l0b3J5aWQzNi44OEU5NzEzOC05RUZELTQzMDYtQTcyQi00QjVDNTNEMkE5RTA5LnNpZ25hdHVyZTQzLkxrd19KVjBpdlhqeHFUN0doZVNrMl84OGYxYm9XUUoxOFZ1UVRqai1vNTQxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)",
+                          "keyType": null,
+                          "keyOrdinal": 0
+                        }
+                      ],
+                      "required": [
+                        "dataType",
+                        "displayName",
+                        "keyName",
+                        "keyValue",
+                        "keyType",
+                        "keyOrdinal"
+                      ],
+                      "properties": {
+                        "dataType": {
+                          "$id": "#/properties/revisions/items/anyOf/0/properties/metadata/items/anyOf/0/properties/dataType",
+                          "type": "null",
+                          "title": "The dataType schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": null,
+                          "examples": [
+                            null
+                          ]
+                        },
+                        "displayName": {
+                          "$id": "#/properties/revisions/items/anyOf/0/properties/metadata/items/anyOf/0/properties/displayName",
+                          "type": "string",
+                          "title": "The displayName schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "Document identifier"
+                          ]
+                        },
+                        "keyName": {
+                          "$id": "#/properties/revisions/items/anyOf/0/properties/metadata/items/anyOf/0/properties/keyName",
+                          "type": "string",
+                          "title": "The keyName schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "__docid"
+                          ]
+                        },
+                        "keyValue": {
+                          "$id": "#/properties/revisions/items/anyOf/0/properties/metadata/items/anyOf/0/properties/keyValue",
+                          "type": "string",
+                          "title": "The keyValue schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "ENC(OC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAxMDE0MDA1MTQxMTAucmVwb3J0c2VjdDQ1Lk5ldyBUZXh0IERvY3VtZW50LnR4dCAgICAgICAgIEFCU1BHMDAwMDAwMDAwMTEwLm9yZ3BhZ2VudW0xLjExMy5udW1iZXJvZnBhZ2VzMS4xNC5uYW1lMzAuTmV3IFRleHQgRG9jdW1lbnQudHh0ICAgICAgICAgMTAucmVwb3NpdG9yeTEyLmxzZGVtb3NlcnZlcjEwLnZlcnNpb25OdW0xLjIxMi5yZXBvc2l0b3J5aWQzNi44OEU5NzEzOC05RUZELTQzMDYtQTcyQi00QjVDNTNEMkE5RTA5LnNpZ25hdHVyZTQzLkxrd19KVjBpdlhqeHFUN0doZVNrMl84OGYxYm9XUUoxOFZ1UVRqai1vNTQxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)"
+                          ]
+                        },
+                        "keyType": {
+                          "$id": "#/properties/revisions/items/anyOf/0/properties/metadata/items/anyOf/0/properties/keyType",
+                          "type": "null",
+                          "title": "The keyType schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": null,
+                          "examples": [
+                            null
+                          ]
+                        },
+                        "keyOrdinal": {
+                          "$id": "#/properties/revisions/items/anyOf/0/properties/metadata/items/anyOf/0/properties/keyOrdinal",
+                          "type": "integer",
+                          "title": "The keyOrdinal schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": 0,
+                          "examples": [
+                            0
+                          ]
+                        }
+                      },
+                      "additionalProperties": true
+                    }
+                  ]
+                }
+              },
+              "links": {
+                "$id": "#/properties/revisions/items/anyOf/0/properties/links",
+                "type": "array",
+                "title": "The links schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": [],
+                "examples": [
+                  [
+                    {
+                      "rel": "self",
+                      "method": "GET",
+                      "href": "/mobius/rest/checkouts"
+                    },
+                    {
+                      "rel": "http://www/asg/com/mobius/rel/checkouts/get",
+                      "method": "GET",
+                      "href": "/mobius/rest/checkouts/4e1c3346-df94-4d68-a21c-34e8f1ef71e3"
+                    }
+                  ]
+                ],
+                "additionalItems": true,
+                "items": {
+                  "$id": "#/properties/revisions/items/anyOf/0/properties/links/items",
+                  "anyOf": [
+                    {
+                      "$id": "#/properties/revisions/items/anyOf/0/properties/links/items/anyOf/0",
+                      "type": "object",
+                      "title": "The first anyOf schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": {},
+                      "examples": [
+                        {
+                          "rel": "self",
+                          "method": "GET",
+                          "href": "/mobius/rest/checkouts"
+                        }
+                      ],
+                      "required": [
+                        "rel",
+                        "method",
+                        "href"
+                      ],
+                      "properties": {
+                        "rel": {
+                          "$id": "#/properties/revisions/items/anyOf/0/properties/links/items/anyOf/0/properties/rel",
+                          "type": "string",
+                          "title": "The rel schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "self"
+                          ]
+                        },
+                        "method": {
+                          "$id": "#/properties/revisions/items/anyOf/0/properties/links/items/anyOf/0/properties/method",
+                          "type": "string",
+                          "title": "The method schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "GET"
+                          ]
+                        },
+                        "href": {
+                          "$id": "#/properties/revisions/items/anyOf/0/properties/links/items/anyOf/0/properties/href",
+                          "type": "string",
+                          "title": "The href schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "/mobius/rest/checkouts"
+                          ]
+                        }
+                      },
+                      "additionalProperties": true
+                    }
+                  ]
+                }
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    },
+    "hasMoreItems": {
+      "$id": "#/properties/hasMoreItems",
+      "type": "boolean",
+      "title": "The hasMoreItems schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": false,
+      "examples": [
+        false
+      ]
+    },
+    "links": {
+      "$id": "#/properties/links",
+      "type": "array",
+      "title": "The links schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "rel": "http://www/asg/com/mobius/rel/checkouts",
+            "method": "GET",
+            "href": "/mobius/rest/checkouts/"
+          },
+          {
+            "rel": "http://www/asg/com/mobius/rel/archivingwrite",
+            "method": "POST",
+            "href": "/mobius/rest/repositories/88E97138-9EFD-4306-A72B-4B5C53D2A9E0/documents"
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/links/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/links/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "rel": "http://www/asg/com/mobius/rel/checkouts",
+                "method": "GET",
+                "href": "/mobius/rest/checkouts/"
+              }
+            ],
+            "required": [
+              "rel",
+              "method",
+              "href"
+            ],
+            "properties": {
+              "rel": {
+                "$id": "#/properties/links/items/anyOf/0/properties/rel",
+                "type": "string",
+                "title": "The rel schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "http://www/asg/com/mobius/rel/checkouts"
+                ]
+              },
+              "method": {
+                "$id": "#/properties/links/items/anyOf/0/properties/method",
+                "type": "string",
+                "title": "The method schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "GET"
+                ]
+              },
+              "href": {
+                "$id": "#/properties/links/items/anyOf/0/properties/href",
+                "type": "string",
+                "title": "The href schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "/mobius/rest/checkouts/"
+                ]
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    },
+    "metadata": {
+      "$id": "#/properties/metadata",
+      "type": "array",
+      "title": "The metadata schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "dataType": null,
+            "displayName": "Document identifier",
+            "keyName": "__docid",
+            "keyValue": "ENC(OC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAxMDE0MDA1MTQxMTAucmVwb3J0c2VjdDQ1Lk5ldyBUZXh0IERvY3VtZW50LnR4dCAgICAgICAgIEFCU1BHMDAwMDAwMDAwMTEwLm9yZ3BhZ2VudW0xLjExMi5yZXBvc2l0b3J5aWQzNi44OEU5NzEzOC05RUZELTQzMDYtQTcyQi00QjVDNTNEMkE5RTA5LnNpZ25hdHVyZTQzLkNnaEp3QlZWQVpfNzdybEp3X3hzM2Z1LXpUbmxBY2ltZURxajh1NUtkZ2sxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)",
+            "keyType": null,
+            "keyOrdinal": 0
+          },
+          {
+            "dataType": null,
+            "displayName": "Version number",
+            "keyName": "__versionNumber",
+            "keyValue": 2,
+            "keyType": null,
+            "keyOrdinal": 0
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/metadata/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/metadata/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "dataType": null,
+                "displayName": "Document identifier",
+                "keyName": "__docid",
+                "keyValue": "ENC(OC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAxMDE0MDA1MTQxMTAucmVwb3J0c2VjdDQ1Lk5ldyBUZXh0IERvY3VtZW50LnR4dCAgICAgICAgIEFCU1BHMDAwMDAwMDAwMTEwLm9yZ3BhZ2VudW0xLjExMi5yZXBvc2l0b3J5aWQzNi44OEU5NzEzOC05RUZELTQzMDYtQTcyQi00QjVDNTNEMkE5RTA5LnNpZ25hdHVyZTQzLkNnaEp3QlZWQVpfNzdybEp3X3hzM2Z1LXpUbmxBY2ltZURxajh1NUtkZ2sxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)",
+                "keyType": null,
+                "keyOrdinal": 0
+              }
+            ],
+            "required": [
+              "dataType",
+              "displayName",
+              "keyName",
+              "keyValue",
+              "keyType",
+              "keyOrdinal"
+            ],
+            "properties": {
+              "dataType": {
+                "$id": "#/properties/metadata/items/anyOf/0/properties/dataType",
+                "type": "null",
+                "title": "The dataType schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": null,
+                "examples": [
+                  null
+                ]
+              },
+              "displayName": {
+                "$id": "#/properties/metadata/items/anyOf/0/properties/displayName",
+                "type": "string",
+                "title": "The displayName schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "Document identifier"
+                ]
+              },
+              "keyName": {
+                "$id": "#/properties/metadata/items/anyOf/0/properties/keyName",
+                "type": "string",
+                "title": "The keyName schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "__docid"
+                ]
+              },
+              "keyValue": {
+                "$id": "#/properties/metadata/items/anyOf/0/properties/keyValue",
+                "type": "string",
+                "title": "The keyValue schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "ENC(OC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAxMDE0MDA1MTQxMTAucmVwb3J0c2VjdDQ1Lk5ldyBUZXh0IERvY3VtZW50LnR4dCAgICAgICAgIEFCU1BHMDAwMDAwMDAwMTEwLm9yZ3BhZ2VudW0xLjExMi5yZXBvc2l0b3J5aWQzNi44OEU5NzEzOC05RUZELTQzMDYtQTcyQi00QjVDNTNEMkE5RTA5LnNpZ25hdHVyZTQzLkNnaEp3QlZWQVpfNzdybEp3X3hzM2Z1LXpUbmxBY2ltZURxajh1NUtkZ2sxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)"
+                ]
+              },
+              "keyType": {
+                "$id": "#/properties/metadata/items/anyOf/0/properties/keyType",
+                "type": "null",
+                "title": "The keyType schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": null,
+                "examples": [
+                  null
+                ]
+              },
+              "keyOrdinal": {
+                "$id": "#/properties/metadata/items/anyOf/0/properties/keyOrdinal",
+                "type": "integer",
+                "title": "The keyOrdinal schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0,
+                "examples": [
+                  0
+                ]
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    }
+  },
+  "additionalProperties": true
+}

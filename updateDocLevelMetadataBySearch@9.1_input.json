@@ -1,0 +1,450 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "updateDocLevelMetadataBySearch@9.1_input",
+  "type": "object",
+  "title": "Update DocLevel Metadata By Search Input V9.1",
+  "description": "The Update DocLevel Metadata By Search Input schema Version 9.1.",
+  "default": {},
+  "examples": [
+    {
+      "indexBySearchRequests": [
+        {
+          "repoIds": [
+            "88E97138-9EFD-4306-A72B-4B5C53D2A9E0"
+          ],
+          "searchCriteria": {
+            "conjunction": "AND",
+            "searchTerms": [
+              {
+                "attributeName": "IPGCHR",
+                "dataType": "STRING",
+                "operator": "NE",
+                "values": [
+                  "11"
+                ]
+              },
+              {
+                "attributeName": "IPGNUM",
+                "dataType": "NUMBER",
+                "operator": "EQ",
+                "values": [
+                  "10"
+                ]
+              }
+            ]
+          },
+          "indexEntries": [
+            {
+              "name": "IPGCHR",
+              "currentValue": "MONTHLY EXPENSE 10",
+              "newValue": "MONTHLY EXPENSEss 10"
+            }
+          ]
+        }
+      ],
+      "settings": {
+        "auth_token": "clientId"
+      }
+    }
+  ],
+  "required": [
+    "indexBySearchRequests"
+  ],
+  "properties": {
+    "indexBySearchRequests": {
+      "$id": "#/properties/indexBySearchRequests",
+      "type": "array",
+      "title": "The indexBySearchRequests schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "repoIds": [
+              "88E97138-9EFD-4306-A72B-4B5C53D2A9E0"
+            ],
+            "searchCriteria": {
+              "conjunction": "AND",
+              "searchTerms": [
+                {
+                  "attributeName": "IPGCHR",
+                  "dataType": "STRING",
+                  "operator": "NE",
+                  "values": [
+                    "11"
+                  ]
+                },
+                {
+                  "attributeName": "IPGNUM",
+                  "dataType": "NUMBER",
+                  "operator": "EQ",
+                  "values": [
+                    "10"
+                  ]
+                }
+              ]
+            },
+            "indexEntries": [
+              {
+                "name": "IPGCHR",
+                "currentValue": "MONTHLY EXPENSE 10",
+                "newValue": "MONTHLY EXPENSEss 10"
+              }
+            ]
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/indexBySearchRequests/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/indexBySearchRequests/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "repoIds": [
+                  "88E97138-9EFD-4306-A72B-4B5C53D2A9E0"
+                ],
+                "searchCriteria": {
+                  "conjunction": "AND",
+                  "searchTerms": [
+                    {
+                      "attributeName": "IPGCHR",
+                      "dataType": "STRING",
+                      "operator": "NE",
+                      "values": [
+                        "11"
+                      ]
+                    },
+                    {
+                      "attributeName": "IPGNUM",
+                      "dataType": "NUMBER",
+                      "operator": "EQ",
+                      "values": [
+                        "10"
+                      ]
+                    }
+                  ]
+                },
+                "indexEntries": [
+                  {
+                    "name": "IPGCHR",
+                    "currentValue": "MONTHLY EXPENSE 10",
+                    "newValue": "MONTHLY EXPENSEss 10"
+                  }
+                ]
+              }
+            ],
+            "required": [
+              "repoIds",
+              "searchCriteria",
+              "indexEntries"
+            ],
+            "properties": {
+              "repoIds": {
+                "$id": "#/properties/indexBySearchRequests/items/anyOf/0/properties/repoIds",
+                "type": "array",
+                "title": "The repoIds schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": [],
+                "examples": [
+                  [
+                    "88E97138-9EFD-4306-A72B-4B5C53D2A9E0"
+                  ]
+                ],
+                "additionalItems": true,
+                "items": {
+                  "$id": "#/properties/indexBySearchRequests/items/anyOf/0/properties/repoIds/items",
+                  "anyOf": [
+                    {
+                      "$id": "#/properties/indexBySearchRequests/items/anyOf/0/properties/repoIds/items/anyOf/0",
+                      "type": "string",
+                      "title": "The first anyOf schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": "",
+                      "examples": [
+                        "88E97138-9EFD-4306-A72B-4B5C53D2A9E0"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "searchCriteria": {
+                "$id": "#/properties/indexBySearchRequests/items/anyOf/0/properties/searchCriteria",
+                "type": "object",
+                "title": "The searchCriteria schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                  {
+                    "conjunction": "AND",
+                    "searchTerms": [
+                      {
+                        "attributeName": "IPGCHR",
+                        "dataType": "STRING",
+                        "operator": "NE",
+                        "values": [
+                          "11"
+                        ]
+                      },
+                      {
+                        "attributeName": "IPGNUM",
+                        "dataType": "NUMBER",
+                        "operator": "EQ",
+                        "values": [
+                          "10"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "required": [
+                  "conjunction",
+                  "searchTerms"
+                ],
+                "properties": {
+                  "conjunction": {
+                    "$id": "#/properties/indexBySearchRequests/items/anyOf/0/properties/searchCriteria/properties/conjunction",
+                    "type": "string",
+                    "title": "The conjunction schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "AND"
+                    ]
+                  },
+                  "searchTerms": {
+                    "$id": "#/properties/indexBySearchRequests/items/anyOf/0/properties/searchCriteria/properties/searchTerms",
+                    "type": "array",
+                    "title": "The searchTerms schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                      [
+                        {
+                          "attributeName": "IPGCHR",
+                          "dataType": "STRING",
+                          "operator": "NE",
+                          "values": [
+                            "11"
+                          ]
+                        },
+                        {
+                          "attributeName": "IPGNUM",
+                          "dataType": "NUMBER",
+                          "operator": "EQ",
+                          "values": [
+                            "10"
+                          ]
+                        }
+                      ]
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                      "$id": "#/properties/indexBySearchRequests/items/anyOf/0/properties/searchCriteria/properties/searchTerms/items",
+                      "anyOf": [
+                        {
+                          "$id": "#/properties/indexBySearchRequests/items/anyOf/0/properties/searchCriteria/properties/searchTerms/items/anyOf/0",
+                          "type": "object",
+                          "title": "The first anyOf schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": {},
+                          "examples": [
+                            {
+                              "attributeName": "IPGCHR",
+                              "dataType": "STRING",
+                              "operator": "NE",
+                              "values": [
+                                "11"
+                              ]
+                            }
+                          ],
+                          "required": [
+                            "attributeName",
+                            "dataType",
+                            "operator",
+                            "values"
+                          ],
+                          "properties": {
+                            "attributeName": {
+                              "$id": "#/properties/indexBySearchRequests/items/anyOf/0/properties/searchCriteria/properties/searchTerms/items/anyOf/0/properties/attributeName",
+                              "type": "string",
+                              "title": "The attributeName schema",
+                              "description": "An explanation about the purpose of this instance.",
+                              "default": "",
+                              "examples": [
+                                "IPGCHR"
+                              ]
+                            },
+                            "dataType": {
+                              "$id": "#/properties/indexBySearchRequests/items/anyOf/0/properties/searchCriteria/properties/searchTerms/items/anyOf/0/properties/dataType",
+                              "type": "string",
+                              "title": "The dataType schema",
+                              "description": "An explanation about the purpose of this instance.",
+                              "default": "",
+                              "examples": [
+                                "STRING"
+                              ]
+                            },
+                            "operator": {
+                              "$id": "#/properties/indexBySearchRequests/items/anyOf/0/properties/searchCriteria/properties/searchTerms/items/anyOf/0/properties/operator",
+                              "type": "string",
+                              "title": "The operator schema",
+                              "description": "An explanation about the purpose of this instance.",
+                              "default": "",
+                              "examples": [
+                                "NE"
+                              ]
+                            },
+                            "values": {
+                              "$id": "#/properties/indexBySearchRequests/items/anyOf/0/properties/searchCriteria/properties/searchTerms/items/anyOf/0/properties/values",
+                              "type": "array",
+                              "title": "The values schema",
+                              "description": "An explanation about the purpose of this instance.",
+                              "default": [],
+                              "examples": [
+                                [
+                                  "11"
+                                ]
+                              ],
+                              "additionalItems": true,
+                              "items": {
+                                "$id": "#/properties/indexBySearchRequests/items/anyOf/0/properties/searchCriteria/properties/searchTerms/items/anyOf/0/properties/values/items",
+                                "anyOf": [
+                                  {
+                                    "$id": "#/properties/indexBySearchRequests/items/anyOf/0/properties/searchCriteria/properties/searchTerms/items/anyOf/0/properties/values/items/anyOf/0",
+                                    "type": "string",
+                                    "title": "The first anyOf schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                      "11"
+                                    ]
+                                  }
+                                ]
+                              }
+                            }
+                          },
+                          "additionalProperties": true
+                        }
+                      ]
+                    }
+                  }
+                },
+                "additionalProperties": true
+              },
+              "indexEntries": {
+                "$id": "#/properties/indexBySearchRequests/items/anyOf/0/properties/indexEntries",
+                "type": "array",
+                "title": "The indexEntries schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": [],
+                "examples": [
+                  [
+                    {
+                      "name": "IPGCHR",
+                      "currentValue": "MONTHLY EXPENSE 10",
+                      "newValue": "MONTHLY EXPENSEss 10"
+                    }
+                  ]
+                ],
+                "additionalItems": true,
+                "items": {
+                  "$id": "#/properties/indexBySearchRequests/items/anyOf/0/properties/indexEntries/items",
+                  "anyOf": [
+                    {
+                      "$id": "#/properties/indexBySearchRequests/items/anyOf/0/properties/indexEntries/items/anyOf/0",
+                      "type": "object",
+                      "title": "The first anyOf schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": {},
+                      "examples": [
+                        {
+                          "name": "IPGCHR",
+                          "currentValue": "MONTHLY EXPENSE 10",
+                          "newValue": "MONTHLY EXPENSEss 10"
+                        }
+                      ],
+                      "required": [
+                        "name",
+                        "currentValue",
+                        "newValue"
+                      ],
+                      "properties": {
+                        "name": {
+                          "$id": "#/properties/indexBySearchRequests/items/anyOf/0/properties/indexEntries/items/anyOf/0/properties/name",
+                          "type": "string",
+                          "title": "The name schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "IPGCHR"
+                          ]
+                        },
+                        "currentValue": {
+                          "$id": "#/properties/indexBySearchRequests/items/anyOf/0/properties/indexEntries/items/anyOf/0/properties/currentValue",
+                          "type": "string",
+                          "title": "The currentValue schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "MONTHLY EXPENSE 10"
+                          ]
+                        },
+                        "newValue": {
+                          "$id": "#/properties/indexBySearchRequests/items/anyOf/0/properties/indexEntries/items/anyOf/0/properties/newValue",
+                          "type": "string",
+                          "title": "The newValue schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "MONTHLY EXPENSEss 10"
+                          ]
+                        }
+                      },
+                      "additionalProperties": true
+                    }
+                  ]
+                }
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    },
+    "settings": {
+      "$id": "#/properties/settings",
+      "type": "object",
+      "title": "The settings schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "auth_token": "clientId"
+        }
+      ],
+      "required": [
+        "auth_token"
+      ],
+      "properties": {
+        "auth_token": {
+          "$id": "#/properties/settings/properties/auth_token",
+          "type": "string",
+          "title": "The auth_token schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "clientId"
+          ]
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}

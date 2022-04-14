@@ -1,0 +1,555 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "updateMetadataByDocId@10.1_input",
+  "type": "object",
+  "title": "Update Metadata By DocId Input V10.1",
+  "description": "The Update Metadata By DocId Input schema Version 10.1.",
+  "default": {},
+  "examples": [
+    {
+      "indexRequests": [
+        {
+          "documentId": "ENC(Ny50b3BpY2lkNi5JUEdOVU05LnRvcGljaXRlbTMuMS4wOC5yZXBvcnRpZDEwLkFDMDAxICAgICA3LnBhZ2VSQkExLjExMy5udW1iZXJvZnBhZ2VzMS4xMTAucGFnZU9mZnNldDEuMDEwLnJlcG9zaXRvcnkxMi5sc2RlbW9zZXJ2ZXI5LnJlcG9ydHZlcjE0LjIwMjAwNDEzMDMyNTUyMTAucmVwb3J0c2VjdDQ1LlNBTEVFQU5XSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAwMTEwLm9yZ3BhZ2VudW0xLjExMi5yZXBvc2l0b3J5aWQzNi44OEU5NzEzOC05RUZELTQzMDYtQTcyQi00QjVDNTNEMkE5RTA5LnNpZ25hdHVyZTQzLnplR0dfQ2tSaFZPaGh6M0NVUGhIU28zQ0NvMW5QNkJWX0Q2T2x4QWRfYTgxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)",
+          "indexScope": {
+            "relativePageNumber": 0,
+            "numberOfPages": 1,
+            "lineLocation": 3
+          },
+          "indexEntries": [
+            {
+              "name": "LLCHR",
+              "currentValue": "BOOKS & SUBSCRIPTIONS",
+              "newValue": "BOOKS & SUBSCRIPTIONS",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "documentId": "ENC(Ny50b3BpY2lkNi5JUEdOVU05LnRvcGljaXRlbTMuMS4wOC5yZXBvcnRpZDEwLkFDMDAxICAgICA3LnBhZ2VSQkExLjExMy5udW1iZXJvZnBhZ2VzMS4xMTAucGFnZU9mZnNldDEuMDEwLnJlcG9zaXRvcnkxMi5sc2RlbW9zZXJ2ZXI5LnJlcG9ydHZlcjE0LjIwMjAwNDEzMDMyNTUyMTAucmVwb3J0c2VjdDQ1LlNBTEVFQU5XSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAwMTEwLm9yZ3BhZ2VudW0xLjExMi5yZXBvc2l0b3J5aWQzNi44OEU5NzEzOC05RUZELTQzMDYtQTcyQi00QjVDNTNEMkE5RTA5LnNpZ25hdHVyZTQzLnplR0dfQ2tSaFZPaGh6M0NVUGhIU28zQ0NvMW5QNkJWX0Q2T2x4QWRfYTgxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)",
+          "indexScope": {
+            "relativePageNumber": 0,
+            "numberOfPages": 1,
+            "lineLocation": -1
+          },
+          "indexEntries": [
+            {
+              "name": "IPGCHR",
+              "currentValue": "MONTHLY EXPENSES",
+              "newValue": "MONTHLY EXPENSES"
+            }
+          ]
+        }
+      ],
+      "workflowDetail": [
+        {
+          "groupName": "IPGCHR",
+          "appliesTo": "Page 1",
+          "fieldName": "IPGCHR",
+          "newValue": "MONTHLY EXPENSES",
+          "originalValue": "MONTHLY EXPENSES",
+          "dataType": "string",
+          "groupType": "PAGE",
+          "lineLocation": 1,
+          "format": "yyyy-MM-dd",
+          "maxLength": 255,
+          "pageNumber": "1",
+          "index": 57
+        },
+        {
+          "groupName": "GRP1 3",
+          "appliesTo": "Page 1",
+          "fieldName": "LLCHR",
+          "newValue": "BOOKS & SUBSCRIPTIONS",
+          "originalValue": "BOOKS & SUBSCRIPTIONS",
+          "dataType": "string",
+          "groupType": "LINE",
+          "lineLocation": 3,
+          "format": "yyyy-MM-dd",
+          "maxLength": 255,
+          "pageNumber": "1",
+          "index": 6
+        }
+      ],
+      "pageCount": 1,
+      "settings": {
+        "auth_token": "clientId"
+      }
+    }
+  ],
+  "required": [
+    "indexRequests",
+    "pageCount"
+  ],
+  "properties": {
+    "indexRequests": {
+      "$id": "#/properties/indexRequests",
+      "type": "array",
+      "title": "The indexRequests schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "documentId": "ENC(Ny50b3BpY2lkNi5JUEdOVU05LnRvcGljaXRlbTMuMS4wOC5yZXBvcnRpZDEwLkFDMDAxICAgICA3LnBhZ2VSQkExLjExMy5udW1iZXJvZnBhZ2VzMS4xMTAucGFnZU9mZnNldDEuMDEwLnJlcG9zaXRvcnkxMi5sc2RlbW9zZXJ2ZXI5LnJlcG9ydHZlcjE0LjIwMjAwNDEzMDMyNTUyMTAucmVwb3J0c2VjdDQ1LlNBTEVFQU5XSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAwMTEwLm9yZ3BhZ2VudW0xLjExMi5yZXBvc2l0b3J5aWQzNi44OEU5NzEzOC05RUZELTQzMDYtQTcyQi00QjVDNTNEMkE5RTA5LnNpZ25hdHVyZTQzLnplR0dfQ2tSaFZPaGh6M0NVUGhIU28zQ0NvMW5QNkJWX0Q2T2x4QWRfYTgxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)",
+            "indexScope": {
+              "relativePageNumber": 0,
+              "numberOfPages": 1,
+              "lineLocation": 3
+            },
+            "indexEntries": [
+              {
+                "name": "LLCHR",
+                "currentValue": "BOOKS & SUBSCRIPTIONS",
+                "newValue": "BOOKS & SUBSCRIPTIONS",
+                "value": ""
+              }
+            ]
+          },
+          {
+            "documentId": "ENC(Ny50b3BpY2lkNi5JUEdOVU05LnRvcGljaXRlbTMuMS4wOC5yZXBvcnRpZDEwLkFDMDAxICAgICA3LnBhZ2VSQkExLjExMy5udW1iZXJvZnBhZ2VzMS4xMTAucGFnZU9mZnNldDEuMDEwLnJlcG9zaXRvcnkxMi5sc2RlbW9zZXJ2ZXI5LnJlcG9ydHZlcjE0LjIwMjAwNDEzMDMyNTUyMTAucmVwb3J0c2VjdDQ1LlNBTEVFQU5XSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAwMTEwLm9yZ3BhZ2VudW0xLjExMi5yZXBvc2l0b3J5aWQzNi44OEU5NzEzOC05RUZELTQzMDYtQTcyQi00QjVDNTNEMkE5RTA5LnNpZ25hdHVyZTQzLnplR0dfQ2tSaFZPaGh6M0NVUGhIU28zQ0NvMW5QNkJWX0Q2T2x4QWRfYTgxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)",
+            "indexScope": {
+              "relativePageNumber": 0,
+              "numberOfPages": 1,
+              "lineLocation": -1
+            },
+            "indexEntries": [
+              {
+                "name": "IPGCHR",
+                "currentValue": "MONTHLY EXPENSES",
+                "newValue": "MONTHLY EXPENSES"
+              }
+            ]
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/indexRequests/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/indexRequests/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "documentId": "ENC(Ny50b3BpY2lkNi5JUEdOVU05LnRvcGljaXRlbTMuMS4wOC5yZXBvcnRpZDEwLkFDMDAxICAgICA3LnBhZ2VSQkExLjExMy5udW1iZXJvZnBhZ2VzMS4xMTAucGFnZU9mZnNldDEuMDEwLnJlcG9zaXRvcnkxMi5sc2RlbW9zZXJ2ZXI5LnJlcG9ydHZlcjE0LjIwMjAwNDEzMDMyNTUyMTAucmVwb3J0c2VjdDQ1LlNBTEVFQU5XSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAwMTEwLm9yZ3BhZ2VudW0xLjExMi5yZXBvc2l0b3J5aWQzNi44OEU5NzEzOC05RUZELTQzMDYtQTcyQi00QjVDNTNEMkE5RTA5LnNpZ25hdHVyZTQzLnplR0dfQ2tSaFZPaGh6M0NVUGhIU28zQ0NvMW5QNkJWX0Q2T2x4QWRfYTgxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)",
+                "indexScope": {
+                  "relativePageNumber": 0,
+                  "numberOfPages": 1,
+                  "lineLocation": 3
+                },
+                "indexEntries": [
+                  {
+                    "name": "LLCHR",
+                    "currentValue": "BOOKS & SUBSCRIPTIONS",
+                    "newValue": "BOOKS & SUBSCRIPTIONS",
+                    "value": ""
+                  }
+                ]
+              }
+            ],
+            "required": [
+              "documentId",
+              "indexScope",
+              "indexEntries"
+            ],
+            "properties": {
+              "documentId": {
+                "$id": "#/properties/indexRequests/items/anyOf/0/properties/documentId",
+                "type": "string",
+                "title": "The documentId schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "ENC(Ny50b3BpY2lkNi5JUEdOVU05LnRvcGljaXRlbTMuMS4wOC5yZXBvcnRpZDEwLkFDMDAxICAgICA3LnBhZ2VSQkExLjExMy5udW1iZXJvZnBhZ2VzMS4xMTAucGFnZU9mZnNldDEuMDEwLnJlcG9zaXRvcnkxMi5sc2RlbW9zZXJ2ZXI5LnJlcG9ydHZlcjE0LjIwMjAwNDEzMDMyNTUyMTAucmVwb3J0c2VjdDQ1LlNBTEVFQU5XSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAwMTEwLm9yZ3BhZ2VudW0xLjExMi5yZXBvc2l0b3J5aWQzNi44OEU5NzEzOC05RUZELTQzMDYtQTcyQi00QjVDNTNEMkE5RTA5LnNpZ25hdHVyZTQzLnplR0dfQ2tSaFZPaGh6M0NVUGhIU28zQ0NvMW5QNkJWX0Q2T2x4QWRfYTgxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)"
+                ]
+              },
+              "indexScope": {
+                "$id": "#/properties/indexRequests/items/anyOf/0/properties/indexScope",
+                "type": "object",
+                "title": "The indexScope schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                  {
+                    "relativePageNumber": 0,
+                    "numberOfPages": 1,
+                    "lineLocation": 3
+                  }
+                ],
+                "required": [
+                  "relativePageNumber",
+                  "numberOfPages",
+                  "lineLocation"
+                ],
+                "properties": {
+                  "relativePageNumber": {
+                    "$id": "#/properties/indexRequests/items/anyOf/0/properties/indexScope/properties/relativePageNumber",
+                    "type": "integer",
+                    "title": "The relativePageNumber schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                      0
+                    ]
+                  },
+                  "numberOfPages": {
+                    "$id": "#/properties/indexRequests/items/anyOf/0/properties/indexScope/properties/numberOfPages",
+                    "type": "integer",
+                    "title": "The numberOfPages schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                      1
+                    ]
+                  },
+                  "lineLocation": {
+                    "$id": "#/properties/indexRequests/items/anyOf/0/properties/indexScope/properties/lineLocation",
+                    "type": "integer",
+                    "title": "The lineLocation schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                      3
+                    ]
+                  }
+                },
+                "additionalProperties": true
+              },
+              "indexEntries": {
+                "$id": "#/properties/indexRequests/items/anyOf/0/properties/indexEntries",
+                "type": "array",
+                "title": "The indexEntries schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": [],
+                "examples": [
+                  [
+                    {
+                      "name": "LLCHR",
+                      "currentValue": "BOOKS & SUBSCRIPTIONS",
+                      "newValue": "BOOKS & SUBSCRIPTIONS",
+                      "value": ""
+                    }
+                  ]
+                ],
+                "additionalItems": true,
+                "items": {
+                  "$id": "#/properties/indexRequests/items/anyOf/0/properties/indexEntries/items",
+                  "anyOf": [
+                    {
+                      "$id": "#/properties/indexRequests/items/anyOf/0/properties/indexEntries/items/anyOf/0",
+                      "type": "object",
+                      "title": "The first anyOf schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": {},
+                      "examples": [
+                        {
+                          "name": "LLCHR",
+                          "currentValue": "BOOKS & SUBSCRIPTIONS",
+                          "newValue": "BOOKS & SUBSCRIPTIONS",
+                          "value": ""
+                        }
+                      ],
+                      "required": [
+                        "name",
+                        "currentValue",
+                        "newValue"
+                      ],
+                      "properties": {
+                        "name": {
+                          "$id": "#/properties/indexRequests/items/anyOf/0/properties/indexEntries/items/anyOf/0/properties/name",
+                          "type": "string",
+                          "title": "The name schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "LLCHR"
+                          ]
+                        },
+                        "currentValue": {
+                          "$id": "#/properties/indexRequests/items/anyOf/0/properties/indexEntries/items/anyOf/0/properties/currentValue",
+                          "type": "string",
+                          "title": "The currentValue schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "BOOKS & SUBSCRIPTIONS"
+                          ]
+                        },
+                        "newValue": {
+                          "$id": "#/properties/indexRequests/items/anyOf/0/properties/indexEntries/items/anyOf/0/properties/newValue",
+                          "type": "string",
+                          "title": "The newValue schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "BOOKS & SUBSCRIPTIONS"
+                          ]
+                        },
+                        "value": {
+                          "$id": "#/properties/indexRequests/items/anyOf/0/properties/indexEntries/items/anyOf/0/properties/value",
+                          "type": "string",
+                          "title": "The value schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            ""
+                          ]
+                        }
+                      },
+                      "additionalProperties": true
+                    }
+                  ]
+                }
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    },
+    "workflowDetail": {
+      "$id": "#/properties/workflowDetail",
+      "type": "array",
+      "title": "The workflowDetail schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "groupName": "IPGCHR",
+            "appliesTo": "Page 1",
+            "fieldName": "IPGCHR",
+            "newValue": "MONTHLY EXPENSES",
+            "originalValue": "MONTHLY EXPENSES",
+            "dataType": "string",
+            "groupType": "PAGE",
+            "lineLocation": 1,
+            "format": "yyyy-MM-dd",
+            "maxLength": 255,
+            "pageNumber": "1",
+            "index": 57
+          },
+          {
+            "groupName": "GRP1 3",
+            "appliesTo": "Page 1",
+            "fieldName": "LLCHR",
+            "newValue": "BOOKS & SUBSCRIPTIONS",
+            "originalValue": "BOOKS & SUBSCRIPTIONS",
+            "dataType": "string",
+            "groupType": "LINE",
+            "lineLocation": 3,
+            "format": "yyyy-MM-dd",
+            "maxLength": 255,
+            "pageNumber": "1",
+            "index": 6
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/workflowDetail/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/workflowDetail/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "groupName": "IPGCHR",
+                "appliesTo": "Page 1",
+                "fieldName": "IPGCHR",
+                "newValue": "MONTHLY EXPENSES",
+                "originalValue": "MONTHLY EXPENSES",
+                "dataType": "string",
+                "groupType": "PAGE",
+                "lineLocation": 1,
+                "format": "yyyy-MM-dd",
+                "maxLength": 255,
+                "pageNumber": "1",
+                "index": 57
+              }
+            ],
+            "required": [
+              "groupName",
+              "appliesTo",
+              "fieldName",
+              "newValue",
+              "originalValue",
+              "dataType",
+              "groupType",
+              "lineLocation",
+              "format",
+              "maxLength",
+              "pageNumber",
+              "index"
+            ],
+            "properties": {
+              "groupName": {
+                "$id": "#/properties/workflowDetail/items/anyOf/0/properties/groupName",
+                "type": "string",
+                "title": "The groupName schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "IPGCHR"
+                ]
+              },
+              "appliesTo": {
+                "$id": "#/properties/workflowDetail/items/anyOf/0/properties/appliesTo",
+                "type": "string",
+                "title": "The appliesTo schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "Page 1"
+                ]
+              },
+              "fieldName": {
+                "$id": "#/properties/workflowDetail/items/anyOf/0/properties/fieldName",
+                "type": "string",
+                "title": "The fieldName schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "IPGCHR"
+                ]
+              },
+              "newValue": {
+                "$id": "#/properties/workflowDetail/items/anyOf/0/properties/newValue",
+                "type": "string",
+                "title": "The newValue schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "MONTHLY EXPENSES"
+                ]
+              },
+              "originalValue": {
+                "$id": "#/properties/workflowDetail/items/anyOf/0/properties/originalValue",
+                "type": "string",
+                "title": "The originalValue schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "MONTHLY EXPENSES"
+                ]
+              },
+              "dataType": {
+                "$id": "#/properties/workflowDetail/items/anyOf/0/properties/dataType",
+                "type": "string",
+                "title": "The dataType schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "string"
+                ]
+              },
+              "groupType": {
+                "$id": "#/properties/workflowDetail/items/anyOf/0/properties/groupType",
+                "type": "string",
+                "title": "The groupType schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "PAGE"
+                ]
+              },
+              "lineLocation": {
+                "$id": "#/properties/workflowDetail/items/anyOf/0/properties/lineLocation",
+                "type": "integer",
+                "title": "The lineLocation schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0,
+                "examples": [
+                  1
+                ]
+              },
+              "format": {
+                "$id": "#/properties/workflowDetail/items/anyOf/0/properties/format",
+                "type": "string",
+                "title": "The format schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "yyyy-MM-dd"
+                ]
+              },
+              "maxLength": {
+                "$id": "#/properties/workflowDetail/items/anyOf/0/properties/maxLength",
+                "type": "integer",
+                "title": "The maxLength schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0,
+                "examples": [
+                  255
+                ]
+              },
+              "pageNumber": {
+                "$id": "#/properties/workflowDetail/items/anyOf/0/properties/pageNumber",
+                "type": "string",
+                "title": "The pageNumber schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "1"
+                ]
+              },
+              "index": {
+                "$id": "#/properties/workflowDetail/items/anyOf/0/properties/index",
+                "type": "integer",
+                "title": "The index schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0,
+                "examples": [
+                  57
+                ]
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    },
+    "pageCount": {
+      "$id": "#/properties/pageCount",
+      "type": "integer",
+      "title": "The pageCount schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [
+        1
+      ]
+    },
+    "settings": {
+      "$id": "#/properties/settings",
+      "type": "object",
+      "title": "The settings schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "auth_token": "clientId"
+        }
+      ],
+      "properties": {
+        "auth_token": {
+          "$id": "#/properties/settings/properties/auth_token",
+          "type": "string",
+          "title": "The auth_token schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "clientId"
+          ]
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

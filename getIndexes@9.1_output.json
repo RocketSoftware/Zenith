@@ -1,0 +1,520 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "getIndexes@9.1_output",
+  "type": "object",
+  "title": "Get Indexes Output V9.1",
+  "description": "The Get Indexes Output schema Version 9.1.",
+  "default": {},
+  "examples": [
+    {
+      "supportedOperators": [
+        {
+          "id": "EQ",
+          "displayName": "Is Equal To"
+        },
+        {
+          "id": "NE",
+          "displayName": "Is Not Equal To"
+        },
+        {
+          "id": "LT",
+          "displayName": "Is Less Than"
+        },
+        {
+          "id": "LE",
+          "displayName": "Is Less Than or Equal To"
+        },
+        {
+          "id": "GT",
+          "displayName": "Is Greater Than"
+        },
+        {
+          "id": "GE",
+          "displayName": "Is Greater Than or Equal To"
+        },
+        {
+          "id": "LK",
+          "displayName": "Is Like"
+        },
+        {
+          "id": "BT",
+          "displayName": "Is Between"
+        },
+        {
+          "id": "NB",
+          "displayName": "Is Not Between"
+        },
+        {
+          "id": "CT",
+          "displayName": "Contains"
+        },
+        {
+          "id": "NC",
+          "displayName": "Does Not Contain"
+        },
+        {
+          "id": "SW",
+          "displayName": "Starts With"
+        },
+        {
+          "id": "EW",
+          "displayName": "Ends With"
+        },
+        {
+          "id": "NN",
+          "displayName": "Is Defined"
+        },
+        {
+          "id": "NU",
+          "displayName": "Is Not Defined"
+        },
+        {
+          "id": "ALLWORDS",
+          "displayName": "Containing All Of The Words Like"
+        },
+        {
+          "id": "NONEWORDS",
+          "displayName": "Containing No Words Like"
+        },
+        {
+          "id": "EXACTPHRASE",
+          "displayName": "Containing The Phrase"
+        },
+        {
+          "id": "ANYWORDS",
+          "displayName": "Containing Some Words Like"
+        },
+        {
+          "id": "After",
+          "displayName": "Is after"
+        },
+        {
+          "id": "Before",
+          "displayName": "Is before"
+        },
+        {
+          "id": "AfterOrOn",
+          "displayName": "Is on or after"
+        },
+        {
+          "id": "BeforeOrOn",
+          "displayName": "Is on or before"
+        },
+        {
+          "id": "On",
+          "displayName": "Is on"
+        },
+        {
+          "id": "NotOn",
+          "displayName": "Is not on"
+        }
+      ],
+      "links": [
+        {
+          "method": "GET",
+          "rel": "self",
+          "href": "/mobius/rest/indexes"
+        }
+      ],
+      "items": [
+        {
+          "applicableRepositories": [
+            {
+              "repositoryId": "88E97138-9EFD-4306-A72B-4B5C53D2A9E0",
+              "repositoryName": "ls"
+            }
+          ],
+          "operatorsSharedByRepositories": [
+            "ALLWORDS",
+            "NONEWORDS",
+            "EXACTPHRASE",
+            "ANYWORDS"
+          ],
+          "name": "$CONTENT",
+          "description": "$CONTENT",
+          "displayName": "$CONTENT",
+          "dataType": "FullTextIndex",
+          "returnable": false,
+          "searchable": true
+        }
+      ]
+    }
+  ],
+  "required": [
+    "supportedOperators",
+    "links",
+    "items"
+  ],
+  "properties": {
+    "supportedOperators": {
+      "$id": "#/properties/supportedOperators",
+      "type": "array",
+      "title": "The supportedOperators schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "id": "EQ",
+            "displayName": "Is Equal To"
+          },
+          {
+            "id": "NE",
+            "displayName": "Is Not Equal To"
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/supportedOperators/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/supportedOperators/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "id": "EQ",
+                "displayName": "Is Equal To"
+              }
+            ],
+            "required": [
+              "id",
+              "displayName"
+            ],
+            "properties": {
+              "id": {
+                "$id": "#/properties/supportedOperators/items/anyOf/0/properties/id",
+                "type": "string",
+                "title": "The id schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "EQ"
+                ]
+              },
+              "displayName": {
+                "$id": "#/properties/supportedOperators/items/anyOf/0/properties/displayName",
+                "type": "string",
+                "title": "The displayName schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "Is Equal To"
+                ]
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    },
+    "links": {
+      "$id": "#/properties/links",
+      "type": "array",
+      "title": "The links schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "method": "GET",
+            "rel": "self",
+            "href": "/mobius/rest/indexes"
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/links/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/links/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "method": "GET",
+                "rel": "self",
+                "href": "/mobius/rest/indexes"
+              }
+            ],
+            "required": [
+              "method",
+              "rel",
+              "href"
+            ],
+            "properties": {
+              "method": {
+                "$id": "#/properties/links/items/anyOf/0/properties/method",
+                "type": "string",
+                "title": "The method schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "GET"
+                ]
+              },
+              "rel": {
+                "$id": "#/properties/links/items/anyOf/0/properties/rel",
+                "type": "string",
+                "title": "The rel schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "self"
+                ]
+              },
+              "href": {
+                "$id": "#/properties/links/items/anyOf/0/properties/href",
+                "type": "string",
+                "title": "The href schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "/mobius/rest/indexes"
+                ]
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    },
+    "items": {
+      "$id": "#/properties/items",
+      "type": "array",
+      "title": "The items schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "applicableRepositories": [
+              {
+                "repositoryId": "88E97138-9EFD-4306-A72B-4B5C53D2A9E0",
+                "repositoryName": "ls"
+              }
+            ],
+            "operatorsSharedByRepositories": [
+              "ALLWORDS",
+              "NONEWORDS",
+              "EXACTPHRASE",
+              "ANYWORDS"
+            ],
+            "name": "$CONTENT",
+            "description": "$CONTENT",
+            "displayName": "$CONTENT",
+            "dataType": "FullTextIndex",
+            "returnable": false,
+            "searchable": true
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/items/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/items/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "applicableRepositories": [
+                  {
+                    "repositoryId": "88E97138-9EFD-4306-A72B-4B5C53D2A9E0",
+                    "repositoryName": "ls"
+                  }
+                ],
+                "operatorsSharedByRepositories": [
+                  "ALLWORDS",
+                  "NONEWORDS",
+                  "EXACTPHRASE",
+                  "ANYWORDS"
+                ],
+                "name": "$CONTENT",
+                "description": "$CONTENT",
+                "displayName": "$CONTENT",
+                "dataType": "FullTextIndex",
+                "returnable": false,
+                "searchable": true
+              }
+            ],
+            "required": [
+              "applicableRepositories",
+              "operatorsSharedByRepositories",
+              "name",
+              "description",
+              "displayName",
+              "dataType",
+              "returnable",
+              "searchable"
+            ],
+            "properties": {
+              "applicableRepositories": {
+                "$id": "#/properties/items/items/anyOf/0/properties/applicableRepositories",
+                "type": "array",
+                "title": "The applicableRepositories schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": [],
+                "examples": [
+                  [
+                    {
+                      "repositoryId": "88E97138-9EFD-4306-A72B-4B5C53D2A9E0",
+                      "repositoryName": "ls"
+                    }
+                  ]
+                ],
+                "additionalItems": true,
+                "items": {
+                  "$id": "#/properties/items/items/anyOf/0/properties/applicableRepositories/items",
+                  "anyOf": [
+                    {
+                      "$id": "#/properties/items/items/anyOf/0/properties/applicableRepositories/items/anyOf/0",
+                      "type": "object",
+                      "title": "The first anyOf schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": {},
+                      "examples": [
+                        {
+                          "repositoryId": "88E97138-9EFD-4306-A72B-4B5C53D2A9E0",
+                          "repositoryName": "ls"
+                        }
+                      ],
+                      "required": [
+                        "repositoryId",
+                        "repositoryName"
+                      ],
+                      "properties": {
+                        "repositoryId": {
+                          "$id": "#/properties/items/items/anyOf/0/properties/applicableRepositories/items/anyOf/0/properties/repositoryId",
+                          "type": "string",
+                          "title": "The repositoryId schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "88E97138-9EFD-4306-A72B-4B5C53D2A9E0"
+                          ]
+                        },
+                        "repositoryName": {
+                          "$id": "#/properties/items/items/anyOf/0/properties/applicableRepositories/items/anyOf/0/properties/repositoryName",
+                          "type": "string",
+                          "title": "The repositoryName schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "ls"
+                          ]
+                        }
+                      },
+                      "additionalProperties": true
+                    }
+                  ]
+                }
+              },
+              "operatorsSharedByRepositories": {
+                "$id": "#/properties/items/items/anyOf/0/properties/operatorsSharedByRepositories",
+                "type": "array",
+                "title": "The operatorsSharedByRepositories schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": [],
+                "examples": [
+                  [
+                    "ALLWORDS",
+                    "NONEWORDS"
+                  ]
+                ],
+                "additionalItems": true,
+                "items": {
+                  "$id": "#/properties/items/items/anyOf/0/properties/operatorsSharedByRepositories/items",
+                  "anyOf": [
+                    {
+                      "$id": "#/properties/items/items/anyOf/0/properties/operatorsSharedByRepositories/items/anyOf/0",
+                      "type": "string",
+                      "title": "The first anyOf schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": "",
+                      "examples": [
+                        "ALLWORDS",
+                        "NONEWORDS"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "name": {
+                "$id": "#/properties/items/items/anyOf/0/properties/name",
+                "type": "string",
+                "title": "The name schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "$CONTENT"
+                ]
+              },
+              "description": {
+                "$id": "#/properties/items/items/anyOf/0/properties/description",
+                "type": "string",
+                "title": "The description schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "$CONTENT"
+                ]
+              },
+              "displayName": {
+                "$id": "#/properties/items/items/anyOf/0/properties/displayName",
+                "type": "string",
+                "title": "The displayName schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "$CONTENT"
+                ]
+              },
+              "dataType": {
+                "$id": "#/properties/items/items/anyOf/0/properties/dataType",
+                "type": "string",
+                "title": "The dataType schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "FullTextIndex"
+                ]
+              },
+              "returnable": {
+                "$id": "#/properties/items/items/anyOf/0/properties/returnable",
+                "type": "boolean",
+                "title": "The returnable schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": false,
+                "examples": [
+                  false
+                ]
+              },
+              "searchable": {
+                "$id": "#/properties/items/items/anyOf/0/properties/searchable",
+                "type": "boolean",
+                "title": "The searchable schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": false,
+                "examples": [
+                  true
+                ]
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,116 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "getCaptureTargets@10.1_input",
+  "type": "object",
+  "title": "Get Capture Targets Input V10.1",
+  "description": "The Get Capture Targets Input schema Version 10.1.",
+  "default": {},
+  "examples": [
+    {
+      "repoIds": [
+        "1E81E6F6-7224-4F49-9B86-5EB80DD4AB98",
+        "99C7BB5C-ECD1-4E15-9D03-7AE22DADBCA6"
+      ],
+      "settings": {
+        "officeaddin": false,
+        "auth_token": "clientId",
+        "connectionTimeoutInMS": 5000,
+        "readTimeoutInMS": 1000
+      }
+    }
+  ],
+  "required": [
+    "repoIds"
+  ],
+  "properties": {
+    "repoIds": {
+      "$id": "#/properties/repoIds",
+      "type": "array",
+      "title": "The repoIds schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          "1E81E6F6-7224-4F49-9B86-5EB80DD4AB98",
+          "99C7BB5C-ECD1-4E15-9D03-7AE22DADBCA6"
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/repoIds/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/repoIds/items/anyOf/0",
+            "type": "string",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "1E81E6F6-7224-4F49-9B86-5EB80DD4AB98",
+              "99C7BB5C-ECD1-4E15-9D03-7AE22DADBCA6"
+            ]
+          }
+        ]
+      }
+    },
+    "settings": {
+      "$id": "#/properties/settings",
+      "type": "object",
+      "title": "The settings schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "officeaddin": false,
+          "auth_token": "clientId",
+          "connectionTimeoutInMS": 5000,
+          "readTimeoutInMS": 1000
+        }
+      ],
+      "properties": {
+        "officeaddin": {
+          "$id": "#/properties/settings/properties/officeaddin",
+          "type": "boolean",
+          "title": "The officeaddin schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "auth_token": {
+          "$id": "#/properties/settings/properties/auth_token",
+          "type": "string",
+          "title": "The auth_token schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "clientId"
+          ]
+        },
+        "connectionTimeoutInMS": {
+          "$id": "#/properties/settings/properties/connectionTimeoutInMS",
+          "type": "integer",
+          "title": "The connectionTimeoutInMS schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            5000
+          ]
+        },
+        "readTimeoutInMS": {
+          "$id": "#/properties/settings/properties/readTimeoutInMS",
+          "type": "integer",
+          "title": "The readTimeoutInMS schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            1000
+          ]
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,256 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "getRetentionReasons@9.1_output",
+  "type": "object",
+  "title": "Get Retention Reasons Output V9.1",
+  "description": "The Get Retention Reasons Output schema Version 9.1.",
+  "default": {},
+  "examples": [
+    {
+      "links": [
+        {
+          "rel": "self",
+          "href": "/mobius/rest/rm/retentions",
+          "method": "GET"
+        }
+      ],
+      "items": [
+        {
+          "reason": "HOLDSM",
+          "templates": [
+            "Hold"
+          ],
+          "applicableRepositories": [
+            "E97F2321-0B29-48A2-9D2B-A270A8C52BED"
+          ]
+        },
+        {
+          "reason": "new",
+          "templates": [
+            "Hold"
+          ],
+          "applicableRepositories": [
+            "E97F2321-0B29-48A2-9D2B-A270A8C52BED"
+          ]
+        },
+        {
+          "reason": "test",
+          "templates": [
+            "Hold"
+          ],
+          "applicableRepositories": [
+            "E97F2321-0B29-48A2-9D2B-A270A8C52BED"
+          ]
+        }
+      ]
+    }
+  ],
+  "required": [
+    "links",
+    "items"
+  ],
+  "properties": {
+    "links": {
+      "$id": "#/properties/links",
+      "type": "array",
+      "title": "The links schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "rel": "self",
+            "href": "/mobius/rest/rm/retentions",
+            "method": "GET"
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/links/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/links/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "rel": "self",
+                "href": "/mobius/rest/rm/retentions",
+                "method": "GET"
+              }
+            ],
+            "required": [
+              "rel",
+              "href",
+              "method"
+            ],
+            "properties": {
+              "rel": {
+                "$id": "#/properties/links/items/anyOf/0/properties/rel",
+                "type": "string",
+                "title": "The rel schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "self"
+                ]
+              },
+              "href": {
+                "$id": "#/properties/links/items/anyOf/0/properties/href",
+                "type": "string",
+                "title": "The href schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "/mobius/rest/rm/retentions"
+                ]
+              },
+              "method": {
+                "$id": "#/properties/links/items/anyOf/0/properties/method",
+                "type": "string",
+                "title": "The method schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "GET"
+                ]
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    },
+    "items": {
+      "$id": "#/properties/items",
+      "type": "array",
+      "title": "The items schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "reason": "HOLDSM",
+            "templates": [
+              "Hold"
+            ],
+            "applicableRepositories": [
+              "E97F2321-0B29-48A2-9D2B-A270A8C52BED"
+            ]
+          },
+          {
+            "reason": "new",
+            "templates": [
+              "Hold"
+            ],
+            "applicableRepositories": [
+              "E97F2321-0B29-48A2-9D2B-A270A8C52BED"
+            ]
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/items/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/items/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "reason": "HOLDSM",
+                "templates": [
+                  "Hold"
+                ],
+                "applicableRepositories": [
+                  "E97F2321-0B29-48A2-9D2B-A270A8C52BED"
+                ]
+              }
+            ],
+            "required": [
+              "reason",
+              "templates",
+              "applicableRepositories"
+            ],
+            "properties": {
+              "reason": {
+                "$id": "#/properties/items/items/anyOf/0/properties/reason",
+                "type": "string",
+                "title": "The reason schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "HOLDSM"
+                ]
+              },
+              "templates": {
+                "$id": "#/properties/items/items/anyOf/0/properties/templates",
+                "type": "array",
+                "title": "The templates schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": [],
+                "examples": [
+                  [
+                    "Hold"
+                  ]
+                ],
+                "additionalItems": true,
+                "items": {
+                  "$id": "#/properties/items/items/anyOf/0/properties/templates/items",
+                  "anyOf": [
+                    {
+                      "$id": "#/properties/items/items/anyOf/0/properties/templates/items/anyOf/0",
+                      "type": "string",
+                      "title": "The first anyOf schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": "",
+                      "examples": [
+                        "Hold"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "applicableRepositories": {
+                "$id": "#/properties/items/items/anyOf/0/properties/applicableRepositories",
+                "type": "array",
+                "title": "The applicableRepositories schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": [],
+                "examples": [
+                  [
+                    "E97F2321-0B29-48A2-9D2B-A270A8C52BED"
+                  ]
+                ],
+                "additionalItems": true,
+                "items": {
+                  "$id": "#/properties/items/items/anyOf/0/properties/applicableRepositories/items",
+                  "anyOf": [
+                    {
+                      "$id": "#/properties/items/items/anyOf/0/properties/applicableRepositories/items/anyOf/0",
+                      "type": "string",
+                      "title": "The first anyOf schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": "",
+                      "examples": [
+                        "E97F2321-0B29-48A2-9D2B-A270A8C52BED"
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    }
+  },
+  "additionalProperties": true
+}

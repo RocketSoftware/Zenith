@@ -1,0 +1,277 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "contentstreamsDownload@9.1_input",
+  "type": "object",
+  "title": "Content Streams Download Input V9.1",
+  "description": "The Content Streams Download Input schema Version 9.1.",
+  "default": {},
+  "examples": [
+    {
+      "sources": [
+        {
+          "id": "ENC(OC5yZXBvcnRpZDEwLkFDMDAxICAgICAxMy5udW1iZXJvZnBhZ2VzMS4xMTAucmVwb3NpdG9yeTEyLmxzZGVtb3NlcnZlcjkucmVwb3J0dmVyMTQuMjAyMDA5MzAwODU2MTQxMC5yZXBvcnRzZWN0NDUudGVzdC50eHQgICAgICAgICAgICAgICAgICAgICAgQUJTUEcwMDAwMDAwMDAxMTAub3JncGFnZW51bTEuMTE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMDEyLnJlcG9zaXRvcnlpZDM2Ljg4RTk3MTM4LTlFRkQtNDMwNi1BNzJCLTRCNUM1M0QyQTlFMDkuc2lnbmF0dXJlNDMuMWFQT3RicE9LaVhmUE1RTEVnVko4RC1kb0V1SFZlT2lSaE9iZm5YZ0dDYw)",
+          "range": "1-1"
+        },
+        {
+          "id": "ENC(OC5yZXBvcnRpZDEwLkFDMDAxICAgICA5LnJlcG9ydHZlcjE0LjIwMjAxMDAxMDgwOTI3MTAucmVwb3J0c2VjdDQ1LlRlc3REb2N1bWVudC50eHQgICAgICAgICAgICAgIDAwMDAwMDAwMDAwMDAwMDEwLm9yZ3BhZ2VudW0xLjExMy5udW1iZXJvZnBhZ2VzMS4xMTAucmVwb3NpdG9yeTEyLmxzZGVtb3NlcnZlcjE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMDEyLnJlcG9zaXRvcnlpZDM2Ljg4RTk3MTM4LTlFRkQtNDMwNi1BNzJCLTRCNUM1M0QyQTlFMDkuc2lnbmF0dXJlNDMudEhlVy04SjhUTDB1TjV4TVpsRGpNUWM1S095ckl1ek02c2N2QmNPcG9qRQ)",
+          "range": "1-1"
+        }
+      ],
+      "imageFormat": "Default",
+      "lpfdFormat": "PDF",
+      "textFormat": "HTML",
+      "combineSingleFile": false,
+      "includeSubpages": true,
+      "X-ContentRequestType": "DOWNLOAD",
+      "zip": true,
+      "redacted": true,
+      "includeannotations": false,
+      "downloadFileName": "Download_20201006004515",
+      "settings": {
+        "statusid": "faed1721-f384-46d5-95d9-430f5bd24055",
+        "auth_token": "clientId",
+        "connectionTimeoutInMS": 5000,
+        "readTimeoutInMS": 1000
+      }
+    }
+  ],
+  "required": [
+    "sources",
+    "imageFormat",
+    "lpfdFormat",
+    "textFormat",
+    "combineSingleFile",
+    "includeSubpages",
+    "X-ContentRequestType",
+    "zip",
+    "redacted",
+    "includeannotations",
+    "downloadFileName"
+  ],
+  "properties": {
+    "sources": {
+      "$id": "#/properties/sources",
+      "type": "array",
+      "title": "The sources schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "id": "ENC(OC5yZXBvcnRpZDEwLkFDMDAxICAgICAxMy5udW1iZXJvZnBhZ2VzMS4xMTAucmVwb3NpdG9yeTEyLmxzZGVtb3NlcnZlcjkucmVwb3J0dmVyMTQuMjAyMDA5MzAwODU2MTQxMC5yZXBvcnRzZWN0NDUudGVzdC50eHQgICAgICAgICAgICAgICAgICAgICAgQUJTUEcwMDAwMDAwMDAxMTAub3JncGFnZW51bTEuMTE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMDEyLnJlcG9zaXRvcnlpZDM2Ljg4RTk3MTM4LTlFRkQtNDMwNi1BNzJCLTRCNUM1M0QyQTlFMDkuc2lnbmF0dXJlNDMuMWFQT3RicE9LaVhmUE1RTEVnVko4RC1kb0V1SFZlT2lSaE9iZm5YZ0dDYw)",
+            "range": "1-1"
+          },
+          {
+            "id": "ENC(OC5yZXBvcnRpZDEwLkFDMDAxICAgICA5LnJlcG9ydHZlcjE0LjIwMjAxMDAxMDgwOTI3MTAucmVwb3J0c2VjdDQ1LlRlc3REb2N1bWVudC50eHQgICAgICAgICAgICAgIDAwMDAwMDAwMDAwMDAwMDEwLm9yZ3BhZ2VudW0xLjExMy5udW1iZXJvZnBhZ2VzMS4xMTAucmVwb3NpdG9yeTEyLmxzZGVtb3NlcnZlcjE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMDEyLnJlcG9zaXRvcnlpZDM2Ljg4RTk3MTM4LTlFRkQtNDMwNi1BNzJCLTRCNUM1M0QyQTlFMDkuc2lnbmF0dXJlNDMudEhlVy04SjhUTDB1TjV4TVpsRGpNUWM1S095ckl1ek02c2N2QmNPcG9qRQ)",
+            "range": "1-1"
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/sources/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/sources/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "id": "ENC(OC5yZXBvcnRpZDEwLkFDMDAxICAgICAxMy5udW1iZXJvZnBhZ2VzMS4xMTAucmVwb3NpdG9yeTEyLmxzZGVtb3NlcnZlcjkucmVwb3J0dmVyMTQuMjAyMDA5MzAwODU2MTQxMC5yZXBvcnRzZWN0NDUudGVzdC50eHQgICAgICAgICAgICAgICAgICAgICAgQUJTUEcwMDAwMDAwMDAxMTAub3JncGFnZW51bTEuMTE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMDEyLnJlcG9zaXRvcnlpZDM2Ljg4RTk3MTM4LTlFRkQtNDMwNi1BNzJCLTRCNUM1M0QyQTlFMDkuc2lnbmF0dXJlNDMuMWFQT3RicE9LaVhmUE1RTEVnVko4RC1kb0V1SFZlT2lSaE9iZm5YZ0dDYw)",
+                "range": "1-1"
+              }
+            ],
+            "required": [
+              "id",
+              "range"
+            ],
+            "properties": {
+              "id": {
+                "$id": "#/properties/sources/items/anyOf/0/properties/id",
+                "type": "string",
+                "title": "The id schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "ENC(OC5yZXBvcnRpZDEwLkFDMDAxICAgICAxMy5udW1iZXJvZnBhZ2VzMS4xMTAucmVwb3NpdG9yeTEyLmxzZGVtb3NlcnZlcjkucmVwb3J0dmVyMTQuMjAyMDA5MzAwODU2MTQxMC5yZXBvcnRzZWN0NDUudGVzdC50eHQgICAgICAgICAgICAgICAgICAgICAgQUJTUEcwMDAwMDAwMDAxMTAub3JncGFnZW51bTEuMTE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMDEyLnJlcG9zaXRvcnlpZDM2Ljg4RTk3MTM4LTlFRkQtNDMwNi1BNzJCLTRCNUM1M0QyQTlFMDkuc2lnbmF0dXJlNDMuMWFQT3RicE9LaVhmUE1RTEVnVko4RC1kb0V1SFZlT2lSaE9iZm5YZ0dDYw)"
+                ]
+              },
+              "range": {
+                "$id": "#/properties/sources/items/anyOf/0/properties/range",
+                "type": "string",
+                "title": "The range schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "1-1"
+                ]
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    },
+    "imageFormat": {
+      "$id": "#/properties/imageFormat",
+      "type": "string",
+      "title": "The imageFormat schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "Default"
+      ]
+    },
+    "lpfdFormat": {
+      "$id": "#/properties/lpfdFormat",
+      "type": "string",
+      "title": "The lpfdFormat schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "PDF"
+      ]
+    },
+    "textFormat": {
+      "$id": "#/properties/textFormat",
+      "type": "string",
+      "title": "The textFormat schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "HTML"
+      ]
+    },
+    "combineSingleFile": {
+      "$id": "#/properties/combineSingleFile",
+      "type": "boolean",
+      "title": "The combineSingleFile schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": false,
+      "examples": [
+        false
+      ]
+    },
+    "includeSubpages": {
+      "$id": "#/properties/includeSubpages",
+      "type": "boolean",
+      "title": "The includeSubpages schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": false,
+      "examples": [
+        true
+      ]
+    },
+    "X-ContentRequestType": {
+      "$id": "#/properties/X-ContentRequestType",
+      "type": "string",
+      "title": "The X-ContentRequestType schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "DOWNLOAD"
+      ]
+    },
+    "zip": {
+      "$id": "#/properties/zip",
+      "type": "boolean",
+      "title": "The zip schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": false,
+      "examples": [
+        true
+      ]
+    },
+    "redacted": {
+      "$id": "#/properties/redacted",
+      "type": "boolean",
+      "title": "The redacted schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": false,
+      "examples": [
+        true
+      ]
+    },
+    "includeannotations": {
+      "$id": "#/properties/includeannotations",
+      "type": "boolean",
+      "title": "The includeannotations schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": false,
+      "examples": [
+        false
+      ]
+    },
+    "downloadFileName": {
+      "$id": "#/properties/downloadFileName",
+      "type": "string",
+      "title": "The downloadFileName schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "Download_20201006004515"
+      ]
+    },
+    "settings": {
+      "$id": "#/properties/settings",
+      "type": "object",
+      "title": "The settings schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "statusId": "faed1721-f384-46d5-95d9-430f5bd24055",
+          "auth_token": "clientId",
+          "connectionTimeoutInMS": 5000,
+          "readTimeoutInMS": 1000
+        }
+      ],
+      "properties": {
+        "statusId": {
+          "$id": "#/properties/settings/properties/statusId",
+          "type": "string",
+          "title": "The Download StatusId",
+          "description": "Unique id given for each download request",
+          "default": "",
+          "examples": [
+            "faed1721-f384-46d5-95d9-430f5bd24055"
+          ]
+        },
+        "auth_token": {
+          "$id": "#/properties/settings/properties/auth_token",
+          "type": "string",
+          "title": "The auth_token schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "clientId"
+          ]
+        },
+        "connectionTimeoutInMS": {
+          "$id": "#/properties/settings/properties/connectionTimeoutInMS",
+          "type": "integer",
+          "title": "The connectionTimeoutInMS schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            5000
+          ]
+        },
+        "readTimeoutInMS": {
+          "$id": "#/properties/settings/properties/readTimeoutInMS",
+          "type": "integer",
+          "title": "The readTimeoutInMS schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            1000
+          ]
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

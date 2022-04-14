@@ -1,0 +1,830 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "transformSearchResultsToDocListModel@9.1_input",
+  "type": "object",
+  "title": "Transform Search Results to Doc List Model Input V9.1",
+  "description": "The Transform Search Results to Doc List Model Input schema Version 9.1.",
+  "default": {},
+  "examples": [
+    {
+      "incompleteResults": true,
+      "cachedResultCount": 20,
+      "allResultsCached": false,
+      "results": [
+        {
+          "pageCount": 2,
+          "pageNumber": 6,
+          "objectId": "ENC(MTAucmVwb3NpdG9yeTEwLk1vYml1c0RlbW84LnJlcG9ydGlkNS5BQzAwMTkucmVwb3J0dmVyMTQuMjAwMzAxMTYwMDAwMDAxMC5yZXBvcnRzZWN0NDUuTUFOVUVBICAgICAgICAgICAgICAgICAgICAgICAgQUJTUEcwMDAwMDAwMDA1MTAub3JncGFnZW51bTEuNTEzLm51bWJlcm9mcGFnZXMxLjIxMi5yZXBvc2l0b3J5aWQzNi5CRUM1NkUwMS1GRjVELTRCODAtODdGMS1CMDcxM0NDQ0M4MkM5LnNpZ25hdHVyZTQzLlhuSF9kUDZzbGdYMWo2eWZKa2FadUp5UHE3T21pZEFhc3RzMnMxRnFRWlkxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)",
+          "objectTypeId": "BEC56E01-FF5D-4B80-87F1-B0713CCCC82C",
+          "indexes": [
+            {
+              "name": "ACCTCODE",
+              "value": 905001
+            }
+          ],
+          "metadata": [
+            {
+              "dataType": "String",
+              "displayName": "__DocTitle",
+              "keyName": "__DocTitle",
+              "keyValue": "AC001 Monthly Expense Jan 16, 2003 12:00:00 AM MANUEA Pages 2 DISK Available",
+              "keyType": "info",
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": "String",
+              "displayName": "__DocName",
+              "keyName": "__DocName",
+              "keyValue": "AC001 Monthly Expense Jan 16, 2003 12:00:00 AM MANUEA",
+              "keyType": "info",
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": "String",
+              "displayName": "Availability Status",
+              "keyName": "__availability",
+              "keyValue": "Available",
+              "keyType": "info",
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": "String",
+              "displayName": "__device",
+              "keyName": "__device",
+              "keyValue": "DISK",
+              "keyType": "info",
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": "String",
+              "displayName": "__ReportDescription",
+              "keyName": "__ReportDescription",
+              "keyValue": "Monthly Expense",
+              "keyType": "info",
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": "String",
+              "displayName": "Report ID",
+              "keyName": "__reportid",
+              "keyValue": "AC001",
+              "keyType": "document",
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": "String",
+              "displayName": "__documentClass",
+              "keyName": "__documentClass",
+              "keyValue": "AC001",
+              "keyType": "info",
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": "Date",
+              "displayName": "Report Version ID",
+              "keyName": "__versionid",
+              "keyValue": "2003-01-16T00:00:00.000-05:00",
+              "keyType": "document",
+              "keyOrdinal": 1
+            },
+            {
+              "dataType": "String",
+              "displayName": "__originalVersionId",
+              "keyName": "__originalVersionId",
+              "keyValue": "20030116000000",
+              "keyType": "info",
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": "String",
+              "displayName": "Report Section",
+              "keyName": "__sectionid",
+              "keyValue": "MANUEA                        ",
+              "keyType": "document",
+              "keyOrdinal": 2
+            },
+            {
+              "dataType": "Date",
+              "displayName": "__revisionTimestamp",
+              "keyName": "__revisionTimestamp",
+              "keyValue": "2003-01-16T00:00:00.000-05:00",
+              "keyType": "info",
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": "Integer",
+              "displayName": "Page Number",
+              "keyName": "__originalPageNumber",
+              "keyValue": 5,
+              "keyType": "pageNumber",
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": "Integer",
+              "displayName": "Page count",
+              "keyName": "__numberOfContentSegments",
+              "keyValue": 2,
+              "keyType": "pageCount",
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": "Integer",
+              "displayName": "__pageOffset",
+              "keyName": "__pageOffset",
+              "keyValue": 1,
+              "keyType": "info",
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": "String",
+              "displayName": "defaultteaser",
+              "keyName": "defaultteaser",
+              "keyValue": "AC001 Monthly Expense Jan 16, 2003 12:00:00 AM MANUEA Pages 2 DISK Available",
+              "keyType": "info",
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": "String",
+              "displayName": "__redactionType",
+              "keyName": "__redactionType",
+              "keyValue": "NONE",
+              "keyType": "info",
+              "keyOrdinal": 0
+            }
+          ],
+          "snippets": null,
+          "links": [
+            {
+              "rel": "http://www/asg/com/mobius/rel/document",
+              "method": "GET",
+              "href": "/mobius/rest/contentstreams?id=ENC%28MTAucmVwb3NpdG9yeTEwLk1vYml1c0RlbW84LnJlcG9ydGlkNS5BQzAwMTkucmVwb3J0dmVyMTQuMjAwMzAxMTYwMDAwMDAxMC5yZXBvcnRzZWN0NDUuTUFOVUVBICAgICAgICAgICAgICAgICAgICAgICAgQUJTUEcwMDAwMDAwMDA1MTAub3JncGFnZW51bTEuNTEzLm51bWJlcm9mcGFnZXMxLjIxMi5yZXBvc2l0b3J5aWQzNi5CRUM1NkUwMS1GRjVELTRCODAtODdGMS1CMDcxM0NDQ0M4MkM5LnNpZ25hdHVyZTQzLlhuSF9kUDZzbGdYMWo2eWZKa2FadUp5UHE3T21pZEFhc3RzMnMxRnFRWlkxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA%29"
+            },
+            {
+              "rel": "http://www/asg/com/mobius/rel/download",
+              "method": "POST",
+              "href": "/mobius/rest/contentstreams?id=ENC%28MTAucmVwb3NpdG9yeTEwLk1vYml1c0RlbW84LnJlcG9ydGlkNS5BQzAwMTkucmVwb3J0dmVyMTQuMjAwMzAxMTYwMDAwMDAxMC5yZXBvcnRzZWN0NDUuTUFOVUVBICAgICAgICAgICAgICAgICAgICAgICAgQUJTUEcwMDAwMDAwMDA1MTAub3JncGFnZW51bTEuNTEzLm51bWJlcm9mcGFnZXMxLjIxMi5yZXBvc2l0b3J5aWQzNi5CRUM1NkUwMS1GRjVELTRCODAtODdGMS1CMDcxM0NDQ0M4MkM5LnNpZ25hdHVyZTQzLlhuSF9kUDZzbGdYMWo2eWZKa2FadUp5UHE3T21pZEFhc3RzMnMxRnFRWlkxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA%29"
+            },
+            {
+              "rel": "http://www/asg/com/mobius/rel/extractionpolicies/get",
+              "method": "GET",
+              "href": "/mobius/rest/extractionpolicies?documentid=ENC%28MTAucmVwb3NpdG9yeTEwLk1vYml1c0RlbW84LnJlcG9ydGlkNS5BQzAwMTkucmVwb3J0dmVyMTQuMjAwMzAxMTYwMDAwMDAxMC5yZXBvcnRzZWN0NDUuTUFOVUVBICAgICAgICAgICAgICAgICAgICAgICAgQUJTUEcwMDAwMDAwMDA1MTAub3JncGFnZW51bTEuNTEzLm51bWJlcm9mcGFnZXMxLjIxMi5yZXBvc2l0b3J5aWQzNi5CRUM1NkUwMS1GRjVELTRCODAtODdGMS1CMDcxM0NDQ0M4MkM5LnNpZ25hdHVyZTQzLlhuSF9kUDZzbGdYMWo2eWZKa2FadUp5UHE3T21pZEFhc3RzMnMxRnFRWlkxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA%29"
+            },
+            {
+              "rel": "http://www/asg/com/mobius/rel/document/metadata",
+              "method": "GET",
+              "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTEwLk1vYml1c0RlbW84LnJlcG9ydGlkNS5BQzAwMTkucmVwb3J0dmVyMTQuMjAwMzAxMTYwMDAwMDAxMC5yZXBvcnRzZWN0NDUuTUFOVUVBICAgICAgICAgICAgICAgICAgICAgICAgQUJTUEcwMDAwMDAwMDA1MTAub3JncGFnZW51bTEuNTEzLm51bWJlcm9mcGFnZXMxLjIxMi5yZXBvc2l0b3J5aWQzNi5CRUM1NkUwMS1GRjVELTRCODAtODdGMS1CMDcxM0NDQ0M4MkM5LnNpZ25hdHVyZTQzLlhuSF9kUDZzbGdYMWo2eWZKa2FadUp5UHE3T21pZEFhc3RzMnMxRnFRWlkxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)/metadata"
+            },
+            {
+              "rel": "http://www/asg/com/mobius/rel/document/properties",
+              "method": "GET",
+              "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTEwLk1vYml1c0RlbW84LnJlcG9ydGlkNS5BQzAwMTkucmVwb3J0dmVyMTQuMjAwMzAxMTYwMDAwMDAxMC5yZXBvcnRzZWN0NDUuTUFOVUVBICAgICAgICAgICAgICAgICAgICAgICAgQUJTUEcwMDAwMDAwMDA1MTAub3JncGFnZW51bTEuNTEzLm51bWJlcm9mcGFnZXMxLjIxMi5yZXBvc2l0b3J5aWQzNi5CRUM1NkUwMS1GRjVELTRCODAtODdGMS1CMDcxM0NDQ0M4MkM5LnNpZ25hdHVyZTQzLlhuSF9kUDZzbGdYMWo2eWZKa2FadUp5UHE3T21pZEFhc3RzMnMxRnFRWlkxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)/properties"
+            },
+            {
+              "rel": "http://www/asg/com/mobius/rel/document/retentions",
+              "method": "GET",
+              "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTEwLk1vYml1c0RlbW84LnJlcG9ydGlkNS5BQzAwMTkucmVwb3J0dmVyMTQuMjAwMzAxMTYwMDAwMDAxMC5yZXBvcnRzZWN0NDUuTUFOVUVBICAgICAgICAgICAgICAgICAgICAgICAgQUJTUEcwMDAwMDAwMDA1MTAub3JncGFnZW51bTEuNTEzLm51bWJlcm9mcGFnZXMxLjIxMi5yZXBvc2l0b3J5aWQzNi5CRUM1NkUwMS1GRjVELTRCODAtODdGMS1CMDcxM0NDQ0M4MkM5LnNpZ25hdHVyZTQzLlhuSF9kUDZzbGdYMWo2eWZKa2FadUp5UHE3T21pZEFhc3RzMnMxRnFRWlkxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)/retentions"
+            },
+            {
+              "rel": "http://www/asg/com/mobius/rel/pages",
+              "method": "GET",
+              "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTEwLk1vYml1c0RlbW84LnJlcG9ydGlkNS5BQzAwMTkucmVwb3J0dmVyMTQuMjAwMzAxMTYwMDAwMDAxMC5yZXBvcnRzZWN0NDUuTUFOVUVBICAgICAgICAgICAgICAgICAgICAgICAgQUJTUEcwMDAwMDAwMDA1MTAub3JncGFnZW51bTEuNTEzLm51bWJlcm9mcGFnZXMxLjIxMi5yZXBvc2l0b3J5aWQzNi5CRUM1NkUwMS1GRjVELTRCODAtODdGMS1CMDcxM0NDQ0M4MkM5LnNpZ25hdHVyZTQzLlhuSF9kUDZzbGdYMWo2eWZKa2FadUp5UHE3T21pZEFhc3RzMnMxRnFRWlkxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)/pages"
+            },
+            {
+              "rel": "http://www/asg/com/mobius/rel/annotations/get",
+              "method": "GET",
+              "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTEwLk1vYml1c0RlbW84LnJlcG9ydGlkNS5BQzAwMTkucmVwb3J0dmVyMTQuMjAwMzAxMTYwMDAwMDAxMC5yZXBvcnRzZWN0NDUuTUFOVUVBICAgICAgICAgICAgICAgICAgICAgICAgQUJTUEcwMDAwMDAwMDA1MTAub3JncGFnZW51bTEuNTEzLm51bWJlcm9mcGFnZXMxLjIxMi5yZXBvc2l0b3J5aWQzNi5CRUM1NkUwMS1GRjVELTRCODAtODdGMS1CMDcxM0NDQ0M4MkM5LnNpZ25hdHVyZTQzLlhuSF9kUDZzbGdYMWo2eWZKa2FadUp5UHE3T21pZEFhc3RzMnMxRnFRWlkxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)/annotations"
+            },
+            {
+              "rel": "http://www/asg/com/mobius/rel/annotations/add",
+              "method": "POST",
+              "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTEwLk1vYml1c0RlbW84LnJlcG9ydGlkNS5BQzAwMTkucmVwb3J0dmVyMTQuMjAwMzAxMTYwMDAwMDAxMC5yZXBvcnRzZWN0NDUuTUFOVUVBICAgICAgICAgICAgICAgICAgICAgICAgQUJTUEcwMDAwMDAwMDA1MTAub3JncGFnZW51bTEuNTEzLm51bWJlcm9mcGFnZXMxLjIxMi5yZXBvc2l0b3J5aWQzNi5CRUM1NkUwMS1GRjVELTRCODAtODdGMS1CMDcxM0NDQ0M4MkM5LnNpZ25hdHVyZTQzLlhuSF9kUDZzbGdYMWo2eWZKa2FadUp5UHE3T21pZEFhc3RzMnMxRnFRWlkxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)/annotations"
+            }
+          ]
+        }
+      ],
+      "searchStatus": [
+        {
+          "message": "SUCCESS",
+          "repositoryId": "BEC56E01-FF5D-4B80-87F1-B0713CCCC82C",
+          "severity": "OK"
+        }
+      ],
+      "links": [
+        {
+          "rel": "http://www/asg/com/mobius/rel/rm/getholds",
+          "method": "POST",
+          "href": "/mobius/rest/rm/holds"
+        },
+        {
+          "rel": "next",
+          "method": "POST",
+          "href": "/mobius/rest/searches?returnresults=true&offset=20"
+        }
+      ]
+    }
+  ],
+  "required": [
+    "results"
+  ],
+  "properties": {
+    "results": {
+      "$id": "#/properties/results",
+      "type": "array",
+      "title": "The results schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "pageCount": 2,
+            "pageNumber": 6,
+            "objectId": "ENC(MTAucmVwb3NpdG9yeTEwLk1vYml1c0RlbW84LnJlcG9ydGlkNS5BQzAwMTkucmVwb3J0dmVyMTQuMjAwMzAxMTYwMDAwMDAxMC5yZXBvcnRzZWN0NDUuTUFOVUVBICAgICAgICAgICAgICAgICAgICAgICAgQUJTUEcwMDAwMDAwMDA1MTAub3JncGFnZW51bTEuNTEzLm51bWJlcm9mcGFnZXMxLjIxMi5yZXBvc2l0b3J5aWQzNi5CRUM1NkUwMS1GRjVELTRCODAtODdGMS1CMDcxM0NDQ0M4MkM5LnNpZ25hdHVyZTQzLlhuSF9kUDZzbGdYMWo2eWZKa2FadUp5UHE3T21pZEFhc3RzMnMxRnFRWlkxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)",
+            "objectTypeId": "BEC56E01-FF5D-4B80-87F1-B0713CCCC82C",
+            "indexes": [
+              {
+                "name": "ACCTCODE",
+                "value": 905001
+              }
+            ],
+            "metadata": [
+              {
+                "dataType": "String",
+                "displayName": "__DocTitle",
+                "keyName": "__DocTitle",
+                "keyValue": "AC001 Monthly Expense Jan 16, 2003 12:00:00 AM MANUEA Pages 2 DISK Available",
+                "keyType": "info",
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": "String",
+                "displayName": "__DocName",
+                "keyName": "__DocName",
+                "keyValue": "AC001 Monthly Expense Jan 16, 2003 12:00:00 AM MANUEA",
+                "keyType": "info",
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": "String",
+                "displayName": "Availability Status",
+                "keyName": "__availability",
+                "keyValue": "Available",
+                "keyType": "info",
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": "String",
+                "displayName": "__device",
+                "keyName": "__device",
+                "keyValue": "DISK",
+                "keyType": "info",
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": "String",
+                "displayName": "__ReportDescription",
+                "keyName": "__ReportDescription",
+                "keyValue": "Monthly Expense",
+                "keyType": "info",
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": "String",
+                "displayName": "Report ID",
+                "keyName": "__reportid",
+                "keyValue": "AC001",
+                "keyType": "document",
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": "String",
+                "displayName": "__documentClass",
+                "keyName": "__documentClass",
+                "keyValue": "AC001",
+                "keyType": "info",
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": "Date",
+                "displayName": "Report Version ID",
+                "keyName": "__versionid",
+                "keyValue": "2003-01-16T00:00:00.000-05:00",
+                "keyType": "document",
+                "keyOrdinal": 1
+              },
+              {
+                "dataType": "String",
+                "displayName": "__originalVersionId",
+                "keyName": "__originalVersionId",
+                "keyValue": "20030116000000",
+                "keyType": "info",
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": "String",
+                "displayName": "Report Section",
+                "keyName": "__sectionid",
+                "keyValue": "MANUEA                        ",
+                "keyType": "document",
+                "keyOrdinal": 2
+              },
+              {
+                "dataType": "Date",
+                "displayName": "__revisionTimestamp",
+                "keyName": "__revisionTimestamp",
+                "keyValue": "2003-01-16T00:00:00.000-05:00",
+                "keyType": "info",
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": "Integer",
+                "displayName": "Page Number",
+                "keyName": "__originalPageNumber",
+                "keyValue": 5,
+                "keyType": "pageNumber",
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": "Integer",
+                "displayName": "Page count",
+                "keyName": "__numberOfContentSegments",
+                "keyValue": 2,
+                "keyType": "pageCount",
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": "Integer",
+                "displayName": "__pageOffset",
+                "keyName": "__pageOffset",
+                "keyValue": 1,
+                "keyType": "info",
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": "String",
+                "displayName": "defaultteaser",
+                "keyName": "defaultteaser",
+                "keyValue": "AC001 Monthly Expense Jan 16, 2003 12:00:00 AM MANUEA Pages 2 DISK Available",
+                "keyType": "info",
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": "String",
+                "displayName": "__redactionType",
+                "keyName": "__redactionType",
+                "keyValue": "NONE",
+                "keyType": "info",
+                "keyOrdinal": 0
+              }
+            ],
+            "snippets": null,
+            "links": [
+              {
+                "rel": "http://www/asg/com/mobius/rel/document",
+                "method": "GET",
+                "href": "/mobius/rest/contentstreams?id=ENC%28MTAucmVwb3NpdG9yeTEwLk1vYml1c0RlbW84LnJlcG9ydGlkNS5BQzAwMTkucmVwb3J0dmVyMTQuMjAwMzAxMTYwMDAwMDAxMC5yZXBvcnRzZWN0NDUuTUFOVUVBICAgICAgICAgICAgICAgICAgICAgICAgQUJTUEcwMDAwMDAwMDA1MTAub3JncGFnZW51bTEuNTEzLm51bWJlcm9mcGFnZXMxLjIxMi5yZXBvc2l0b3J5aWQzNi5CRUM1NkUwMS1GRjVELTRCODAtODdGMS1CMDcxM0NDQ0M4MkM5LnNpZ25hdHVyZTQzLlhuSF9kUDZzbGdYMWo2eWZKa2FadUp5UHE3T21pZEFhc3RzMnMxRnFRWlkxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA%29"
+              },
+              {
+                "rel": "http://www/asg/com/mobius/rel/download",
+                "method": "POST",
+                "href": "/mobius/rest/contentstreams?id=ENC%28MTAucmVwb3NpdG9yeTEwLk1vYml1c0RlbW84LnJlcG9ydGlkNS5BQzAwMTkucmVwb3J0dmVyMTQuMjAwMzAxMTYwMDAwMDAxMC5yZXBvcnRzZWN0NDUuTUFOVUVBICAgICAgICAgICAgICAgICAgICAgICAgQUJTUEcwMDAwMDAwMDA1MTAub3JncGFnZW51bTEuNTEzLm51bWJlcm9mcGFnZXMxLjIxMi5yZXBvc2l0b3J5aWQzNi5CRUM1NkUwMS1GRjVELTRCODAtODdGMS1CMDcxM0NDQ0M4MkM5LnNpZ25hdHVyZTQzLlhuSF9kUDZzbGdYMWo2eWZKa2FadUp5UHE3T21pZEFhc3RzMnMxRnFRWlkxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA%29"
+              },
+              {
+                "rel": "http://www/asg/com/mobius/rel/extractionpolicies/get",
+                "method": "GET",
+                "href": "/mobius/rest/extractionpolicies?documentid=ENC%28MTAucmVwb3NpdG9yeTEwLk1vYml1c0RlbW84LnJlcG9ydGlkNS5BQzAwMTkucmVwb3J0dmVyMTQuMjAwMzAxMTYwMDAwMDAxMC5yZXBvcnRzZWN0NDUuTUFOVUVBICAgICAgICAgICAgICAgICAgICAgICAgQUJTUEcwMDAwMDAwMDA1MTAub3JncGFnZW51bTEuNTEzLm51bWJlcm9mcGFnZXMxLjIxMi5yZXBvc2l0b3J5aWQzNi5CRUM1NkUwMS1GRjVELTRCODAtODdGMS1CMDcxM0NDQ0M4MkM5LnNpZ25hdHVyZTQzLlhuSF9kUDZzbGdYMWo2eWZKa2FadUp5UHE3T21pZEFhc3RzMnMxRnFRWlkxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA%29"
+              },
+              {
+                "rel": "http://www/asg/com/mobius/rel/document/metadata",
+                "method": "GET",
+                "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTEwLk1vYml1c0RlbW84LnJlcG9ydGlkNS5BQzAwMTkucmVwb3J0dmVyMTQuMjAwMzAxMTYwMDAwMDAxMC5yZXBvcnRzZWN0NDUuTUFOVUVBICAgICAgICAgICAgICAgICAgICAgICAgQUJTUEcwMDAwMDAwMDA1MTAub3JncGFnZW51bTEuNTEzLm51bWJlcm9mcGFnZXMxLjIxMi5yZXBvc2l0b3J5aWQzNi5CRUM1NkUwMS1GRjVELTRCODAtODdGMS1CMDcxM0NDQ0M4MkM5LnNpZ25hdHVyZTQzLlhuSF9kUDZzbGdYMWo2eWZKa2FadUp5UHE3T21pZEFhc3RzMnMxRnFRWlkxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)/metadata"
+              },
+              {
+                "rel": "http://www/asg/com/mobius/rel/document/properties",
+                "method": "GET",
+                "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTEwLk1vYml1c0RlbW84LnJlcG9ydGlkNS5BQzAwMTkucmVwb3J0dmVyMTQuMjAwMzAxMTYwMDAwMDAxMC5yZXBvcnRzZWN0NDUuTUFOVUVBICAgICAgICAgICAgICAgICAgICAgICAgQUJTUEcwMDAwMDAwMDA1MTAub3JncGFnZW51bTEuNTEzLm51bWJlcm9mcGFnZXMxLjIxMi5yZXBvc2l0b3J5aWQzNi5CRUM1NkUwMS1GRjVELTRCODAtODdGMS1CMDcxM0NDQ0M4MkM5LnNpZ25hdHVyZTQzLlhuSF9kUDZzbGdYMWo2eWZKa2FadUp5UHE3T21pZEFhc3RzMnMxRnFRWlkxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)/properties"
+              },
+              {
+                "rel": "http://www/asg/com/mobius/rel/document/retentions",
+                "method": "GET",
+                "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTEwLk1vYml1c0RlbW84LnJlcG9ydGlkNS5BQzAwMTkucmVwb3J0dmVyMTQuMjAwMzAxMTYwMDAwMDAxMC5yZXBvcnRzZWN0NDUuTUFOVUVBICAgICAgICAgICAgICAgICAgICAgICAgQUJTUEcwMDAwMDAwMDA1MTAub3JncGFnZW51bTEuNTEzLm51bWJlcm9mcGFnZXMxLjIxMi5yZXBvc2l0b3J5aWQzNi5CRUM1NkUwMS1GRjVELTRCODAtODdGMS1CMDcxM0NDQ0M4MkM5LnNpZ25hdHVyZTQzLlhuSF9kUDZzbGdYMWo2eWZKa2FadUp5UHE3T21pZEFhc3RzMnMxRnFRWlkxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)/retentions"
+              },
+              {
+                "rel": "http://www/asg/com/mobius/rel/pages",
+                "method": "GET",
+                "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTEwLk1vYml1c0RlbW84LnJlcG9ydGlkNS5BQzAwMTkucmVwb3J0dmVyMTQuMjAwMzAxMTYwMDAwMDAxMC5yZXBvcnRzZWN0NDUuTUFOVUVBICAgICAgICAgICAgICAgICAgICAgICAgQUJTUEcwMDAwMDAwMDA1MTAub3JncGFnZW51bTEuNTEzLm51bWJlcm9mcGFnZXMxLjIxMi5yZXBvc2l0b3J5aWQzNi5CRUM1NkUwMS1GRjVELTRCODAtODdGMS1CMDcxM0NDQ0M4MkM5LnNpZ25hdHVyZTQzLlhuSF9kUDZzbGdYMWo2eWZKa2FadUp5UHE3T21pZEFhc3RzMnMxRnFRWlkxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)/pages"
+              },
+              {
+                "rel": "http://www/asg/com/mobius/rel/annotations/get",
+                "method": "GET",
+                "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTEwLk1vYml1c0RlbW84LnJlcG9ydGlkNS5BQzAwMTkucmVwb3J0dmVyMTQuMjAwMzAxMTYwMDAwMDAxMC5yZXBvcnRzZWN0NDUuTUFOVUVBICAgICAgICAgICAgICAgICAgICAgICAgQUJTUEcwMDAwMDAwMDA1MTAub3JncGFnZW51bTEuNTEzLm51bWJlcm9mcGFnZXMxLjIxMi5yZXBvc2l0b3J5aWQzNi5CRUM1NkUwMS1GRjVELTRCODAtODdGMS1CMDcxM0NDQ0M4MkM5LnNpZ25hdHVyZTQzLlhuSF9kUDZzbGdYMWo2eWZKa2FadUp5UHE3T21pZEFhc3RzMnMxRnFRWlkxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)/annotations"
+              },
+              {
+                "rel": "http://www/asg/com/mobius/rel/annotations/add",
+                "method": "POST",
+                "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTEwLk1vYml1c0RlbW84LnJlcG9ydGlkNS5BQzAwMTkucmVwb3J0dmVyMTQuMjAwMzAxMTYwMDAwMDAxMC5yZXBvcnRzZWN0NDUuTUFOVUVBICAgICAgICAgICAgICAgICAgICAgICAgQUJTUEcwMDAwMDAwMDA1MTAub3JncGFnZW51bTEuNTEzLm51bWJlcm9mcGFnZXMxLjIxMi5yZXBvc2l0b3J5aWQzNi5CRUM1NkUwMS1GRjVELTRCODAtODdGMS1CMDcxM0NDQ0M4MkM5LnNpZ25hdHVyZTQzLlhuSF9kUDZzbGdYMWo2eWZKa2FadUp5UHE3T21pZEFhc3RzMnMxRnFRWlkxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)/annotations"
+              }
+            ]
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/results/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/results/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "pageCount": 2,
+                "pageNumber": 6,
+                "objectId": "ENC(MTAucmVwb3NpdG9yeTEwLk1vYml1c0RlbW84LnJlcG9ydGlkNS5BQzAwMTkucmVwb3J0dmVyMTQuMjAwMzAxMTYwMDAwMDAxMC5yZXBvcnRzZWN0NDUuTUFOVUVBICAgICAgICAgICAgICAgICAgICAgICAgQUJTUEcwMDAwMDAwMDA1MTAub3JncGFnZW51bTEuNTEzLm51bWJlcm9mcGFnZXMxLjIxMi5yZXBvc2l0b3J5aWQzNi5CRUM1NkUwMS1GRjVELTRCODAtODdGMS1CMDcxM0NDQ0M4MkM5LnNpZ25hdHVyZTQzLlhuSF9kUDZzbGdYMWo2eWZKa2FadUp5UHE3T21pZEFhc3RzMnMxRnFRWlkxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)",
+                "objectTypeId": "BEC56E01-FF5D-4B80-87F1-B0713CCCC82C",
+                "indexes": [
+                  {
+                    "name": "ACCTCODE",
+                    "value": 905001
+                  }
+                ],
+                "metadata": [
+                  {
+                    "dataType": "String",
+                    "displayName": "__DocTitle",
+                    "keyName": "__DocTitle",
+                    "keyValue": "AC001 Monthly Expense Jan 16, 2003 12:00:00 AM MANUEA Pages 2 DISK Available",
+                    "keyType": "info",
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": "String",
+                    "displayName": "__DocName",
+                    "keyName": "__DocName",
+                    "keyValue": "AC001 Monthly Expense Jan 16, 2003 12:00:00 AM MANUEA",
+                    "keyType": "info",
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": "String",
+                    "displayName": "Availability Status",
+                    "keyName": "__availability",
+                    "keyValue": "Available",
+                    "keyType": "info",
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": "String",
+                    "displayName": "__device",
+                    "keyName": "__device",
+                    "keyValue": "DISK",
+                    "keyType": "info",
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": "String",
+                    "displayName": "__ReportDescription",
+                    "keyName": "__ReportDescription",
+                    "keyValue": "Monthly Expense",
+                    "keyType": "info",
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": "String",
+                    "displayName": "Report ID",
+                    "keyName": "__reportid",
+                    "keyValue": "AC001",
+                    "keyType": "document",
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": "String",
+                    "displayName": "__documentClass",
+                    "keyName": "__documentClass",
+                    "keyValue": "AC001",
+                    "keyType": "info",
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": "Date",
+                    "displayName": "Report Version ID",
+                    "keyName": "__versionid",
+                    "keyValue": "2003-01-16T00:00:00.000-05:00",
+                    "keyType": "document",
+                    "keyOrdinal": 1
+                  },
+                  {
+                    "dataType": "String",
+                    "displayName": "__originalVersionId",
+                    "keyName": "__originalVersionId",
+                    "keyValue": "20030116000000",
+                    "keyType": "info",
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": "String",
+                    "displayName": "Report Section",
+                    "keyName": "__sectionid",
+                    "keyValue": "MANUEA                        ",
+                    "keyType": "document",
+                    "keyOrdinal": 2
+                  },
+                  {
+                    "dataType": "Date",
+                    "displayName": "__revisionTimestamp",
+                    "keyName": "__revisionTimestamp",
+                    "keyValue": "2003-01-16T00:00:00.000-05:00",
+                    "keyType": "info",
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": "Integer",
+                    "displayName": "Page Number",
+                    "keyName": "__originalPageNumber",
+                    "keyValue": 5,
+                    "keyType": "pageNumber",
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": "Integer",
+                    "displayName": "Page count",
+                    "keyName": "__numberOfContentSegments",
+                    "keyValue": 2,
+                    "keyType": "pageCount",
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": "Integer",
+                    "displayName": "__pageOffset",
+                    "keyName": "__pageOffset",
+                    "keyValue": 1,
+                    "keyType": "info",
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": "String",
+                    "displayName": "defaultteaser",
+                    "keyName": "defaultteaser",
+                    "keyValue": "AC001 Monthly Expense Jan 16, 2003 12:00:00 AM MANUEA Pages 2 DISK Available",
+                    "keyType": "info",
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": "String",
+                    "displayName": "__redactionType",
+                    "keyName": "__redactionType",
+                    "keyValue": "NONE",
+                    "keyType": "info",
+                    "keyOrdinal": 0
+                  }
+                ],
+                "snippets": null,
+                "links": [
+                  {
+                    "rel": "http://www/asg/com/mobius/rel/document",
+                    "method": "GET",
+                    "href": "/mobius/rest/contentstreams?id=ENC%28MTAucmVwb3NpdG9yeTEwLk1vYml1c0RlbW84LnJlcG9ydGlkNS5BQzAwMTkucmVwb3J0dmVyMTQuMjAwMzAxMTYwMDAwMDAxMC5yZXBvcnRzZWN0NDUuTUFOVUVBICAgICAgICAgICAgICAgICAgICAgICAgQUJTUEcwMDAwMDAwMDA1MTAub3JncGFnZW51bTEuNTEzLm51bWJlcm9mcGFnZXMxLjIxMi5yZXBvc2l0b3J5aWQzNi5CRUM1NkUwMS1GRjVELTRCODAtODdGMS1CMDcxM0NDQ0M4MkM5LnNpZ25hdHVyZTQzLlhuSF9kUDZzbGdYMWo2eWZKa2FadUp5UHE3T21pZEFhc3RzMnMxRnFRWlkxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA%29"
+                  },
+                  {
+                    "rel": "http://www/asg/com/mobius/rel/download",
+                    "method": "POST",
+                    "href": "/mobius/rest/contentstreams?id=ENC%28MTAucmVwb3NpdG9yeTEwLk1vYml1c0RlbW84LnJlcG9ydGlkNS5BQzAwMTkucmVwb3J0dmVyMTQuMjAwMzAxMTYwMDAwMDAxMC5yZXBvcnRzZWN0NDUuTUFOVUVBICAgICAgICAgICAgICAgICAgICAgICAgQUJTUEcwMDAwMDAwMDA1MTAub3JncGFnZW51bTEuNTEzLm51bWJlcm9mcGFnZXMxLjIxMi5yZXBvc2l0b3J5aWQzNi5CRUM1NkUwMS1GRjVELTRCODAtODdGMS1CMDcxM0NDQ0M4MkM5LnNpZ25hdHVyZTQzLlhuSF9kUDZzbGdYMWo2eWZKa2FadUp5UHE3T21pZEFhc3RzMnMxRnFRWlkxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA%29"
+                  },
+                  {
+                    "rel": "http://www/asg/com/mobius/rel/extractionpolicies/get",
+                    "method": "GET",
+                    "href": "/mobius/rest/extractionpolicies?documentid=ENC%28MTAucmVwb3NpdG9yeTEwLk1vYml1c0RlbW84LnJlcG9ydGlkNS5BQzAwMTkucmVwb3J0dmVyMTQuMjAwMzAxMTYwMDAwMDAxMC5yZXBvcnRzZWN0NDUuTUFOVUVBICAgICAgICAgICAgICAgICAgICAgICAgQUJTUEcwMDAwMDAwMDA1MTAub3JncGFnZW51bTEuNTEzLm51bWJlcm9mcGFnZXMxLjIxMi5yZXBvc2l0b3J5aWQzNi5CRUM1NkUwMS1GRjVELTRCODAtODdGMS1CMDcxM0NDQ0M4MkM5LnNpZ25hdHVyZTQzLlhuSF9kUDZzbGdYMWo2eWZKa2FadUp5UHE3T21pZEFhc3RzMnMxRnFRWlkxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA%29"
+                  },
+                  {
+                    "rel": "http://www/asg/com/mobius/rel/document/metadata",
+                    "method": "GET",
+                    "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTEwLk1vYml1c0RlbW84LnJlcG9ydGlkNS5BQzAwMTkucmVwb3J0dmVyMTQuMjAwMzAxMTYwMDAwMDAxMC5yZXBvcnRzZWN0NDUuTUFOVUVBICAgICAgICAgICAgICAgICAgICAgICAgQUJTUEcwMDAwMDAwMDA1MTAub3JncGFnZW51bTEuNTEzLm51bWJlcm9mcGFnZXMxLjIxMi5yZXBvc2l0b3J5aWQzNi5CRUM1NkUwMS1GRjVELTRCODAtODdGMS1CMDcxM0NDQ0M4MkM5LnNpZ25hdHVyZTQzLlhuSF9kUDZzbGdYMWo2eWZKa2FadUp5UHE3T21pZEFhc3RzMnMxRnFRWlkxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)/metadata"
+                  },
+                  {
+                    "rel": "http://www/asg/com/mobius/rel/document/properties",
+                    "method": "GET",
+                    "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTEwLk1vYml1c0RlbW84LnJlcG9ydGlkNS5BQzAwMTkucmVwb3J0dmVyMTQuMjAwMzAxMTYwMDAwMDAxMC5yZXBvcnRzZWN0NDUuTUFOVUVBICAgICAgICAgICAgICAgICAgICAgICAgQUJTUEcwMDAwMDAwMDA1MTAub3JncGFnZW51bTEuNTEzLm51bWJlcm9mcGFnZXMxLjIxMi5yZXBvc2l0b3J5aWQzNi5CRUM1NkUwMS1GRjVELTRCODAtODdGMS1CMDcxM0NDQ0M4MkM5LnNpZ25hdHVyZTQzLlhuSF9kUDZzbGdYMWo2eWZKa2FadUp5UHE3T21pZEFhc3RzMnMxRnFRWlkxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)/properties"
+                  },
+                  {
+                    "rel": "http://www/asg/com/mobius/rel/document/retentions",
+                    "method": "GET",
+                    "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTEwLk1vYml1c0RlbW84LnJlcG9ydGlkNS5BQzAwMTkucmVwb3J0dmVyMTQuMjAwMzAxMTYwMDAwMDAxMC5yZXBvcnRzZWN0NDUuTUFOVUVBICAgICAgICAgICAgICAgICAgICAgICAgQUJTUEcwMDAwMDAwMDA1MTAub3JncGFnZW51bTEuNTEzLm51bWJlcm9mcGFnZXMxLjIxMi5yZXBvc2l0b3J5aWQzNi5CRUM1NkUwMS1GRjVELTRCODAtODdGMS1CMDcxM0NDQ0M4MkM5LnNpZ25hdHVyZTQzLlhuSF9kUDZzbGdYMWo2eWZKa2FadUp5UHE3T21pZEFhc3RzMnMxRnFRWlkxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)/retentions"
+                  },
+                  {
+                    "rel": "http://www/asg/com/mobius/rel/pages",
+                    "method": "GET",
+                    "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTEwLk1vYml1c0RlbW84LnJlcG9ydGlkNS5BQzAwMTkucmVwb3J0dmVyMTQuMjAwMzAxMTYwMDAwMDAxMC5yZXBvcnRzZWN0NDUuTUFOVUVBICAgICAgICAgICAgICAgICAgICAgICAgQUJTUEcwMDAwMDAwMDA1MTAub3JncGFnZW51bTEuNTEzLm51bWJlcm9mcGFnZXMxLjIxMi5yZXBvc2l0b3J5aWQzNi5CRUM1NkUwMS1GRjVELTRCODAtODdGMS1CMDcxM0NDQ0M4MkM5LnNpZ25hdHVyZTQzLlhuSF9kUDZzbGdYMWo2eWZKa2FadUp5UHE3T21pZEFhc3RzMnMxRnFRWlkxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)/pages"
+                  },
+                  {
+                    "rel": "http://www/asg/com/mobius/rel/annotations/get",
+                    "method": "GET",
+                    "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTEwLk1vYml1c0RlbW84LnJlcG9ydGlkNS5BQzAwMTkucmVwb3J0dmVyMTQuMjAwMzAxMTYwMDAwMDAxMC5yZXBvcnRzZWN0NDUuTUFOVUVBICAgICAgICAgICAgICAgICAgICAgICAgQUJTUEcwMDAwMDAwMDA1MTAub3JncGFnZW51bTEuNTEzLm51bWJlcm9mcGFnZXMxLjIxMi5yZXBvc2l0b3J5aWQzNi5CRUM1NkUwMS1GRjVELTRCODAtODdGMS1CMDcxM0NDQ0M4MkM5LnNpZ25hdHVyZTQzLlhuSF9kUDZzbGdYMWo2eWZKa2FadUp5UHE3T21pZEFhc3RzMnMxRnFRWlkxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)/annotations"
+                  },
+                  {
+                    "rel": "http://www/asg/com/mobius/rel/annotations/add",
+                    "method": "POST",
+                    "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTEwLk1vYml1c0RlbW84LnJlcG9ydGlkNS5BQzAwMTkucmVwb3J0dmVyMTQuMjAwMzAxMTYwMDAwMDAxMC5yZXBvcnRzZWN0NDUuTUFOVUVBICAgICAgICAgICAgICAgICAgICAgICAgQUJTUEcwMDAwMDAwMDA1MTAub3JncGFnZW51bTEuNTEzLm51bWJlcm9mcGFnZXMxLjIxMi5yZXBvc2l0b3J5aWQzNi5CRUM1NkUwMS1GRjVELTRCODAtODdGMS1CMDcxM0NDQ0M4MkM5LnNpZ25hdHVyZTQzLlhuSF9kUDZzbGdYMWo2eWZKa2FadUp5UHE3T21pZEFhc3RzMnMxRnFRWlkxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)/annotations"
+                  }
+                ]
+              }
+            ],
+            "required": [
+              "objectId",
+              "objectTypeId",
+              "metadata",
+              "links"
+            ],
+            "properties": {
+              "objectId": {
+                "$id": "#/properties/results/items/anyOf/0/properties/objectId",
+                "type": "string",
+                "title": "The objectId schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "ENC(MTAucmVwb3NpdG9yeTEwLk1vYml1c0RlbW84LnJlcG9ydGlkNS5BQzAwMTkucmVwb3J0dmVyMTQuMjAwMzAxMTYwMDAwMDAxMC5yZXBvcnRzZWN0NDUuTUFOVUVBICAgICAgICAgICAgICAgICAgICAgICAgQUJTUEcwMDAwMDAwMDA1MTAub3JncGFnZW51bTEuNTEzLm51bWJlcm9mcGFnZXMxLjIxMi5yZXBvc2l0b3J5aWQzNi5CRUM1NkUwMS1GRjVELTRCODAtODdGMS1CMDcxM0NDQ0M4MkM5LnNpZ25hdHVyZTQzLlhuSF9kUDZzbGdYMWo2eWZKa2FadUp5UHE3T21pZEFhc3RzMnMxRnFRWlkxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)"
+                ]
+              },
+              "objectTypeId": {
+                "$id": "#/properties/results/items/anyOf/0/properties/objectTypeId",
+                "type": "string",
+                "title": "The objectTypeId schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "401478A0-B592-46FA-9522-347E889C4F77"
+                ]
+              },
+              "metadata": {
+                "$id": "#/properties/results/items/anyOf/0/properties/metadata",
+                "type": "array",
+                "title": "The metadata schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": [],
+                "examples": [
+                  [
+                    {
+                      "dataType": "String",
+                      "displayName": "__DocTitle",
+                      "keyName": "__DocTitle",
+                      "keyValue": "AC001 Monthly Expense Jan 16, 2003 12:00:00 AM MANUEA Pages 2 DISK Available",
+                      "keyType": "info",
+                      "keyOrdinal": 0
+                    },
+                    {
+                      "dataType": "String",
+                      "displayName": "__DocName",
+                      "keyName": "__DocName",
+                      "keyValue": "AC001 Monthly Expense Jan 16, 2003 12:00:00 AM MANUEA",
+                      "keyType": "info",
+                      "keyOrdinal": 0
+                    }
+                  ]
+                ],
+                "additionalItems": true,
+                "items": {
+                  "$id": "#/properties/results/items/anyOf/0/properties/metadata/items",
+                  "anyOf": [
+                    {
+                      "$id": "#/properties/results/items/anyOf/0/properties/metadata/items/anyOf/0",
+                      "type": "object",
+                      "title": "The first anyOf schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": {},
+                      "examples": [
+                        {
+                          "dataType": "String",
+                          "displayName": "__DocTitle",
+                          "keyName": "__DocTitle",
+                          "keyValue": "AC001 Monthly Expense Jan 16, 2003 12:00:00 AM MANUEA Pages 2 DISK Available",
+                          "keyType": "info",
+                          "keyOrdinal": 0
+                        }
+                      ],
+                      "required": [
+                        "displayName",
+                        "keyName",
+                        "keyValue"
+                      ],
+                      "properties": {
+                        "displayName": {
+                          "$id": "#/properties/results/items/anyOf/0/properties/metadata/items/anyOf/0/properties/displayName",
+                          "type": "string",
+                          "title": "The displayName schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "__DocTitle"
+                          ]
+                        },
+                        "keyName": {
+                          "$id": "#/properties/results/items/anyOf/0/properties/metadata/items/anyOf/0/properties/keyName",
+                          "type": "string",
+                          "title": "The keyName schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "__DocTitle"
+                          ]
+                        },
+                        "keyValue": {
+                          "$id": "#/properties/results/items/anyOf/0/properties/metadata/items/anyOf/0/properties/keyValue",
+                          "type": ["string","integer"],
+                          "title": "The keyValue schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "AC001 Monthly Expense Jan 16, 2003 12:00:00 AM MANUEA Pages 2 DISK Available"
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "links": {
+                "$id": "#/properties/results/items/anyOf/0/properties/links",
+                "type": "array",
+                "title": "The links schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": [],
+                "examples": [
+                  [
+                    {
+                      "rel": "http://www/asg/com/mobius/rel/document",
+                      "href": "/mobius/rest/contentstreams?id=ENC%28MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU5XSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMDEwLm9yZ3BhZ2VudW0yLjEwMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuY1JySVRNelkzRnVVamM2ang1X2VoVDF3Sm1QUmphMUNyQV9aTDNPMk0zazE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA%29",
+                      "method": "GET"
+                    },
+                    {
+                      "rel": "http://www/asg/com/mobius/rel/download",
+                      "href": "/mobius/rest/contentstreams?id=ENC%28MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU5XSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMDEwLm9yZ3BhZ2VudW0yLjEwMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuY1JySVRNelkzRnVVamM2ang1X2VoVDF3Sm1QUmphMUNyQV9aTDNPMk0zazE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA%29",
+                      "method": "POST"
+                    }
+                  ]
+                ],
+                "additionalItems": true,
+                "items": {
+                  "$id": "#/properties/results/items/anyOf/0/properties/links/items",
+                  "anyOf": [
+                    {
+                      "$id": "#/properties/results/items/anyOf/0/properties/links/items/anyOf/0",
+                      "type": "object",
+                      "title": "The first anyOf schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": {},
+                      "examples": [
+                        {
+                          "rel": "http://www/asg/com/mobius/rel/document",
+                          "href": "/mobius/rest/contentstreams?id=ENC%28MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU5XSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMDEwLm9yZ3BhZ2VudW0yLjEwMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuY1JySVRNelkzRnVVamM2ang1X2VoVDF3Sm1QUmphMUNyQV9aTDNPMk0zazE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA%29",
+                          "method": "GET"
+                        }
+                      ],
+                      "required": [
+                        "rel",
+                        "href",
+                        "method"
+                      ],
+                      "properties": {
+                        "rel": {
+                          "$id": "#/properties/results/items/anyOf/0/properties/links/items/anyOf/0/properties/rel",
+                          "type": "string",
+                          "title": "The rel schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "http://www/asg/com/mobius/rel/document"
+                          ]
+                        },
+                        "href": {
+                          "$id": "#/properties/results/items/anyOf/0/properties/links/items/anyOf/0/properties/href",
+                          "type": "string",
+                          "title": "The href schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "/mobius/rest/contentstreams?id=ENC%28MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU5XSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMDEwLm9yZ3BhZ2VudW0yLjEwMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuY1JySVRNelkzRnVVamM2ang1X2VoVDF3Sm1QUmphMUNyQV9aTDNPMk0zazE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA%29"
+                          ]
+                        },
+                        "method": {
+                          "$id": "#/properties/results/items/anyOf/0/properties/links/items/anyOf/0/properties/method",
+                          "type": "string",
+                          "title": "The method schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "GET"
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

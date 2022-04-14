@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "getRepositories@9.1_input",
+  "type": "object",
+  "title": "Get Repositories Input V9.1",
+  "description": "The Get Repositories Input schema Version 9.1.",
+  "default": {},
+  "examples": [
+    {
+      "settings": {
+        "auth_token": "clientId",
+        "connectionTimeoutInMS": 5000,
+        "readTimeoutInMS": 1000
+      }
+    }
+  ],
+  "properties": {
+    "settings": {
+      "$id": "#/properties/settings",
+      "type": "object",
+      "title": "The settings schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "auth_token": "clientId",
+          "connectionTimeoutInMS": 5000,
+          "readTimeoutInMS": 1000
+        }
+      ],
+      "properties": {
+        "auth_token": {
+          "$id": "#/properties/settings/properties/auth_token",
+          "type": "string",
+          "title": "The auth_token schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "clientId"
+          ]
+        },
+        "connectionTimeoutInMS": {
+          "$id": "#/properties/settings/properties/connectionTimeoutInMS",
+          "type": "integer",
+          "title": "The connectionTimeoutInMS schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            5000
+          ]
+        },
+        "readTimeoutInMS": {
+          "$id": "#/properties/settings/properties/readTimeoutInMS",
+          "type": "integer",
+          "title": "The readTimeoutInMS schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            1000
+          ]
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

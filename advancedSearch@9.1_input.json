@@ -1,0 +1,329 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "advancedSearch@9.1_input",
+  "type": "object",
+  "title": "Advanced Search Input V9.1",
+  "description": "The Advanced Search Input schema Version 9.1",
+  "default": {},
+  "examples": [
+    {
+      "constraints": [
+        {
+          "indexes": [],
+          "name": "IPGNUM",
+          "operator": "NE",
+          "values": [
+            {
+              "value": "0"
+            }
+          ]
+        }
+      ],
+      "returnedIndexes": [
+        {
+          "name": "IPGNUM"
+        }
+      ],
+      "repoIds": [
+        "88E97138-9EFD-4306-A72B-4B5C53D2A9E0"
+      ],
+      "settings": {
+        "limit": 20,
+        "offset": 5,
+        "auth_token": "clientId",
+        "connectionTimeoutInMS": 5000,
+        "readTimeoutInMS": 1000
+      }
+    }
+  ],
+  "required": [
+    "constraints",
+    "returnedIndexes",
+    "repoIds"
+  ],
+  "properties": {
+    "constraints": {
+      "$id": "#/properties/constraints",
+      "type": "array",
+      "title": "The constraints schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "indexes": [],
+            "name": "IPGNUM",
+            "operator": "NE",
+            "values": [
+              {
+                "value": "0"
+              }
+            ]
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/constraints/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/constraints/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "indexes": [],
+                "name": "IPGNUM",
+                "operator": "NE",
+                "values": [
+                  {
+                    "value": "0"
+                  }
+                ]
+              }
+            ],
+            "required": [
+              "indexes",
+              "name",
+              "operator",
+              "values"
+            ],
+            "properties": {
+              "indexes": {
+                "$id": "#/properties/constraints/items/anyOf/0/properties/indexes",
+                "type": "array",
+                "title": "The indexes schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": [],
+                "examples": [
+                  []
+                ],
+                "additionalItems": true,
+                "items": {
+                  "$id": "#/properties/constraints/items/anyOf/0/properties/indexes/items"
+                }
+              },
+              "name": {
+                "$id": "#/properties/constraints/items/anyOf/0/properties/name",
+                "type": "string",
+                "title": "The name schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "IPGNUM"
+                ]
+              },
+              "operator": {
+                "$id": "#/properties/constraints/items/anyOf/0/properties/operator",
+                "type": "string",
+                "title": "The operator schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "NE"
+                ]
+              },
+              "values": {
+                "$id": "#/properties/constraints/items/anyOf/0/properties/values",
+                "type": "array",
+                "title": "The values schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": [],
+                "examples": [
+                  [
+                    {
+                      "value": "0"
+                    }
+                  ]
+                ],
+                "additionalItems": true,
+                "items": {
+                  "$id": "#/properties/constraints/items/anyOf/0/properties/values/items",
+                  "anyOf": [
+                    {
+                      "$id": "#/properties/constraints/items/anyOf/0/properties/values/items/anyOf/0",
+                      "type": "object",
+                      "title": "The first anyOf schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": {},
+                      "examples": [
+                        {
+                          "value": "0"
+                        }
+                      ],
+                      "required": [
+                        "value"
+                      ],
+                      "properties": {
+                        "value": {
+                          "$id": "#/properties/constraints/items/anyOf/0/properties/values/items/anyOf/0/properties/value",
+                          "type": "string",
+                          "title": "The value schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "0"
+                          ]
+                        }
+                      },
+                      "additionalProperties": true
+                    }
+                  ]
+                }
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    },
+    "returnedIndexes": {
+      "$id": "#/properties/returnedIndexes",
+      "type": "array",
+      "title": "The returnedIndexes schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "name": "IPGNUM"
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/returnedIndexes/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/returnedIndexes/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "name": "IPGNUM"
+              }
+            ],
+            "required": [
+              "name"
+            ],
+            "properties": {
+              "name": {
+                "$id": "#/properties/returnedIndexes/items/anyOf/0/properties/name",
+                "type": "string",
+                "title": "The name schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "IPGNUM"
+                ]
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    },
+    "repoIds": {
+      "$id": "#/properties/repoIds",
+      "type": "array",
+      "title": "The repoIds schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          "88E97138-9EFD-4306-A72B-4B5C53D2A9E0"
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/repoIds/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/repoIds/items/anyOf/0",
+            "type": "string",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "88E97138-9EFD-4306-A72B-4B5C53D2A9E0"
+            ]
+          }
+        ]
+      }
+    },
+    "settings": {
+      "$id": "#/properties/settings",
+      "type": "object",
+      "title": "The settings schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "limit": 20,
+          "offset": 5,
+          "auth_token": "clientId",
+          "connectionTimeoutInMS": 5000,
+          "readTimeoutInMS": 1000
+        }
+      ],
+      "properties": {
+        "limit": {
+          "$id": "#/properties/settings/properties/limit",
+          "type": "integer",
+          "title": "The limit schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            20
+          ]
+        },
+        "offset": {
+          "$id": "#/properties/settings/properties/offset",
+          "type": "integer",
+          "title": "The offset schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            5
+          ]
+        },
+        "auth_token": {
+          "$id": "#/properties/settings/properties/auth_token",
+          "type": "string",
+          "title": "The auth_token schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "clientId"
+          ]
+        },
+        "connectionTimeoutInMS": {
+          "$id": "#/properties/settings/properties/connectionTimeoutInMS",
+          "type": "integer",
+          "title": "The connectionTimeoutInMS schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            5000
+          ]
+        },
+        "readTimeoutInMS": {
+          "$id": "#/properties/settings/properties/readTimeoutInMS",
+          "type": "integer",
+          "title": "The readTimeoutInMS schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            1000
+          ]
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

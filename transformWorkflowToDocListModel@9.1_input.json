@@ -1,0 +1,1383 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "transformWorkflowToDocListModel@11.2_input",
+  "type": "object",
+  "title": "Transform Workflow to Doc List Model Input V11.2",
+  "description": "The Transform Workflow to Doc List Model Input schema Version 11.2.",
+  "default": {},
+  "examples": [
+    {
+      "origin": {
+        "fieldDefinitions": [
+          {
+            "fieldName": "__DocTitle",
+            "dataType": "string",
+            "displayName": "__DocTitle",
+            "repositories": [
+              "401478A0-B592-46FA-9522-347E889C4F77"
+            ]
+          },
+          {
+            "fieldName": "__DocName",
+            "dataType": "string",
+            "displayName": "__DocName",
+            "repositories": [
+              "401478A0-B592-46FA-9522-347E889C4F77"
+            ]
+          },
+          {
+            "fieldName": "__availability",
+            "dataType": "string",
+            "displayName": "Availability Status",
+            "repositories": [
+              "401478A0-B592-46FA-9522-347E889C4F77"
+            ]
+          },
+          {
+            "fieldName": "__device",
+            "dataType": "string",
+            "displayName": "__device",
+            "repositories": [
+              "401478A0-B592-46FA-9522-347E889C4F77"
+            ]
+          },
+          {
+            "fieldName": "__ReportDescription",
+            "dataType": "string",
+            "displayName": "__ReportDescription",
+            "repositories": [
+              "401478A0-B592-46FA-9522-347E889C4F77"
+            ]
+          },
+          {
+            "fieldName": "__reportid",
+            "dataType": "string",
+            "displayName": "Report ID",
+            "repositories": [
+              "401478A0-B592-46FA-9522-347E889C4F77"
+            ]
+          },
+          {
+            "fieldName": "__documentClass",
+            "dataType": "string",
+            "displayName": "__documentClass",
+            "repositories": [
+              "401478A0-B592-46FA-9522-347E889C4F77"
+            ]
+          },
+          {
+            "fieldName": "__versionid",
+            "dataType": "string",
+            "displayName": "Report Version ID",
+            "repositories": [
+              "401478A0-B592-46FA-9522-347E889C4F77"
+            ]
+          },
+          {
+            "fieldName": "__originalVersionId",
+            "dataType": "string",
+            "displayName": "__originalVersionId",
+            "repositories": [
+              "401478A0-B592-46FA-9522-347E889C4F77"
+            ]
+          },
+          {
+            "fieldName": "__sectionid",
+            "dataType": "string",
+            "displayName": "Report Section",
+            "repositories": [
+              "401478A0-B592-46FA-9522-347E889C4F77"
+            ]
+          },
+          {
+            "fieldName": "__revisionTimestamp",
+            "dataType": "string",
+            "displayName": "__revisionTimestamp",
+            "repositories": [
+              "401478A0-B592-46FA-9522-347E889C4F77"
+            ]
+          },
+          {
+            "fieldName": "__originalPageNumber",
+            "dataType": "string",
+            "displayName": "__originalPageNumber",
+            "repositories": [
+              "401478A0-B592-46FA-9522-347E889C4F77"
+            ]
+          },
+          {
+            "fieldName": "__numberOfContentSegments",
+            "dataType": "string",
+            "displayName": "Page count",
+            "repositories": [
+              "401478A0-B592-46FA-9522-347E889C4F77"
+            ]
+          },
+          {
+            "fieldName": "__pageOffset",
+            "dataType": "string",
+            "displayName": "Page Number",
+            "repositories": [
+              "401478A0-B592-46FA-9522-347E889C4F77"
+            ]
+          },
+          {
+            "fieldName": "defaultteaser",
+            "dataType": "string",
+            "displayName": "defaultteaser",
+            "repositories": [
+              "401478A0-B592-46FA-9522-347E889C4F77"
+            ]
+          },
+          {
+            "fieldName": "__redactionType",
+            "dataType": "string",
+            "displayName": "__redactionType",
+            "repositories": [
+              "401478A0-B592-46FA-9522-347E889C4F77"
+            ]
+          },
+          {
+            "fieldName": "IPGCHR",
+            "dataType": "string",
+            "repositories": [
+              "401478A0-B592-46FA-9522-347E889C4F77"
+            ]
+          }
+        ],
+        "discoveryUrl": "http://localhost:4200/mobius/rest/resources"
+      },
+      "documents": [
+        {
+          "documentId": "ENC(MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU5XSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMDEwLm9yZ3BhZ2VudW0yLjEwMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuY1JySVRNelkzRnVVamM2ang1X2VoVDF3Sm1QUmphMUNyQV9aTDNPMk0zazE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA)",
+          "repositoryId": "401478A0-B592-46FA-9522-347E889C4F77",
+          "metadata": [
+            {
+              "fieldName": "__DocTitle",
+              "fieldValue": "AC001 AC001 is a shipped sample Jul 17, 2020 8:38:53 AM MANUEANWK Pages 1 DISK Available"
+            },
+            {
+              "fieldName": "__DocName",
+              "fieldValue": "AC001 AC001 is a shipped sample Jul 17, 2020 8:38:53 AM MANUEANWK"
+            },
+            {
+              "fieldName": "__availability",
+              "fieldValue": "Available"
+            },
+            {
+              "fieldName": "__device",
+              "fieldValue": "DISK"
+            },
+            {
+              "fieldName": "__ReportDescription",
+              "fieldValue": "AC001 is a shipped sample"
+            },
+            {
+              "fieldName": "__reportid",
+              "fieldValue": "AC001"
+            },
+            {
+              "fieldName": "__documentClass",
+              "fieldValue": "AC001"
+            },
+            {
+              "fieldName": "__versionid",
+              "fieldValue": "2020-07-17T08:38:53.000Z"
+            },
+            {
+              "fieldName": "__originalVersionId",
+              "fieldValue": "20200717083853"
+            },
+            {
+              "fieldName": "__sectionid",
+              "fieldValue": "MANUEANWK                     "
+            },
+            {
+              "fieldName": "__revisionTimestamp",
+              "fieldValue": "2020-07-17T08:38:53.000Z"
+            },
+            {
+              "fieldName": "__originalPageNumber",
+              "fieldValue": 10
+            },
+            {
+              "fieldName": "__numberOfContentSegments",
+              "fieldValue": 1
+            },
+            {
+              "fieldName": "__pageOffset",
+              "fieldValue": 1
+            },
+            {
+              "fieldName": "defaultteaser",
+              "fieldValue": "AC001 AC001 is a shipped sample Jul 17, 2020 8:38:53 AM MANUEANWK Pages 1 DISK Available"
+            },
+            {
+              "fieldName": "__redactionType",
+              "fieldValue": "NONE"
+            },
+            {
+              "fieldName": "IPGCHR",
+              "fieldValue": "MONTHLY EXPENSE  10"
+            },
+            {
+              "fieldName": "__title",
+              "fieldValue": "AC001 AC001 is a shipped sample Jul 17, 2020 8:38:53 AM MANUEANWK Pages 1 DISK Available"
+            }
+          ],
+          "links": [
+            {
+              "rel": "http://www/asg/com/mobius/rel/document",
+              "href": "/mobius/rest/contentstreams?id=ENC%28MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU5XSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMDEwLm9yZ3BhZ2VudW0yLjEwMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuY1JySVRNelkzRnVVamM2ang1X2VoVDF3Sm1QUmphMUNyQV9aTDNPMk0zazE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA%29",
+              "method": "GET"
+            },
+            {
+              "rel": "http://www/asg/com/mobius/rel/download",
+              "href": "/mobius/rest/contentstreams?id=ENC%28MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU5XSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMDEwLm9yZ3BhZ2VudW0yLjEwMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuY1JySVRNelkzRnVVamM2ang1X2VoVDF3Sm1QUmphMUNyQV9aTDNPMk0zazE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA%29",
+              "method": "POST"
+            },
+            {
+              "rel": "http://www/asg/com/mobius/rel/extractionpolicies/get",
+              "href": "/mobius/rest/extractionpolicies?documentid=ENC%28MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU5XSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMDEwLm9yZ3BhZ2VudW0yLjEwMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuY1JySVRNelkzRnVVamM2ang1X2VoVDF3Sm1QUmphMUNyQV9aTDNPMk0zazE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA%29",
+              "method": "GET"
+            },
+            {
+              "rel": "http://www/asg/com/mobius/rel/document/metadata",
+              "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU5XSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMDEwLm9yZ3BhZ2VudW0yLjEwMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuY1JySVRNelkzRnVVamM2ang1X2VoVDF3Sm1QUmphMUNyQV9aTDNPMk0zazE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA)/metadata",
+              "method": "GET"
+            },
+            {
+              "rel": "http://www/asg/com/mobius/rel/document/properties",
+              "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU5XSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMDEwLm9yZ3BhZ2VudW0yLjEwMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuY1JySVRNelkzRnVVamM2ang1X2VoVDF3Sm1QUmphMUNyQV9aTDNPMk0zazE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA)/properties",
+              "method": "GET"
+            },
+            {
+              "rel": "http://www/asg/com/mobius/rel/document/retentions",
+              "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU5XSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMDEwLm9yZ3BhZ2VudW0yLjEwMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuY1JySVRNelkzRnVVamM2ang1X2VoVDF3Sm1QUmphMUNyQV9aTDNPMk0zazE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA)/retentions",
+              "method": "GET"
+            },
+            {
+              "rel": "http://www/asg/com/mobius/rel/pages",
+              "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU5XSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMDEwLm9yZ3BhZ2VudW0yLjEwMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuY1JySVRNelkzRnVVamM2ang1X2VoVDF3Sm1QUmphMUNyQV9aTDNPMk0zazE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA)/pages",
+              "method": "GET"
+            },
+            {
+              "rel": "http://www/asg/com/mobius/rel/annotations/get",
+              "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU5XSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMDEwLm9yZ3BhZ2VudW0yLjEwMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuY1JySVRNelkzRnVVamM2ang1X2VoVDF3Sm1QUmphMUNyQV9aTDNPMk0zazE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA)/annotations",
+              "method": "GET"
+            },
+            {
+              "rel": "http://www/asg/com/mobius/rel/annotations/add",
+              "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU5XSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMDEwLm9yZ3BhZ2VudW0yLjEwMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuY1JySVRNelkzRnVVamM2ang1X2VoVDF3Sm1QUmphMUNyQV9aTDNPMk0zazE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA)/annotations",
+              "method": "POST"
+            }
+          ]
+        },
+        {
+          "documentId": "ENC(MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU9BSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMTEwLm9yZ3BhZ2VudW0yLjExMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuZGFmdFA2TmQ4Z21RdkJBUFc0LWp2SEJGVmZwWVVGeF82Q3BNcDdxMHJHSTE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA)",
+          "repositoryId": "401478A0-B592-46FA-9522-347E889C4F77",
+          "metadata": [
+            {
+              "fieldName": "__DocTitle",
+              "fieldValue": "AC001 AC001 is a shipped sample Jul 17, 2020 8:38:53 AM MANUEAOAK Pages 1 DISK Available"
+            },
+            {
+              "fieldName": "__DocName",
+              "fieldValue": "AC001 AC001 is a shipped sample Jul 17, 2020 8:38:53 AM MANUEAOAK"
+            },
+            {
+              "fieldName": "__availability",
+              "fieldValue": "Available"
+            },
+            {
+              "fieldName": "__device",
+              "fieldValue": "DISK"
+            },
+            {
+              "fieldName": "__ReportDescription",
+              "fieldValue": "AC001 is a shipped sample"
+            },
+            {
+              "fieldName": "__reportid",
+              "fieldValue": "AC001"
+            },
+            {
+              "fieldName": "__documentClass",
+              "fieldValue": "AC001"
+            },
+            {
+              "fieldName": "__versionid",
+              "fieldValue": "2020-07-17T08:38:53.000Z"
+            },
+            {
+              "fieldName": "__originalVersionId",
+              "fieldValue": "20200717083853"
+            },
+            {
+              "fieldName": "__sectionid",
+              "fieldValue": "MANUEAOAK                     "
+            },
+            {
+              "fieldName": "__revisionTimestamp",
+              "fieldValue": "2020-07-17T08:38:53.000Z"
+            },
+            {
+              "fieldName": "__originalPageNumber",
+              "fieldValue": 11
+            },
+            {
+              "fieldName": "__numberOfContentSegments",
+              "fieldValue": 1
+            },
+            {
+              "fieldName": "__pageOffset",
+              "fieldValue": 1
+            },
+            {
+              "fieldName": "defaultteaser",
+              "fieldValue": "AC001 AC001 is a shipped sample Jul 17, 2020 8:38:53 AM MANUEAOAK Pages 1 DISK Available"
+            },
+            {
+              "fieldName": "__redactionType",
+              "fieldValue": "NONE"
+            },
+            {
+              "fieldName": "IPGCHR",
+              "fieldValue": "MONTHLY EXPENSE  11"
+            },
+            {
+              "fieldName": "__title",
+              "fieldValue": "AC001 AC001 is a shipped sample Jul 17, 2020 8:38:53 AM MANUEAOAK Pages 1 DISK Available"
+            }
+          ],
+          "links": [
+            {
+              "rel": "http://www/asg/com/mobius/rel/document",
+              "href": "/mobius/rest/contentstreams?id=ENC%28MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU9BSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMTEwLm9yZ3BhZ2VudW0yLjExMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuZGFmdFA2TmQ4Z21RdkJBUFc0LWp2SEJGVmZwWVVGeF82Q3BNcDdxMHJHSTE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA%29",
+              "method": "GET"
+            },
+            {
+              "rel": "http://www/asg/com/mobius/rel/download",
+              "href": "/mobius/rest/contentstreams?id=ENC%28MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU9BSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMTEwLm9yZ3BhZ2VudW0yLjExMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuZGFmdFA2TmQ4Z21RdkJBUFc0LWp2SEJGVmZwWVVGeF82Q3BNcDdxMHJHSTE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA%29",
+              "method": "POST"
+            },
+            {
+              "rel": "http://www/asg/com/mobius/rel/extractionpolicies/get",
+              "href": "/mobius/rest/extractionpolicies?documentid=ENC%28MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU9BSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMTEwLm9yZ3BhZ2VudW0yLjExMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuZGFmdFA2TmQ4Z21RdkJBUFc0LWp2SEJGVmZwWVVGeF82Q3BNcDdxMHJHSTE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA%29",
+              "method": "GET"
+            },
+            {
+              "rel": "http://www/asg/com/mobius/rel/document/metadata",
+              "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU9BSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMTEwLm9yZ3BhZ2VudW0yLjExMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuZGFmdFA2TmQ4Z21RdkJBUFc0LWp2SEJGVmZwWVVGeF82Q3BNcDdxMHJHSTE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA)/metadata",
+              "method": "GET"
+            },
+            {
+              "rel": "http://www/asg/com/mobius/rel/document/properties",
+              "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU9BSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMTEwLm9yZ3BhZ2VudW0yLjExMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuZGFmdFA2TmQ4Z21RdkJBUFc0LWp2SEJGVmZwWVVGeF82Q3BNcDdxMHJHSTE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA)/properties",
+              "method": "GET"
+            },
+            {
+              "rel": "http://www/asg/com/mobius/rel/document/retentions",
+              "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU9BSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMTEwLm9yZ3BhZ2VudW0yLjExMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuZGFmdFA2TmQ4Z21RdkJBUFc0LWp2SEJGVmZwWVVGeF82Q3BNcDdxMHJHSTE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA)/retentions",
+              "method": "GET"
+            },
+            {
+              "rel": "http://www/asg/com/mobius/rel/pages",
+              "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU9BSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMTEwLm9yZ3BhZ2VudW0yLjExMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuZGFmdFA2TmQ4Z21RdkJBUFc0LWp2SEJGVmZwWVVGeF82Q3BNcDdxMHJHSTE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA)/pages",
+              "method": "GET"
+            },
+            {
+              "rel": "http://www/asg/com/mobius/rel/annotations/get",
+              "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU9BSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMTEwLm9yZ3BhZ2VudW0yLjExMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuZGFmdFA2TmQ4Z21RdkJBUFc0LWp2SEJGVmZwWVVGeF82Q3BNcDdxMHJHSTE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA)/annotations",
+              "method": "GET"
+            },
+            {
+              "rel": "http://www/asg/com/mobius/rel/annotations/add",
+              "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU9BSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMTEwLm9yZ3BhZ2VudW0yLjExMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuZGFmdFA2TmQ4Z21RdkJBUFc0LWp2SEJGVmZwWVVGeF82Q3BNcDdxMHJHSTE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA)/annotations",
+              "method": "POST"
+            }
+          ]
+        }
+      ],
+      "settings": {
+        "auth_token": "clientId",
+        "connectionTimeoutInMS": 5000,
+        "readTimeoutInMS": 1000
+      }
+    }
+  ],
+  "required": [
+    "origin",
+    "documents"
+  ],
+  "properties": {
+    "origin": {
+      "$id": "#/properties/origin",
+      "type": "object",
+      "title": "The origin schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "fieldDefinitions": [
+            {
+              "fieldName": "__DocTitle",
+              "dataType": "string",
+              "displayName": "__DocTitle",
+              "repositories": [
+                "401478A0-B592-46FA-9522-347E889C4F77"
+              ]
+            },
+            {
+              "fieldName": "__DocName",
+              "dataType": "string",
+              "displayName": "__DocName",
+              "repositories": [
+                "401478A0-B592-46FA-9522-347E889C4F77"
+              ]
+            },
+            {
+              "fieldName": "__availability",
+              "dataType": "string",
+              "displayName": "Availability Status",
+              "repositories": [
+                "401478A0-B592-46FA-9522-347E889C4F77"
+              ]
+            },
+            {
+              "fieldName": "__device",
+              "dataType": "string",
+              "displayName": "__device",
+              "repositories": [
+                "401478A0-B592-46FA-9522-347E889C4F77"
+              ]
+            },
+            {
+              "fieldName": "__ReportDescription",
+              "dataType": "string",
+              "displayName": "__ReportDescription",
+              "repositories": [
+                "401478A0-B592-46FA-9522-347E889C4F77"
+              ]
+            },
+            {
+              "fieldName": "__reportid",
+              "dataType": "string",
+              "displayName": "Report ID",
+              "repositories": [
+                "401478A0-B592-46FA-9522-347E889C4F77"
+              ]
+            },
+            {
+              "fieldName": "__documentClass",
+              "dataType": "string",
+              "displayName": "__documentClass",
+              "repositories": [
+                "401478A0-B592-46FA-9522-347E889C4F77"
+              ]
+            },
+            {
+              "fieldName": "__versionid",
+              "dataType": "string",
+              "displayName": "Report Version ID",
+              "repositories": [
+                "401478A0-B592-46FA-9522-347E889C4F77"
+              ]
+            },
+            {
+              "fieldName": "__originalVersionId",
+              "dataType": "string",
+              "displayName": "__originalVersionId",
+              "repositories": [
+                "401478A0-B592-46FA-9522-347E889C4F77"
+              ]
+            },
+            {
+              "fieldName": "__sectionid",
+              "dataType": "string",
+              "displayName": "Report Section",
+              "repositories": [
+                "401478A0-B592-46FA-9522-347E889C4F77"
+              ]
+            },
+            {
+              "fieldName": "__revisionTimestamp",
+              "dataType": "string",
+              "displayName": "__revisionTimestamp",
+              "repositories": [
+                "401478A0-B592-46FA-9522-347E889C4F77"
+              ]
+            },
+            {
+              "fieldName": "__originalPageNumber",
+              "dataType": "string",
+              "displayName": "__originalPageNumber",
+              "repositories": [
+                "401478A0-B592-46FA-9522-347E889C4F77"
+              ]
+            },
+            {
+              "fieldName": "__numberOfContentSegments",
+              "dataType": "string",
+              "displayName": "Page count",
+              "repositories": [
+                "401478A0-B592-46FA-9522-347E889C4F77"
+              ]
+            },
+            {
+              "fieldName": "__pageOffset",
+              "dataType": "string",
+              "displayName": "Page Number",
+              "repositories": [
+                "401478A0-B592-46FA-9522-347E889C4F77"
+              ]
+            },
+            {
+              "fieldName": "defaultteaser",
+              "dataType": "string",
+              "displayName": "defaultteaser",
+              "repositories": [
+                "401478A0-B592-46FA-9522-347E889C4F77"
+              ]
+            },
+            {
+              "fieldName": "__redactionType",
+              "dataType": "string",
+              "displayName": "__redactionType",
+              "repositories": [
+                "401478A0-B592-46FA-9522-347E889C4F77"
+              ]
+            },
+            {
+              "fieldName": "IPGCHR",
+              "dataType": "string",
+              "repositories": [
+                "401478A0-B592-46FA-9522-347E889C4F77"
+              ]
+            }
+          ],
+          "discoveryUrl": "http://localhost:4200/mobius/rest/resources"
+        }
+      ],
+      "required": [
+        "fieldDefinitions",
+        "discoveryUrl"
+      ],
+      "properties": {
+        "fieldDefinitions": {
+          "$id": "#/properties/origin/properties/fieldDefinitions",
+          "type": "array",
+          "title": "The fieldDefinitions schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": [],
+          "examples": [
+            [
+              {
+                "fieldName": "__DocTitle",
+                "dataType": "string",
+                "displayName": "__DocTitle",
+                "repositories": [
+                  "401478A0-B592-46FA-9522-347E889C4F77"
+                ]
+              },
+              {
+                "fieldName": "__DocName",
+                "dataType": "string",
+                "displayName": "__DocName",
+                "repositories": [
+                  "401478A0-B592-46FA-9522-347E889C4F77"
+                ]
+              }
+            ]
+          ],
+          "additionalItems": true,
+          "items": {
+            "$id": "#/properties/origin/properties/fieldDefinitions/items",
+            "anyOf": [
+              {
+                "$id": "#/properties/origin/properties/fieldDefinitions/items/anyOf/0",
+                "type": "object",
+                "title": "The first anyOf schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                  {
+                    "fieldName": "__DocTitle",
+                    "dataType": "string",
+                    "displayName": "__DocTitle",
+                    "repositories": [
+                      "401478A0-B592-46FA-9522-347E889C4F77"
+                    ]
+                  }
+                ],
+                "required": [
+                  "fieldName",
+                  "dataType"
+                ],
+                "properties": {
+                  "fieldName": {
+                    "$id": "#/properties/origin/properties/fieldDefinitions/items/anyOf/0/properties/fieldName",
+                    "type": "string",
+                    "title": "The fieldName schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "__DocTitle"
+                    ]
+                  },
+                  "dataType": {
+                    "$id": "#/properties/origin/properties/fieldDefinitions/items/anyOf/0/properties/dataType",
+                    "type": "string",
+                    "title": "The dataType schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "string"
+                    ]
+                  },
+                  "displayName": {
+                    "$id": "#/properties/origin/properties/fieldDefinitions/items/anyOf/0/properties/displayName",
+                    "type": "string",
+                    "title": "The displayName schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "__DocTitle"
+                    ]
+                  },
+                  "repositories": {
+                    "$id": "#/properties/origin/properties/fieldDefinitions/items/anyOf/0/properties/repositories",
+                    "type": "array",
+                    "title": "The repositories schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                      [
+                        "401478A0-B592-46FA-9522-347E889C4F77"
+                      ]
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                      "$id": "#/properties/origin/properties/fieldDefinitions/items/anyOf/0/properties/repositories/items",
+                      "anyOf": [
+                        {
+                          "$id": "#/properties/origin/properties/fieldDefinitions/items/anyOf/0/properties/repositories/items/anyOf/0",
+                          "type": "string",
+                          "title": "The first anyOf schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "401478A0-B592-46FA-9522-347E889C4F77"
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                },
+                "additionalProperties": true
+              },
+              {
+                "$id": "#/properties/origin/properties/fieldDefinitions/items/anyOf/1",
+                "type": "object",
+                "title": "The second anyOf schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                  {
+                    "fieldName": "IPGCHR",
+                    "dataType": "string",
+                    "repositories": [
+                      "401478A0-B592-46FA-9522-347E889C4F77"
+                    ]
+                  }
+                ],
+                "required": [
+                  "fieldName",
+                  "dataType"
+                ],
+                "properties": {
+                  "fieldName": {
+                    "$id": "#/properties/origin/properties/fieldDefinitions/items/anyOf/1/properties/fieldName",
+                    "type": "string",
+                    "title": "The fieldName schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "IPGCHR"
+                    ]
+                  },
+                  "dataType": {
+                    "$id": "#/properties/origin/properties/fieldDefinitions/items/anyOf/1/properties/dataType",
+                    "type": "string",
+                    "title": "The dataType schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "string"
+                    ]
+                  },
+                  "repositories": {
+                    "$id": "#/properties/origin/properties/fieldDefinitions/items/anyOf/1/properties/repositories",
+                    "type": "array",
+                    "title": "The repositories schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                      [
+                        "401478A0-B592-46FA-9522-347E889C4F77"
+                      ]
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                      "$id": "#/properties/origin/properties/fieldDefinitions/items/anyOf/1/properties/repositories/items",
+                      "anyOf": [
+                        {
+                          "$id": "#/properties/origin/properties/fieldDefinitions/items/anyOf/1/properties/repositories/items/anyOf/0",
+                          "type": "string",
+                          "title": "The first anyOf schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "401478A0-B592-46FA-9522-347E889C4F77"
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                },
+                "additionalProperties": true
+              }
+            ]
+          }
+        },
+        "discoveryUrl": {
+          "$id": "#/properties/origin/properties/discoveryUrl",
+          "type": "string",
+          "title": "The discoveryUrl schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "http://localhost:4200/mobius/rest/resources"
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "documents": {
+      "$id": "#/properties/documents",
+      "type": "array",
+      "title": "The documents schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "documentId": "ENC(MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU5XSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMDEwLm9yZ3BhZ2VudW0yLjEwMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuY1JySVRNelkzRnVVamM2ang1X2VoVDF3Sm1QUmphMUNyQV9aTDNPMk0zazE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA)",
+            "repositoryId": "401478A0-B592-46FA-9522-347E889C4F77",
+            "metadata": [
+              {
+                "fieldName": "__DocTitle",
+                "fieldValue": "AC001 AC001 is a shipped sample Jul 17, 2020 8:38:53 AM MANUEANWK Pages 1 DISK Available"
+              },
+              {
+                "fieldName": "__DocName",
+                "fieldValue": "AC001 AC001 is a shipped sample Jul 17, 2020 8:38:53 AM MANUEANWK"
+              },
+              {
+                "fieldName": "__availability",
+                "fieldValue": "Available"
+              },
+              {
+                "fieldName": "__device",
+                "fieldValue": "DISK"
+              },
+              {
+                "fieldName": "__ReportDescription",
+                "fieldValue": "AC001 is a shipped sample"
+              },
+              {
+                "fieldName": "__reportid",
+                "fieldValue": "AC001"
+              },
+              {
+                "fieldName": "__documentClass",
+                "fieldValue": "AC001"
+              },
+              {
+                "fieldName": "__versionid",
+                "fieldValue": "2020-07-17T08:38:53.000Z"
+              },
+              {
+                "fieldName": "__originalVersionId",
+                "fieldValue": "20200717083853"
+              },
+              {
+                "fieldName": "__sectionid",
+                "fieldValue": "MANUEANWK                     "
+              },
+              {
+                "fieldName": "__revisionTimestamp",
+                "fieldValue": "2020-07-17T08:38:53.000Z"
+              },
+              {
+                "fieldName": "__originalPageNumber",
+                "fieldValue": 10
+              },
+              {
+                "fieldName": "__numberOfContentSegments",
+                "fieldValue": 1
+              },
+              {
+                "fieldName": "__pageOffset",
+                "fieldValue": 1
+              },
+              {
+                "fieldName": "defaultteaser",
+                "fieldValue": "AC001 AC001 is a shipped sample Jul 17, 2020 8:38:53 AM MANUEANWK Pages 1 DISK Available"
+              },
+              {
+                "fieldName": "__redactionType",
+                "fieldValue": "NONE"
+              },
+              {
+                "fieldName": "IPGCHR",
+                "fieldValue": "MONTHLY EXPENSE  10"
+              },
+              {
+                "fieldName": "__title",
+                "fieldValue": "AC001 AC001 is a shipped sample Jul 17, 2020 8:38:53 AM MANUEANWK Pages 1 DISK Available"
+              }
+            ],
+            "links": [
+              {
+                "rel": "http://www/asg/com/mobius/rel/document",
+                "href": "/mobius/rest/contentstreams?id=ENC%28MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU5XSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMDEwLm9yZ3BhZ2VudW0yLjEwMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuY1JySVRNelkzRnVVamM2ang1X2VoVDF3Sm1QUmphMUNyQV9aTDNPMk0zazE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA%29",
+                "method": "GET"
+              },
+              {
+                "rel": "http://www/asg/com/mobius/rel/download",
+                "href": "/mobius/rest/contentstreams?id=ENC%28MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU5XSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMDEwLm9yZ3BhZ2VudW0yLjEwMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuY1JySVRNelkzRnVVamM2ang1X2VoVDF3Sm1QUmphMUNyQV9aTDNPMk0zazE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA%29",
+                "method": "POST"
+              },
+              {
+                "rel": "http://www/asg/com/mobius/rel/extractionpolicies/get",
+                "href": "/mobius/rest/extractionpolicies?documentid=ENC%28MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU5XSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMDEwLm9yZ3BhZ2VudW0yLjEwMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuY1JySVRNelkzRnVVamM2ang1X2VoVDF3Sm1QUmphMUNyQV9aTDNPMk0zazE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA%29",
+                "method": "GET"
+              },
+              {
+                "rel": "http://www/asg/com/mobius/rel/document/metadata",
+                "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU5XSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMDEwLm9yZ3BhZ2VudW0yLjEwMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuY1JySVRNelkzRnVVamM2ang1X2VoVDF3Sm1QUmphMUNyQV9aTDNPMk0zazE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA)/metadata",
+                "method": "GET"
+              },
+              {
+                "rel": "http://www/asg/com/mobius/rel/document/properties",
+                "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU5XSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMDEwLm9yZ3BhZ2VudW0yLjEwMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuY1JySVRNelkzRnVVamM2ang1X2VoVDF3Sm1QUmphMUNyQV9aTDNPMk0zazE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA)/properties",
+                "method": "GET"
+              },
+              {
+                "rel": "http://www/asg/com/mobius/rel/document/retentions",
+                "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU5XSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMDEwLm9yZ3BhZ2VudW0yLjEwMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuY1JySVRNelkzRnVVamM2ang1X2VoVDF3Sm1QUmphMUNyQV9aTDNPMk0zazE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA)/retentions",
+                "method": "GET"
+              },
+              {
+                "rel": "http://www/asg/com/mobius/rel/pages",
+                "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU5XSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMDEwLm9yZ3BhZ2VudW0yLjEwMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuY1JySVRNelkzRnVVamM2ang1X2VoVDF3Sm1QUmphMUNyQV9aTDNPMk0zazE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA)/pages",
+                "method": "GET"
+              },
+              {
+                "rel": "http://www/asg/com/mobius/rel/annotations/get",
+                "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU5XSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMDEwLm9yZ3BhZ2VudW0yLjEwMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuY1JySVRNelkzRnVVamM2ang1X2VoVDF3Sm1QUmphMUNyQV9aTDNPMk0zazE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA)/annotations",
+                "method": "GET"
+              },
+              {
+                "rel": "http://www/asg/com/mobius/rel/annotations/add",
+                "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU5XSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMDEwLm9yZ3BhZ2VudW0yLjEwMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuY1JySVRNelkzRnVVamM2ang1X2VoVDF3Sm1QUmphMUNyQV9aTDNPMk0zazE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA)/annotations",
+                "method": "POST"
+              }
+            ]
+          },
+          {
+            "documentId": "ENC(MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU9BSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMTEwLm9yZ3BhZ2VudW0yLjExMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuZGFmdFA2TmQ4Z21RdkJBUFc0LWp2SEJGVmZwWVVGeF82Q3BNcDdxMHJHSTE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA)",
+            "repositoryId": "401478A0-B592-46FA-9522-347E889C4F77",
+            "metadata": [
+              {
+                "fieldName": "__DocTitle",
+                "fieldValue": "AC001 AC001 is a shipped sample Jul 17, 2020 8:38:53 AM MANUEAOAK Pages 1 DISK Available"
+              },
+              {
+                "fieldName": "__DocName",
+                "fieldValue": "AC001 AC001 is a shipped sample Jul 17, 2020 8:38:53 AM MANUEAOAK"
+              },
+              {
+                "fieldName": "__availability",
+                "fieldValue": "Available"
+              },
+              {
+                "fieldName": "__device",
+                "fieldValue": "DISK"
+              },
+              {
+                "fieldName": "__ReportDescription",
+                "fieldValue": "AC001 is a shipped sample"
+              },
+              {
+                "fieldName": "__reportid",
+                "fieldValue": "AC001"
+              },
+              {
+                "fieldName": "__documentClass",
+                "fieldValue": "AC001"
+              },
+              {
+                "fieldName": "__versionid",
+                "fieldValue": "2020-07-17T08:38:53.000Z"
+              },
+              {
+                "fieldName": "__originalVersionId",
+                "fieldValue": "20200717083853"
+              },
+              {
+                "fieldName": "__sectionid",
+                "fieldValue": "MANUEAOAK                     "
+              },
+              {
+                "fieldName": "__revisionTimestamp",
+                "fieldValue": "2020-07-17T08:38:53.000Z"
+              },
+              {
+                "fieldName": "__originalPageNumber",
+                "fieldValue": 11
+              },
+              {
+                "fieldName": "__numberOfContentSegments",
+                "fieldValue": 1
+              },
+              {
+                "fieldName": "__pageOffset",
+                "fieldValue": 1
+              },
+              {
+                "fieldName": "defaultteaser",
+                "fieldValue": "AC001 AC001 is a shipped sample Jul 17, 2020 8:38:53 AM MANUEAOAK Pages 1 DISK Available"
+              },
+              {
+                "fieldName": "__redactionType",
+                "fieldValue": "NONE"
+              },
+              {
+                "fieldName": "IPGCHR",
+                "fieldValue": "MONTHLY EXPENSE  11"
+              },
+              {
+                "fieldName": "__title",
+                "fieldValue": "AC001 AC001 is a shipped sample Jul 17, 2020 8:38:53 AM MANUEAOAK Pages 1 DISK Available"
+              }
+            ],
+            "links": [
+              {
+                "rel": "http://www/asg/com/mobius/rel/document",
+                "href": "/mobius/rest/contentstreams?id=ENC%28MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU9BSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMTEwLm9yZ3BhZ2VudW0yLjExMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuZGFmdFA2TmQ4Z21RdkJBUFc0LWp2SEJGVmZwWVVGeF82Q3BNcDdxMHJHSTE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA%29",
+                "method": "GET"
+              },
+              {
+                "rel": "http://www/asg/com/mobius/rel/download",
+                "href": "/mobius/rest/contentstreams?id=ENC%28MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU9BSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMTEwLm9yZ3BhZ2VudW0yLjExMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuZGFmdFA2TmQ4Z21RdkJBUFc0LWp2SEJGVmZwWVVGeF82Q3BNcDdxMHJHSTE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA%29",
+                "method": "POST"
+              },
+              {
+                "rel": "http://www/asg/com/mobius/rel/extractionpolicies/get",
+                "href": "/mobius/rest/extractionpolicies?documentid=ENC%28MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU9BSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMTEwLm9yZ3BhZ2VudW0yLjExMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuZGFmdFA2TmQ4Z21RdkJBUFc0LWp2SEJGVmZwWVVGeF82Q3BNcDdxMHJHSTE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA%29",
+                "method": "GET"
+              },
+              {
+                "rel": "http://www/asg/com/mobius/rel/document/metadata",
+                "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU9BSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMTEwLm9yZ3BhZ2VudW0yLjExMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuZGFmdFA2TmQ4Z21RdkJBUFc0LWp2SEJGVmZwWVVGeF82Q3BNcDdxMHJHSTE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA)/metadata",
+                "method": "GET"
+              },
+              {
+                "rel": "http://www/asg/com/mobius/rel/document/properties",
+                "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU9BSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMTEwLm9yZ3BhZ2VudW0yLjExMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuZGFmdFA2TmQ4Z21RdkJBUFc0LWp2SEJGVmZwWVVGeF82Q3BNcDdxMHJHSTE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA)/properties",
+                "method": "GET"
+              },
+              {
+                "rel": "http://www/asg/com/mobius/rel/document/retentions",
+                "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU9BSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMTEwLm9yZ3BhZ2VudW0yLjExMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuZGFmdFA2TmQ4Z21RdkJBUFc0LWp2SEJGVmZwWVVGeF82Q3BNcDdxMHJHSTE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA)/retentions",
+                "method": "GET"
+              },
+              {
+                "rel": "http://www/asg/com/mobius/rel/pages",
+                "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU9BSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMTEwLm9yZ3BhZ2VudW0yLjExMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuZGFmdFA2TmQ4Z21RdkJBUFc0LWp2SEJGVmZwWVVGeF82Q3BNcDdxMHJHSTE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA)/pages",
+                "method": "GET"
+              },
+              {
+                "rel": "http://www/asg/com/mobius/rel/annotations/get",
+                "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU9BSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMTEwLm9yZ3BhZ2VudW0yLjExMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuZGFmdFA2TmQ4Z21RdkJBUFc0LWp2SEJGVmZwWVVGeF82Q3BNcDdxMHJHSTE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA)/annotations",
+                "method": "GET"
+              },
+              {
+                "rel": "http://www/asg/com/mobius/rel/annotations/add",
+                "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU9BSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMTEwLm9yZ3BhZ2VudW0yLjExMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuZGFmdFA2TmQ4Z21RdkJBUFc0LWp2SEJGVmZwWVVGeF82Q3BNcDdxMHJHSTE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA)/annotations",
+                "method": "POST"
+              }
+            ]
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/documents/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/documents/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "documentId": "ENC(MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU5XSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMDEwLm9yZ3BhZ2VudW0yLjEwMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuY1JySVRNelkzRnVVamM2ang1X2VoVDF3Sm1QUmphMUNyQV9aTDNPMk0zazE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA)",
+                "repositoryId": "401478A0-B592-46FA-9522-347E889C4F77",
+                "metadata": [
+                  {
+                    "fieldName": "__DocTitle",
+                    "fieldValue": "AC001 AC001 is a shipped sample Jul 17, 2020 8:38:53 AM MANUEANWK Pages 1 DISK Available"
+                  },
+                  {
+                    "fieldName": "__DocName",
+                    "fieldValue": "AC001 AC001 is a shipped sample Jul 17, 2020 8:38:53 AM MANUEANWK"
+                  },
+                  {
+                    "fieldName": "__availability",
+                    "fieldValue": "Available"
+                  },
+                  {
+                    "fieldName": "__device",
+                    "fieldValue": "DISK"
+                  },
+                  {
+                    "fieldName": "__ReportDescription",
+                    "fieldValue": "AC001 is a shipped sample"
+                  },
+                  {
+                    "fieldName": "__reportid",
+                    "fieldValue": "AC001"
+                  },
+                  {
+                    "fieldName": "__documentClass",
+                    "fieldValue": "AC001"
+                  },
+                  {
+                    "fieldName": "__versionid",
+                    "fieldValue": "2020-07-17T08:38:53.000Z"
+                  },
+                  {
+                    "fieldName": "__originalVersionId",
+                    "fieldValue": "20200717083853"
+                  },
+                  {
+                    "fieldName": "__sectionid",
+                    "fieldValue": "MANUEANWK                     "
+                  },
+                  {
+                    "fieldName": "__revisionTimestamp",
+                    "fieldValue": "2020-07-17T08:38:53.000Z"
+                  },
+                  {
+                    "fieldName": "__originalPageNumber",
+                    "fieldValue": 10
+                  },
+                  {
+                    "fieldName": "__numberOfContentSegments",
+                    "fieldValue": 1
+                  },
+                  {
+                    "fieldName": "__pageOffset",
+                    "fieldValue": 1
+                  },
+                  {
+                    "fieldName": "defaultteaser",
+                    "fieldValue": "AC001 AC001 is a shipped sample Jul 17, 2020 8:38:53 AM MANUEANWK Pages 1 DISK Available"
+                  },
+                  {
+                    "fieldName": "__redactionType",
+                    "fieldValue": "NONE"
+                  },
+                  {
+                    "fieldName": "IPGCHR",
+                    "fieldValue": "MONTHLY EXPENSE  10"
+                  },
+                  {
+                    "fieldName": "__title",
+                    "fieldValue": "AC001 AC001 is a shipped sample Jul 17, 2020 8:38:53 AM MANUEANWK Pages 1 DISK Available"
+                  }
+                ],
+                "links": [
+                  {
+                    "rel": "http://www/asg/com/mobius/rel/document",
+                    "href": "/mobius/rest/contentstreams?id=ENC%28MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU5XSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMDEwLm9yZ3BhZ2VudW0yLjEwMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuY1JySVRNelkzRnVVamM2ang1X2VoVDF3Sm1QUmphMUNyQV9aTDNPMk0zazE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA%29",
+                    "method": "GET"
+                  },
+                  {
+                    "rel": "http://www/asg/com/mobius/rel/download",
+                    "href": "/mobius/rest/contentstreams?id=ENC%28MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU5XSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMDEwLm9yZ3BhZ2VudW0yLjEwMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuY1JySVRNelkzRnVVamM2ang1X2VoVDF3Sm1QUmphMUNyQV9aTDNPMk0zazE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA%29",
+                    "method": "POST"
+                  },
+                  {
+                    "rel": "http://www/asg/com/mobius/rel/extractionpolicies/get",
+                    "href": "/mobius/rest/extractionpolicies?documentid=ENC%28MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU5XSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMDEwLm9yZ3BhZ2VudW0yLjEwMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuY1JySVRNelkzRnVVamM2ang1X2VoVDF3Sm1QUmphMUNyQV9aTDNPMk0zazE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA%29",
+                    "method": "GET"
+                  },
+                  {
+                    "rel": "http://www/asg/com/mobius/rel/document/metadata",
+                    "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU5XSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMDEwLm9yZ3BhZ2VudW0yLjEwMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuY1JySVRNelkzRnVVamM2ang1X2VoVDF3Sm1QUmphMUNyQV9aTDNPMk0zazE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA)/metadata",
+                    "method": "GET"
+                  },
+                  {
+                    "rel": "http://www/asg/com/mobius/rel/document/properties",
+                    "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU5XSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMDEwLm9yZ3BhZ2VudW0yLjEwMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuY1JySVRNelkzRnVVamM2ang1X2VoVDF3Sm1QUmphMUNyQV9aTDNPMk0zazE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA)/properties",
+                    "method": "GET"
+                  },
+                  {
+                    "rel": "http://www/asg/com/mobius/rel/document/retentions",
+                    "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU5XSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMDEwLm9yZ3BhZ2VudW0yLjEwMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuY1JySVRNelkzRnVVamM2ang1X2VoVDF3Sm1QUmphMUNyQV9aTDNPMk0zazE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA)/retentions",
+                    "method": "GET"
+                  },
+                  {
+                    "rel": "http://www/asg/com/mobius/rel/pages",
+                    "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU5XSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMDEwLm9yZ3BhZ2VudW0yLjEwMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuY1JySVRNelkzRnVVamM2ang1X2VoVDF3Sm1QUmphMUNyQV9aTDNPMk0zazE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA)/pages",
+                    "method": "GET"
+                  },
+                  {
+                    "rel": "http://www/asg/com/mobius/rel/annotations/get",
+                    "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU5XSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMDEwLm9yZ3BhZ2VudW0yLjEwMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuY1JySVRNelkzRnVVamM2ang1X2VoVDF3Sm1QUmphMUNyQV9aTDNPMk0zazE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA)/annotations",
+                    "method": "GET"
+                  },
+                  {
+                    "rel": "http://www/asg/com/mobius/rel/annotations/add",
+                    "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU5XSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMDEwLm9yZ3BhZ2VudW0yLjEwMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuY1JySVRNelkzRnVVamM2ang1X2VoVDF3Sm1QUmphMUNyQV9aTDNPMk0zazE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA)/annotations",
+                    "method": "POST"
+                  }
+                ]
+              }
+            ],
+            "required": [
+              "documentId",
+              "repositoryId",
+              "metadata",
+              "links"
+            ],
+            "properties": {
+              "documentId": {
+                "$id": "#/properties/documents/items/anyOf/0/properties/documentId",
+                "type": "string",
+                "title": "The documentId schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "ENC(MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU5XSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMDEwLm9yZ3BhZ2VudW0yLjEwMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuY1JySVRNelkzRnVVamM2ang1X2VoVDF3Sm1QUmphMUNyQV9aTDNPMk0zazE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA)"
+                ]
+              },
+              "repositoryId": {
+                "$id": "#/properties/documents/items/anyOf/0/properties/repositoryId",
+                "type": "string",
+                "title": "The repositoryId schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "401478A0-B592-46FA-9522-347E889C4F77"
+                ]
+              },
+              "metadata": {
+                "$id": "#/properties/documents/items/anyOf/0/properties/metadata",
+                "type": "array",
+                "title": "The metadata schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": [],
+                "examples": [
+                  [
+                    {
+                      "fieldName": "__DocTitle",
+                      "fieldValue": "AC001 AC001 is a shipped sample Jul 17, 2020 8:38:53 AM MANUEANWK Pages 1 DISK Available"
+                    },
+                    {
+                      "fieldName": "__DocName",
+                      "fieldValue": "AC001 AC001 is a shipped sample Jul 17, 2020 8:38:53 AM MANUEANWK"
+                    }
+                  ]
+                ],
+                "additionalItems": true,
+                "items": {
+                  "$id": "#/properties/documents/items/anyOf/0/properties/metadata/items",
+                  "anyOf": [
+                    {
+                      "$id": "#/properties/documents/items/anyOf/0/properties/metadata/items/anyOf/0",
+                      "type": "object",
+                      "title": "The first anyOf schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": {},
+                      "examples": [
+                        {
+                          "fieldName": "__DocTitle",
+                          "fieldValue": "AC001 AC001 is a shipped sample Jul 17, 2020 8:38:53 AM MANUEANWK Pages 1 DISK Available"
+                        }
+                      ],
+                      "required": [
+                        "fieldName"
+                      ],
+                      "properties": {
+                        "fieldName": {
+                          "$id": "#/properties/documents/items/anyOf/0/properties/metadata/items/anyOf/0/properties/fieldName",
+                          "type": "string",
+                          "title": "The fieldName schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "__DocTitle"
+                          ]
+                        }
+                      },
+                      "additionalProperties": true
+                    }
+                  ]
+                }
+              },
+              "links": {
+                "$id": "#/properties/documents/items/anyOf/0/properties/links",
+                "type": "array",
+                "title": "The links schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": [],
+                "examples": [
+                  [
+                    {
+                      "rel": "http://www/asg/com/mobius/rel/document",
+                      "href": "/mobius/rest/contentstreams?id=ENC%28MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU5XSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMDEwLm9yZ3BhZ2VudW0yLjEwMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuY1JySVRNelkzRnVVamM2ang1X2VoVDF3Sm1QUmphMUNyQV9aTDNPMk0zazE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA%29",
+                      "method": "GET"
+                    },
+                    {
+                      "rel": "http://www/asg/com/mobius/rel/download",
+                      "href": "/mobius/rest/contentstreams?id=ENC%28MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU5XSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMDEwLm9yZ3BhZ2VudW0yLjEwMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuY1JySVRNelkzRnVVamM2ang1X2VoVDF3Sm1QUmphMUNyQV9aTDNPMk0zazE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA%29",
+                      "method": "POST"
+                    }
+                  ]
+                ],
+                "additionalItems": true,
+                "items": {
+                  "$id": "#/properties/documents/items/anyOf/0/properties/links/items",
+                  "anyOf": [
+                    {
+                      "$id": "#/properties/documents/items/anyOf/0/properties/links/items/anyOf/0",
+                      "type": "object",
+                      "title": "The first anyOf schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": {},
+                      "examples": [
+                        {
+                          "rel": "http://www/asg/com/mobius/rel/document",
+                          "href": "/mobius/rest/contentstreams?id=ENC%28MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU5XSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMDEwLm9yZ3BhZ2VudW0yLjEwMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuY1JySVRNelkzRnVVamM2ang1X2VoVDF3Sm1QUmphMUNyQV9aTDNPMk0zazE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA%29",
+                          "method": "GET"
+                        }
+                      ],
+                      "required": [
+                        "rel",
+                        "href",
+                        "method"
+                      ],
+                      "properties": {
+                        "rel": {
+                          "$id": "#/properties/documents/items/anyOf/0/properties/links/items/anyOf/0/properties/rel",
+                          "type": "string",
+                          "title": "The rel schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "http://www/asg/com/mobius/rel/document"
+                          ]
+                        },
+                        "href": {
+                          "$id": "#/properties/documents/items/anyOf/0/properties/links/items/anyOf/0/properties/href",
+                          "type": "string",
+                          "title": "The href schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "/mobius/rest/contentstreams?id=ENC%28MTAucmVwb3NpdG9yeTIwLlZEUk5FVF9BVVRPTUFUSU9OX0RCOC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE3MDgzODUzMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQU5XSyAgICAgICAgICAgICAgICAgICAgIEFCU1BHMDAwMDAwMDAxMDEwLm9yZ3BhZ2VudW0yLjEwMTMubnVtYmVyb2ZwYWdlczEuMTEyLnJlcG9zaXRvcnlpZDM2LjQwMTQ3OEEwLUI1OTItNDZGQS05NTIyLTM0N0U4ODlDNEY3Nzkuc2lnbmF0dXJlNDMuY1JySVRNelkzRnVVamM2ang1X2VoVDF3Sm1QUmphMUNyQV9aTDNPMk0zazE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA%29"
+                          ]
+                        },
+                        "method": {
+                          "$id": "#/properties/documents/items/anyOf/0/properties/links/items/anyOf/0/properties/method",
+                          "type": "string",
+                          "title": "The method schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "GET"
+                          ]
+                        }
+                      },
+                      "additionalProperties": true
+                    }
+                  ]
+                }
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    },
+    "settings": {
+      "$id": "#/properties/settings",
+      "type": "object",
+      "title": "The settings schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "auth_token": "clientId",
+          "connectionTimeoutInMS": 5000,
+          "readTimeoutInMS": 1000
+        }
+      ],
+      "required": [
+        "auth_token",
+        "connectionTimeoutInMS",
+        "readTimeoutInMS"
+      ],
+      "properties": {
+        "auth_token": {
+          "$id": "#/properties/settings/properties/auth_token",
+          "type": "string",
+          "title": "The auth_token schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "clientId"
+          ]
+        },
+        "connectionTimeoutInMS": {
+          "$id": "#/properties/settings/properties/connectionTimeoutInMS",
+          "type": "integer",
+          "title": "The connectionTimeoutInMS schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            5000
+          ]
+        },
+        "readTimeoutInMS": {
+          "$id": "#/properties/settings/properties/readTimeoutInMS",
+          "type": "integer",
+          "title": "The readTimeoutInMS schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            1000
+          ]
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

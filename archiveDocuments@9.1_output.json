@@ -1,0 +1,229 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "archiveDocuments@9.1",
+  "type": "object",
+  "title": "Archive Documents Output V9.1",
+  "description": "The Archive Documents Output schema Version 9.1.",
+  "default": {},
+  "examples": [
+    {
+      "items": [
+        {
+          "statusID": "AC001-20210131153045-0222",
+          "links": [
+            {
+              "method": "GET",
+              "rel": "self",
+              "href": "/mobius/rest/capturedroptargets/cfa31d72-6a90-4a09-a19e-9eb175bf1027"
+            },
+            {
+              "method": "GET",
+              "rel": "http://www/asg/com/mobius/rel/archivingstatus",
+              "href": "/mobius/rest/repositories/F7F9ED90-9F6A-4214-B81A-803F18BA43D0/archivingstatuses/AC001-20210131153045-0222"
+            }
+          ],
+          "percentComplete": 0,
+          "statusMessage": "Processing",
+          "status": "inprogress"
+        }
+      ]
+    }
+  ],
+  "required": [
+    "items"
+  ],
+  "properties": {
+    "items": {
+      "$id": "#/properties/items",
+      "type": "array",
+      "title": "The items schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "statusID": "AC001-20210131153045-0222",
+            "links": [
+              {
+                "method": "GET",
+                "rel": "self",
+                "href": "/mobius/rest/capturedroptargets/cfa31d72-6a90-4a09-a19e-9eb175bf1027"
+              },
+              {
+                "method": "GET",
+                "rel": "http://www/asg/com/mobius/rel/archivingstatus",
+                "href": "/mobius/rest/repositories/F7F9ED90-9F6A-4214-B81A-803F18BA43D0/archivingstatuses/AC001-20210131153045-0222"
+              }
+            ],
+            "percentComplete": 0,
+            "statusMessage": "Processing",
+            "status": "inprogress"
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/items/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/items/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "statusID": "AC001-20210131153045-0222",
+                "links": [
+                  {
+                    "method": "GET",
+                    "rel": "self",
+                    "href": "/mobius/rest/capturedroptargets/cfa31d72-6a90-4a09-a19e-9eb175bf1027"
+                  },
+                  {
+                    "method": "GET",
+                    "rel": "http://www/asg/com/mobius/rel/archivingstatus",
+                    "href": "/mobius/rest/repositories/F7F9ED90-9F6A-4214-B81A-803F18BA43D0/archivingstatuses/AC001-20210131153045-0222"
+                  }
+                ],
+                "percentComplete": 0,
+                "statusMessage": "Processing",
+                "status": "inprogress"
+              }
+            ],
+            "required": [
+              "statusID",
+              "links",
+              "percentComplete",
+              "statusMessage",
+              "status"
+            ],
+            "properties": {
+              "statusID": {
+                "$id": "#/properties/items/items/anyOf/0/properties/statusID",
+                "type": "string",
+                "title": "The statusID schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "AC001-20210131153045-0222"
+                ]
+              },
+              "links": {
+                "$id": "#/properties/items/items/anyOf/0/properties/links",
+                "type": "array",
+                "title": "The links schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": [],
+                "examples": [
+                  [
+                    {
+                      "method": "GET",
+                      "rel": "self",
+                      "href": "/mobius/rest/capturedroptargets/cfa31d72-6a90-4a09-a19e-9eb175bf1027"
+                    },
+                    {
+                      "method": "GET",
+                      "rel": "http://www/asg/com/mobius/rel/archivingstatus",
+                      "href": "/mobius/rest/repositories/F7F9ED90-9F6A-4214-B81A-803F18BA43D0/archivingstatuses/AC001-20210131153045-0222"
+                    }
+                  ]
+                ],
+                "additionalItems": true,
+                "items": {
+                  "$id": "#/properties/items/items/anyOf/0/properties/links/items",
+                  "anyOf": [
+                    {
+                      "$id": "#/properties/items/items/anyOf/0/properties/links/items/anyOf/0",
+                      "type": "object",
+                      "title": "The first anyOf schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": {},
+                      "examples": [
+                        {
+                          "method": "GET",
+                          "rel": "self",
+                          "href": "/mobius/rest/capturedroptargets/cfa31d72-6a90-4a09-a19e-9eb175bf1027"
+                        }
+                      ],
+                      "required": [
+                        "method",
+                        "rel",
+                        "href"
+                      ],
+                      "properties": {
+                        "method": {
+                          "$id": "#/properties/items/items/anyOf/0/properties/links/items/anyOf/0/properties/method",
+                          "type": "string",
+                          "title": "The method schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "GET"
+                          ]
+                        },
+                        "rel": {
+                          "$id": "#/properties/items/items/anyOf/0/properties/links/items/anyOf/0/properties/rel",
+                          "type": "string",
+                          "title": "The rel schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "self"
+                          ]
+                        },
+                        "href": {
+                          "$id": "#/properties/items/items/anyOf/0/properties/links/items/anyOf/0/properties/href",
+                          "type": "string",
+                          "title": "The href schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "/mobius/rest/capturedroptargets/cfa31d72-6a90-4a09-a19e-9eb175bf1027"
+                          ]
+                        }
+                      },
+                      "additionalProperties": true
+                    }
+                  ]
+                }
+              },
+              "percentComplete": {
+                "$id": "#/properties/items/items/anyOf/0/properties/percentComplete",
+                "type": "integer",
+                "title": "The percentComplete schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0,
+                "examples": [
+                  0
+                ]
+              },
+              "statusMessage": {
+                "$id": "#/properties/items/items/anyOf/0/properties/statusMessage",
+                "type": "string",
+                "title": "The statusMessage schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "Processing"
+                ]
+              },
+              "status": {
+                "$id": "#/properties/items/items/anyOf/0/properties/status",
+                "type": "string",
+                "title": "The status schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "inprogress"
+                ]
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "contentstreamsDownload@9.1_output",
+  "type": "object",
+  "title": "Content Streams Download Output V9.1",
+  "description": "The Content Streams Download Output schema Version 9.1.",
+  "default": {},
+  "examples": [
+  ],
+  "required": [
+  ],
+  "properties": {
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,164 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "getHolds@9.1_input",
+  "type": "object",
+  "title": "Get Holds Input V9.1",
+  "description": "The Get Holds Input schema Version 9.1.",
+  "default": {},
+  "examples": [
+    {
+      "items": [
+        {
+          "repoId": "E97F2321-0B29-48A2-9D2B-A270A8C52BED",
+          "report": "_INTRO    ",
+          "version": "2014-02-06T13:26:04.000-05:00",
+          "section": "document name"
+        }
+      ],
+      "settings": {
+        "auth_token": "clientId",
+        "connectionTimeoutInMS": 5000,
+        "readTimeoutInMS": 1000
+      }
+    }
+  ],
+  "required": [
+    "items"
+  ],
+  "properties": {
+    "items": {
+      "$id": "#/properties/items",
+      "type": "array",
+      "title": "The items schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "repoId": "E97F2321-0B29-48A2-9D2B-A270A8C52BED",
+            "report": "_INTRO    ",
+            "version": "2014-02-06T13:26:04.000-05:00",
+            "section": "document name"
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/items/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/items/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "repoId": "E97F2321-0B29-48A2-9D2B-A270A8C52BED",
+                "report": "_INTRO    ",
+                "version": "2014-02-06T13:26:04.000-05:00",
+                "section": "document name"
+              }
+            ],
+            "required": [
+              "repoId",
+              "report",
+              "version"
+            ],
+            "properties": {
+              "repoId": {
+                "$id": "#/properties/items/items/anyOf/0/properties/repoId",
+                "type": "string",
+                "title": "The repoId schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "E97F2321-0B29-48A2-9D2B-A270A8C52BED"
+                ]
+              },
+              "report": {
+                "$id": "#/properties/items/items/anyOf/0/properties/report",
+                "type": "string",
+                "title": "The report schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "_INTRO    "
+                ]
+              },
+              "version": {
+                "$id": "#/properties/items/items/anyOf/0/properties/version",
+                "type": "string",
+                "title": "The version schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "2014-02-06T13:26:04.000-05:00"
+                ]
+              },
+              "section": {
+                "$id": "#/properties/items/items/anyOf/0/properties/section",
+                "type": "string",
+                "title": "The section schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "document name"
+                ]
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    },
+    "settings": {
+      "$id": "#/properties/settings",
+      "type": "object",
+      "title": "The settings schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "auth_token": "clientId",
+          "connectionTimeoutInMS": 5000,
+          "readTimeoutInMS": 1000
+        }
+      ],
+      "properties": {
+        "auth_token": {
+          "$id": "#/properties/settings/properties/auth_token",
+          "type": "string",
+          "title": "The auth_token schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "clientId"
+          ]
+        },
+        "connectionTimeoutInMS": {
+          "$id": "#/properties/settings/properties/connectionTimeoutInMS",
+          "type": "integer",
+          "title": "The connectionTimeoutInMS schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            5000
+          ]
+        },
+        "readTimeoutInMS": {
+          "$id": "#/properties/settings/properties/readTimeoutInMS",
+          "type": "integer",
+          "title": "The readTimeoutInMS schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            1000
+          ]
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

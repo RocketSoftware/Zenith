@@ -1,0 +1,300 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "deleteDocLevelMetadataByDocId@9.1_output",
+  "type": "object",
+  "title": "Delete Document Level Metadata by Doc ID Output V9.1",
+  "description": "The Delete Document Level Metadata by Doc ID Output schema Version 9.1",
+  "default": {},
+  "examples": [
+    {
+      "links": [
+        {
+          "rel": "self",
+          "href": "/mobius/rest/indexes",
+          "method": "POST"
+        },
+        {
+          "rel": "http://www/asg/com/mobius/rel/indexes/get",
+          "href": "/mobius/rest/indexes",
+          "method": "GET"
+        },
+        {
+          "rel": "http://www/asg/com/mobius/rel/indexes/add",
+          "href": "/mobius/rest/indexes",
+          "method": "POST"
+        },
+        {
+          "rel": "http://www/asg/com/mobius/rel/indexes/modify",
+          "href": "/mobius/rest/indexes",
+          "method": "PUT"
+        },
+        {
+          "rel": "http://www/asg/com/mobius/rel/indexes/delete",
+          "href": "/mobius/rest/indexes",
+          "method": "PUT"
+        }
+      ],
+      "statusMessage": "All requests completed without errors.",
+      "statusCode": "SUCCESS",
+      "indexEntryStatuses": [
+        {
+          "documentId": "ENC(Ny50b3BpY2lkOS5vZmZpY2Vkb2M5LnRvcGljaXRlbTQudGVzdDgucmVwb3J0aWQxMC5BQzAwMSAgICAgOS5yZXBvcnR2ZXIxNC4yMDIxMDQxNTE5MjMyMjEwLnJlcG9ydHNlY3Q0NS5sb2FuIGFwcGxpY2F0aW9uIGZvcm0ucGRmICAgICBBQlNQRzAwMDAwMDAwMDE3LnBhZ2VSQkExLjExMy5udW1iZXJvZnBhZ2VzMS4xMTAucGFnZU9mZnNldDEuMDEwLm9yZ3BhZ2VudW0xLjExMC5yZXBvc2l0b3J5MjcuVkRSTkVUX0FVVE9NQVRJT05fREJfMTBfMF8xMTIucmVwb3NpdG9yeWlkMzYuRUFDRDhCNTktNzJEMy00N0FCLTg3MzEtNEVCNTYxNTEyREJGOS5zaWduYXR1cmU0My45ajkyWGFOeHFhLXFXZkpoaWtyVW0yWU9FMXFEd0M1REJpWnI5RWlzZnljMTYudGNpY3J5cHRvdmVyc2lvbjMuOC4w)",
+          "indexEntries": [
+            {
+              "name": "C_INSTANCE",
+              "value": "1234567800"
+            }
+          ],
+          "statusMessages": []
+        }
+      ]
+    }
+  ],
+  "required": [
+    "links",
+    "statusMessage",
+    "statusCode",
+    "indexEntryStatuses"
+  ],
+  "properties": {
+    "links": {
+      "$id": "#/properties/links",
+      "type": "array",
+      "title": "The links schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "rel": "self",
+            "href": "/mobius/rest/indexes",
+            "method": "POST"
+          },
+          {
+            "rel": "http://www/asg/com/mobius/rel/indexes/get",
+            "href": "/mobius/rest/indexes",
+            "method": "GET"
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/links/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/links/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "rel": "self",
+                "href": "/mobius/rest/indexes",
+                "method": "POST"
+              }
+            ],
+            "required": [
+              "rel",
+              "href",
+              "method"
+            ],
+            "properties": {
+              "rel": {
+                "$id": "#/properties/links/items/anyOf/0/properties/rel",
+                "type": "string",
+                "title": "The rel schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "self"
+                ]
+              },
+              "href": {
+                "$id": "#/properties/links/items/anyOf/0/properties/href",
+                "type": "string",
+                "title": "The href schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "/mobius/rest/indexes"
+                ]
+              },
+              "method": {
+                "$id": "#/properties/links/items/anyOf/0/properties/method",
+                "type": "string",
+                "title": "The method schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "POST"
+                ]
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    },
+    "statusMessage": {
+      "$id": "#/properties/statusMessage",
+      "type": "string",
+      "title": "The statusMessage schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "All requests completed without errors."
+      ]
+    },
+    "statusCode": {
+      "$id": "#/properties/statusCode",
+      "type": "string",
+      "title": "The statusCode schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "SUCCESS"
+      ]
+    },
+    "indexEntryStatuses": {
+      "$id": "#/properties/indexEntryStatuses",
+      "type": "array",
+      "title": "The indexEntryStatuses schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "documentId": "ENC(Ny50b3BpY2lkOS5vZmZpY2Vkb2M5LnRvcGljaXRlbTQudGVzdDgucmVwb3J0aWQxMC5BQzAwMSAgICAgOS5yZXBvcnR2ZXIxNC4yMDIxMDQxNTE5MjMyMjEwLnJlcG9ydHNlY3Q0NS5sb2FuIGFwcGxpY2F0aW9uIGZvcm0ucGRmICAgICBBQlNQRzAwMDAwMDAwMDE3LnBhZ2VSQkExLjExMy5udW1iZXJvZnBhZ2VzMS4xMTAucGFnZU9mZnNldDEuMDEwLm9yZ3BhZ2VudW0xLjExMC5yZXBvc2l0b3J5MjcuVkRSTkVUX0FVVE9NQVRJT05fREJfMTBfMF8xMTIucmVwb3NpdG9yeWlkMzYuRUFDRDhCNTktNzJEMy00N0FCLTg3MzEtNEVCNTYxNTEyREJGOS5zaWduYXR1cmU0My45ajkyWGFOeHFhLXFXZkpoaWtyVW0yWU9FMXFEd0M1REJpWnI5RWlzZnljMTYudGNpY3J5cHRvdmVyc2lvbjMuOC4w)",
+            "indexEntries": [
+              {
+                "name": "C_INSTANCE",
+                "value": "1234567800"
+              }
+            ],
+            "statusMessages": []
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/indexEntryStatuses/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/indexEntryStatuses/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "documentId": "ENC(Ny50b3BpY2lkOS5vZmZpY2Vkb2M5LnRvcGljaXRlbTQudGVzdDgucmVwb3J0aWQxMC5BQzAwMSAgICAgOS5yZXBvcnR2ZXIxNC4yMDIxMDQxNTE5MjMyMjEwLnJlcG9ydHNlY3Q0NS5sb2FuIGFwcGxpY2F0aW9uIGZvcm0ucGRmICAgICBBQlNQRzAwMDAwMDAwMDE3LnBhZ2VSQkExLjExMy5udW1iZXJvZnBhZ2VzMS4xMTAucGFnZU9mZnNldDEuMDEwLm9yZ3BhZ2VudW0xLjExMC5yZXBvc2l0b3J5MjcuVkRSTkVUX0FVVE9NQVRJT05fREJfMTBfMF8xMTIucmVwb3NpdG9yeWlkMzYuRUFDRDhCNTktNzJEMy00N0FCLTg3MzEtNEVCNTYxNTEyREJGOS5zaWduYXR1cmU0My45ajkyWGFOeHFhLXFXZkpoaWtyVW0yWU9FMXFEd0M1REJpWnI5RWlzZnljMTYudGNpY3J5cHRvdmVyc2lvbjMuOC4w)",
+                "indexEntries": [
+                  {
+                    "name": "C_INSTANCE",
+                    "value": "1234567800"
+                  }
+                ],
+                "statusMessages": []
+              }
+            ],
+            "required": [
+              "documentId",
+              "indexEntries",
+              "statusMessages"
+            ],
+            "properties": {
+              "documentId": {
+                "$id": "#/properties/indexEntryStatuses/items/anyOf/0/properties/documentId",
+                "type": "string",
+                "title": "The documentId schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "ENC(Ny50b3BpY2lkOS5vZmZpY2Vkb2M5LnRvcGljaXRlbTQudGVzdDgucmVwb3J0aWQxMC5BQzAwMSAgICAgOS5yZXBvcnR2ZXIxNC4yMDIxMDQxNTE5MjMyMjEwLnJlcG9ydHNlY3Q0NS5sb2FuIGFwcGxpY2F0aW9uIGZvcm0ucGRmICAgICBBQlNQRzAwMDAwMDAwMDE3LnBhZ2VSQkExLjExMy5udW1iZXJvZnBhZ2VzMS4xMTAucGFnZU9mZnNldDEuMDEwLm9yZ3BhZ2VudW0xLjExMC5yZXBvc2l0b3J5MjcuVkRSTkVUX0FVVE9NQVRJT05fREJfMTBfMF8xMTIucmVwb3NpdG9yeWlkMzYuRUFDRDhCNTktNzJEMy00N0FCLTg3MzEtNEVCNTYxNTEyREJGOS5zaWduYXR1cmU0My45ajkyWGFOeHFhLXFXZkpoaWtyVW0yWU9FMXFEd0M1REJpWnI5RWlzZnljMTYudGNpY3J5cHRvdmVyc2lvbjMuOC4w)"
+                ]
+              },
+              "indexEntries": {
+                "$id": "#/properties/indexEntryStatuses/items/anyOf/0/properties/indexEntries",
+                "type": "array",
+                "title": "The indexEntries schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": [],
+                "examples": [
+                  [
+                    {
+                      "name": "C_INSTANCE",
+                      "value": "1234567800"
+                    }
+                  ]
+                ],
+                "additionalItems": true,
+                "items": {
+                  "$id": "#/properties/indexEntryStatuses/items/anyOf/0/properties/indexEntries/items",
+                  "anyOf": [
+                    {
+                      "$id": "#/properties/indexEntryStatuses/items/anyOf/0/properties/indexEntries/items/anyOf/0",
+                      "type": "object",
+                      "title": "The first anyOf schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": {},
+                      "examples": [
+                        {
+                          "name": "C_INSTANCE",
+                          "value": "1234567800"
+                        }
+                      ],
+                      "required": [
+                        "name",
+                        "value"
+                      ],
+                      "properties": {
+                        "name": {
+                          "$id": "#/properties/indexEntryStatuses/items/anyOf/0/properties/indexEntries/items/anyOf/0/properties/name",
+                          "type": "string",
+                          "title": "The name schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "C_INSTANCE"
+                          ]
+                        },
+                        "value": {
+                          "$id": "#/properties/indexEntryStatuses/items/anyOf/0/properties/indexEntries/items/anyOf/0/properties/value",
+                          "type": "string",
+                          "title": "The value schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "1234567800"
+                          ]
+                        }
+                      },
+                      "additionalProperties": true
+                    }
+                  ]
+                }
+              },
+              "statusMessages": {
+                "$id": "#/properties/indexEntryStatuses/items/anyOf/0/properties/statusMessages",
+                "type": "array",
+                "title": "The statusMessages schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": [],
+                "examples": [
+                  []
+                ],
+                "additionalItems": true,
+                "items": {
+                  "$id": "#/properties/indexEntryStatuses/items/anyOf/0/properties/statusMessages/items"
+                }
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,525 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "checkinDocument@9.1_output",
+  "type": "object",
+  "title": "Checkin Document Output V9.1",
+  "description": "The Checkin Document Output schema Version 9.1.",
+  "default": {},
+  "examples": [
+    {
+      "statusID": "AC001-20201102103520-0000",
+      "links": [
+        {
+          "rel": "self",
+          "href": "/mobius/rest/repositories/736672BD-8ADE-4F17-AB03-9BC1DC9D7CCD/documents"
+        },
+        {
+          "method": "GET",
+          "rel": "http://www/asg/com/mobius/rel/archivingstatus",
+          "href": "/mobius/rest/repositories/736672BD-8ADE-4F17-AB03-9BC1DC9D7CCD/archivingstatuses/AC001-20201102103520-0000"
+        }
+      ],
+      "percentComplete": 0,
+      "documentStatuses": [
+        {
+          "documentId": "ENC(OC5yZXBvcnRpZDUuQUMwMDExMC5yZXBvcnRzZWN0NDUuYWNtZS10ZXh0LXBkZi5wZGYgICAgICAgICAgICAgQUJTUEcwMDAwMDAwMDAyMTAucmVwb3NpdG9yeTgudmRybmV0ZHM5LnJlcG9ydHZlcjE0LjIwMjAwOTI4MTAwMTQzMTAub3JncGFnZW51bTEuMjEzLm51bWJlcm9mcGFnZXMxLjExMi5yZXBvc2l0b3J5aWQzNi43MzY2NzJCRC04QURFLTRGMTctQUIwMy05QkMxREM5RDdDQ0Q5LnNpZ25hdHVyZTQzLnpWNXV1eTVQVXFsVHlKN2NFS282YzN4VThfTktwY0thQWwyTXh5dHVKWnMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)",
+          "metadataFields": [
+            {
+              "keyValue": "AC001",
+              "keyOrdinal": 0,
+              "displayName": "Report ID",
+              "dataType": "String",
+              "keyName": "__reportid",
+              "keyType": "document"
+            },
+            {
+              "keyValue": "2020-11-02T10:35:20.000Z",
+              "keyOrdinal": 1,
+              "displayName": "Report Version ID",
+              "dataType": "Date",
+              "keyName": "__versionid",
+              "keyType": "document"
+            },
+            {
+              "keyValue": "acme-text-pdf.pdf             ",
+              "keyOrdinal": 2,
+              "displayName": "Report Section",
+              "dataType": "String",
+              "keyName": "__sectionid",
+              "keyType": "document"
+            },
+            {
+              "keyValue": 1,
+              "keyOrdinal": 0,
+              "displayName": "Page Number",
+              "dataType": "Integer",
+              "keyName": "__originalPageNumber",
+              "keyType": "pageNumber"
+            },
+            {
+              "keyValue": 1,
+              "keyOrdinal": 0,
+              "displayName": "Page count",
+              "dataType": "Integer",
+              "keyName": "__numberOfContentSegments",
+              "keyType": "pageCount"
+            }
+          ],
+          "statusMessage": "Processing",
+          "status": "inprogress"
+        }
+      ],
+      "statusMessage": "Processing",
+      "status": "inprogress"
+    }
+  ],
+  "required": [
+    "statusID",
+    "links",
+    "percentComplete",
+    "documentStatuses",
+    "statusMessage",
+    "status"
+  ],
+  "properties": {
+    "statusID": {
+      "$id": "#/properties/statusID",
+      "type": "string",
+      "title": "The statusID schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "AC001-20201102103520-0000"
+      ]
+    },
+    "links": {
+      "$id": "#/properties/links",
+      "type": "array",
+      "title": "The links schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "rel": "self",
+            "href": "/mobius/rest/repositories/736672BD-8ADE-4F17-AB03-9BC1DC9D7CCD/documents"
+          },
+          {
+            "method": "GET",
+            "rel": "http://www/asg/com/mobius/rel/archivingstatus",
+            "href": "/mobius/rest/repositories/736672BD-8ADE-4F17-AB03-9BC1DC9D7CCD/archivingstatuses/AC001-20201102103520-0000"
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/links/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/links/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "rel": "self",
+                "href": "/mobius/rest/repositories/736672BD-8ADE-4F17-AB03-9BC1DC9D7CCD/documents"
+              }
+            ],
+            "required": [
+              "rel",
+              "href"
+            ],
+            "properties": {
+              "rel": {
+                "$id": "#/properties/links/items/anyOf/0/properties/rel",
+                "type": "string",
+                "title": "The rel schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "self"
+                ]
+              },
+              "href": {
+                "$id": "#/properties/links/items/anyOf/0/properties/href",
+                "type": "string",
+                "title": "The href schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "/mobius/rest/repositories/736672BD-8ADE-4F17-AB03-9BC1DC9D7CCD/documents"
+                ]
+              }
+            },
+            "additionalProperties": true
+          },
+          {
+            "$id": "#/properties/links/items/anyOf/1",
+            "type": "object",
+            "title": "The second anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "method": "GET",
+                "rel": "http://www/asg/com/mobius/rel/archivingstatus",
+                "href": "/mobius/rest/repositories/736672BD-8ADE-4F17-AB03-9BC1DC9D7CCD/archivingstatuses/AC001-20201102103520-0000"
+              }
+            ],
+            "required": [
+              "method",
+              "rel",
+              "href"
+            ],
+            "properties": {
+              "method": {
+                "$id": "#/properties/links/items/anyOf/1/properties/method",
+                "type": "string",
+                "title": "The method schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "GET"
+                ]
+              },
+              "rel": {
+                "$id": "#/properties/links/items/anyOf/1/properties/rel",
+                "type": "string",
+                "title": "The rel schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "http://www/asg/com/mobius/rel/archivingstatus"
+                ]
+              },
+              "href": {
+                "$id": "#/properties/links/items/anyOf/1/properties/href",
+                "type": "string",
+                "title": "The href schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "/mobius/rest/repositories/736672BD-8ADE-4F17-AB03-9BC1DC9D7CCD/archivingstatuses/AC001-20201102103520-0000"
+                ]
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    },
+    "percentComplete": {
+      "$id": "#/properties/percentComplete",
+      "type": "integer",
+      "title": "The percentComplete schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [
+        0
+      ]
+    },
+    "documentStatuses": {
+      "$id": "#/properties/documentStatuses",
+      "type": "array",
+      "title": "The documentStatuses schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "documentId": "ENC(OC5yZXBvcnRpZDUuQUMwMDExMC5yZXBvcnRzZWN0NDUuYWNtZS10ZXh0LXBkZi5wZGYgICAgICAgICAgICAgQUJTUEcwMDAwMDAwMDAyMTAucmVwb3NpdG9yeTgudmRybmV0ZHM5LnJlcG9ydHZlcjE0LjIwMjAwOTI4MTAwMTQzMTAub3JncGFnZW51bTEuMjEzLm51bWJlcm9mcGFnZXMxLjExMi5yZXBvc2l0b3J5aWQzNi43MzY2NzJCRC04QURFLTRGMTctQUIwMy05QkMxREM5RDdDQ0Q5LnNpZ25hdHVyZTQzLnpWNXV1eTVQVXFsVHlKN2NFS282YzN4VThfTktwY0thQWwyTXh5dHVKWnMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)",
+            "metadataFields": [
+              {
+                "keyValue": "AC001",
+                "keyOrdinal": 0,
+                "displayName": "Report ID",
+                "dataType": "String",
+                "keyName": "__reportid",
+                "keyType": "document"
+              },
+              {
+                "keyValue": "2020-11-02T10:35:20.000Z",
+                "keyOrdinal": 1,
+                "displayName": "Report Version ID",
+                "dataType": "Date",
+                "keyName": "__versionid",
+                "keyType": "document"
+              },
+              {
+                "keyValue": "acme-text-pdf.pdf             ",
+                "keyOrdinal": 2,
+                "displayName": "Report Section",
+                "dataType": "String",
+                "keyName": "__sectionid",
+                "keyType": "document"
+              },
+              {
+                "keyValue": 1,
+                "keyOrdinal": 0,
+                "displayName": "Page Number",
+                "dataType": "Integer",
+                "keyName": "__originalPageNumber",
+                "keyType": "pageNumber"
+              },
+              {
+                "keyValue": 1,
+                "keyOrdinal": 0,
+                "displayName": "Page count",
+                "dataType": "Integer",
+                "keyName": "__numberOfContentSegments",
+                "keyType": "pageCount"
+              }
+            ],
+            "statusMessage": "Processing",
+            "status": "inprogress"
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/documentStatuses/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/documentStatuses/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "documentId": "ENC(OC5yZXBvcnRpZDUuQUMwMDExMC5yZXBvcnRzZWN0NDUuYWNtZS10ZXh0LXBkZi5wZGYgICAgICAgICAgICAgQUJTUEcwMDAwMDAwMDAyMTAucmVwb3NpdG9yeTgudmRybmV0ZHM5LnJlcG9ydHZlcjE0LjIwMjAwOTI4MTAwMTQzMTAub3JncGFnZW51bTEuMjEzLm51bWJlcm9mcGFnZXMxLjExMi5yZXBvc2l0b3J5aWQzNi43MzY2NzJCRC04QURFLTRGMTctQUIwMy05QkMxREM5RDdDQ0Q5LnNpZ25hdHVyZTQzLnpWNXV1eTVQVXFsVHlKN2NFS282YzN4VThfTktwY0thQWwyTXh5dHVKWnMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)",
+                "metadataFields": [
+                  {
+                    "keyValue": "AC001",
+                    "keyOrdinal": 0,
+                    "displayName": "Report ID",
+                    "dataType": "String",
+                    "keyName": "__reportid",
+                    "keyType": "document"
+                  },
+                  {
+                    "keyValue": "2020-11-02T10:35:20.000Z",
+                    "keyOrdinal": 1,
+                    "displayName": "Report Version ID",
+                    "dataType": "Date",
+                    "keyName": "__versionid",
+                    "keyType": "document"
+                  },
+                  {
+                    "keyValue": "acme-text-pdf.pdf             ",
+                    "keyOrdinal": 2,
+                    "displayName": "Report Section",
+                    "dataType": "String",
+                    "keyName": "__sectionid",
+                    "keyType": "document"
+                  },
+                  {
+                    "keyValue": 1,
+                    "keyOrdinal": 0,
+                    "displayName": "Page Number",
+                    "dataType": "Integer",
+                    "keyName": "__originalPageNumber",
+                    "keyType": "pageNumber"
+                  },
+                  {
+                    "keyValue": 1,
+                    "keyOrdinal": 0,
+                    "displayName": "Page count",
+                    "dataType": "Integer",
+                    "keyName": "__numberOfContentSegments",
+                    "keyType": "pageCount"
+                  }
+                ],
+                "statusMessage": "Processing",
+                "status": "inprogress"
+              }
+            ],
+            "required": [
+              "documentId",
+              "metadataFields",
+              "statusMessage",
+              "status"
+            ],
+            "properties": {
+              "documentId": {
+                "$id": "#/properties/documentStatuses/items/anyOf/0/properties/documentId",
+                "type": "string",
+                "title": "The documentId schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "ENC(OC5yZXBvcnRpZDUuQUMwMDExMC5yZXBvcnRzZWN0NDUuYWNtZS10ZXh0LXBkZi5wZGYgICAgICAgICAgICAgQUJTUEcwMDAwMDAwMDAyMTAucmVwb3NpdG9yeTgudmRybmV0ZHM5LnJlcG9ydHZlcjE0LjIwMjAwOTI4MTAwMTQzMTAub3JncGFnZW51bTEuMjEzLm51bWJlcm9mcGFnZXMxLjExMi5yZXBvc2l0b3J5aWQzNi43MzY2NzJCRC04QURFLTRGMTctQUIwMy05QkMxREM5RDdDQ0Q5LnNpZ25hdHVyZTQzLnpWNXV1eTVQVXFsVHlKN2NFS282YzN4VThfTktwY0thQWwyTXh5dHVKWnMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)"
+                ]
+              },
+              "metadataFields": {
+                "$id": "#/properties/documentStatuses/items/anyOf/0/properties/metadataFields",
+                "type": "array",
+                "title": "The metadataFields schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": [],
+                "examples": [
+                  [
+                    {
+                      "keyValue": "AC001",
+                      "keyOrdinal": 0,
+                      "displayName": "Report ID",
+                      "dataType": "String",
+                      "keyName": "__reportid",
+                      "keyType": "document"
+                    },
+                    {
+                      "keyValue": "2020-11-02T10:35:20.000Z",
+                      "keyOrdinal": 1,
+                      "displayName": "Report Version ID",
+                      "dataType": "Date",
+                      "keyName": "__versionid",
+                      "keyType": "document"
+                    }
+                  ]
+                ],
+                "additionalItems": true,
+                "items": {
+                  "$id": "#/properties/documentStatuses/items/anyOf/0/properties/metadataFields/items",
+                  "anyOf": [
+                    {
+                      "$id": "#/properties/documentStatuses/items/anyOf/0/properties/metadataFields/items/anyOf/0",
+                      "type": "object",
+                      "title": "The first anyOf schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": {},
+                      "examples": [
+                        {
+                          "keyValue": "AC001",
+                          "keyOrdinal": 0,
+                          "displayName": "Report ID",
+                          "dataType": "String",
+                          "keyName": "__reportid",
+                          "keyType": "document"
+                        }
+                      ],
+                      "required": [
+                        "keyValue",
+                        "keyOrdinal",
+                        "displayName",
+                        "dataType",
+                        "keyName",
+                        "keyType"
+                      ],
+                      "properties": {
+                        "keyValue": {
+                          "$id": "#/properties/documentStatuses/items/anyOf/0/properties/metadataFields/items/anyOf/0/properties/keyValue",
+                          "type": "string",
+                          "title": "The keyValue schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "AC001"
+                          ]
+                        },
+                        "keyOrdinal": {
+                          "$id": "#/properties/documentStatuses/items/anyOf/0/properties/metadataFields/items/anyOf/0/properties/keyOrdinal",
+                          "type": "integer",
+                          "title": "The keyOrdinal schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": 0,
+                          "examples": [
+                            0
+                          ]
+                        },
+                        "displayName": {
+                          "$id": "#/properties/documentStatuses/items/anyOf/0/properties/metadataFields/items/anyOf/0/properties/displayName",
+                          "type": "string",
+                          "title": "The displayName schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "Report ID"
+                          ]
+                        },
+                        "dataType": {
+                          "$id": "#/properties/documentStatuses/items/anyOf/0/properties/metadataFields/items/anyOf/0/properties/dataType",
+                          "type": "string",
+                          "title": "The dataType schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "String"
+                          ]
+                        },
+                        "keyName": {
+                          "$id": "#/properties/documentStatuses/items/anyOf/0/properties/metadataFields/items/anyOf/0/properties/keyName",
+                          "type": "string",
+                          "title": "The keyName schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "__reportid"
+                          ]
+                        },
+                        "keyType": {
+                          "$id": "#/properties/documentStatuses/items/anyOf/0/properties/metadataFields/items/anyOf/0/properties/keyType",
+                          "type": "string",
+                          "title": "The keyType schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "document"
+                          ]
+                        }
+                      },
+                      "additionalProperties": true
+                    }
+                  ]
+                }
+              },
+              "statusMessage": {
+                "$id": "#/properties/documentStatuses/items/anyOf/0/properties/statusMessage",
+                "type": "string",
+                "title": "The statusMessage schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "Processing"
+                ]
+              },
+              "status": {
+                "$id": "#/properties/documentStatuses/items/anyOf/0/properties/status",
+                "type": "string",
+                "title": "The status schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "inprogress"
+                ]
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    },
+    "statusMessage": {
+      "$id": "#/properties/statusMessage",
+      "type": "string",
+      "title": "The statusMessage schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "Processing"
+      ]
+    },
+    "status": {
+      "$id": "#/properties/status",
+      "type": "string",
+      "title": "The status schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "inprogress"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

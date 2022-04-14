@@ -1,0 +1,352 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "updateDocLevelMetadataBySearch@9.1_output",
+  "type": "object",
+  "title": "Update DocLevel Metadata By Search Output V9.1",
+  "description": "The Update DocLevel Metadata By Search Output schema Version 9.1.",
+  "default": {},
+  "examples": [
+    {
+      "links": [
+        {
+          "rel": "self",
+          "href": "/mobius/rest/indexes",
+          "method": "POST"
+        },
+        {
+          "rel": "http://www/asg/com/mobius/rel/indexes/get",
+          "href": "/mobius/rest/indexes",
+          "method": "GET"
+        },
+        {
+          "rel": "http://www/asg/com/mobius/rel/indexes/add",
+          "href": "/mobius/rest/indexes",
+          "method": "POST"
+        },
+        {
+          "rel": "http://www/asg/com/mobius/rel/indexes/modify",
+          "href": "/mobius/rest/indexes",
+          "method": "PUT"
+        },
+        {
+          "rel": "http://www/asg/com/mobius/rel/indexes/delete",
+          "href": "/mobius/rest/indexes",
+          "method": "PUT"
+        }
+      ],
+      "statusMessage": "",
+      "statusCode": "SUCCESS",
+      "indexEntryStatuses": [
+        {
+          "indexEntries": [
+            {
+              "name": "ACCTDESC",
+              "value": "TEST DESCRIPTION"
+            }
+          ],
+          "searchCount": 0,
+          "recordsAffected": 0,
+          "searchStatusMessage": null,
+          "searchStatusCode": "SUCCESS",
+          "updateStatusMessage": null,
+          "updateStatusCode": "SUCCESS"
+        }
+      ]
+    }
+  ],
+  "required": [
+    "links",
+    "statusMessage",
+    "statusCode",
+    "indexEntryStatuses"
+  ],
+  "properties": {
+    "links": {
+      "$id": "#/properties/links",
+      "type": "array",
+      "title": "The links schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "rel": "self",
+            "href": "/mobius/rest/indexes",
+            "method": "POST"
+          },
+          {
+            "rel": "http://www/asg/com/mobius/rel/indexes/get",
+            "href": "/mobius/rest/indexes",
+            "method": "GET"
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/links/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/links/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "rel": "self",
+                "href": "/mobius/rest/indexes",
+                "method": "POST"
+              }
+            ],
+            "required": [
+              "rel",
+              "href",
+              "method"
+            ],
+            "properties": {
+              "rel": {
+                "$id": "#/properties/links/items/anyOf/0/properties/rel",
+                "type": "string",
+                "title": "The rel schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "self"
+                ]
+              },
+              "href": {
+                "$id": "#/properties/links/items/anyOf/0/properties/href",
+                "type": "string",
+                "title": "The href schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "/mobius/rest/indexes"
+                ]
+              },
+              "method": {
+                "$id": "#/properties/links/items/anyOf/0/properties/method",
+                "type": "string",
+                "title": "The method schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "POST"
+                ]
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    },
+    "statusMessage": {
+      "$id": "#/properties/statusMessage",
+      "type": "string",
+      "title": "The statusMessage schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        ""
+      ]
+    },
+    "statusCode": {
+      "$id": "#/properties/statusCode",
+      "type": "string",
+      "title": "The statusCode schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "SUCCESS"
+      ]
+    },
+    "indexEntryStatuses": {
+      "$id": "#/properties/indexEntryStatuses",
+      "type": "array",
+      "title": "The indexEntryStatuses schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "indexEntries": [
+              {
+                "name": "ACCTDESC",
+                "value": "TEST DESCRIPTION"
+              }
+            ],
+            "searchCount": 0,
+            "recordsAffected": 0,
+            "searchStatusMessage": null,
+            "searchStatusCode": "SUCCESS",
+            "updateStatusMessage": null,
+            "updateStatusCode": "SUCCESS"
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/indexEntryStatuses/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/indexEntryStatuses/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "indexEntries": [
+                  {
+                    "name": "ACCTDESC",
+                    "value": "TEST DESCRIPTION"
+                  }
+                ],
+                "searchCount": 0,
+                "recordsAffected": 0,
+                "searchStatusMessage": null,
+                "searchStatusCode": "SUCCESS",
+                "updateStatusMessage": null,
+                "updateStatusCode": "SUCCESS"
+              }
+            ],
+            "required": [
+              "indexEntries",
+              "searchCount",
+              "recordsAffected",
+              "searchStatusMessage",
+              "searchStatusCode",
+              "updateStatusMessage",
+              "updateStatusCode"
+            ],
+            "properties": {
+              "indexEntries": {
+                "$id": "#/properties/indexEntryStatuses/items/anyOf/0/properties/indexEntries",
+                "type": "array",
+                "title": "The indexEntries schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": [],
+                "examples": [
+                  [
+                    {
+                      "name": "ACCTDESC",
+                      "value": "TEST DESCRIPTION"
+                    }
+                  ]
+                ],
+                "additionalItems": true,
+                "items": {
+                  "$id": "#/properties/indexEntryStatuses/items/anyOf/0/properties/indexEntries/items",
+                  "anyOf": [
+                    {
+                      "$id": "#/properties/indexEntryStatuses/items/anyOf/0/properties/indexEntries/items/anyOf/0",
+                      "type": "object",
+                      "title": "The first anyOf schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": {},
+                      "examples": [
+                        {
+                          "name": "ACCTDESC",
+                          "value": "TEST DESCRIPTION"
+                        }
+                      ],
+                      "required": [
+                        "name",
+                        "value"
+                      ],
+                      "properties": {
+                        "name": {
+                          "$id": "#/properties/indexEntryStatuses/items/anyOf/0/properties/indexEntries/items/anyOf/0/properties/name",
+                          "type": "string",
+                          "title": "The name schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "ACCTDESC"
+                          ]
+                        },
+                        "value": {
+                          "$id": "#/properties/indexEntryStatuses/items/anyOf/0/properties/indexEntries/items/anyOf/0/properties/value",
+                          "type": "string",
+                          "title": "The value schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "TEST DESCRIPTION"
+                          ]
+                        }
+                      },
+                      "additionalProperties": true
+                    }
+                  ]
+                }
+              },
+              "searchCount": {
+                "$id": "#/properties/indexEntryStatuses/items/anyOf/0/properties/searchCount",
+                "type": "integer",
+                "title": "The searchCount schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0,
+                "examples": [
+                  0
+                ]
+              },
+              "recordsAffected": {
+                "$id": "#/properties/indexEntryStatuses/items/anyOf/0/properties/recordsAffected",
+                "type": "integer",
+                "title": "The recordsAffected schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0,
+                "examples": [
+                  0
+                ]
+              },
+              "searchStatusMessage": {
+                "$id": "#/properties/indexEntryStatuses/items/anyOf/0/properties/searchStatusMessage",
+                "type": "null",
+                "title": "The searchStatusMessage schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": null,
+                "examples": [
+                  null
+                ]
+              },
+              "searchStatusCode": {
+                "$id": "#/properties/indexEntryStatuses/items/anyOf/0/properties/searchStatusCode",
+                "type": "string",
+                "title": "The searchStatusCode schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "SUCCESS"
+                ]
+              },
+              "updateStatusMessage": {
+                "$id": "#/properties/indexEntryStatuses/items/anyOf/0/properties/updateStatusMessage",
+                "type": "null",
+                "title": "The updateStatusMessage schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": null,
+                "examples": [
+                  null
+                ]
+              },
+              "updateStatusCode": {
+                "$id": "#/properties/indexEntryStatuses/items/anyOf/0/properties/updateStatusCode",
+                "type": "string",
+                "title": "The updateStatusCode schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "SUCCESS"
+                ]
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    }
+  },
+  "additionalProperties": true
+}

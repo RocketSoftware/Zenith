@@ -1,0 +1,1622 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "advancedSearch@11.0_output",
+  "type": "object",
+  "title": "Advanced Search Output V11.0",
+  "description": "The Advanced Search Output schema Version 11.0.",
+  "default": {},
+  "examples": [
+    {
+      "incompleteResults": true,
+      "cachedResultCount": 0,
+      "allResultsCached": false,
+      "results": [
+        {
+          "pageCount": 1,
+          "pageNumber": 2,
+          "objectId": "ENC(MTAucmVwb3NpdG9yeTcuRW50UmVwbzgucmVwb3J0aWQ1LkFDMDAxOS5yZXBvcnR2ZXIxNC4yMDIwMDcxNDExMjAxMDEwLnJlcG9ydHNlY3Q0NS5FbnRSZXBvcnRfMjAyMDA3MDcxNDA5MjlfU0FMRUNBQlNQRzAwMDAwMDAwMDExMC5vcmdwYWdlbnVtMS4xMTMubnVtYmVyb2ZwYWdlczEuMTEwLnBhZ2VPZmZzZXQxLjAxMi5yZXBvc2l0b3J5aWQzNi4xRTgxRTZGNi03MjI0LTRGNDktOUI4Ni01RUI4MERENEFCOTg5LnNpZ25hdHVyZTQzLnYzbnZpeXZCa1pZQ0VwVG94U0hRYW9oYUxadEtlNHhwei1IS1R2V3Y4SHMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)",
+          "objectTypeId": "1E81E6F6-7224-4F49-9B86-5EB80DD4AB98",
+          "indexes": [
+            {
+              "name": "__DocTitle",
+              "value": "AC001 AC001 is a shipped sample Jul 14, 2020 11:24:23 AM EntReport_20200707140929_SALEC Pages 1 DISK Available"
+            },
+            {
+              "name": "__DocName",
+              "value": "AC001 AC001 is a shipped sample Jul 14, 2020 11:24:23 AM EntReport_20200707140929_SALEC"
+            },
+            {
+              "name": "__availability",
+              "value": "Available"
+            },
+            {
+              "name": "__device",
+              "value": "DISK"
+            },
+            {
+              "name": "__ReportDescription",
+              "value": "AC001 is a shipped sample"
+            },
+            {
+              "name": "__reportid",
+              "value": "AC001"
+            },
+            {
+              "name": "__documentClass",
+              "value": "AC001"
+            },
+            {
+              "name": "__versionid",
+              "value": "Jul 14, 2020 11:20:10 AM"
+            },
+            {
+              "name": "__originalVersionId",
+              "value": "20200714112423"
+            },
+            {
+              "name": "__sectionid",
+              "value": "EntReport_20200707140929_SALEC"
+            },
+            {
+              "name": "__revisionTimestamp",
+              "value": "2020-07-14T11:24:23.000+05:30"
+            },
+            {
+              "name": "__originalPageNumber",
+              "value": 1
+            },
+            {
+              "name": "__numberOfContentSegments",
+              "value": 1
+            },
+            {
+              "name": "__Snippet",
+              "value": "ReportID: AC001 SectionID: EntReport_20200707140929_SALEC LS_INDT: 20200714055423 LS_INUSR: ADMIN LS_MSG: V2 LS_ORGPG: 1 LS_OUTDT: 20200714055256 LS_OUTID: 7e094301-9656-4f3e-b6e1-44e47c5a7d9a LS_OUTUSR: ADMIN LS_PGCNT: 1 LS_RPTID: AC001 LS_RPTVER: 20200714112010 LS_SECTID: EntReport_20200707140929_SALEC LS_VERNO: 2 Metadata: Test Numeric: 1234.1232132498326 Text: 01/16/84                                                                                                                  PAGE     5\r\n     REPORT ID: AC001                                      MONTHLY EXPENSE\r\n    DEPARTMENT: SALE   SALES\r\n        REGION: CE     CENTRAL\r\n        OFFICE: CHI    CHICAGO, ILLINOIS\r\n\r\nACCT  ACCT                              PLANNED          ACTUAL     VARIANCE      PLANNED        ACTUAL       VARIANCE\r\nCODE  DESCRIPTION                         MTD             MTD         MTD           YTD           YTD           YTD\r\n------ ------------------------------   ---------    ...ADMINISTRATIVE         "
+            },
+            {
+              "name": "__HitPosition",
+              "value": "976, 990"
+            }
+          ],
+          "metadata": [
+            {
+              "dataType": "String",
+              "displayName": "__DocTitle",
+              "keyName": "__DocTitle",
+              "keyValue": "AC001 AC001 is a shipped sample Jul 14, 2020 11:24:23 AM EntReport_20200707140929_SALEC Pages 1 DISK Available",
+              "keyType": "info",
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": "String",
+              "displayName": "__DocName",
+              "keyName": "__DocName",
+              "keyValue": "AC001 AC001 is a shipped sample Jul 14, 2020 11:24:23 AM EntReport_20200707140929_SALEC",
+              "keyType": "info",
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": "String",
+              "displayName": "Availability Status",
+              "keyName": "__availability",
+              "keyValue": "Available",
+              "keyType": "info",
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": "String",
+              "displayName": "__device",
+              "keyName": "__device",
+              "keyValue": "DISK",
+              "keyType": "info",
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": "String",
+              "displayName": "__ReportDescription",
+              "keyName": "__ReportDescription",
+              "keyValue": "AC001 is a shipped sample",
+              "keyType": "info",
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": "String",
+              "displayName": "Report ID",
+              "keyName": "__reportid",
+              "keyValue": "AC001",
+              "keyType": "document",
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": "String",
+              "displayName": "__documentClass",
+              "keyName": "__documentClass",
+              "keyValue": "AC001",
+              "keyType": "info",
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": "Date",
+              "displayName": "Report Version ID",
+              "keyName": "__versionid",
+              "keyValue": "2020-07-14T11:20:10.000+05:30",
+              "keyType": "document",
+              "keyOrdinal": 1
+            },
+            {
+              "dataType": "String",
+              "displayName": "__originalVersionId",
+              "keyName": "__originalVersionId",
+              "keyValue": "20200714112010",
+              "keyType": "info",
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": "String",
+              "displayName": "Report Section",
+              "keyName": "__sectionid",
+              "keyValue": "EntReport_20200707140929_SALEC",
+              "keyType": "document",
+              "keyOrdinal": 2
+            },
+            {
+              "dataType": "Date",
+              "displayName": "__revisionTimestamp",
+              "keyName": "__revisionTimestamp",
+              "keyValue": "2020-07-14T11:24:23.000+05:30",
+              "keyType": "info",
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": "Integer",
+              "displayName": "Page Number",
+              "keyName": "__originalPageNumber",
+              "keyValue": 1,
+              "keyType": "pageNumber",
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": "Integer",
+              "displayName": "Page count",
+              "keyName": "__numberOfContentSegments",
+              "keyValue": 1,
+              "keyType": "pageCount",
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": "Integer",
+              "displayName": "__pageOffset",
+              "keyName": "__pageOffset",
+              "keyValue": 1,
+              "keyType": "info",
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": "String",
+              "displayName": "__Snippet",
+              "keyName": "__Snippet",
+              "keyValue": "ReportID: AC001 SectionID: EntReport_20200707140929_SALEC LS_INDT: 20200714055423 LS_INUSR: ADMIN LS_MSG: V2 LS_ORGPG: 1 LS_OUTDT: 20200714055256 LS_OUTID: 7e094301-9656-4f3e-b6e1-44e47c5a7d9a LS_OUTUSR: ADMIN LS_PGCNT: 1 LS_RPTID: AC001 LS_RPTVER: 20200714112010 LS_SECTID: EntReport_20200707140929_SALEC LS_VERNO: 2 Metadata: Test Numeric: 1234.1232132498326 Text: 01/16/84                                                                                                                  PAGE     5\r\n     REPORT ID: AC001                                      MONTHLY EXPENSE\r\n    DEPARTMENT: SALE   SALES\r\n        REGION: CE     CENTRAL\r\n        OFFICE: CHI    CHICAGO, ILLINOIS\r\n\r\nACCT  ACCT                              PLANNED          ACTUAL     VARIANCE      PLANNED        ACTUAL       VARIANCE\r\nCODE  DESCRIPTION                         MTD             MTD         MTD           YTD           YTD           YTD\r\n------ ------------------------------   ---------    ...ADMINISTRATIVE         ",
+              "keyType": "info",
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": "String",
+              "displayName": "__HitPosition",
+              "keyName": "__HitPosition",
+              "keyValue": "976, 990",
+              "keyType": "info",
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": "String",
+              "displayName": "defaultteaser",
+              "keyName": "defaultteaser",
+              "keyValue": "AC001 AC001 is a shipped sample Jul 14, 2020 11:24:23 AM EntReport_20200707140929_SALEC Pages 1 DISK Available",
+              "keyType": "info",
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": "String",
+              "displayName": "__redactionType",
+              "keyName": "__redactionType",
+              "keyValue": "NONE",
+              "keyType": "info",
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": "String",
+              "displayName": "Document identifier",
+              "keyName": "__docid",
+              "keyValue": "ENC(OC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE0MTEyMDEwMTAucmVwb3J0c2VjdDQ1LkVudFJlcG9ydF8yMDIwMDcwNzE0MDkyOV9TQUxFQ0FCU1BHMDAwMDAwMDAwMTEwLm9yZ3BhZ2VudW0xLjExMi5yZXBvc2l0b3J5aWQzNi4xRTgxRTZGNi03MjI0LTRGNDktOUI4Ni01RUI4MERENEFCOTg5LnNpZ25hdHVyZTQzLnJPS2lfU1FlR3FiR3BTdVB3QkN5LWVVV0xSQ2otTi1GaURiN1pIcnp4MWMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)",
+              "keyType": "info",
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": "Integer",
+              "displayName": "Version number",
+              "keyName": "__versionNumber",
+              "keyValue": 2,
+              "keyType": "info",
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": "String",
+              "displayName": "Unique checkout identifier",
+              "keyName": "__checkoutId",
+              "keyValue": "751eca35-1b6c-480b-b69e-5a587765489d",
+              "keyType": "info",
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": "String",
+              "displayName": "Checkout Status",
+              "keyName": "__checkoutStatus",
+              "keyValue": "COMPLETED",
+              "keyType": "info",
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": "Date",
+              "displayName": "Checkout date time",
+              "keyName": "__checkoutDate",
+              "keyValue": "2020-07-14T11:22:56.000+05:30",
+              "keyType": "info",
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": "String",
+              "displayName": "Checkout User",
+              "keyName": "__checkoutUser",
+              "keyValue": "ADMIN",
+              "keyType": "info",
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": "Date",
+              "displayName": "Checkin date time",
+              "keyName": "__checkinDate",
+              "keyValue": "2020-07-14T11:24:23.000+05:30",
+              "keyType": "info",
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": "String",
+              "displayName": "Checkin User",
+              "keyName": "__checkinUser",
+              "keyValue": "ADMIN",
+              "keyType": "info",
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": "String",
+              "displayName": "Checkout message",
+              "keyName": "__checkoutMessage",
+              "keyValue": "V2",
+              "keyType": "info",
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": "Boolean",
+              "displayName": "Claimed",
+              "keyName": "__claimed",
+              "keyValue": false,
+              "keyType": "info",
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": "Integer",
+              "displayName": "Page Count",
+              "keyName": "__pageCount",
+              "keyValue": 1,
+              "keyType": "info",
+              "keyOrdinal": 0
+            },
+            {
+              "dataType": "String",
+              "displayName": "Document identifier",
+              "keyName": "__docid",
+              "keyValue": "ENC(OC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE0MTEyMDEwMTAucmVwb3J0c2VjdDQ1LkVudFJlcG9ydF8yMDIwMDcwNzE0MDkyOV9TQUxFQ0FCU1BHMDAwMDAwMDAwMTEwLm9yZ3BhZ2VudW0xLjExMi5yZXBvc2l0b3J5aWQzNi4xRTgxRTZGNi03MjI0LTRGNDktOUI4Ni01RUI4MERENEFCOTg5LnNpZ25hdHVyZTQzLnJPS2lfU1FlR3FiR3BTdVB3QkN5LWVVV0xSQ2otTi1GaURiN1pIcnp4MWMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)",
+              "keyType": "info",
+              "keyOrdinal": 0
+            }
+          ],
+          "snippets": null,
+          "links": [
+            {
+              "rel": "http://www/asg/com/mobius/rel/document",
+              "method": "GET",
+              "href": "/mobius/rest/contentstreams?id=ENC%28MTAucmVwb3NpdG9yeTcuRW50UmVwbzgucmVwb3J0aWQ1LkFDMDAxOS5yZXBvcnR2ZXIxNC4yMDIwMDcxNDExMjAxMDEwLnJlcG9ydHNlY3Q0NS5FbnRSZXBvcnRfMjAyMDA3MDcxNDA5MjlfU0FMRUNBQlNQRzAwMDAwMDAwMDExMC5vcmdwYWdlbnVtMS4xMTMubnVtYmVyb2ZwYWdlczEuMTEwLnBhZ2VPZmZzZXQxLjAxMi5yZXBvc2l0b3J5aWQzNi4xRTgxRTZGNi03MjI0LTRGNDktOUI4Ni01RUI4MERENEFCOTg5LnNpZ25hdHVyZTQzLnYzbnZpeXZCa1pZQ0VwVG94U0hRYW9oYUxadEtlNHhwei1IS1R2V3Y4SHMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA%29"
+            },
+            {
+              "rel": "http://www/asg/com/mobius/rel/download",
+              "method": "POST",
+              "href": "/mobius/rest/contentstreams?id=ENC%28MTAucmVwb3NpdG9yeTcuRW50UmVwbzgucmVwb3J0aWQ1LkFDMDAxOS5yZXBvcnR2ZXIxNC4yMDIwMDcxNDExMjAxMDEwLnJlcG9ydHNlY3Q0NS5FbnRSZXBvcnRfMjAyMDA3MDcxNDA5MjlfU0FMRUNBQlNQRzAwMDAwMDAwMDExMC5vcmdwYWdlbnVtMS4xMTMubnVtYmVyb2ZwYWdlczEuMTEwLnBhZ2VPZmZzZXQxLjAxMi5yZXBvc2l0b3J5aWQzNi4xRTgxRTZGNi03MjI0LTRGNDktOUI4Ni01RUI4MERENEFCOTg5LnNpZ25hdHVyZTQzLnYzbnZpeXZCa1pZQ0VwVG94U0hRYW9oYUxadEtlNHhwei1IS1R2V3Y4SHMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA%29"
+            },
+            {
+              "rel": "http://www/asg/com/mobius/rel/extractionpolicies/get",
+              "method": "GET",
+              "href": "/mobius/rest/extractionpolicies?documentid=ENC%28MTAucmVwb3NpdG9yeTcuRW50UmVwbzgucmVwb3J0aWQ1LkFDMDAxOS5yZXBvcnR2ZXIxNC4yMDIwMDcxNDExMjAxMDEwLnJlcG9ydHNlY3Q0NS5FbnRSZXBvcnRfMjAyMDA3MDcxNDA5MjlfU0FMRUNBQlNQRzAwMDAwMDAwMDExMC5vcmdwYWdlbnVtMS4xMTMubnVtYmVyb2ZwYWdlczEuMTEwLnBhZ2VPZmZzZXQxLjAxMi5yZXBvc2l0b3J5aWQzNi4xRTgxRTZGNi03MjI0LTRGNDktOUI4Ni01RUI4MERENEFCOTg5LnNpZ25hdHVyZTQzLnYzbnZpeXZCa1pZQ0VwVG94U0hRYW9oYUxadEtlNHhwei1IS1R2V3Y4SHMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA%29"
+            },
+            {
+              "rel": "http://www/asg/com/mobius/rel/document/metadata",
+              "method": "GET",
+              "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTcuRW50UmVwbzgucmVwb3J0aWQ1LkFDMDAxOS5yZXBvcnR2ZXIxNC4yMDIwMDcxNDExMjAxMDEwLnJlcG9ydHNlY3Q0NS5FbnRSZXBvcnRfMjAyMDA3MDcxNDA5MjlfU0FMRUNBQlNQRzAwMDAwMDAwMDExMC5vcmdwYWdlbnVtMS4xMTMubnVtYmVyb2ZwYWdlczEuMTEwLnBhZ2VPZmZzZXQxLjAxMi5yZXBvc2l0b3J5aWQzNi4xRTgxRTZGNi03MjI0LTRGNDktOUI4Ni01RUI4MERENEFCOTg5LnNpZ25hdHVyZTQzLnYzbnZpeXZCa1pZQ0VwVG94U0hRYW9oYUxadEtlNHhwei1IS1R2V3Y4SHMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)/metadata"
+            },
+            {
+              "rel": "http://www/asg/com/mobius/rel/document/properties",
+              "method": "GET",
+              "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTcuRW50UmVwbzgucmVwb3J0aWQ1LkFDMDAxOS5yZXBvcnR2ZXIxNC4yMDIwMDcxNDExMjAxMDEwLnJlcG9ydHNlY3Q0NS5FbnRSZXBvcnRfMjAyMDA3MDcxNDA5MjlfU0FMRUNBQlNQRzAwMDAwMDAwMDExMC5vcmdwYWdlbnVtMS4xMTMubnVtYmVyb2ZwYWdlczEuMTEwLnBhZ2VPZmZzZXQxLjAxMi5yZXBvc2l0b3J5aWQzNi4xRTgxRTZGNi03MjI0LTRGNDktOUI4Ni01RUI4MERENEFCOTg5LnNpZ25hdHVyZTQzLnYzbnZpeXZCa1pZQ0VwVG94U0hRYW9oYUxadEtlNHhwei1IS1R2V3Y4SHMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)/properties"
+            },
+            {
+              "rel": "http://www/asg/com/mobius/rel/document/retentions",
+              "method": "GET",
+              "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTcuRW50UmVwbzgucmVwb3J0aWQ1LkFDMDAxOS5yZXBvcnR2ZXIxNC4yMDIwMDcxNDExMjAxMDEwLnJlcG9ydHNlY3Q0NS5FbnRSZXBvcnRfMjAyMDA3MDcxNDA5MjlfU0FMRUNBQlNQRzAwMDAwMDAwMDExMC5vcmdwYWdlbnVtMS4xMTMubnVtYmVyb2ZwYWdlczEuMTEwLnBhZ2VPZmZzZXQxLjAxMi5yZXBvc2l0b3J5aWQzNi4xRTgxRTZGNi03MjI0LTRGNDktOUI4Ni01RUI4MERENEFCOTg5LnNpZ25hdHVyZTQzLnYzbnZpeXZCa1pZQ0VwVG94U0hRYW9oYUxadEtlNHhwei1IS1R2V3Y4SHMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)/retentions"
+            },
+            {
+              "rel": "http://www/asg/com/mobius/rel/pages",
+              "method": "GET",
+              "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTcuRW50UmVwbzgucmVwb3J0aWQ1LkFDMDAxOS5yZXBvcnR2ZXIxNC4yMDIwMDcxNDExMjAxMDEwLnJlcG9ydHNlY3Q0NS5FbnRSZXBvcnRfMjAyMDA3MDcxNDA5MjlfU0FMRUNBQlNQRzAwMDAwMDAwMDExMC5vcmdwYWdlbnVtMS4xMTMubnVtYmVyb2ZwYWdlczEuMTEwLnBhZ2VPZmZzZXQxLjAxMi5yZXBvc2l0b3J5aWQzNi4xRTgxRTZGNi03MjI0LTRGNDktOUI4Ni01RUI4MERENEFCOTg5LnNpZ25hdHVyZTQzLnYzbnZpeXZCa1pZQ0VwVG94U0hRYW9oYUxadEtlNHhwei1IS1R2V3Y4SHMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)/pages"
+            },
+            {
+              "rel": "http://www/asg/com/mobius/rel/annotations/get",
+              "method": "GET",
+              "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTcuRW50UmVwbzgucmVwb3J0aWQ1LkFDMDAxOS5yZXBvcnR2ZXIxNC4yMDIwMDcxNDExMjAxMDEwLnJlcG9ydHNlY3Q0NS5FbnRSZXBvcnRfMjAyMDA3MDcxNDA5MjlfU0FMRUNBQlNQRzAwMDAwMDAwMDExMC5vcmdwYWdlbnVtMS4xMTMubnVtYmVyb2ZwYWdlczEuMTEwLnBhZ2VPZmZzZXQxLjAxMi5yZXBvc2l0b3J5aWQzNi4xRTgxRTZGNi03MjI0LTRGNDktOUI4Ni01RUI4MERENEFCOTg5LnNpZ25hdHVyZTQzLnYzbnZpeXZCa1pZQ0VwVG94U0hRYW9oYUxadEtlNHhwei1IS1R2V3Y4SHMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)/annotations"
+            },
+            {
+              "rel": "http://www/asg/com/mobius/rel/annotations/add",
+              "method": "POST",
+              "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTcuRW50UmVwbzgucmVwb3J0aWQ1LkFDMDAxOS5yZXBvcnR2ZXIxNC4yMDIwMDcxNDExMjAxMDEwLnJlcG9ydHNlY3Q0NS5FbnRSZXBvcnRfMjAyMDA3MDcxNDA5MjlfU0FMRUNBQlNQRzAwMDAwMDAwMDExMC5vcmdwYWdlbnVtMS4xMTMubnVtYmVyb2ZwYWdlczEuMTEwLnBhZ2VPZmZzZXQxLjAxMi5yZXBvc2l0b3J5aWQzNi4xRTgxRTZGNi03MjI0LTRGNDktOUI4Ni01RUI4MERENEFCOTg5LnNpZ25hdHVyZTQzLnYzbnZpeXZCa1pZQ0VwVG94U0hRYW9oYUxadEtlNHhwei1IS1R2V3Y4SHMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)/annotations"
+            },
+            {
+              "rel": "http://www/asg/com/mobius/rel/checkouts",
+              "method": "GET",
+              "href": "/mobius/rest/checkouts/"
+            },
+            {
+              "rel": "http://www/asg/com/mobius/rel/checkouts/post",
+              "method": "POST",
+              "href": "/mobius/rest/checkouts/"
+            }
+          ]
+        }
+      ],
+      "searchStatus": [],
+      "links": [
+        {
+          "rel": "next",
+          "method": "POST",
+          "href": "/mobius/rest/searches?returnresults=true&offset=6&limit=3"
+        },
+        {
+          "rel": "prev",
+          "method": "POST",
+          "href": "/mobius/rest/searches?returnresults=true&offset=0&limit=3"
+        }
+      ]
+    }
+  ],
+  "required": [
+    "incompleteResults",
+    "cachedResultCount",
+    "allResultsCached",
+    "results",
+    "searchStatus",
+    "links"
+  ],
+  "properties": {
+    "incompleteResults": {
+      "$id": "#/properties/incompleteResults",
+      "type": "boolean",
+      "title": "The incompleteResults schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": false,
+      "examples": [
+        true
+      ]
+    },
+    "cachedResultCount": {
+      "$id": "#/properties/cachedResultCount",
+      "type": "integer",
+      "title": "The cachedResultCount schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [
+        0
+      ]
+    },
+    "allResultsCached": {
+      "$id": "#/properties/allResultsCached",
+      "type": "boolean",
+      "title": "The allResultsCached schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": false,
+      "examples": [
+        false
+      ]
+    },
+    "results": {
+      "$id": "#/properties/results",
+      "type": "array",
+      "title": "The results schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "pageCount": 1,
+            "pageNumber": 2,
+            "objectId": "ENC(MTAucmVwb3NpdG9yeTcuRW50UmVwbzgucmVwb3J0aWQ1LkFDMDAxOS5yZXBvcnR2ZXIxNC4yMDIwMDcxNDExMjAxMDEwLnJlcG9ydHNlY3Q0NS5FbnRSZXBvcnRfMjAyMDA3MDcxNDA5MjlfU0FMRUNBQlNQRzAwMDAwMDAwMDExMC5vcmdwYWdlbnVtMS4xMTMubnVtYmVyb2ZwYWdlczEuMTEwLnBhZ2VPZmZzZXQxLjAxMi5yZXBvc2l0b3J5aWQzNi4xRTgxRTZGNi03MjI0LTRGNDktOUI4Ni01RUI4MERENEFCOTg5LnNpZ25hdHVyZTQzLnYzbnZpeXZCa1pZQ0VwVG94U0hRYW9oYUxadEtlNHhwei1IS1R2V3Y4SHMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)",
+            "objectTypeId": "1E81E6F6-7224-4F49-9B86-5EB80DD4AB98",
+            "indexes": [
+              {
+                "name": "__DocTitle",
+                "value": "AC001 AC001 is a shipped sample Jul 14, 2020 11:24:23 AM EntReport_20200707140929_SALEC Pages 1 DISK Available"
+              },
+              {
+                "name": "__DocName",
+                "value": "AC001 AC001 is a shipped sample Jul 14, 2020 11:24:23 AM EntReport_20200707140929_SALEC"
+              },
+              {
+                "name": "__availability",
+                "value": "Available"
+              },
+              {
+                "name": "__device",
+                "value": "DISK"
+              },
+              {
+                "name": "__ReportDescription",
+                "value": "AC001 is a shipped sample"
+              },
+              {
+                "name": "__reportid",
+                "value": "AC001"
+              },
+              {
+                "name": "__documentClass",
+                "value": "AC001"
+              },
+              {
+                "name": "__versionid",
+                "value": "Jul 14, 2020 11:20:10 AM"
+              },
+              {
+                "name": "__originalVersionId",
+                "value": "20200714112423"
+              },
+              {
+                "name": "__sectionid",
+                "value": "EntReport_20200707140929_SALEC"
+              },
+              {
+                "name": "__revisionTimestamp",
+                "value": "2020-07-14T11:24:23.000+05:30"
+              },
+              {
+                "name": "__originalPageNumber",
+                "value": 1
+              },
+              {
+                "name": "__numberOfContentSegments",
+                "value": 1
+              },
+              {
+                "name": "__Snippet",
+                "value": "ReportID: AC001 SectionID: EntReport_20200707140929_SALEC LS_INDT: 20200714055423 LS_INUSR: ADMIN LS_MSG: V2 LS_ORGPG: 1 LS_OUTDT: 20200714055256 LS_OUTID: 7e094301-9656-4f3e-b6e1-44e47c5a7d9a LS_OUTUSR: ADMIN LS_PGCNT: 1 LS_RPTID: AC001 LS_RPTVER: 20200714112010 LS_SECTID: EntReport_20200707140929_SALEC LS_VERNO: 2 Metadata: Test Numeric: 1234.1232132498326 Text: 01/16/84                                                                                                                  PAGE     5\r\n     REPORT ID: AC001                                      MONTHLY EXPENSE\r\n    DEPARTMENT: SALE   SALES\r\n        REGION: CE     CENTRAL\r\n        OFFICE: CHI    CHICAGO, ILLINOIS\r\n\r\nACCT  ACCT                              PLANNED          ACTUAL     VARIANCE      PLANNED        ACTUAL       VARIANCE\r\nCODE  DESCRIPTION                         MTD             MTD         MTD           YTD           YTD           YTD\r\n------ ------------------------------   ---------    ...ADMINISTRATIVE         "
+              },
+              {
+                "name": "__HitPosition",
+                "value": "976, 990"
+              }
+            ],
+            "metadata": [
+              {
+                "dataType": "String",
+                "displayName": "__DocTitle",
+                "keyName": "__DocTitle",
+                "keyValue": "AC001 AC001 is a shipped sample Jul 14, 2020 11:24:23 AM EntReport_20200707140929_SALEC Pages 1 DISK Available",
+                "keyType": "info",
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": "String",
+                "displayName": "__DocName",
+                "keyName": "__DocName",
+                "keyValue": "AC001 AC001 is a shipped sample Jul 14, 2020 11:24:23 AM EntReport_20200707140929_SALEC",
+                "keyType": "info",
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": "String",
+                "displayName": "Availability Status",
+                "keyName": "__availability",
+                "keyValue": "Available",
+                "keyType": "info",
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": "String",
+                "displayName": "__device",
+                "keyName": "__device",
+                "keyValue": "DISK",
+                "keyType": "info",
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": "String",
+                "displayName": "__ReportDescription",
+                "keyName": "__ReportDescription",
+                "keyValue": "AC001 is a shipped sample",
+                "keyType": "info",
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": "String",
+                "displayName": "Report ID",
+                "keyName": "__reportid",
+                "keyValue": "AC001",
+                "keyType": "document",
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": "String",
+                "displayName": "__documentClass",
+                "keyName": "__documentClass",
+                "keyValue": "AC001",
+                "keyType": "info",
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": "Date",
+                "displayName": "Report Version ID",
+                "keyName": "__versionid",
+                "keyValue": "2020-07-14T11:20:10.000+05:30",
+                "keyType": "document",
+                "keyOrdinal": 1
+              },
+              {
+                "dataType": "String",
+                "displayName": "__originalVersionId",
+                "keyName": "__originalVersionId",
+                "keyValue": "20200714112010",
+                "keyType": "info",
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": "String",
+                "displayName": "Report Section",
+                "keyName": "__sectionid",
+                "keyValue": "EntReport_20200707140929_SALEC",
+                "keyType": "document",
+                "keyOrdinal": 2
+              },
+              {
+                "dataType": "Date",
+                "displayName": "__revisionTimestamp",
+                "keyName": "__revisionTimestamp",
+                "keyValue": "2020-07-14T11:24:23.000+05:30",
+                "keyType": "info",
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": "Integer",
+                "displayName": "Page Number",
+                "keyName": "__originalPageNumber",
+                "keyValue": 1,
+                "keyType": "pageNumber",
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": "Integer",
+                "displayName": "Page count",
+                "keyName": "__numberOfContentSegments",
+                "keyValue": 1,
+                "keyType": "pageCount",
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": "Integer",
+                "displayName": "__pageOffset",
+                "keyName": "__pageOffset",
+                "keyValue": 1,
+                "keyType": "info",
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": "String",
+                "displayName": "__Snippet",
+                "keyName": "__Snippet",
+                "keyValue": "ReportID: AC001 SectionID: EntReport_20200707140929_SALEC LS_INDT: 20200714055423 LS_INUSR: ADMIN LS_MSG: V2 LS_ORGPG: 1 LS_OUTDT: 20200714055256 LS_OUTID: 7e094301-9656-4f3e-b6e1-44e47c5a7d9a LS_OUTUSR: ADMIN LS_PGCNT: 1 LS_RPTID: AC001 LS_RPTVER: 20200714112010 LS_SECTID: EntReport_20200707140929_SALEC LS_VERNO: 2 Metadata: Test Numeric: 1234.1232132498326 Text: 01/16/84                                                                                                                  PAGE     5\r\n     REPORT ID: AC001                                      MONTHLY EXPENSE\r\n    DEPARTMENT: SALE   SALES\r\n        REGION: CE     CENTRAL\r\n        OFFICE: CHI    CHICAGO, ILLINOIS\r\n\r\nACCT  ACCT                              PLANNED          ACTUAL     VARIANCE      PLANNED        ACTUAL       VARIANCE\r\nCODE  DESCRIPTION                         MTD             MTD         MTD           YTD           YTD           YTD\r\n------ ------------------------------   ---------    ...ADMINISTRATIVE         ",
+                "keyType": "info",
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": "String",
+                "displayName": "__HitPosition",
+                "keyName": "__HitPosition",
+                "keyValue": "976, 990",
+                "keyType": "info",
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": "String",
+                "displayName": "defaultteaser",
+                "keyName": "defaultteaser",
+                "keyValue": "AC001 AC001 is a shipped sample Jul 14, 2020 11:24:23 AM EntReport_20200707140929_SALEC Pages 1 DISK Available",
+                "keyType": "info",
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": "String",
+                "displayName": "__redactionType",
+                "keyName": "__redactionType",
+                "keyValue": "NONE",
+                "keyType": "info",
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": "String",
+                "displayName": "Document identifier",
+                "keyName": "__docid",
+                "keyValue": "ENC(OC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE0MTEyMDEwMTAucmVwb3J0c2VjdDQ1LkVudFJlcG9ydF8yMDIwMDcwNzE0MDkyOV9TQUxFQ0FCU1BHMDAwMDAwMDAwMTEwLm9yZ3BhZ2VudW0xLjExMi5yZXBvc2l0b3J5aWQzNi4xRTgxRTZGNi03MjI0LTRGNDktOUI4Ni01RUI4MERENEFCOTg5LnNpZ25hdHVyZTQzLnJPS2lfU1FlR3FiR3BTdVB3QkN5LWVVV0xSQ2otTi1GaURiN1pIcnp4MWMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)",
+                "keyType": "info",
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": "Integer",
+                "displayName": "Version number",
+                "keyName": "__versionNumber",
+                "keyValue": 2,
+                "keyType": "info",
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": "String",
+                "displayName": "Unique checkout identifier",
+                "keyName": "__checkoutId",
+                "keyValue": "751eca35-1b6c-480b-b69e-5a587765489d",
+                "keyType": "info",
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": "String",
+                "displayName": "Checkout Status",
+                "keyName": "__checkoutStatus",
+                "keyValue": "COMPLETED",
+                "keyType": "info",
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": "Date",
+                "displayName": "Checkout date time",
+                "keyName": "__checkoutDate",
+                "keyValue": "2020-07-14T11:22:56.000+05:30",
+                "keyType": "info",
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": "String",
+                "displayName": "Checkout User",
+                "keyName": "__checkoutUser",
+                "keyValue": "ADMIN",
+                "keyType": "info",
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": "Date",
+                "displayName": "Checkin date time",
+                "keyName": "__checkinDate",
+                "keyValue": "2020-07-14T11:24:23.000+05:30",
+                "keyType": "info",
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": "String",
+                "displayName": "Checkin User",
+                "keyName": "__checkinUser",
+                "keyValue": "ADMIN",
+                "keyType": "info",
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": "String",
+                "displayName": "Checkout message",
+                "keyName": "__checkoutMessage",
+                "keyValue": "V2",
+                "keyType": "info",
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": "Boolean",
+                "displayName": "Claimed",
+                "keyName": "__claimed",
+                "keyValue": false,
+                "keyType": "info",
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": "Integer",
+                "displayName": "Page Count",
+                "keyName": "__pageCount",
+                "keyValue": 1,
+                "keyType": "info",
+                "keyOrdinal": 0
+              },
+              {
+                "dataType": "String",
+                "displayName": "Document identifier",
+                "keyName": "__docid",
+                "keyValue": "ENC(OC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE0MTEyMDEwMTAucmVwb3J0c2VjdDQ1LkVudFJlcG9ydF8yMDIwMDcwNzE0MDkyOV9TQUxFQ0FCU1BHMDAwMDAwMDAwMTEwLm9yZ3BhZ2VudW0xLjExMi5yZXBvc2l0b3J5aWQzNi4xRTgxRTZGNi03MjI0LTRGNDktOUI4Ni01RUI4MERENEFCOTg5LnNpZ25hdHVyZTQzLnJPS2lfU1FlR3FiR3BTdVB3QkN5LWVVV0xSQ2otTi1GaURiN1pIcnp4MWMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)",
+                "keyType": "info",
+                "keyOrdinal": 0
+              }
+            ],
+            "snippets": null,
+            "links": [
+              {
+                "rel": "http://www/asg/com/mobius/rel/document",
+                "method": "GET",
+                "href": "/mobius/rest/contentstreams?id=ENC%28MTAucmVwb3NpdG9yeTcuRW50UmVwbzgucmVwb3J0aWQ1LkFDMDAxOS5yZXBvcnR2ZXIxNC4yMDIwMDcxNDExMjAxMDEwLnJlcG9ydHNlY3Q0NS5FbnRSZXBvcnRfMjAyMDA3MDcxNDA5MjlfU0FMRUNBQlNQRzAwMDAwMDAwMDExMC5vcmdwYWdlbnVtMS4xMTMubnVtYmVyb2ZwYWdlczEuMTEwLnBhZ2VPZmZzZXQxLjAxMi5yZXBvc2l0b3J5aWQzNi4xRTgxRTZGNi03MjI0LTRGNDktOUI4Ni01RUI4MERENEFCOTg5LnNpZ25hdHVyZTQzLnYzbnZpeXZCa1pZQ0VwVG94U0hRYW9oYUxadEtlNHhwei1IS1R2V3Y4SHMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA%29"
+              },
+              {
+                "rel": "http://www/asg/com/mobius/rel/download",
+                "method": "POST",
+                "href": "/mobius/rest/contentstreams?id=ENC%28MTAucmVwb3NpdG9yeTcuRW50UmVwbzgucmVwb3J0aWQ1LkFDMDAxOS5yZXBvcnR2ZXIxNC4yMDIwMDcxNDExMjAxMDEwLnJlcG9ydHNlY3Q0NS5FbnRSZXBvcnRfMjAyMDA3MDcxNDA5MjlfU0FMRUNBQlNQRzAwMDAwMDAwMDExMC5vcmdwYWdlbnVtMS4xMTMubnVtYmVyb2ZwYWdlczEuMTEwLnBhZ2VPZmZzZXQxLjAxMi5yZXBvc2l0b3J5aWQzNi4xRTgxRTZGNi03MjI0LTRGNDktOUI4Ni01RUI4MERENEFCOTg5LnNpZ25hdHVyZTQzLnYzbnZpeXZCa1pZQ0VwVG94U0hRYW9oYUxadEtlNHhwei1IS1R2V3Y4SHMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA%29"
+              },
+              {
+                "rel": "http://www/asg/com/mobius/rel/extractionpolicies/get",
+                "method": "GET",
+                "href": "/mobius/rest/extractionpolicies?documentid=ENC%28MTAucmVwb3NpdG9yeTcuRW50UmVwbzgucmVwb3J0aWQ1LkFDMDAxOS5yZXBvcnR2ZXIxNC4yMDIwMDcxNDExMjAxMDEwLnJlcG9ydHNlY3Q0NS5FbnRSZXBvcnRfMjAyMDA3MDcxNDA5MjlfU0FMRUNBQlNQRzAwMDAwMDAwMDExMC5vcmdwYWdlbnVtMS4xMTMubnVtYmVyb2ZwYWdlczEuMTEwLnBhZ2VPZmZzZXQxLjAxMi5yZXBvc2l0b3J5aWQzNi4xRTgxRTZGNi03MjI0LTRGNDktOUI4Ni01RUI4MERENEFCOTg5LnNpZ25hdHVyZTQzLnYzbnZpeXZCa1pZQ0VwVG94U0hRYW9oYUxadEtlNHhwei1IS1R2V3Y4SHMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA%29"
+              },
+              {
+                "rel": "http://www/asg/com/mobius/rel/document/metadata",
+                "method": "GET",
+                "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTcuRW50UmVwbzgucmVwb3J0aWQ1LkFDMDAxOS5yZXBvcnR2ZXIxNC4yMDIwMDcxNDExMjAxMDEwLnJlcG9ydHNlY3Q0NS5FbnRSZXBvcnRfMjAyMDA3MDcxNDA5MjlfU0FMRUNBQlNQRzAwMDAwMDAwMDExMC5vcmdwYWdlbnVtMS4xMTMubnVtYmVyb2ZwYWdlczEuMTEwLnBhZ2VPZmZzZXQxLjAxMi5yZXBvc2l0b3J5aWQzNi4xRTgxRTZGNi03MjI0LTRGNDktOUI4Ni01RUI4MERENEFCOTg5LnNpZ25hdHVyZTQzLnYzbnZpeXZCa1pZQ0VwVG94U0hRYW9oYUxadEtlNHhwei1IS1R2V3Y4SHMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)/metadata"
+              },
+              {
+                "rel": "http://www/asg/com/mobius/rel/document/properties",
+                "method": "GET",
+                "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTcuRW50UmVwbzgucmVwb3J0aWQ1LkFDMDAxOS5yZXBvcnR2ZXIxNC4yMDIwMDcxNDExMjAxMDEwLnJlcG9ydHNlY3Q0NS5FbnRSZXBvcnRfMjAyMDA3MDcxNDA5MjlfU0FMRUNBQlNQRzAwMDAwMDAwMDExMC5vcmdwYWdlbnVtMS4xMTMubnVtYmVyb2ZwYWdlczEuMTEwLnBhZ2VPZmZzZXQxLjAxMi5yZXBvc2l0b3J5aWQzNi4xRTgxRTZGNi03MjI0LTRGNDktOUI4Ni01RUI4MERENEFCOTg5LnNpZ25hdHVyZTQzLnYzbnZpeXZCa1pZQ0VwVG94U0hRYW9oYUxadEtlNHhwei1IS1R2V3Y4SHMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)/properties"
+              },
+              {
+                "rel": "http://www/asg/com/mobius/rel/document/retentions",
+                "method": "GET",
+                "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTcuRW50UmVwbzgucmVwb3J0aWQ1LkFDMDAxOS5yZXBvcnR2ZXIxNC4yMDIwMDcxNDExMjAxMDEwLnJlcG9ydHNlY3Q0NS5FbnRSZXBvcnRfMjAyMDA3MDcxNDA5MjlfU0FMRUNBQlNQRzAwMDAwMDAwMDExMC5vcmdwYWdlbnVtMS4xMTMubnVtYmVyb2ZwYWdlczEuMTEwLnBhZ2VPZmZzZXQxLjAxMi5yZXBvc2l0b3J5aWQzNi4xRTgxRTZGNi03MjI0LTRGNDktOUI4Ni01RUI4MERENEFCOTg5LnNpZ25hdHVyZTQzLnYzbnZpeXZCa1pZQ0VwVG94U0hRYW9oYUxadEtlNHhwei1IS1R2V3Y4SHMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)/retentions"
+              },
+              {
+                "rel": "http://www/asg/com/mobius/rel/pages",
+                "method": "GET",
+                "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTcuRW50UmVwbzgucmVwb3J0aWQ1LkFDMDAxOS5yZXBvcnR2ZXIxNC4yMDIwMDcxNDExMjAxMDEwLnJlcG9ydHNlY3Q0NS5FbnRSZXBvcnRfMjAyMDA3MDcxNDA5MjlfU0FMRUNBQlNQRzAwMDAwMDAwMDExMC5vcmdwYWdlbnVtMS4xMTMubnVtYmVyb2ZwYWdlczEuMTEwLnBhZ2VPZmZzZXQxLjAxMi5yZXBvc2l0b3J5aWQzNi4xRTgxRTZGNi03MjI0LTRGNDktOUI4Ni01RUI4MERENEFCOTg5LnNpZ25hdHVyZTQzLnYzbnZpeXZCa1pZQ0VwVG94U0hRYW9oYUxadEtlNHhwei1IS1R2V3Y4SHMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)/pages"
+              },
+              {
+                "rel": "http://www/asg/com/mobius/rel/annotations/get",
+                "method": "GET",
+                "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTcuRW50UmVwbzgucmVwb3J0aWQ1LkFDMDAxOS5yZXBvcnR2ZXIxNC4yMDIwMDcxNDExMjAxMDEwLnJlcG9ydHNlY3Q0NS5FbnRSZXBvcnRfMjAyMDA3MDcxNDA5MjlfU0FMRUNBQlNQRzAwMDAwMDAwMDExMC5vcmdwYWdlbnVtMS4xMTMubnVtYmVyb2ZwYWdlczEuMTEwLnBhZ2VPZmZzZXQxLjAxMi5yZXBvc2l0b3J5aWQzNi4xRTgxRTZGNi03MjI0LTRGNDktOUI4Ni01RUI4MERENEFCOTg5LnNpZ25hdHVyZTQzLnYzbnZpeXZCa1pZQ0VwVG94U0hRYW9oYUxadEtlNHhwei1IS1R2V3Y4SHMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)/annotations"
+              },
+              {
+                "rel": "http://www/asg/com/mobius/rel/annotations/add",
+                "method": "POST",
+                "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTcuRW50UmVwbzgucmVwb3J0aWQ1LkFDMDAxOS5yZXBvcnR2ZXIxNC4yMDIwMDcxNDExMjAxMDEwLnJlcG9ydHNlY3Q0NS5FbnRSZXBvcnRfMjAyMDA3MDcxNDA5MjlfU0FMRUNBQlNQRzAwMDAwMDAwMDExMC5vcmdwYWdlbnVtMS4xMTMubnVtYmVyb2ZwYWdlczEuMTEwLnBhZ2VPZmZzZXQxLjAxMi5yZXBvc2l0b3J5aWQzNi4xRTgxRTZGNi03MjI0LTRGNDktOUI4Ni01RUI4MERENEFCOTg5LnNpZ25hdHVyZTQzLnYzbnZpeXZCa1pZQ0VwVG94U0hRYW9oYUxadEtlNHhwei1IS1R2V3Y4SHMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)/annotations"
+              },
+              {
+                "rel": "http://www/asg/com/mobius/rel/checkouts",
+                "method": "GET",
+                "href": "/mobius/rest/checkouts/"
+              },
+              {
+                "rel": "http://www/asg/com/mobius/rel/checkouts/post",
+                "method": "POST",
+                "href": "/mobius/rest/checkouts/"
+              }
+            ]
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/results/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/results/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "pageCount": 1,
+                "pageNumber": 2,
+                "objectId": "ENC(MTAucmVwb3NpdG9yeTcuRW50UmVwbzgucmVwb3J0aWQ1LkFDMDAxOS5yZXBvcnR2ZXIxNC4yMDIwMDcxNDExMjAxMDEwLnJlcG9ydHNlY3Q0NS5FbnRSZXBvcnRfMjAyMDA3MDcxNDA5MjlfU0FMRUNBQlNQRzAwMDAwMDAwMDExMC5vcmdwYWdlbnVtMS4xMTMubnVtYmVyb2ZwYWdlczEuMTEwLnBhZ2VPZmZzZXQxLjAxMi5yZXBvc2l0b3J5aWQzNi4xRTgxRTZGNi03MjI0LTRGNDktOUI4Ni01RUI4MERENEFCOTg5LnNpZ25hdHVyZTQzLnYzbnZpeXZCa1pZQ0VwVG94U0hRYW9oYUxadEtlNHhwei1IS1R2V3Y4SHMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)",
+                "objectTypeId": "1E81E6F6-7224-4F49-9B86-5EB80DD4AB98",
+                "indexes": [
+                  {
+                    "name": "__DocTitle",
+                    "value": "AC001 AC001 is a shipped sample Jul 14, 2020 11:24:23 AM EntReport_20200707140929_SALEC Pages 1 DISK Available"
+                  },
+                  {
+                    "name": "__DocName",
+                    "value": "AC001 AC001 is a shipped sample Jul 14, 2020 11:24:23 AM EntReport_20200707140929_SALEC"
+                  },
+                  {
+                    "name": "__availability",
+                    "value": "Available"
+                  },
+                  {
+                    "name": "__device",
+                    "value": "DISK"
+                  },
+                  {
+                    "name": "__ReportDescription",
+                    "value": "AC001 is a shipped sample"
+                  },
+                  {
+                    "name": "__reportid",
+                    "value": "AC001"
+                  },
+                  {
+                    "name": "__documentClass",
+                    "value": "AC001"
+                  },
+                  {
+                    "name": "__versionid",
+                    "value": "Jul 14, 2020 11:20:10 AM"
+                  },
+                  {
+                    "name": "__originalVersionId",
+                    "value": "20200714112423"
+                  },
+                  {
+                    "name": "__sectionid",
+                    "value": "EntReport_20200707140929_SALEC"
+                  },
+                  {
+                    "name": "__revisionTimestamp",
+                    "value": "2020-07-14T11:24:23.000+05:30"
+                  },
+                  {
+                    "name": "__originalPageNumber",
+                    "value": 1
+                  },
+                  {
+                    "name": "__numberOfContentSegments",
+                    "value": 1
+                  },
+                  {
+                    "name": "__Snippet",
+                    "value": "ReportID: AC001 SectionID: EntReport_20200707140929_SALEC LS_INDT: 20200714055423 LS_INUSR: ADMIN LS_MSG: V2 LS_ORGPG: 1 LS_OUTDT: 20200714055256 LS_OUTID: 7e094301-9656-4f3e-b6e1-44e47c5a7d9a LS_OUTUSR: ADMIN LS_PGCNT: 1 LS_RPTID: AC001 LS_RPTVER: 20200714112010 LS_SECTID: EntReport_20200707140929_SALEC LS_VERNO: 2 Metadata: Test Numeric: 1234.1232132498326 Text: 01/16/84                                                                                                                  PAGE     5\r\n     REPORT ID: AC001                                      MONTHLY EXPENSE\r\n    DEPARTMENT: SALE   SALES\r\n        REGION: CE     CENTRAL\r\n        OFFICE: CHI    CHICAGO, ILLINOIS\r\n\r\nACCT  ACCT                              PLANNED          ACTUAL     VARIANCE      PLANNED        ACTUAL       VARIANCE\r\nCODE  DESCRIPTION                         MTD             MTD         MTD           YTD           YTD           YTD\r\n------ ------------------------------   ---------    ...ADMINISTRATIVE         "
+                  },
+                  {
+                    "name": "__HitPosition",
+                    "value": "976, 990"
+                  }
+                ],
+                "metadata": [
+                  {
+                    "dataType": "String",
+                    "displayName": "__DocTitle",
+                    "keyName": "__DocTitle",
+                    "keyValue": "AC001 AC001 is a shipped sample Jul 14, 2020 11:24:23 AM EntReport_20200707140929_SALEC Pages 1 DISK Available",
+                    "keyType": "info",
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": "String",
+                    "displayName": "__DocName",
+                    "keyName": "__DocName",
+                    "keyValue": "AC001 AC001 is a shipped sample Jul 14, 2020 11:24:23 AM EntReport_20200707140929_SALEC",
+                    "keyType": "info",
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": "String",
+                    "displayName": "Availability Status",
+                    "keyName": "__availability",
+                    "keyValue": "Available",
+                    "keyType": "info",
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": "String",
+                    "displayName": "__device",
+                    "keyName": "__device",
+                    "keyValue": "DISK",
+                    "keyType": "info",
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": "String",
+                    "displayName": "__ReportDescription",
+                    "keyName": "__ReportDescription",
+                    "keyValue": "AC001 is a shipped sample",
+                    "keyType": "info",
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": "String",
+                    "displayName": "Report ID",
+                    "keyName": "__reportid",
+                    "keyValue": "AC001",
+                    "keyType": "document",
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": "String",
+                    "displayName": "__documentClass",
+                    "keyName": "__documentClass",
+                    "keyValue": "AC001",
+                    "keyType": "info",
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": "Date",
+                    "displayName": "Report Version ID",
+                    "keyName": "__versionid",
+                    "keyValue": "2020-07-14T11:20:10.000+05:30",
+                    "keyType": "document",
+                    "keyOrdinal": 1
+                  },
+                  {
+                    "dataType": "String",
+                    "displayName": "__originalVersionId",
+                    "keyName": "__originalVersionId",
+                    "keyValue": "20200714112010",
+                    "keyType": "info",
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": "String",
+                    "displayName": "Report Section",
+                    "keyName": "__sectionid",
+                    "keyValue": "EntReport_20200707140929_SALEC",
+                    "keyType": "document",
+                    "keyOrdinal": 2
+                  },
+                  {
+                    "dataType": "Date",
+                    "displayName": "__revisionTimestamp",
+                    "keyName": "__revisionTimestamp",
+                    "keyValue": "2020-07-14T11:24:23.000+05:30",
+                    "keyType": "info",
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": "Integer",
+                    "displayName": "Page Number",
+                    "keyName": "__originalPageNumber",
+                    "keyValue": 1,
+                    "keyType": "pageNumber",
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": "Integer",
+                    "displayName": "Page count",
+                    "keyName": "__numberOfContentSegments",
+                    "keyValue": 1,
+                    "keyType": "pageCount",
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": "Integer",
+                    "displayName": "__pageOffset",
+                    "keyName": "__pageOffset",
+                    "keyValue": 1,
+                    "keyType": "info",
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": "String",
+                    "displayName": "__Snippet",
+                    "keyName": "__Snippet",
+                    "keyValue": "ReportID: AC001 SectionID: EntReport_20200707140929_SALEC LS_INDT: 20200714055423 LS_INUSR: ADMIN LS_MSG: V2 LS_ORGPG: 1 LS_OUTDT: 20200714055256 LS_OUTID: 7e094301-9656-4f3e-b6e1-44e47c5a7d9a LS_OUTUSR: ADMIN LS_PGCNT: 1 LS_RPTID: AC001 LS_RPTVER: 20200714112010 LS_SECTID: EntReport_20200707140929_SALEC LS_VERNO: 2 Metadata: Test Numeric: 1234.1232132498326 Text: 01/16/84                                                                                                                  PAGE     5\r\n     REPORT ID: AC001                                      MONTHLY EXPENSE\r\n    DEPARTMENT: SALE   SALES\r\n        REGION: CE     CENTRAL\r\n        OFFICE: CHI    CHICAGO, ILLINOIS\r\n\r\nACCT  ACCT                              PLANNED          ACTUAL     VARIANCE      PLANNED        ACTUAL       VARIANCE\r\nCODE  DESCRIPTION                         MTD             MTD         MTD           YTD           YTD           YTD\r\n------ ------------------------------   ---------    ...ADMINISTRATIVE         ",
+                    "keyType": "info",
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": "String",
+                    "displayName": "__HitPosition",
+                    "keyName": "__HitPosition",
+                    "keyValue": "976, 990",
+                    "keyType": "info",
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": "String",
+                    "displayName": "defaultteaser",
+                    "keyName": "defaultteaser",
+                    "keyValue": "AC001 AC001 is a shipped sample Jul 14, 2020 11:24:23 AM EntReport_20200707140929_SALEC Pages 1 DISK Available",
+                    "keyType": "info",
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": "String",
+                    "displayName": "__redactionType",
+                    "keyName": "__redactionType",
+                    "keyValue": "NONE",
+                    "keyType": "info",
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": "String",
+                    "displayName": "Document identifier",
+                    "keyName": "__docid",
+                    "keyValue": "ENC(OC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE0MTEyMDEwMTAucmVwb3J0c2VjdDQ1LkVudFJlcG9ydF8yMDIwMDcwNzE0MDkyOV9TQUxFQ0FCU1BHMDAwMDAwMDAwMTEwLm9yZ3BhZ2VudW0xLjExMi5yZXBvc2l0b3J5aWQzNi4xRTgxRTZGNi03MjI0LTRGNDktOUI4Ni01RUI4MERENEFCOTg5LnNpZ25hdHVyZTQzLnJPS2lfU1FlR3FiR3BTdVB3QkN5LWVVV0xSQ2otTi1GaURiN1pIcnp4MWMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)",
+                    "keyType": "info",
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": "Integer",
+                    "displayName": "Version number",
+                    "keyName": "__versionNumber",
+                    "keyValue": 2,
+                    "keyType": "info",
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": "String",
+                    "displayName": "Unique checkout identifier",
+                    "keyName": "__checkoutId",
+                    "keyValue": "751eca35-1b6c-480b-b69e-5a587765489d",
+                    "keyType": "info",
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": "String",
+                    "displayName": "Checkout Status",
+                    "keyName": "__checkoutStatus",
+                    "keyValue": "COMPLETED",
+                    "keyType": "info",
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": "Date",
+                    "displayName": "Checkout date time",
+                    "keyName": "__checkoutDate",
+                    "keyValue": "2020-07-14T11:22:56.000+05:30",
+                    "keyType": "info",
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": "String",
+                    "displayName": "Checkout User",
+                    "keyName": "__checkoutUser",
+                    "keyValue": "ADMIN",
+                    "keyType": "info",
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": "Date",
+                    "displayName": "Checkin date time",
+                    "keyName": "__checkinDate",
+                    "keyValue": "2020-07-14T11:24:23.000+05:30",
+                    "keyType": "info",
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": "String",
+                    "displayName": "Checkin User",
+                    "keyName": "__checkinUser",
+                    "keyValue": "ADMIN",
+                    "keyType": "info",
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": "String",
+                    "displayName": "Checkout message",
+                    "keyName": "__checkoutMessage",
+                    "keyValue": "V2",
+                    "keyType": "info",
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": "Boolean",
+                    "displayName": "Claimed",
+                    "keyName": "__claimed",
+                    "keyValue": false,
+                    "keyType": "info",
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": "Integer",
+                    "displayName": "Page Count",
+                    "keyName": "__pageCount",
+                    "keyValue": 1,
+                    "keyType": "info",
+                    "keyOrdinal": 0
+                  },
+                  {
+                    "dataType": "String",
+                    "displayName": "Document identifier",
+                    "keyName": "__docid",
+                    "keyValue": "ENC(OC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAwNzE0MTEyMDEwMTAucmVwb3J0c2VjdDQ1LkVudFJlcG9ydF8yMDIwMDcwNzE0MDkyOV9TQUxFQ0FCU1BHMDAwMDAwMDAwMTEwLm9yZ3BhZ2VudW0xLjExMi5yZXBvc2l0b3J5aWQzNi4xRTgxRTZGNi03MjI0LTRGNDktOUI4Ni01RUI4MERENEFCOTg5LnNpZ25hdHVyZTQzLnJPS2lfU1FlR3FiR3BTdVB3QkN5LWVVV0xSQ2otTi1GaURiN1pIcnp4MWMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)",
+                    "keyType": "info",
+                    "keyOrdinal": 0
+                  }
+                ],
+                "snippets": null,
+                "links": [
+                  {
+                    "rel": "http://www/asg/com/mobius/rel/document",
+                    "method": "GET",
+                    "href": "/mobius/rest/contentstreams?id=ENC%28MTAucmVwb3NpdG9yeTcuRW50UmVwbzgucmVwb3J0aWQ1LkFDMDAxOS5yZXBvcnR2ZXIxNC4yMDIwMDcxNDExMjAxMDEwLnJlcG9ydHNlY3Q0NS5FbnRSZXBvcnRfMjAyMDA3MDcxNDA5MjlfU0FMRUNBQlNQRzAwMDAwMDAwMDExMC5vcmdwYWdlbnVtMS4xMTMubnVtYmVyb2ZwYWdlczEuMTEwLnBhZ2VPZmZzZXQxLjAxMi5yZXBvc2l0b3J5aWQzNi4xRTgxRTZGNi03MjI0LTRGNDktOUI4Ni01RUI4MERENEFCOTg5LnNpZ25hdHVyZTQzLnYzbnZpeXZCa1pZQ0VwVG94U0hRYW9oYUxadEtlNHhwei1IS1R2V3Y4SHMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA%29"
+                  },
+                  {
+                    "rel": "http://www/asg/com/mobius/rel/download",
+                    "method": "POST",
+                    "href": "/mobius/rest/contentstreams?id=ENC%28MTAucmVwb3NpdG9yeTcuRW50UmVwbzgucmVwb3J0aWQ1LkFDMDAxOS5yZXBvcnR2ZXIxNC4yMDIwMDcxNDExMjAxMDEwLnJlcG9ydHNlY3Q0NS5FbnRSZXBvcnRfMjAyMDA3MDcxNDA5MjlfU0FMRUNBQlNQRzAwMDAwMDAwMDExMC5vcmdwYWdlbnVtMS4xMTMubnVtYmVyb2ZwYWdlczEuMTEwLnBhZ2VPZmZzZXQxLjAxMi5yZXBvc2l0b3J5aWQzNi4xRTgxRTZGNi03MjI0LTRGNDktOUI4Ni01RUI4MERENEFCOTg5LnNpZ25hdHVyZTQzLnYzbnZpeXZCa1pZQ0VwVG94U0hRYW9oYUxadEtlNHhwei1IS1R2V3Y4SHMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA%29"
+                  },
+                  {
+                    "rel": "http://www/asg/com/mobius/rel/extractionpolicies/get",
+                    "method": "GET",
+                    "href": "/mobius/rest/extractionpolicies?documentid=ENC%28MTAucmVwb3NpdG9yeTcuRW50UmVwbzgucmVwb3J0aWQ1LkFDMDAxOS5yZXBvcnR2ZXIxNC4yMDIwMDcxNDExMjAxMDEwLnJlcG9ydHNlY3Q0NS5FbnRSZXBvcnRfMjAyMDA3MDcxNDA5MjlfU0FMRUNBQlNQRzAwMDAwMDAwMDExMC5vcmdwYWdlbnVtMS4xMTMubnVtYmVyb2ZwYWdlczEuMTEwLnBhZ2VPZmZzZXQxLjAxMi5yZXBvc2l0b3J5aWQzNi4xRTgxRTZGNi03MjI0LTRGNDktOUI4Ni01RUI4MERENEFCOTg5LnNpZ25hdHVyZTQzLnYzbnZpeXZCa1pZQ0VwVG94U0hRYW9oYUxadEtlNHhwei1IS1R2V3Y4SHMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA%29"
+                  },
+                  {
+                    "rel": "http://www/asg/com/mobius/rel/document/metadata",
+                    "method": "GET",
+                    "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTcuRW50UmVwbzgucmVwb3J0aWQ1LkFDMDAxOS5yZXBvcnR2ZXIxNC4yMDIwMDcxNDExMjAxMDEwLnJlcG9ydHNlY3Q0NS5FbnRSZXBvcnRfMjAyMDA3MDcxNDA5MjlfU0FMRUNBQlNQRzAwMDAwMDAwMDExMC5vcmdwYWdlbnVtMS4xMTMubnVtYmVyb2ZwYWdlczEuMTEwLnBhZ2VPZmZzZXQxLjAxMi5yZXBvc2l0b3J5aWQzNi4xRTgxRTZGNi03MjI0LTRGNDktOUI4Ni01RUI4MERENEFCOTg5LnNpZ25hdHVyZTQzLnYzbnZpeXZCa1pZQ0VwVG94U0hRYW9oYUxadEtlNHhwei1IS1R2V3Y4SHMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)/metadata"
+                  },
+                  {
+                    "rel": "http://www/asg/com/mobius/rel/document/properties",
+                    "method": "GET",
+                    "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTcuRW50UmVwbzgucmVwb3J0aWQ1LkFDMDAxOS5yZXBvcnR2ZXIxNC4yMDIwMDcxNDExMjAxMDEwLnJlcG9ydHNlY3Q0NS5FbnRSZXBvcnRfMjAyMDA3MDcxNDA5MjlfU0FMRUNBQlNQRzAwMDAwMDAwMDExMC5vcmdwYWdlbnVtMS4xMTMubnVtYmVyb2ZwYWdlczEuMTEwLnBhZ2VPZmZzZXQxLjAxMi5yZXBvc2l0b3J5aWQzNi4xRTgxRTZGNi03MjI0LTRGNDktOUI4Ni01RUI4MERENEFCOTg5LnNpZ25hdHVyZTQzLnYzbnZpeXZCa1pZQ0VwVG94U0hRYW9oYUxadEtlNHhwei1IS1R2V3Y4SHMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)/properties"
+                  },
+                  {
+                    "rel": "http://www/asg/com/mobius/rel/document/retentions",
+                    "method": "GET",
+                    "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTcuRW50UmVwbzgucmVwb3J0aWQ1LkFDMDAxOS5yZXBvcnR2ZXIxNC4yMDIwMDcxNDExMjAxMDEwLnJlcG9ydHNlY3Q0NS5FbnRSZXBvcnRfMjAyMDA3MDcxNDA5MjlfU0FMRUNBQlNQRzAwMDAwMDAwMDExMC5vcmdwYWdlbnVtMS4xMTMubnVtYmVyb2ZwYWdlczEuMTEwLnBhZ2VPZmZzZXQxLjAxMi5yZXBvc2l0b3J5aWQzNi4xRTgxRTZGNi03MjI0LTRGNDktOUI4Ni01RUI4MERENEFCOTg5LnNpZ25hdHVyZTQzLnYzbnZpeXZCa1pZQ0VwVG94U0hRYW9oYUxadEtlNHhwei1IS1R2V3Y4SHMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)/retentions"
+                  },
+                  {
+                    "rel": "http://www/asg/com/mobius/rel/pages",
+                    "method": "GET",
+                    "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTcuRW50UmVwbzgucmVwb3J0aWQ1LkFDMDAxOS5yZXBvcnR2ZXIxNC4yMDIwMDcxNDExMjAxMDEwLnJlcG9ydHNlY3Q0NS5FbnRSZXBvcnRfMjAyMDA3MDcxNDA5MjlfU0FMRUNBQlNQRzAwMDAwMDAwMDExMC5vcmdwYWdlbnVtMS4xMTMubnVtYmVyb2ZwYWdlczEuMTEwLnBhZ2VPZmZzZXQxLjAxMi5yZXBvc2l0b3J5aWQzNi4xRTgxRTZGNi03MjI0LTRGNDktOUI4Ni01RUI4MERENEFCOTg5LnNpZ25hdHVyZTQzLnYzbnZpeXZCa1pZQ0VwVG94U0hRYW9oYUxadEtlNHhwei1IS1R2V3Y4SHMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)/pages"
+                  },
+                  {
+                    "rel": "http://www/asg/com/mobius/rel/annotations/get",
+                    "method": "GET",
+                    "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTcuRW50UmVwbzgucmVwb3J0aWQ1LkFDMDAxOS5yZXBvcnR2ZXIxNC4yMDIwMDcxNDExMjAxMDEwLnJlcG9ydHNlY3Q0NS5FbnRSZXBvcnRfMjAyMDA3MDcxNDA5MjlfU0FMRUNBQlNQRzAwMDAwMDAwMDExMC5vcmdwYWdlbnVtMS4xMTMubnVtYmVyb2ZwYWdlczEuMTEwLnBhZ2VPZmZzZXQxLjAxMi5yZXBvc2l0b3J5aWQzNi4xRTgxRTZGNi03MjI0LTRGNDktOUI4Ni01RUI4MERENEFCOTg5LnNpZ25hdHVyZTQzLnYzbnZpeXZCa1pZQ0VwVG94U0hRYW9oYUxadEtlNHhwei1IS1R2V3Y4SHMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)/annotations"
+                  },
+                  {
+                    "rel": "http://www/asg/com/mobius/rel/annotations/add",
+                    "method": "POST",
+                    "href": "/mobius/rest/documents/ENC(MTAucmVwb3NpdG9yeTcuRW50UmVwbzgucmVwb3J0aWQ1LkFDMDAxOS5yZXBvcnR2ZXIxNC4yMDIwMDcxNDExMjAxMDEwLnJlcG9ydHNlY3Q0NS5FbnRSZXBvcnRfMjAyMDA3MDcxNDA5MjlfU0FMRUNBQlNQRzAwMDAwMDAwMDExMC5vcmdwYWdlbnVtMS4xMTMubnVtYmVyb2ZwYWdlczEuMTEwLnBhZ2VPZmZzZXQxLjAxMi5yZXBvc2l0b3J5aWQzNi4xRTgxRTZGNi03MjI0LTRGNDktOUI4Ni01RUI4MERENEFCOTg5LnNpZ25hdHVyZTQzLnYzbnZpeXZCa1pZQ0VwVG94U0hRYW9oYUxadEtlNHhwei1IS1R2V3Y4SHMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)/annotations"
+                  },
+                  {
+                    "rel": "http://www/asg/com/mobius/rel/checkouts",
+                    "method": "GET",
+                    "href": "/mobius/rest/checkouts/"
+                  },
+                  {
+                    "rel": "http://www/asg/com/mobius/rel/checkouts/post",
+                    "method": "POST",
+                    "href": "/mobius/rest/checkouts/"
+                  }
+                ]
+              }
+            ],
+            "required": [
+              "pageCount",
+              "pageNumber",
+              "objectId",
+              "objectTypeId",
+              "indexes",
+              "metadata",
+              "snippets",
+              "links"
+            ],
+            "properties": {
+              "pageCount": {
+                "$id": "#/properties/results/items/anyOf/0/properties/pageCount",
+                "type": "integer",
+                "title": "The pageCount schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0,
+                "examples": [
+                  1
+                ]
+              },
+              "pageNumber": {
+                "$id": "#/properties/results/items/anyOf/0/properties/pageNumber",
+                "type": "integer",
+                "title": "The pageNumber schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0,
+                "examples": [
+                  2
+                ]
+              },
+              "objectId": {
+                "$id": "#/properties/results/items/anyOf/0/properties/objectId",
+                "type": "string",
+                "title": "The objectId schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "ENC(MTAucmVwb3NpdG9yeTcuRW50UmVwbzgucmVwb3J0aWQ1LkFDMDAxOS5yZXBvcnR2ZXIxNC4yMDIwMDcxNDExMjAxMDEwLnJlcG9ydHNlY3Q0NS5FbnRSZXBvcnRfMjAyMDA3MDcxNDA5MjlfU0FMRUNBQlNQRzAwMDAwMDAwMDExMC5vcmdwYWdlbnVtMS4xMTMubnVtYmVyb2ZwYWdlczEuMTEwLnBhZ2VPZmZzZXQxLjAxMi5yZXBvc2l0b3J5aWQzNi4xRTgxRTZGNi03MjI0LTRGNDktOUI4Ni01RUI4MERENEFCOTg5LnNpZ25hdHVyZTQzLnYzbnZpeXZCa1pZQ0VwVG94U0hRYW9oYUxadEtlNHhwei1IS1R2V3Y4SHMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)"
+                ]
+              },
+              "objectTypeId": {
+                "$id": "#/properties/results/items/anyOf/0/properties/objectTypeId",
+                "type": "string",
+                "title": "The objectTypeId schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "1E81E6F6-7224-4F49-9B86-5EB80DD4AB98"
+                ]
+              },
+              "indexes": {
+                "$id": "#/properties/results/items/anyOf/0/properties/indexes",
+                "type": "array",
+                "title": "The indexes schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": [],
+                "examples": [
+                  [
+                    {
+                      "name": "__DocTitle",
+                      "value": "AC001 AC001 is a shipped sample Jul 14, 2020 11:24:23 AM EntReport_20200707140929_SALEC Pages 1 DISK Available"
+                    },
+                    {
+                      "name": "__DocName",
+                      "value": "AC001 AC001 is a shipped sample Jul 14, 2020 11:24:23 AM EntReport_20200707140929_SALEC"
+                    }
+                  ]
+                ],
+                "additionalItems": true,
+                "items": {
+                  "$id": "#/properties/results/items/anyOf/0/properties/indexes/items",
+                  "anyOf": [
+                    {
+                      "$id": "#/properties/results/items/anyOf/0/properties/indexes/items/anyOf/0",
+                      "type": "object",
+                      "title": "The first anyOf schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": {},
+                      "examples": [
+                        {
+                          "name": "__DocTitle",
+                          "value": "AC001 AC001 is a shipped sample Jul 14, 2020 11:24:23 AM EntReport_20200707140929_SALEC Pages 1 DISK Available"
+                        }
+                      ],
+                      "required": [
+                        "name",
+                        "value"
+                      ],
+                      "properties": {
+                        "name": {
+                          "$id": "#/properties/results/items/anyOf/0/properties/indexes/items/anyOf/0/properties/name",
+                          "type": "string",
+                          "title": "The name schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "__DocTitle"
+                          ]
+                        },
+                        "value": {
+                          "$id": "#/properties/results/items/anyOf/0/properties/indexes/items/anyOf/0/properties/value",
+                          "type": "string",
+                          "title": "The value schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "AC001 AC001 is a shipped sample Jul 14, 2020 11:24:23 AM EntReport_20200707140929_SALEC Pages 1 DISK Available"
+                          ]
+                        }
+                      },
+                      "additionalProperties": true
+                    }
+                  ]
+                }
+              },
+              "metadata": {
+                "$id": "#/properties/results/items/anyOf/0/properties/metadata",
+                "type": "array",
+                "title": "The metadata schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": [],
+                "examples": [
+                  [
+                    {
+                      "dataType": "String",
+                      "displayName": "__DocTitle",
+                      "keyName": "__DocTitle",
+                      "keyValue": "AC001 AC001 is a shipped sample Jul 14, 2020 11:24:23 AM EntReport_20200707140929_SALEC Pages 1 DISK Available",
+                      "keyType": "info",
+                      "keyOrdinal": 0
+                    },
+                    {
+                      "dataType": "String",
+                      "displayName": "__DocName",
+                      "keyName": "__DocName",
+                      "keyValue": "AC001 AC001 is a shipped sample Jul 14, 2020 11:24:23 AM EntReport_20200707140929_SALEC",
+                      "keyType": "info",
+                      "keyOrdinal": 0
+                    }
+                  ]
+                ],
+                "additionalItems": true,
+                "items": {
+                  "$id": "#/properties/results/items/anyOf/0/properties/metadata/items",
+                  "anyOf": [
+                    {
+                      "$id": "#/properties/results/items/anyOf/0/properties/metadata/items/anyOf/0",
+                      "type": "object",
+                      "title": "The first anyOf schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": {},
+                      "examples": [
+                        {
+                          "dataType": "String",
+                          "displayName": "__DocTitle",
+                          "keyName": "__DocTitle",
+                          "keyValue": "AC001 AC001 is a shipped sample Jul 14, 2020 11:24:23 AM EntReport_20200707140929_SALEC Pages 1 DISK Available",
+                          "keyType": "info",
+                          "keyOrdinal": 0
+                        }
+                      ],
+                      "required": [
+                        "dataType",
+                        "displayName",
+                        "keyName",
+                        "keyValue",
+                        "keyType",
+                        "keyOrdinal"
+                      ],
+                      "properties": {
+                        "dataType": {
+                          "$id": "#/properties/results/items/anyOf/0/properties/metadata/items/anyOf/0/properties/dataType",
+                          "type": "string",
+                          "title": "The dataType schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "String"
+                          ]
+                        },
+                        "displayName": {
+                          "$id": "#/properties/results/items/anyOf/0/properties/metadata/items/anyOf/0/properties/displayName",
+                          "type": "string",
+                          "title": "The displayName schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "__DocTitle"
+                          ]
+                        },
+                        "keyName": {
+                          "$id": "#/properties/results/items/anyOf/0/properties/metadata/items/anyOf/0/properties/keyName",
+                          "type": "string",
+                          "title": "The keyName schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "__DocTitle"
+                          ]
+                        },
+                        "keyValue": {
+                          "$id": "#/properties/results/items/anyOf/0/properties/metadata/items/anyOf/0/properties/keyValue",
+                          "type": "string",
+                          "title": "The keyValue schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "AC001 AC001 is a shipped sample Jul 14, 2020 11:24:23 AM EntReport_20200707140929_SALEC Pages 1 DISK Available"
+                          ]
+                        },
+                        "keyType": {
+                          "$id": "#/properties/results/items/anyOf/0/properties/metadata/items/anyOf/0/properties/keyType",
+                          "type": "string",
+                          "title": "The keyType schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "info"
+                          ]
+                        },
+                        "keyOrdinal": {
+                          "$id": "#/properties/results/items/anyOf/0/properties/metadata/items/anyOf/0/properties/keyOrdinal",
+                          "type": "integer",
+                          "title": "The keyOrdinal schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": 0,
+                          "examples": [
+                            0
+                          ]
+                        }
+                      },
+                      "additionalProperties": true
+                    }
+                  ]
+                }
+              },
+              "snippets": {
+                "$id": "#/properties/results/items/anyOf/0/properties/snippets",
+                "type": "null",
+                "title": "The snippets schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": null,
+                "examples": [
+                  null
+                ]
+              },
+              "links": {
+                "$id": "#/properties/results/items/anyOf/0/properties/links",
+                "type": "array",
+                "title": "The links schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": [],
+                "examples": [
+                  [
+                    {
+                      "rel": "http://www/asg/com/mobius/rel/document",
+                      "method": "GET",
+                      "href": "/mobius/rest/contentstreams?id=ENC%28MTAucmVwb3NpdG9yeTcuRW50UmVwbzgucmVwb3J0aWQ1LkFDMDAxOS5yZXBvcnR2ZXIxNC4yMDIwMDcxNDExMjAxMDEwLnJlcG9ydHNlY3Q0NS5FbnRSZXBvcnRfMjAyMDA3MDcxNDA5MjlfU0FMRUNBQlNQRzAwMDAwMDAwMDExMC5vcmdwYWdlbnVtMS4xMTMubnVtYmVyb2ZwYWdlczEuMTEwLnBhZ2VPZmZzZXQxLjAxMi5yZXBvc2l0b3J5aWQzNi4xRTgxRTZGNi03MjI0LTRGNDktOUI4Ni01RUI4MERENEFCOTg5LnNpZ25hdHVyZTQzLnYzbnZpeXZCa1pZQ0VwVG94U0hRYW9oYUxadEtlNHhwei1IS1R2V3Y4SHMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA%29"
+                    },
+                    {
+                      "rel": "http://www/asg/com/mobius/rel/download",
+                      "method": "POST",
+                      "href": "/mobius/rest/contentstreams?id=ENC%28MTAucmVwb3NpdG9yeTcuRW50UmVwbzgucmVwb3J0aWQ1LkFDMDAxOS5yZXBvcnR2ZXIxNC4yMDIwMDcxNDExMjAxMDEwLnJlcG9ydHNlY3Q0NS5FbnRSZXBvcnRfMjAyMDA3MDcxNDA5MjlfU0FMRUNBQlNQRzAwMDAwMDAwMDExMC5vcmdwYWdlbnVtMS4xMTMubnVtYmVyb2ZwYWdlczEuMTEwLnBhZ2VPZmZzZXQxLjAxMi5yZXBvc2l0b3J5aWQzNi4xRTgxRTZGNi03MjI0LTRGNDktOUI4Ni01RUI4MERENEFCOTg5LnNpZ25hdHVyZTQzLnYzbnZpeXZCa1pZQ0VwVG94U0hRYW9oYUxadEtlNHhwei1IS1R2V3Y4SHMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA%29"
+                    }
+                  ]
+                ],
+                "additionalItems": true,
+                "items": {
+                  "$id": "#/properties/results/items/anyOf/0/properties/links/items",
+                  "anyOf": [
+                    {
+                      "$id": "#/properties/results/items/anyOf/0/properties/links/items/anyOf/0",
+                      "type": "object",
+                      "title": "The first anyOf schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": {},
+                      "examples": [
+                        {
+                          "rel": "http://www/asg/com/mobius/rel/document",
+                          "method": "GET",
+                          "href": "/mobius/rest/contentstreams?id=ENC%28MTAucmVwb3NpdG9yeTcuRW50UmVwbzgucmVwb3J0aWQ1LkFDMDAxOS5yZXBvcnR2ZXIxNC4yMDIwMDcxNDExMjAxMDEwLnJlcG9ydHNlY3Q0NS5FbnRSZXBvcnRfMjAyMDA3MDcxNDA5MjlfU0FMRUNBQlNQRzAwMDAwMDAwMDExMC5vcmdwYWdlbnVtMS4xMTMubnVtYmVyb2ZwYWdlczEuMTEwLnBhZ2VPZmZzZXQxLjAxMi5yZXBvc2l0b3J5aWQzNi4xRTgxRTZGNi03MjI0LTRGNDktOUI4Ni01RUI4MERENEFCOTg5LnNpZ25hdHVyZTQzLnYzbnZpeXZCa1pZQ0VwVG94U0hRYW9oYUxadEtlNHhwei1IS1R2V3Y4SHMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA%29"
+                        }
+                      ],
+                      "required": [
+                        "rel",
+                        "method",
+                        "href"
+                      ],
+                      "properties": {
+                        "rel": {
+                          "$id": "#/properties/results/items/anyOf/0/properties/links/items/anyOf/0/properties/rel",
+                          "type": "string",
+                          "title": "The rel schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "http://www/asg/com/mobius/rel/document"
+                          ]
+                        },
+                        "method": {
+                          "$id": "#/properties/results/items/anyOf/0/properties/links/items/anyOf/0/properties/method",
+                          "type": "string",
+                          "title": "The method schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "GET"
+                          ]
+                        },
+                        "href": {
+                          "$id": "#/properties/results/items/anyOf/0/properties/links/items/anyOf/0/properties/href",
+                          "type": "string",
+                          "title": "The href schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "/mobius/rest/contentstreams?id=ENC%28MTAucmVwb3NpdG9yeTcuRW50UmVwbzgucmVwb3J0aWQ1LkFDMDAxOS5yZXBvcnR2ZXIxNC4yMDIwMDcxNDExMjAxMDEwLnJlcG9ydHNlY3Q0NS5FbnRSZXBvcnRfMjAyMDA3MDcxNDA5MjlfU0FMRUNBQlNQRzAwMDAwMDAwMDExMC5vcmdwYWdlbnVtMS4xMTMubnVtYmVyb2ZwYWdlczEuMTEwLnBhZ2VPZmZzZXQxLjAxMi5yZXBvc2l0b3J5aWQzNi4xRTgxRTZGNi03MjI0LTRGNDktOUI4Ni01RUI4MERENEFCOTg5LnNpZ25hdHVyZTQzLnYzbnZpeXZCa1pZQ0VwVG94U0hRYW9oYUxadEtlNHhwei1IS1R2V3Y4SHMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA%29"
+                          ]
+                        }
+                      },
+                      "additionalProperties": true
+                    }
+                  ]
+                }
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    },
+    "searchStatus": {
+      "$id": "#/properties/searchStatus",
+      "type": "array",
+      "title": "The searchStatus schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        []
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/searchStatus/items"
+      }
+    },
+    "links": {
+      "$id": "#/properties/links",
+      "type": "array",
+      "title": "The links schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "rel": "next",
+            "method": "POST",
+            "href": "/mobius/rest/searches?returnresults=true&offset=6&limit=3"
+          },
+          {
+            "rel": "prev",
+            "method": "POST",
+            "href": "/mobius/rest/searches?returnresults=true&offset=0&limit=3"
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/links/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/links/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "rel": "next",
+                "method": "POST",
+                "href": "/mobius/rest/searches?returnresults=true&offset=6&limit=3"
+              }
+            ],
+            "required": [
+              "rel",
+              "method",
+              "href"
+            ],
+            "properties": {
+              "rel": {
+                "$id": "#/properties/links/items/anyOf/0/properties/rel",
+                "type": "string",
+                "title": "The rel schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "next"
+                ]
+              },
+              "method": {
+                "$id": "#/properties/links/items/anyOf/0/properties/method",
+                "type": "string",
+                "title": "The method schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "POST"
+                ]
+              },
+              "href": {
+                "$id": "#/properties/links/items/anyOf/0/properties/href",
+                "type": "string",
+                "title": "The href schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "/mobius/rest/searches?returnresults=true&offset=6&limit=3"
+                ]
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    }
+  },
+  "additionalProperties": true
+}

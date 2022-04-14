@@ -1,0 +1,309 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "getRepositoryCapabilities@9.1_output",
+  "type": "object",
+  "title": "Get Repository Capabilities Output V9.1",
+  "description": "The Get Repository Capabilities Output schema Version 9.1.",
+  "default": {},
+  "examples": [
+    {
+      "capabilities": [
+        {
+          "name": "INDEX_CREATE",
+          "displayName": "Index create",
+          "isSupported": false
+        },
+        {
+          "name": "INDEX_DELETE",
+          "displayName": "Index delete",
+          "isSupported": false
+        },
+        {
+          "name": "INDEX_UPDATE",
+          "displayName": "Index update",
+          "isSupported": true
+        },
+        {
+          "name": "INDEX_READ",
+          "displayName": "Index read",
+          "isSupported": false
+        },
+        {
+          "name": "CONTENT_NAVIGATION",
+          "displayName": "Content navigation",
+          "isSupported": false
+        },
+        {
+          "name": "ARC_CREATE",
+          "displayName": "Archive Create",
+          "isSupported": true
+        },
+        {
+          "name": "REC_MANAGEMENT",
+          "displayName": "Records management",
+          "isSupported": false
+        },
+        {
+          "name": "BASIC_FUNCTIONALITY",
+          "displayName": "Basic functionality",
+          "isSupported": true
+        },
+        {
+          "name": "ANNOTATIONS",
+          "displayName": "Annotations",
+          "isSupported": true
+        },
+        {
+          "name": "OVERLAYS",
+          "displayName": "Overlays",
+          "isSupported": true
+        },
+        {
+          "name": "TOPIC_ITEM_SEARCH",
+          "displayName": "Topic item search",
+          "isSupported": true
+        },
+        {
+          "name": "WORK_QUEUES",
+          "displayName": "Work Queues",
+          "isSupported": false
+        },
+        {
+          "name": "ANNO_PERM_DISTINCT",
+          "displayName": "Anno perm distinct",
+          "isSupported": true
+        },
+        {
+          "name": "OVERLAY_PERMISSIONS",
+          "displayName": "Overlay permissions",
+          "isSupported": true
+        },
+        {
+          "name": "RECIPIENT_LENGTH_10",
+          "displayName": "Recipient length 10",
+          "isSupported": false
+        },
+        {
+          "name": "RECIPIENT_LENGTH_74",
+          "displayName": "Recipient length 74",
+          "isSupported": false
+        },
+        {
+          "name": "RECIPIENT_LENGTH_128",
+          "displayName": "Recipient length 128",
+          "isSupported": true
+        },
+        {
+          "name": "GET_PAGES_API",
+          "displayName": "Get pages API",
+          "isSupported": true
+        },
+        {
+          "name": "FILTERED_DOCSEARCH",
+          "displayName": "Filtered doc search",
+          "isSupported": true
+        },
+        {
+          "name": "FILTERED_DOCSEARCHX",
+          "displayName": "Filtered doc search enhanced",
+          "isSupported": true
+        },
+        {
+          "name": "TOPICITEM_SEARCH_ENH",
+          "displayName": "Topic item search enhanced",
+          "isSupported": true
+        },
+        {
+          "name": "TOPICITEM_UPDATER",
+          "displayName": "Topic item updater",
+          "isSupported": true
+        },
+        {
+          "name": "TOPICITEM_LENGTH_255",
+          "displayName": "Topic item length 255",
+          "isSupported": true
+        },
+        {
+          "name": "PER_TOPIC_TOPICITEM_LENGTH",
+          "displayName": "Per topic item length",
+          "isSupported": true
+        },
+        {
+          "name": "TOPIC_ITEM_UPDATE_ENHANCED",
+          "displayName": "Topic item update enhanced",
+          "isSupported": true
+        },
+        {
+          "name": "DELETE_REPORT_VERSION",
+          "displayName": "Deleter report version",
+          "isSupported": true
+        },
+        {
+          "name": "SIMPLE_SEARCH",
+          "displayName": "Simple Search",
+          "isSupported": true
+        },
+        {
+          "name": "FULL_TEXT_SEARCH",
+          "displayName": "Full text search",
+          "isSupported": true
+        },
+        {
+          "name": "SEARCH",
+          "displayName": "Search",
+          "isSupported": true
+        },
+        {
+          "name": "SERVER_REDACTION",
+          "displayName": "Server redaction",
+          "isSupported": true
+        },
+        {
+          "name": "ANNOTATION_CREATE",
+          "displayName": "Annotation Create",
+          "isSupported": true
+        },
+        {
+          "name": "ANNOTATION_READ",
+          "displayName": "Annotation Read",
+          "isSupported": true
+        },
+        {
+          "name": "ANNOTATION_UPDATE",
+          "displayName": "Annotation Update",
+          "isSupported": true
+        },
+        {
+          "name": "ANNOTATION_DELETE",
+          "displayName": "Annotation Delete",
+          "isSupported": true
+        },
+        {
+          "name": "VIEW_NONREDACTED_PAGES",
+          "displayName": "View non-redacted pages",
+          "isSupported": true
+        },
+        {
+          "name": "RETRIEVE_DOCUMENTS_METADATA",
+          "displayName": "Retrieve Documents Metadata",
+          "isSupported": false
+        },
+        {
+          "name": "NAVIGATION",
+          "displayName": "navigation",
+          "isSupported": true
+        },
+        {
+          "name": "RM_WITHOUT_TOPIC",
+          "displayName": "Record management without topic",
+          "isSupported": true
+        },
+        {
+          "name": "RESTFUL_API",
+          "displayName": "Restful API",
+          "isSupported": true
+        },
+        {
+          "name": "ENABLE_REDACTION",
+          "displayName": "Enable Redaction",
+          "isSupported": false
+        },
+        {
+          "name": "ENABLE_DOC_VERSIONING",
+          "displayName": "Enable Document versioning",
+          "isSupported": false
+        },
+        {
+          "name": "TOPIC_ITEM_DETAILED",
+          "displayName": "Topic item detailed",
+          "isSupported": true
+        }
+      ]
+    }
+  ],
+  "required": [
+    "capabilities"
+  ],
+  "properties": {
+    "capabilities": {
+      "$id": "#/properties/capabilities",
+      "type": "array",
+      "title": "The capabilities schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "name": "INDEX_CREATE",
+            "displayName": "Index create",
+            "isSupported": false
+          },
+          {
+            "name": "INDEX_DELETE",
+            "displayName": "Index delete",
+            "isSupported": false
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/capabilities/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/capabilities/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "name": "INDEX_CREATE",
+                "displayName": "Index create",
+                "isSupported": false
+              }
+            ],
+            "required": [
+              "name",
+              "displayName",
+              "isSupported"
+            ],
+            "properties": {
+              "name": {
+                "$id": "#/properties/capabilities/items/anyOf/0/properties/name",
+                "type": "string",
+                "title": "The name schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "INDEX_CREATE"
+                ]
+              },
+              "displayName": {
+                "$id": "#/properties/capabilities/items/anyOf/0/properties/displayName",
+                "type": "string",
+                "title": "The displayName schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "Index create"
+                ]
+              },
+              "isSupported": {
+                "$id": "#/properties/capabilities/items/anyOf/0/properties/isSupported",
+                "type": "boolean",
+                "title": "The isSupported schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": false,
+                "examples": [
+                  false
+                ]
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    }
+  },
+  "additionalProperties": true
+}

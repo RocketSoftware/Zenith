@@ -1,0 +1,172 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "getDocumentProperties@11.0_input",
+  "type": "object",
+  "title": "Get Document Propreties Input V11.0",
+  "description": "The Get Document Propreties Input schema Version 11.0",
+  "default": {},
+  "examples": [
+    {
+      "links": [
+        {
+          "rel": "http://www/asg/com/mobius/rel/document",
+          "method": "GET",
+          "href": "/mobius/rest/contentstreams?id=ENC%28OC5yZXBvcnRpZDEwLkFDMDAxICAgICA5LnJlcG9ydHZlcjE0LjIwMjAxMDIwMTgyNjA5MTAucmVwb3J0c2VjdDQ1LldlYi5kb2N4ICAgICAgICAgICAgICAgICAgICAgIDAwMDAwMDAwMDAwMDAwMDEwLm9yZ3BhZ2VudW0xLjExMy5udW1iZXJvZnBhZ2VzMS4xMTAucmVwb3NpdG9yeTIyLnJldmlzaW9uQXV0b21hdGlvblBHREIxMi5yZXBvc2l0b3J5aWQzNi44QzVBMzlFMi0wRjAzLTRBQkUtOTZGMy1BNUREQ0Y0NDVCRUI5LnNpZ25hdHVyZTQzLm5NX3E3bC12c3lmaHBsZFI2Q0xyVS1MaERjbDZlWi1yRl9lclNFRTcyYXMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA%29"
+        },
+        {
+          "rel": "http://www/asg/com/mobius/rel/document/properties",
+          "method": "GET",
+          "href": "/mobius/rest/documents/ENC(OC5yZXBvcnRpZDEwLkFDMDAxICAgICA5LnJlcG9ydHZlcjE0LjIwMjAxMDIwMTgyNjA5MTAucmVwb3J0c2VjdDQ1LldlYi5kb2N4ICAgICAgICAgICAgICAgICAgICAgIDAwMDAwMDAwMDAwMDAwMDEwLm9yZ3BhZ2VudW0xLjExMy5udW1iZXJvZnBhZ2VzMS4xMTAucmVwb3NpdG9yeTIyLnJldmlzaW9uQXV0b21hdGlvblBHREIxMi5yZXBvc2l0b3J5aWQzNi44QzVBMzlFMi0wRjAzLTRBQkUtOTZGMy1BNUREQ0Y0NDVCRUI5LnNpZ25hdHVyZTQzLm5NX3E3bC12c3lmaHBsZFI2Q0xyVS1MaERjbDZlWi1yRl9lclNFRTcyYXMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)/properties"
+        }
+      ],
+      "page": "1",
+      "settings": {
+        "auth_token": "clientId",
+        "connectionTimeoutInMS": 5000,
+        "readTimeoutInMS": 1000
+      }
+    }
+  ],
+  "required": [
+    "links"
+  ],
+  "properties": {
+    "links": {
+      "$id": "#/properties/links",
+      "type": "array",
+      "title": "The links schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "rel": "http://www/asg/com/mobius/rel/document",
+            "method": "GET",
+            "href": "/mobius/rest/contentstreams?id=ENC%28OC5yZXBvcnRpZDEwLkFDMDAxICAgICA5LnJlcG9ydHZlcjE0LjIwMjAxMDIwMTgyNjA5MTAucmVwb3J0c2VjdDQ1LldlYi5kb2N4ICAgICAgICAgICAgICAgICAgICAgIDAwMDAwMDAwMDAwMDAwMDEwLm9yZ3BhZ2VudW0xLjExMy5udW1iZXJvZnBhZ2VzMS4xMTAucmVwb3NpdG9yeTIyLnJldmlzaW9uQXV0b21hdGlvblBHREIxMi5yZXBvc2l0b3J5aWQzNi44QzVBMzlFMi0wRjAzLTRBQkUtOTZGMy1BNUREQ0Y0NDVCRUI5LnNpZ25hdHVyZTQzLm5NX3E3bC12c3lmaHBsZFI2Q0xyVS1MaERjbDZlWi1yRl9lclNFRTcyYXMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA%29"
+          },
+          {
+            "rel": "http://www/asg/com/mobius/rel/document/properties",
+            "method": "GET",
+            "href": "/mobius/rest/documents/ENC(OC5yZXBvcnRpZDEwLkFDMDAxICAgICA5LnJlcG9ydHZlcjE0LjIwMjAxMDIwMTgyNjA5MTAucmVwb3J0c2VjdDQ1LldlYi5kb2N4ICAgICAgICAgICAgICAgICAgICAgIDAwMDAwMDAwMDAwMDAwMDEwLm9yZ3BhZ2VudW0xLjExMy5udW1iZXJvZnBhZ2VzMS4xMTAucmVwb3NpdG9yeTIyLnJldmlzaW9uQXV0b21hdGlvblBHREIxMi5yZXBvc2l0b3J5aWQzNi44QzVBMzlFMi0wRjAzLTRBQkUtOTZGMy1BNUREQ0Y0NDVCRUI5LnNpZ25hdHVyZTQzLm5NX3E3bC12c3lmaHBsZFI2Q0xyVS1MaERjbDZlWi1yRl9lclNFRTcyYXMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)/properties"
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/links/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/links/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "rel": "http://www/asg/com/mobius/rel/document",
+                "method": "GET",
+                "href": "/mobius/rest/contentstreams?id=ENC%28OC5yZXBvcnRpZDEwLkFDMDAxICAgICA5LnJlcG9ydHZlcjE0LjIwMjAxMDIwMTgyNjA5MTAucmVwb3J0c2VjdDQ1LldlYi5kb2N4ICAgICAgICAgICAgICAgICAgICAgIDAwMDAwMDAwMDAwMDAwMDEwLm9yZ3BhZ2VudW0xLjExMy5udW1iZXJvZnBhZ2VzMS4xMTAucmVwb3NpdG9yeTIyLnJldmlzaW9uQXV0b21hdGlvblBHREIxMi5yZXBvc2l0b3J5aWQzNi44QzVBMzlFMi0wRjAzLTRBQkUtOTZGMy1BNUREQ0Y0NDVCRUI5LnNpZ25hdHVyZTQzLm5NX3E3bC12c3lmaHBsZFI2Q0xyVS1MaERjbDZlWi1yRl9lclNFRTcyYXMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA%29"
+              }
+            ],
+            "required": [
+              "rel",
+              "method",
+              "href"
+            ],
+            "properties": {
+              "rel": {
+                "$id": "#/properties/links/items/anyOf/0/properties/rel",
+                "type": "string",
+                "title": "The rel schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "http://www/asg/com/mobius/rel/document"
+                ]
+              },
+              "method": {
+                "$id": "#/properties/links/items/anyOf/0/properties/method",
+                "type": "string",
+                "title": "The method schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "GET"
+                ]
+              },
+              "href": {
+                "$id": "#/properties/links/items/anyOf/0/properties/href",
+                "type": "string",
+                "title": "The href schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "/mobius/rest/contentstreams?id=ENC%28OC5yZXBvcnRpZDEwLkFDMDAxICAgICA5LnJlcG9ydHZlcjE0LjIwMjAxMDIwMTgyNjA5MTAucmVwb3J0c2VjdDQ1LldlYi5kb2N4ICAgICAgICAgICAgICAgICAgICAgIDAwMDAwMDAwMDAwMDAwMDEwLm9yZ3BhZ2VudW0xLjExMy5udW1iZXJvZnBhZ2VzMS4xMTAucmVwb3NpdG9yeTIyLnJldmlzaW9uQXV0b21hdGlvblBHREIxMi5yZXBvc2l0b3J5aWQzNi44QzVBMzlFMi0wRjAzLTRBQkUtOTZGMy1BNUREQ0Y0NDVCRUI5LnNpZ25hdHVyZTQzLm5NX3E3bC12c3lmaHBsZFI2Q0xyVS1MaERjbDZlWi1yRl9lclNFRTcyYXMxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA%29"
+                ]
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    },
+    "page": {
+      "$id": "#/properties/page",
+      "type": "string",
+      "title": "The page schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "1",
+      "examples": [
+        "1"
+      ]
+    },
+    "settings": {
+      "$id": "#/properties/settings",
+      "type": "object",
+      "title": "The settings schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "auth_token": "clientId",
+          "connectionTimeoutInMS": 5000,
+          "readTimeoutInMS": 1000
+        }
+      ],
+      "properties": {
+        "auth_token": {
+          "$id": "#/properties/settings/properties/auth_token",
+          "type": "string",
+          "title": "The auth_token schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "clientId"
+          ]
+        },
+        "connectionTimeoutInMS": {
+          "$id": "#/properties/settings/properties/connectionTimeoutInMS",
+          "type": "integer",
+          "title": "The connectionTimeoutInMS schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            5000
+          ]
+        },
+        "readTimeoutInMS": {
+          "$id": "#/properties/settings/properties/readTimeoutInMS",
+          "type": "integer",
+          "title": "The readTimeoutInMS schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            1000
+          ]
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": true
+}

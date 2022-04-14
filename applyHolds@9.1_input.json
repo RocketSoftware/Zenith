@@ -1,0 +1,160 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "applyHolds@9.1_input",
+  "type": "object",
+  "title": "Apply Holds Input V9.1",
+  "description": "The Apply Holds Input schema Version 9.1.",
+  "default": {},
+  "examples": [
+    {
+      "repoIds": [
+        "736672BD-8ADE-4F17-AB03-9BC1DC9D7CCD"
+      ],
+      "docIds": [
+        "ENC(MTAucmVwb3NpdG9yeTgudmRybmV0ZHM4LnJlcG9ydGlkMTAuQUMwMDEgICAgIDkucmVwb3J0dmVyMTQuMjAyMDA5MjgxMDAxNDMxMC5yZXBvcnRzZWN0NDUuU2FtcGxlS0VLLnR4dCAgICAgICAgICAgICAgICAgMDAwMDAwMDAwMDAwMDAwMTAub3JncGFnZW51bTEuMTEzLm51bWJlcm9mcGFnZXMxLjExMi5yZXBvc2l0b3J5aWQzNi43MzY2NzJCRC04QURFLTRGMTctQUIwMy05QkMxREM5RDdDQ0Q5LnNpZ25hdHVyZTQzLk1uUk9BZGw0Z1VaTk93NVJTU3k3Q25nd1lYMUY2Umc0cExXUHRSVVZwOU0xNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)",
+        "ENC(MTAucmVwb3NpdG9yeTgudmRybmV0ZHM4LnJlcG9ydGlkMTAuQUMwMDEgICAgIDkucmVwb3J0dmVyMTQuMjAyMDA5MjgxMDAxNDMxMC5yZXBvcnRzZWN0NDUuU2NyZWVuc2hvdC5wbmcgICAgICAgICAgICAgICAgMDAwMDAwMDAwMDAwMDAwMTAub3JncGFnZW51bTEuMzEzLm51bWJlcm9mcGFnZXMxLjExMi5yZXBvc2l0b3J5aWQzNi43MzY2NzJCRC04QURFLTRGMTctQUIwMy05QkMxREM5RDdDQ0Q5LnNpZ25hdHVyZTQzLkpQakhoYmZYUFlUZHY1YTdQVjBOdGlycFJDQWdack1hZU1PdUYxWDY1T0kxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)"
+      ],
+      "reason": "Multiple doc hold Testing",
+      "description": "Multiple doc hold Testing",
+      "settings": {
+        "auth_token": "clientId",
+        "connectionTimeoutInMS": 5000,
+        "readTimeoutInMS": 1000
+      }
+    }
+  ],
+  "required": [
+    "repoIds",
+    "docIds",
+    "reason",
+    "description"
+  ],
+  "properties": {
+    "repoIds": {
+      "$id": "#/properties/repoIds",
+      "type": "array",
+      "title": "The repoIds schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          "736672BD-8ADE-4F17-AB03-9BC1DC9D7CCD"
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/repoIds/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/repoIds/items/anyOf/0",
+            "type": "string",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "736672BD-8ADE-4F17-AB03-9BC1DC9D7CCD"
+            ]
+          }
+        ]
+      }
+    },
+    "docIds": {
+      "$id": "#/properties/docIds",
+      "type": "array",
+      "title": "The document Ids schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          "ENC(MTAucmVwb3NpdG9yeTgudmRybmV0ZHM4LnJlcG9ydGlkMTAuQUMwMDEgICAgIDkucmVwb3J0dmVyMTQuMjAyMDA5MjgxMDAxNDMxMC5yZXBvcnRzZWN0NDUuU2FtcGxlS0VLLnR4dCAgICAgICAgICAgICAgICAgMDAwMDAwMDAwMDAwMDAwMTAub3JncGFnZW51bTEuMTEzLm51bWJlcm9mcGFnZXMxLjExMi5yZXBvc2l0b3J5aWQzNi43MzY2NzJCRC04QURFLTRGMTctQUIwMy05QkMxREM5RDdDQ0Q5LnNpZ25hdHVyZTQzLk1uUk9BZGw0Z1VaTk93NVJTU3k3Q25nd1lYMUY2Umc0cExXUHRSVVZwOU0xNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)",
+          "ENC(MTAucmVwb3NpdG9yeTgudmRybmV0ZHM4LnJlcG9ydGlkMTAuQUMwMDEgICAgIDkucmVwb3J0dmVyMTQuMjAyMDA5MjgxMDAxNDMxMC5yZXBvcnRzZWN0NDUuU2NyZWVuc2hvdC5wbmcgICAgICAgICAgICAgICAgMDAwMDAwMDAwMDAwMDAwMTAub3JncGFnZW51bTEuMzEzLm51bWJlcm9mcGFnZXMxLjExMi5yZXBvc2l0b3J5aWQzNi43MzY2NzJCRC04QURFLTRGMTctQUIwMy05QkMxREM5RDdDQ0Q5LnNpZ25hdHVyZTQzLkpQakhoYmZYUFlUZHY1YTdQVjBOdGlycFJDQWdack1hZU1PdUYxWDY1T0kxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)"
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/docIds/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/docIds/items/anyOf/0",
+            "type": "string",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "ENC(MTAucmVwb3NpdG9yeTgudmRybmV0ZHM4LnJlcG9ydGlkMTAuQUMwMDEgICAgIDkucmVwb3J0dmVyMTQuMjAyMDA5MjgxMDAxNDMxMC5yZXBvcnRzZWN0NDUuU2FtcGxlS0VLLnR4dCAgICAgICAgICAgICAgICAgMDAwMDAwMDAwMDAwMDAwMTAub3JncGFnZW51bTEuMTEzLm51bWJlcm9mcGFnZXMxLjExMi5yZXBvc2l0b3J5aWQzNi43MzY2NzJCRC04QURFLTRGMTctQUIwMy05QkMxREM5RDdDQ0Q5LnNpZ25hdHVyZTQzLk1uUk9BZGw0Z1VaTk93NVJTU3k3Q25nd1lYMUY2Umc0cExXUHRSVVZwOU0xNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)",
+              "ENC(MTAucmVwb3NpdG9yeTgudmRybmV0ZHM4LnJlcG9ydGlkMTAuQUMwMDEgICAgIDkucmVwb3J0dmVyMTQuMjAyMDA5MjgxMDAxNDMxMC5yZXBvcnRzZWN0NDUuU2NyZWVuc2hvdC5wbmcgICAgICAgICAgICAgICAgMDAwMDAwMDAwMDAwMDAwMTAub3JncGFnZW51bTEuMzEzLm51bWJlcm9mcGFnZXMxLjExMi5yZXBvc2l0b3J5aWQzNi43MzY2NzJCRC04QURFLTRGMTctQUIwMy05QkMxREM5RDdDQ0Q5LnNpZ25hdHVyZTQzLkpQakhoYmZYUFlUZHY1YTdQVjBOdGlycFJDQWdack1hZU1PdUYxWDY1T0kxNi50Y2ljcnlwdG92ZXJzaW9uMy44LjA)"
+            ]
+          }
+        ]
+      }
+    },
+    "reason": {
+      "$id": "#/properties/reason",
+      "type": "string",
+      "title": "The reason schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "Multiple doc hold Testing"
+      ]
+    },
+    "description": {
+      "$id": "#/properties/description",
+      "type": "string",
+      "title": "The description schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "Multiple doc hold Testing"
+      ]
+    },
+    "settings": {
+      "$id": "#/properties/settings",
+      "type": "object",
+      "title": "The settings schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "auth_token": "clientId",
+          "connectionTimeoutInMS": 5000,
+          "readTimeoutInMS": 1000
+        }
+      ],
+      "properties": {
+        "auth_token": {
+          "$id": "#/properties/settings/properties/auth_token",
+          "type": "string",
+          "title": "The auth_token schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "clientId"
+          ]
+        },
+        "connectionTimeoutInMS": {
+          "$id": "#/properties/settings/properties/connectionTimeoutInMS",
+          "type": "integer",
+          "title": "The connectionTimeoutInMS schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            5000
+          ]
+        },
+        "readTimeoutInMS": {
+          "$id": "#/properties/settings/properties/readTimeoutInMS",
+          "type": "integer",
+          "title": "The readTimeoutInMS schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            1000
+          ]
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

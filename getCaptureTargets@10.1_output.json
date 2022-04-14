@@ -1,0 +1,500 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "getCaptureTargets@10.1_output",
+  "type": "object",
+  "title": "Get Capture Targets Output V10.1",
+  "description": "The Get Capture Targets Output schema Version 10.1.",
+  "default": {},
+  "examples": [
+    {
+      "items": [
+        {
+          "title": "Capture to Monthly P&L report",
+          "description": "Captures the specified documents as new versions of the Monthly P&L report",
+          "repositoryId": "2149077D-59D7-473C-A4C3-BE29A8521217",
+          "documentClassId": "Monthly P&L A",
+          "enabled": true,
+          "metadata": [
+            {
+              "name": "SECTION",
+              "suggestedValues": [],
+              "suggestedValuesOnly": false,
+              "isRequired": true
+            },
+            {
+              "name": "REGION",
+              "suggestedValues": [
+                "WESTERN",
+                "EASTERN"
+              ],
+              "suggestedValuesOnly": true,
+              "isRequired": true
+            }
+          ],
+          "policies": [
+            "AC001",
+            "SAMPLE"
+          ],
+          "links": [
+            {
+              "href": "/mobius/adminrest/capturetargets/26db8cd7-82ce-4873-89df-b2ec000062c6",
+              "method": "GET",
+              "rel": "self"
+            }
+          ]
+        }
+      ],
+      "links": [
+        {
+          "rel": "string",
+          "method": "GET",
+          "href": "string"
+        }
+      ]
+    }
+  ],
+  "required": [
+    "items",
+    "links"
+  ],
+  "properties": {
+    "items": {
+      "$id": "#/properties/items",
+      "type": "array",
+      "title": "The items schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "title": "Capture to Monthly P&L report",
+            "description": "Captures the specified documents as new versions of the Monthly P&L report",
+            "repositoryId": "2149077D-59D7-473C-A4C3-BE29A8521217",
+            "documentClassId": "Monthly P&L A",
+            "enabled": true,
+            "metadata": [
+              {
+                "name": "SECTION",
+                "suggestedValues": [],
+                "suggestedValuesOnly": false,
+                "isRequired": true
+              },
+              {
+                "name": "REGION",
+                "suggestedValues": [
+                  "WESTERN",
+                  "EASTERN"
+                ],
+                "suggestedValuesOnly": true,
+                "isRequired": true
+              }
+            ],
+            "policies": [
+              "AC001",
+              "SAMPLE"
+            ],
+            "links": [
+              {
+                "href": "/mobius/adminrest/capturetargets/26db8cd7-82ce-4873-89df-b2ec000062c6",
+                "method": "GET",
+                "rel": "self"
+              }
+            ]
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/items/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/items/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "title": "Capture to Monthly P&L report",
+                "description": "Captures the specified documents as new versions of the Monthly P&L report",
+                "repositoryId": "2149077D-59D7-473C-A4C3-BE29A8521217",
+                "documentClassId": "Monthly P&L A",
+                "enabled": true,
+                "metadata": [
+                  {
+                    "name": "SECTION",
+                    "suggestedValues": [],
+                    "suggestedValuesOnly": false,
+                    "isRequired": true
+                  },
+                  {
+                    "name": "REGION",
+                    "suggestedValues": [
+                      "WESTERN",
+                      "EASTERN"
+                    ],
+                    "suggestedValuesOnly": true,
+                    "isRequired": true
+                  }
+                ],
+                "policies": [
+                  "AC001",
+                  "SAMPLE"
+                ],
+                "links": [
+                  {
+                    "href": "/mobius/adminrest/capturetargets/26db8cd7-82ce-4873-89df-b2ec000062c6",
+                    "method": "GET",
+                    "rel": "self"
+                  }
+                ]
+              }
+            ],
+            "required": [
+              "title",
+              "description",
+              "repositoryId",
+              "documentClassId",
+              "enabled",
+              "metadata",
+              "policies",
+              "links"
+            ],
+            "properties": {
+              "title": {
+                "$id": "#/properties/items/items/anyOf/0/properties/title",
+                "type": "string",
+                "title": "The title schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "Capture to Monthly P&L report"
+                ]
+              },
+              "description": {
+                "$id": "#/properties/items/items/anyOf/0/properties/description",
+                "type": "string",
+                "title": "The description schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "Captures the specified documents as new versions of the Monthly P&L report"
+                ]
+              },
+              "repositoryId": {
+                "$id": "#/properties/items/items/anyOf/0/properties/repositoryId",
+                "type": "string",
+                "title": "The repositoryId schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "2149077D-59D7-473C-A4C3-BE29A8521217"
+                ]
+              },
+              "documentClassId": {
+                "$id": "#/properties/items/items/anyOf/0/properties/documentClassId",
+                "type": "string",
+                "title": "The documentClassId schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "Monthly P&L A"
+                ]
+              },
+              "enabled": {
+                "$id": "#/properties/items/items/anyOf/0/properties/enabled",
+                "type": "boolean",
+                "title": "The enabled schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": false,
+                "examples": [
+                  true
+                ]
+              },
+              "metadata": {
+                "$id": "#/properties/items/items/anyOf/0/properties/metadata",
+                "type": "array",
+                "title": "The metadata schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": [],
+                "examples": [
+                  [
+                    {
+                      "name": "SECTION",
+                      "suggestedValues": [],
+                      "suggestedValuesOnly": false,
+                      "isRequired": true
+                    },
+                    {
+                      "name": "REGION",
+                      "suggestedValues": [
+                        "WESTERN",
+                        "EASTERN"
+                      ],
+                      "suggestedValuesOnly": true,
+                      "isRequired": true
+                    }
+                  ]
+                ],
+                "additionalItems": true,
+                "items": {
+                  "$id": "#/properties/items/items/anyOf/0/properties/metadata/items",
+                  "anyOf": [
+                    {
+                      "$id": "#/properties/items/items/anyOf/0/properties/metadata/items/anyOf/0",
+                      "type": "object",
+                      "title": "The first anyOf schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": {},
+                      "examples": [
+                        {
+                          "name": "SECTION",
+                          "suggestedValues": [],
+                          "suggestedValuesOnly": false,
+                          "isRequired": true
+                        }
+                      ],
+                      "required": [
+                        "name",
+                        "suggestedValues",
+                        "suggestedValuesOnly",
+                        "isRequired"
+                      ],
+                      "properties": {
+                        "name": {
+                          "$id": "#/properties/items/items/anyOf/0/properties/metadata/items/anyOf/0/properties/name",
+                          "type": "string",
+                          "title": "The name schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "SECTION"
+                          ]
+                        },
+                        "suggestedValues": {
+                          "$id": "#/properties/items/items/anyOf/0/properties/metadata/items/anyOf/0/properties/suggestedValues",
+                          "type": "array",
+                          "title": "The suggestedValues schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": [],
+                          "examples": [
+                            []
+                          ],
+                          "additionalItems": true,
+                          "items": {
+                            "$id": "#/properties/items/items/anyOf/0/properties/metadata/items/anyOf/0/properties/suggestedValues/items"
+                          }
+                        },
+                        "suggestedValuesOnly": {
+                          "$id": "#/properties/items/items/anyOf/0/properties/metadata/items/anyOf/0/properties/suggestedValuesOnly",
+                          "type": "boolean",
+                          "title": "The suggestedValuesOnly schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": false,
+                          "examples": [
+                            false
+                          ]
+                        },
+                        "isRequired": {
+                          "$id": "#/properties/items/items/anyOf/0/properties/metadata/items/anyOf/0/properties/isRequired",
+                          "type": "boolean",
+                          "title": "The isRequired schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": false,
+                          "examples": [
+                            true
+                          ]
+                        }
+                      },
+                      "additionalProperties": true
+                    }
+                  ]
+                }
+              },
+              "policies": {
+                "$id": "#/properties/items/items/anyOf/0/properties/policies",
+                "type": "array",
+                "title": "The policies schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": [],
+                "examples": [
+                  [
+                    "AC001",
+                    "SAMPLE"
+                  ]
+                ],
+                "additionalItems": true,
+                "items": {
+                  "$id": "#/properties/items/items/anyOf/0/properties/policies/items",
+                  "anyOf": [
+                    {
+                      "$id": "#/properties/items/items/anyOf/0/properties/policies/items/anyOf/0",
+                      "type": "string",
+                      "title": "The first anyOf schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": "",
+                      "examples": [
+                        "AC001",
+                        "SAMPLE"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "links": {
+                "$id": "#/properties/items/items/anyOf/0/properties/links",
+                "type": "array",
+                "title": "The links schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": [],
+                "examples": [
+                  [
+                    {
+                      "href": "/mobius/adminrest/capturetargets/26db8cd7-82ce-4873-89df-b2ec000062c6",
+                      "method": "GET",
+                      "rel": "self"
+                    }
+                  ]
+                ],
+                "additionalItems": true,
+                "items": {
+                  "$id": "#/properties/items/items/anyOf/0/properties/links/items",
+                  "anyOf": [
+                    {
+                      "$id": "#/properties/items/items/anyOf/0/properties/links/items/anyOf/0",
+                      "type": "object",
+                      "title": "The first anyOf schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": {},
+                      "examples": [
+                        {
+                          "href": "/mobius/adminrest/capturetargets/26db8cd7-82ce-4873-89df-b2ec000062c6",
+                          "method": "GET",
+                          "rel": "self"
+                        }
+                      ],
+                      "required": [
+                        "href",
+                        "method",
+                        "rel"
+                      ],
+                      "properties": {
+                        "href": {
+                          "$id": "#/properties/items/items/anyOf/0/properties/links/items/anyOf/0/properties/href",
+                          "type": "string",
+                          "title": "The href schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "/mobius/adminrest/capturetargets/26db8cd7-82ce-4873-89df-b2ec000062c6"
+                          ]
+                        },
+                        "method": {
+                          "$id": "#/properties/items/items/anyOf/0/properties/links/items/anyOf/0/properties/method",
+                          "type": "string",
+                          "title": "The method schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "GET"
+                          ]
+                        },
+                        "rel": {
+                          "$id": "#/properties/items/items/anyOf/0/properties/links/items/anyOf/0/properties/rel",
+                          "type": "string",
+                          "title": "The rel schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "self"
+                          ]
+                        }
+                      },
+                      "additionalProperties": true
+                    }
+                  ]
+                }
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    },
+    "links": {
+      "$id": "#/properties/links",
+      "type": "array",
+      "title": "The links schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "rel": "string",
+            "method": "GET",
+            "href": "string"
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/links/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/links/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "rel": "string",
+                "method": "GET",
+                "href": "string"
+              }
+            ],
+            "required": [
+              "rel",
+              "method",
+              "href"
+            ],
+            "properties": {
+              "rel": {
+                "$id": "#/properties/links/items/anyOf/0/properties/rel",
+                "type": "string",
+                "title": "The rel schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "string"
+                ]
+              },
+              "method": {
+                "$id": "#/properties/links/items/anyOf/0/properties/method",
+                "type": "string",
+                "title": "The method schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "GET"
+                ]
+              },
+              "href": {
+                "$id": "#/properties/links/items/anyOf/0/properties/href",
+                "type": "string",
+                "title": "The href schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "string"
+                ]
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    }
+  },
+  "additionalProperties": true
+}

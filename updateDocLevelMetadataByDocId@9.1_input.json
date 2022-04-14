@@ -1,0 +1,263 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "updateDocLevelMetadataByDocId@9.1_input",
+  "type": "object",
+  "title": "Update DocLevel Metadata By DocId Input V9.1",
+  "description": "The Update DocLevel Metadata By DocId Input schema Version 9.1.",
+  "default": {},
+  "examples": [
+    {
+      "indexRequests": [
+        {
+          "documentId": "ENC(OC5yZXBvcnRpZDEwLkFDMDAxICAgICA5LnJlcG9ydHZlcjE0LjIwMDUwMTE2MDAwMDAwMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQSAgICAgICAgICAgICAgICAgICAgICAgIDAwMDAwMDAwMDEwMDAwMDEwLm9yZ3BhZ2VudW0xLjUxMy5udW1iZXJvZnBhZ2VzMS4yMTAucmVwb3NpdG9yeTEyLk1vYml1c0RlbW84MDEyLnJlcG9zaXRvcnlpZDM2LjQ5NzUzODU0LUE3QkItNDJGRS05MjhDLTNEQ0VBQTkwNzYwQzE2LnRjaWNyeXB0b3ZlcnNpb24zLjEuMA)",
+          "indexScope": {
+            "relativePageNumber": 0,
+            "numberOfPages": 1,
+            "lineLocation": -1
+          },
+          "indexEntries": [
+            {
+              "name": "ACCTDESC",
+              "currentValue": "TEST DESCRIPTION",
+              "newValue": "ADVERTISING"
+            }
+          ]
+        }
+      ],
+      "settings": {
+        "auth_token": "clientId"
+      }
+    }
+  ],
+  "required": [
+    "indexRequests"
+  ],
+  "properties": {
+    "indexRequests": {
+      "$id": "#/properties/indexRequests",
+      "type": "array",
+      "title": "The indexRequests schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "documentId": "ENC(OC5yZXBvcnRpZDEwLkFDMDAxICAgICA5LnJlcG9ydHZlcjE0LjIwMDUwMTE2MDAwMDAwMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQSAgICAgICAgICAgICAgICAgICAgICAgIDAwMDAwMDAwMDEwMDAwMDEwLm9yZ3BhZ2VudW0xLjUxMy5udW1iZXJvZnBhZ2VzMS4yMTAucmVwb3NpdG9yeTEyLk1vYml1c0RlbW84MDEyLnJlcG9zaXRvcnlpZDM2LjQ5NzUzODU0LUE3QkItNDJGRS05MjhDLTNEQ0VBQTkwNzYwQzE2LnRjaWNyeXB0b3ZlcnNpb24zLjEuMA)",
+            "indexScope": {
+              "relativePageNumber": 0,
+              "numberOfPages": 1,
+              "lineLocation": -1
+            },
+            "indexEntries": [
+              {
+                "name": "ACCTDESC",
+                "currentValue": "TEST DESCRIPTION",
+                "newValue": "ADVERTISING"
+              }
+            ]
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/indexRequests/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/indexRequests/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "documentId": "ENC(OC5yZXBvcnRpZDEwLkFDMDAxICAgICA5LnJlcG9ydHZlcjE0LjIwMDUwMTE2MDAwMDAwMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQSAgICAgICAgICAgICAgICAgICAgICAgIDAwMDAwMDAwMDEwMDAwMDEwLm9yZ3BhZ2VudW0xLjUxMy5udW1iZXJvZnBhZ2VzMS4yMTAucmVwb3NpdG9yeTEyLk1vYml1c0RlbW84MDEyLnJlcG9zaXRvcnlpZDM2LjQ5NzUzODU0LUE3QkItNDJGRS05MjhDLTNEQ0VBQTkwNzYwQzE2LnRjaWNyeXB0b3ZlcnNpb24zLjEuMA)",
+                "indexScope": {
+                  "relativePageNumber": 0,
+                  "numberOfPages": 1,
+                  "lineLocation": -1
+                },
+                "indexEntries": [
+                  {
+                    "name": "ACCTDESC",
+                    "currentValue": "TEST DESCRIPTION",
+                    "newValue": "ADVERTISING"
+                  }
+                ]
+              }
+            ],
+            "required": [
+              "documentId",
+              "indexScope",
+              "indexEntries"
+            ],
+            "properties": {
+              "documentId": {
+                "$id": "#/properties/indexRequests/items/anyOf/0/properties/documentId",
+                "type": "string",
+                "title": "The documentId schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "ENC(OC5yZXBvcnRpZDEwLkFDMDAxICAgICA5LnJlcG9ydHZlcjE0LjIwMDUwMTE2MDAwMDAwMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQSAgICAgICAgICAgICAgICAgICAgICAgIDAwMDAwMDAwMDEwMDAwMDEwLm9yZ3BhZ2VudW0xLjUxMy5udW1iZXJvZnBhZ2VzMS4yMTAucmVwb3NpdG9yeTEyLk1vYml1c0RlbW84MDEyLnJlcG9zaXRvcnlpZDM2LjQ5NzUzODU0LUE3QkItNDJGRS05MjhDLTNEQ0VBQTkwNzYwQzE2LnRjaWNyeXB0b3ZlcnNpb24zLjEuMA)"
+                ]
+              },
+              "indexScope": {
+                "$id": "#/properties/indexRequests/items/anyOf/0/properties/indexScope",
+                "type": "object",
+                "title": "The indexScope schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                  {
+                    "relativePageNumber": 0,
+                    "numberOfPages": 1,
+                    "lineLocation": -1
+                  }
+                ],
+                "required": [
+                  "relativePageNumber",
+                  "numberOfPages",
+                  "lineLocation"
+                ],
+                "properties": {
+                  "relativePageNumber": {
+                    "$id": "#/properties/indexRequests/items/anyOf/0/properties/indexScope/properties/relativePageNumber",
+                    "type": "integer",
+                    "title": "The relativePageNumber schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                      0
+                    ]
+                  },
+                  "numberOfPages": {
+                    "$id": "#/properties/indexRequests/items/anyOf/0/properties/indexScope/properties/numberOfPages",
+                    "type": "integer",
+                    "title": "The numberOfPages schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                      1
+                    ]
+                  },
+                  "lineLocation": {
+                    "$id": "#/properties/indexRequests/items/anyOf/0/properties/indexScope/properties/lineLocation",
+                    "type": "integer",
+                    "title": "The lineLocation schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                      -1
+                    ]
+                  }
+                },
+                "additionalProperties": false
+              },
+              "indexEntries": {
+                "$id": "#/properties/indexRequests/items/anyOf/0/properties/indexEntries",
+                "type": "array",
+                "title": "The indexEntries schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": [],
+                "examples": [
+                  [
+                    {
+                      "name": "ACCTDESC",
+                      "currentValue": "TEST DESCRIPTION",
+                      "newValue": "ADVERTISING"
+                    }
+                  ]
+                ],
+                "additionalItems": true,
+                "items": {
+                  "$id": "#/properties/indexRequests/items/anyOf/0/properties/indexEntries/items",
+                  "anyOf": [
+                    {
+                      "$id": "#/properties/indexRequests/items/anyOf/0/properties/indexEntries/items/anyOf/0",
+                      "type": "object",
+                      "title": "The first anyOf schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": {},
+                      "examples": [
+                        {
+                          "name": "ACCTDESC",
+                          "currentValue": "TEST DESCRIPTION",
+                          "newValue": "ADVERTISING"
+                        }
+                      ],
+                      "required": [
+                        "name",
+                        "currentValue",
+                        "newValue"
+                      ],
+                      "properties": {
+                        "name": {
+                          "$id": "#/properties/indexRequests/items/anyOf/0/properties/indexEntries/items/anyOf/0/properties/name",
+                          "type": "string",
+                          "title": "The name schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "ACCTDESC"
+                          ]
+                        },
+                        "currentValue": {
+                          "$id": "#/properties/indexRequests/items/anyOf/0/properties/indexEntries/items/anyOf/0/properties/currentValue",
+                          "type": "string",
+                          "title": "The currentValue schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "TEST DESCRIPTION"
+                          ]
+                        },
+                        "newValue": {
+                          "$id": "#/properties/indexRequests/items/anyOf/0/properties/indexEntries/items/anyOf/0/properties/newValue",
+                          "type": "string",
+                          "title": "The newValue schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "ADVERTISING"
+                          ]
+                        }
+                      },
+                      "additionalProperties": true
+                    }
+                  ]
+                }
+              }
+            },
+            "additionalProperties": false
+          }
+        ]
+      }
+    },
+    "settings": {
+      "$id": "#/properties/settings",
+      "type": "object",
+      "title": "The settings schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "auth_token": "clientId"
+        }
+      ],
+      "properties": {
+        "auth_token": {
+          "$id": "#/properties/settings/properties/auth_token",
+          "type": "string",
+          "title": "The auth_token schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "clientId"
+          ]
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

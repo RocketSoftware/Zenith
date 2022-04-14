@@ -1,0 +1,292 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "advancedSearchV2@11.0_input",
+  "type": "object",
+  "title": "Advanced Search V2 Input Schema Input V11.0",
+  "description": "The Advanced Search V2 Input schema Version 11.0.",
+  "default": {},
+  "examples": [
+    {
+      "name":"Creating a new search",
+      "distinct":false,
+      "exitOnError":false,
+      "conjunction":"AND",
+      "constraints":[
+        {
+          "unselected":false,
+          "subexpression":{
+            "constraints":[
+              {
+                "unselected":false,
+                "name":"LS_VERNO",
+                "operator":"GT",
+                "values":[
+                  {
+                    "value":"0"
+                  }
+                ]
+              },
+              {
+                "unselected":false,
+                "name":"LS_VERNO",
+                "operator":"GT",
+                "values":[
+                  {
+                    "value":"0"
+                  }
+                ]
+              }
+            ],
+            "conjunction":"OR"
+          }
+        },
+        {
+          "unselected":false,
+          "name":"LS_INDT",
+          "operator":"GT",
+          "values":[
+            {
+              "value":"0"
+            }
+          ]
+        }
+      ],
+      "returnedIndexes":[
+        {
+          "name":"LS_VERNO"
+        },
+        {
+          "name":"LS_INDT"
+        }
+      ],
+      "repoIds":[
+        "244DB065-A980-4A21-88A6-C7202C8F9BE4",
+        "BEC56E01-FF5D-4B80-87F1-B0713CCCC82C"
+      ],
+      "settings": {
+        "limit": 20,
+        "offset": 5,
+        "auth_token": "clientId",
+        "connectionTimeoutInMS": 5000,
+        "readTimeoutInMS": 1000
+      },
+      "advancedDescription":"[{\"id\":\"elem-10\",\"data\":[{\"_showDelete\":false,\"_showBorder\":false,\"_handleValidation\":true,\"_isValid\":true,\"_type\":\"Criterian\",\"criterianOptionalValue\":null,\"_id\":\"elem-7\",\"_criterianValue\":\"0\",\"_criterianOperator\":\"Is Greater Than\",\"_criterianField\":\"LS_VERNO\",\"finishedEditing\":true},{\"id\":\"elem-9\",\"data\":\"OR\"},{\"_showDelete\":false,\"_showBorder\":false,\"_handleValidation\":true,\"_isValid\":true,\"_type\":\"Criterian\",\"criterianOptionalValue\":null,\"_id\":\"elem-8\",\"_criterianValue\":\"0\",\"_criterianOperator\":\"Is Greater Than\",\"_criterianField\":\"LS_VERNO\",\"finishedEditing\":true}]},{\"id\":\"elem-12\",\"data\":\"AND\"},{\"_showDelete\":false,\"_showBorder\":false,\"_handleValidation\":true,\"_isValid\":true,\"_type\":\"Criterian\",\"criterianOptionalValue\":null,\"_id\":\"elem-11\",\"_criterianValue\":\"0\",\"_criterianOperator\":\"Is Greater Than\",\"_criterianField\":\"LS_INDT\",\"finishedEditing\":false}]"
+    }
+  ],
+  "required": [
+    "conjunction",
+    "constraints",
+    "returnedIndexes",
+    "repoIds"
+  ],
+  "properties": {
+    "conjunction": {
+      "$id": "#/properties/conjunction",
+      "type": "string",
+      "title": "The conjunction schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "OR"
+      ]
+    },
+    "constraints": {
+      "$id": "#/properties/constraints",
+      "type": "array",
+      "title": "The constraints schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "unselected": false,
+            "subexpression": {
+              "constraints": [
+                {
+                  "unselected": false,
+                  "name": "LS_VERNO",
+                  "operator": "GT",
+                  "values": [
+                    {
+                      "value": "0"
+                    }
+                  ]
+                },
+                {
+                  "unselected": false,
+                  "name": "LS_VERNO",
+                  "operator": "GT",
+                  "values": [
+                    {
+                      "value": "0"
+                    }
+                  ]
+                }
+              ],
+              "conjunction": "OR"
+            }
+          },
+          {
+            "unselected": false,
+            "name": "LS_INDT",
+            "operator": "GT",
+            "values": [
+              {
+                "value": "0"
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    "returnedIndexes": {
+      "$id": "#/properties/returnedIndexes",
+      "type": "array",
+      "title": "The returnedIndexes schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "name":"LS_VERNO"
+          },
+          {
+            "name":"LS_INDT"
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/returnedIndexes/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/returnedIndexes/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "name":"LS_VERNO"
+              }
+            ],
+            "required": [
+              "name"
+            ],
+            "properties": {
+              "name": {
+                "$id": "#/properties/returnedIndexes/items/anyOf/0/properties/name",
+                "type": "string",
+                "title": "The name schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "LS_VERNO"
+                ]
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    },
+    "repoIds": {
+      "$id": "#/properties/repoIds",
+      "type": "array",
+      "title": "The repoIds schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          "88E97138-9EFD-4306-A72B-4B5C53D2A9E0"
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/repoIds/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/repoIds/items/anyOf/0",
+            "type": "string",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "88E97138-9EFD-4306-A72B-4B5C53D2A9E0"
+            ]
+          }
+        ]
+      }
+    },
+    "settings": {
+      "$id": "#/properties/settings",
+      "type": "object",
+      "title": "The settings schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "limit": 20,
+          "offset": 5,
+          "auth_token": "clientId",
+          "connectionTimeoutInMS": 5000,
+          "readTimeoutInMS": 1000
+        }
+      ],
+      "properties": {
+        "limit": {
+          "$id": "#/properties/settings/properties/limit",
+          "type": "integer",
+          "title": "The limit schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            20
+          ]
+        },
+        "offset": {
+          "$id": "#/properties/settings/properties/offset",
+          "type": "integer",
+          "title": "The offset schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            5
+          ]
+        },
+        "auth_token": {
+          "$id": "#/properties/settings/properties/auth_token",
+          "type": "string",
+          "title": "The auth_token schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "clientId"
+          ]
+        },
+        "connectionTimeoutInMS": {
+          "$id": "#/properties/settings/properties/connectionTimeoutInMS",
+          "type": "integer",
+          "title": "The connectionTimeoutInMS schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            5000
+          ]
+        },
+        "readTimeoutInMS": {
+          "$id": "#/properties/settings/properties/readTimeoutInMS",
+          "type": "integer",
+          "title": "The readTimeoutInMS schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            1000
+          ]
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

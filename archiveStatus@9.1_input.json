@@ -1,0 +1,205 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "archiveStatus@9.1_input",
+  "type": "object",
+  "title": "Archive Status Input V9.1",
+  "description": "The Archive Status Input schema Version 9.1.",
+  "default": {},
+  "examples": [
+    {
+      "statusID": "AC001-20200915091933-0107",
+      "percentComplete": 0,
+      "status": "inprogress",
+      "statusMessage": "Processing",
+      "links": [
+        {
+          "rel": "self",
+          "href": "/mobius/rest/capturedroptargets/f690ac0a-2015-431f-9f68-375b2a07965b",
+          "method": "GET"
+        },
+        {
+          "rel": "http://www/asg/com/mobius/rel/archivingstatus",
+          "href": "/mobius/rest/repositories/09EC391E-5E48-4725-9F81-FF3C7BADC042/archivingstatuses/AC001-20200915091933-0107",
+          "method": "GET"
+        }
+      ],
+      "settings": {
+        "auth_token": "clientId",
+        "connectionTimeoutInMS": 5000,
+        "readTimeoutInMS": 1000
+      }
+    }
+  ],
+  "required": [
+    "links"
+  ],
+  "properties": {
+    "statusID": {
+      "$id": "#/properties/statusID",
+      "type": "string",
+      "title": "The statusID schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "AC001-20200915091933-0107"
+      ]
+    },
+    "percentComplete": {
+      "$id": "#/properties/percentComplete",
+      "type": "integer",
+      "title": "The percentComplete schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [
+        0
+      ]
+    },
+    "status": {
+      "$id": "#/properties/status",
+      "type": "string",
+      "title": "The status schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "inprogress"
+      ]
+    },
+    "statusMessage": {
+      "$id": "#/properties/statusMessage",
+      "type": "string",
+      "title": "The statusMessage schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "Processing"
+      ]
+    },
+    "links": {
+      "$id": "#/properties/links",
+      "type": "array",
+      "title": "The links schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "rel": "self",
+            "href": "/mobius/rest/capturedroptargets/f690ac0a-2015-431f-9f68-375b2a07965b",
+            "method": "GET"
+          },
+          {
+            "rel": "http://www/asg/com/mobius/rel/archivingstatus",
+            "href": "/mobius/rest/repositories/09EC391E-5E48-4725-9F81-FF3C7BADC042/archivingstatuses/AC001-20200915091933-0107",
+            "method": "GET"
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/links/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/links/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "rel": "self",
+                "href": "/mobius/rest/capturedroptargets/f690ac0a-2015-431f-9f68-375b2a07965b",
+                "method": "GET"
+              }
+            ],
+            "required": [
+              "rel",
+              "href",
+              "method"
+            ],
+            "properties": {
+              "rel": {
+                "$id": "#/properties/links/items/anyOf/0/properties/rel",
+                "type": "string",
+                "title": "The rel schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "self"
+                ]
+              },
+              "href": {
+                "$id": "#/properties/links/items/anyOf/0/properties/href",
+                "type": "string",
+                "title": "The href schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "/mobius/rest/capturedroptargets/f690ac0a-2015-431f-9f68-375b2a07965b"
+                ]
+              },
+              "method": {
+                "$id": "#/properties/links/items/anyOf/0/properties/method",
+                "type": "string",
+                "title": "The method schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "GET"
+                ]
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    },
+    "settings": {
+      "$id": "#/properties/settings",
+      "type": "object",
+      "title": "The settings schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "auth_token": "clientId",
+          "connectionTimeoutInMS": 5000,
+          "readTimeoutInMS": 1000
+        }
+      ],
+      "properties": {
+        "auth_token": {
+          "$id": "#/properties/settings/properties/auth_token",
+          "type": "string",
+          "title": "The auth_token schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "clientId"
+          ]
+        },
+        "connectionTimeoutInMS": {
+          "$id": "#/properties/settings/properties/connectionTimeoutInMS",
+          "type": "integer",
+          "title": "The connectionTimeoutInMS schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            5000
+          ]
+        },
+        "readTimeoutInMS": {
+          "$id": "#/properties/settings/properties/readTimeoutInMS",
+          "type": "integer",
+          "title": "The readTimeoutInMS schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            1000
+          ]
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

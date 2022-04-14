@@ -1,0 +1,249 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "cancelCheckoutDocument@10.1_input",
+  "type": "object",
+  "title": "Cancel Checkout Document Input V10.1",
+  "description": "The Cancel Checkout Document Input schema Version 10.1.",
+  "default": {},
+  "examples": [
+    {
+      "repoIds": [
+        "88E97138-9EFD-4306-A72B-4B5C53D2A9E0"
+      ],
+      "links": [
+        {
+          "rel": "http://www/asg/com/mobius/rel/document",
+          "method": "GET",
+          "href": "/mobius/rest/contentstreams?id=ENC%28OC5yZXBvcnRpZDEwLkFDMDAxICAgICAxMy5udW1iZXJvZnBhZ2VzMS4xMTAucmVwb3NpdG9yeTEyLmxzZGVtb3NlcnZlcjkucmVwb3J0dmVyMTQuMjAyMDEwMTQwMDUxNDExMC5yZXBvcnRzZWN0NDUuTmV3IFRleHQgRG9jdW1lbnQudHh0ICAgICAgICAgQUJTUEcwMDAwMDAwMDAxMTAub3JncGFnZW51bTEuMTEyLnJlcG9zaXRvcnlpZDM2Ljg4RTk3MTM4LTlFRkQtNDMwNi1BNzJCLTRCNUM1M0QyQTlFMDkuc2lnbmF0dXJlNDMubjhzdG5XWFZPSXJ0SkVaTjgwQmI2R1Q5Y2pQaXpYSDRfcXFwWGk5ZTVUVTE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA%29"
+        },
+        {
+          "rel": "http://www/asg/com/mobius/rel/download",
+          "method": "POST",
+          "href": "/mobius/rest/contentstreams?id=ENC%28OC5yZXBvcnRpZDEwLkFDMDAxICAgICAxMy5udW1iZXJvZnBhZ2VzMS4xMTAucmVwb3NpdG9yeTEyLmxzZGVtb3NlcnZlcjkucmVwb3J0dmVyMTQuMjAyMDEwMTQwMDUxNDExMC5yZXBvcnRzZWN0NDUuTmV3IFRleHQgRG9jdW1lbnQudHh0ICAgICAgICAgQUJTUEcwMDAwMDAwMDAxMTAub3JncGFnZW51bTEuMTEyLnJlcG9zaXRvcnlpZDM2Ljg4RTk3MTM4LTlFRkQtNDMwNi1BNzJCLTRCNUM1M0QyQTlFMDkuc2lnbmF0dXJlNDMubjhzdG5XWFZPSXJ0SkVaTjgwQmI2R1Q5Y2pQaXpYSDRfcXFwWGk5ZTVUVTE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA%29"
+        },
+        {
+          "rel": "http://www/asg/com/mobius/rel/extractionpolicies/get",
+          "method": "GET",
+          "href": "/mobius/rest/extractionpolicies?documentid=ENC%28OC5yZXBvcnRpZDEwLkFDMDAxICAgICAxMy5udW1iZXJvZnBhZ2VzMS4xMTAucmVwb3NpdG9yeTEyLmxzZGVtb3NlcnZlcjkucmVwb3J0dmVyMTQuMjAyMDEwMTQwMDUxNDExMC5yZXBvcnRzZWN0NDUuTmV3IFRleHQgRG9jdW1lbnQudHh0ICAgICAgICAgQUJTUEcwMDAwMDAwMDAxMTAub3JncGFnZW51bTEuMTEyLnJlcG9zaXRvcnlpZDM2Ljg4RTk3MTM4LTlFRkQtNDMwNi1BNzJCLTRCNUM1M0QyQTlFMDkuc2lnbmF0dXJlNDMubjhzdG5XWFZPSXJ0SkVaTjgwQmI2R1Q5Y2pQaXpYSDRfcXFwWGk5ZTVUVTE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA%29"
+        },
+        {
+          "rel": "http://www/asg/com/mobius/rel/pages",
+          "method": "GET",
+          "href": "/mobius/rest/documents/ENC(OC5yZXBvcnRpZDEwLkFDMDAxICAgICAxMy5udW1iZXJvZnBhZ2VzMS4xMTAucmVwb3NpdG9yeTEyLmxzZGVtb3NlcnZlcjkucmVwb3J0dmVyMTQuMjAyMDEwMTQwMDUxNDExMC5yZXBvcnRzZWN0NDUuTmV3IFRleHQgRG9jdW1lbnQudHh0ICAgICAgICAgQUJTUEcwMDAwMDAwMDAxMTAub3JncGFnZW51bTEuMTEyLnJlcG9zaXRvcnlpZDM2Ljg4RTk3MTM4LTlFRkQtNDMwNi1BNzJCLTRCNUM1M0QyQTlFMDkuc2lnbmF0dXJlNDMubjhzdG5XWFZPSXJ0SkVaTjgwQmI2R1Q5Y2pQaXpYSDRfcXFwWGk5ZTVUVTE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA)/pages"
+        },
+        {
+          "rel": "http://www/asg/com/mobius/rel/document/metadata",
+          "method": "GET",
+          "href": "/mobius/rest/documents/ENC(OC5yZXBvcnRpZDEwLkFDMDAxICAgICAxMy5udW1iZXJvZnBhZ2VzMS4xMTAucmVwb3NpdG9yeTEyLmxzZGVtb3NlcnZlcjkucmVwb3J0dmVyMTQuMjAyMDEwMTQwMDUxNDExMC5yZXBvcnRzZWN0NDUuTmV3IFRleHQgRG9jdW1lbnQudHh0ICAgICAgICAgQUJTUEcwMDAwMDAwMDAxMTAub3JncGFnZW51bTEuMTEyLnJlcG9zaXRvcnlpZDM2Ljg4RTk3MTM4LTlFRkQtNDMwNi1BNzJCLTRCNUM1M0QyQTlFMDkuc2lnbmF0dXJlNDMubjhzdG5XWFZPSXJ0SkVaTjgwQmI2R1Q5Y2pQaXpYSDRfcXFwWGk5ZTVUVTE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA)/metadata"
+        },
+        {
+          "rel": "http://www/asg/com/mobius/rel/document/properties",
+          "method": "GET",
+          "href": "/mobius/rest/documents/ENC(OC5yZXBvcnRpZDEwLkFDMDAxICAgICAxMy5udW1iZXJvZnBhZ2VzMS4xMTAucmVwb3NpdG9yeTEyLmxzZGVtb3NlcnZlcjkucmVwb3J0dmVyMTQuMjAyMDEwMTQwMDUxNDExMC5yZXBvcnRzZWN0NDUuTmV3IFRleHQgRG9jdW1lbnQudHh0ICAgICAgICAgQUJTUEcwMDAwMDAwMDAxMTAub3JncGFnZW51bTEuMTEyLnJlcG9zaXRvcnlpZDM2Ljg4RTk3MTM4LTlFRkQtNDMwNi1BNzJCLTRCNUM1M0QyQTlFMDkuc2lnbmF0dXJlNDMubjhzdG5XWFZPSXJ0SkVaTjgwQmI2R1Q5Y2pQaXpYSDRfcXFwWGk5ZTVUVTE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA)/properties"
+        },
+        {
+          "rel": "http://www/asg/com/mobius/rel/document/retentions",
+          "method": "GET",
+          "href": "/mobius/rest/documents/ENC(OC5yZXBvcnRpZDEwLkFDMDAxICAgICAxMy5udW1iZXJvZnBhZ2VzMS4xMTAucmVwb3NpdG9yeTEyLmxzZGVtb3NlcnZlcjkucmVwb3J0dmVyMTQuMjAyMDEwMTQwMDUxNDExMC5yZXBvcnRzZWN0NDUuTmV3IFRleHQgRG9jdW1lbnQudHh0ICAgICAgICAgQUJTUEcwMDAwMDAwMDAxMTAub3JncGFnZW51bTEuMTEyLnJlcG9zaXRvcnlpZDM2Ljg4RTk3MTM4LTlFRkQtNDMwNi1BNzJCLTRCNUM1M0QyQTlFMDkuc2lnbmF0dXJlNDMubjhzdG5XWFZPSXJ0SkVaTjgwQmI2R1Q5Y2pQaXpYSDRfcXFwWGk5ZTVUVTE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA)/retentions"
+        },
+        {
+          "rel": "http://www/asg/com/mobius/rel/annotations/get",
+          "method": "GET",
+          "href": "/mobius/rest/documents/ENC(OC5yZXBvcnRpZDEwLkFDMDAxICAgICAxMy5udW1iZXJvZnBhZ2VzMS4xMTAucmVwb3NpdG9yeTEyLmxzZGVtb3NlcnZlcjkucmVwb3J0dmVyMTQuMjAyMDEwMTQwMDUxNDExMC5yZXBvcnRzZWN0NDUuTmV3IFRleHQgRG9jdW1lbnQudHh0ICAgICAgICAgQUJTUEcwMDAwMDAwMDAxMTAub3JncGFnZW51bTEuMTEyLnJlcG9zaXRvcnlpZDM2Ljg4RTk3MTM4LTlFRkQtNDMwNi1BNzJCLTRCNUM1M0QyQTlFMDkuc2lnbmF0dXJlNDMubjhzdG5XWFZPSXJ0SkVaTjgwQmI2R1Q5Y2pQaXpYSDRfcXFwWGk5ZTVUVTE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA)/annotations"
+        },
+        {
+          "rel": "http://www/asg/com/mobius/rel/annotations/add",
+          "method": "POST",
+          "href": "/mobius/rest/documents/ENC(OC5yZXBvcnRpZDEwLkFDMDAxICAgICAxMy5udW1iZXJvZnBhZ2VzMS4xMTAucmVwb3NpdG9yeTEyLmxzZGVtb3NlcnZlcjkucmVwb3J0dmVyMTQuMjAyMDEwMTQwMDUxNDExMC5yZXBvcnRzZWN0NDUuTmV3IFRleHQgRG9jdW1lbnQudHh0ICAgICAgICAgQUJTUEcwMDAwMDAwMDAxMTAub3JncGFnZW51bTEuMTEyLnJlcG9zaXRvcnlpZDM2Ljg4RTk3MTM4LTlFRkQtNDMwNi1BNzJCLTRCNUM1M0QyQTlFMDkuc2lnbmF0dXJlNDMubjhzdG5XWFZPSXJ0SkVaTjgwQmI2R1Q5Y2pQaXpYSDRfcXFwWGk5ZTVUVTE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA)/annotations"
+        },
+        {
+          "rel": "http://www/asg/com/mobius/rel/archivingwrite",
+          "method": "POST",
+          "href": "/mobius/rest/repositories/88E97138-9EFD-4306-A72B-4B5C53D2A9E0/documents"
+        },
+        {
+          "rel": "http://www/asg/com/mobius/rel/checkouts/patch",
+          "method": "PATCH",
+          "href": "/mobius/rest/checkouts/9a89575b-118e-4b0d-bc26-cec2d6364a6c"
+        },
+        {
+          "rel": "http://www/asg/com/mobius/rel/checkouts/delete",
+          "method": "DELETE",
+          "href": "/mobius/rest/checkouts/9a89575b-118e-4b0d-bc26-cec2d6364a6c"
+        },
+        {
+          "rel": "http://www/asg/com/mobius/rel/checkouts/get",
+          "method": "GET",
+          "href": "/mobius/rest/checkouts/9a89575b-118e-4b0d-bc26-cec2d6364a6c"
+        }
+      ],
+      "settings": {
+        "auth_token": "clientId",
+        "connectionTimeoutInMS": 5000,
+        "readTimeoutInMS": 1000
+      }
+    }
+  ],
+  "required": [
+    "repoIds",
+    "links"
+  ],
+  "properties": {
+    "repoIds": {
+      "$id": "#/properties/repoIds",
+      "type": "array",
+      "maxItems": 1,
+      "title": "The repoIds schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          "88E97138-9EFD-4306-A72B-4B5C53D2A9E0"
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/repoIds/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/repoIds/items/anyOf/0",
+            "type": "string",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "88E97138-9EFD-4306-A72B-4B5C53D2A9E0"
+            ]
+          }
+        ]
+      }
+    },
+    "links": {
+      "$id": "#/properties/links",
+      "type": "array",
+      "title": "The links schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "rel": "http://www/asg/com/mobius/rel/document",
+            "method": "GET",
+            "href": "/mobius/rest/contentstreams?id=ENC%28OC5yZXBvcnRpZDEwLkFDMDAxICAgICAxMy5udW1iZXJvZnBhZ2VzMS4xMTAucmVwb3NpdG9yeTEyLmxzZGVtb3NlcnZlcjkucmVwb3J0dmVyMTQuMjAyMDEwMTQwMDUxNDExMC5yZXBvcnRzZWN0NDUuTmV3IFRleHQgRG9jdW1lbnQudHh0ICAgICAgICAgQUJTUEcwMDAwMDAwMDAxMTAub3JncGFnZW51bTEuMTEyLnJlcG9zaXRvcnlpZDM2Ljg4RTk3MTM4LTlFRkQtNDMwNi1BNzJCLTRCNUM1M0QyQTlFMDkuc2lnbmF0dXJlNDMubjhzdG5XWFZPSXJ0SkVaTjgwQmI2R1Q5Y2pQaXpYSDRfcXFwWGk5ZTVUVTE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA%29"
+          },
+          {
+            "rel": "http://www/asg/com/mobius/rel/download",
+            "method": "POST",
+            "href": "/mobius/rest/contentstreams?id=ENC%28OC5yZXBvcnRpZDEwLkFDMDAxICAgICAxMy5udW1iZXJvZnBhZ2VzMS4xMTAucmVwb3NpdG9yeTEyLmxzZGVtb3NlcnZlcjkucmVwb3J0dmVyMTQuMjAyMDEwMTQwMDUxNDExMC5yZXBvcnRzZWN0NDUuTmV3IFRleHQgRG9jdW1lbnQudHh0ICAgICAgICAgQUJTUEcwMDAwMDAwMDAxMTAub3JncGFnZW51bTEuMTEyLnJlcG9zaXRvcnlpZDM2Ljg4RTk3MTM4LTlFRkQtNDMwNi1BNzJCLTRCNUM1M0QyQTlFMDkuc2lnbmF0dXJlNDMubjhzdG5XWFZPSXJ0SkVaTjgwQmI2R1Q5Y2pQaXpYSDRfcXFwWGk5ZTVUVTE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA%29"
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/links/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/links/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "rel": "http://www/asg/com/mobius/rel/document",
+                "method": "GET",
+                "href": "/mobius/rest/contentstreams?id=ENC%28OC5yZXBvcnRpZDEwLkFDMDAxICAgICAxMy5udW1iZXJvZnBhZ2VzMS4xMTAucmVwb3NpdG9yeTEyLmxzZGVtb3NlcnZlcjkucmVwb3J0dmVyMTQuMjAyMDEwMTQwMDUxNDExMC5yZXBvcnRzZWN0NDUuTmV3IFRleHQgRG9jdW1lbnQudHh0ICAgICAgICAgQUJTUEcwMDAwMDAwMDAxMTAub3JncGFnZW51bTEuMTEyLnJlcG9zaXRvcnlpZDM2Ljg4RTk3MTM4LTlFRkQtNDMwNi1BNzJCLTRCNUM1M0QyQTlFMDkuc2lnbmF0dXJlNDMubjhzdG5XWFZPSXJ0SkVaTjgwQmI2R1Q5Y2pQaXpYSDRfcXFwWGk5ZTVUVTE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA%29"
+              }
+            ],
+            "required": [
+              "rel",
+              "method",
+              "href"
+            ],
+            "properties": {
+              "rel": {
+                "$id": "#/properties/links/items/anyOf/0/properties/rel",
+                "type": "string",
+                "title": "The rel schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "http://www/asg/com/mobius/rel/document"
+                ]
+              },
+              "method": {
+                "$id": "#/properties/links/items/anyOf/0/properties/method",
+                "type": "string",
+                "title": "The method schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "GET"
+                ]
+              },
+              "href": {
+                "$id": "#/properties/links/items/anyOf/0/properties/href",
+                "type": "string",
+                "title": "The href schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "/mobius/rest/contentstreams?id=ENC%28OC5yZXBvcnRpZDEwLkFDMDAxICAgICAxMy5udW1iZXJvZnBhZ2VzMS4xMTAucmVwb3NpdG9yeTEyLmxzZGVtb3NlcnZlcjkucmVwb3J0dmVyMTQuMjAyMDEwMTQwMDUxNDExMC5yZXBvcnRzZWN0NDUuTmV3IFRleHQgRG9jdW1lbnQudHh0ICAgICAgICAgQUJTUEcwMDAwMDAwMDAxMTAub3JncGFnZW51bTEuMTEyLnJlcG9zaXRvcnlpZDM2Ljg4RTk3MTM4LTlFRkQtNDMwNi1BNzJCLTRCNUM1M0QyQTlFMDkuc2lnbmF0dXJlNDMubjhzdG5XWFZPSXJ0SkVaTjgwQmI2R1Q5Y2pQaXpYSDRfcXFwWGk5ZTVUVTE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA%29"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        ]
+      }
+    },
+    "settings": {
+      "$id": "#/properties/settings",
+      "type": "object",
+      "title": "The settings schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "auth_token": "clientId",
+          "connectionTimeoutInMS": 5000,
+          "readTimeoutInMS": 1000
+        }
+      ],
+      "properties": {
+        "auth_token": {
+          "$id": "#/properties/settings/properties/auth_token",
+          "type": "string",
+          "title": "The auth_token schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "clientId"
+          ]
+        },
+        "connectionTimeoutInMS": {
+          "$id": "#/properties/settings/properties/connectionTimeoutInMS",
+          "type": "integer",
+          "title": "The connectionTimeoutInMS schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            5000
+          ]
+        },
+        "readTimeoutInMS": {
+          "$id": "#/properties/settings/properties/readTimeoutInMS",
+          "type": "integer",
+          "title": "The readTimeoutInMS schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            1000
+          ]
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

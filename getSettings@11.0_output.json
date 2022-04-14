@@ -1,0 +1,1539 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "getSettings@11.0_output",
+  "type": "object",
+  "title": "Get Settings Output V11.0",
+  "description": "The Get Settings Output schema Version 11.0.",
+  "default": {},
+  "examples": [
+    {
+      "links": [
+        {
+          "rel": "self",
+          "method": "GET",
+          "href": "/mobius/rest/settings"
+        }
+      ],
+      "applicationServerConfigSummary": {
+        "homeScreenEnabled": false,
+        "clientInactivityTimeout": 120000,
+        "maxIdleTime": 300,
+        "allowSelectLanguage": true,
+        "defaultLanguage": "en-US",
+        "enabledLanguages": [
+          "en-US",
+          "fr-FR"
+        ],
+        "uploadOfAllFilesRestricted": false,
+        "keyboardShortcutsEnabled": true,
+        "disabledFeatures": [],
+        "autoSaveAnnotations": true,
+        "browserNotSupported": true,
+        "logoURL": "/assets/images/product-logo.svg",
+        "headerText": "MOBIUS",
+        "headerBkgrdColor": "#28334a",
+        "leftNavBarBkgrdColor": "#f8f8f8",
+        "headerTextColor": "#ffffff",
+        "leftNavBarIconColor": "#545454",
+        "leftNavBarActiveBkgrdColor": "#eeeeee",
+        "leftNavBarActiveBorderColor": "#008073",
+        "navigationMenuItems": []
+      },
+      "browsingConfigSummary": {
+        "itemCountPerPage": 200,
+        "navigationStrategy": "multipage",
+        "openItemIfSingle": false,
+        "quickOpen": false,
+        "openFirstItemOnEnterKey": true,
+        "resetLocateCriteriaOnLogout": false,
+        "preserveFindValueAcrossDocuments": false
+      },
+      "searchingConfigSummary": {
+        "searchResultsLimit": 5,
+        "estimateTotalResultCount": false,
+        "prefetchBlockCount": 5,
+        "enableSimpleSearch": true,
+        "findOnPageScope": null
+      },
+      "downloadConfigSummary": {
+        "defaultImageDownloadFormat": "Default",
+        "allowImageDownloadFormatSelect": true,
+        "allowedImageDownloadFormats": {
+          "JPG": true,
+          "PDF": true,
+          "BMP": true,
+          "PNG": true,
+          "Default": true
+        },
+        "defaultLPFDDownloadFormat": "PDF",
+        "allowLPFDDownloadFormatSelect": true,
+        "allowedLPFDDownloadFormats": {
+          "JPG": true,
+          "PDF": true,
+          "BMP": true,
+          "PNG": true
+        },
+        "defaultTextDownloadFormat": "HTML",
+        "allowTextDownloadFormatSelect": true,
+        "allowedTextDownloadFormats": {
+          "PDF": true,
+          "HTML": true,
+          "TEXT": true
+        },
+        "savingHierarchySetting": "0"
+      },
+      "repositorySecurityConfigSummary": {
+        "showLoginLogoutButton": true,
+        "enableFederation": true,
+        "enableAlternateLogoutPage": false,
+        "logoutPage": null,
+        "enableGeoLocation": false
+      },
+      "productInfoConfigSummary": {
+        "buildDate": "2020-08-31 15:25",
+        "buildVersion": "11.0 DEV",
+        "licenseOptions": [
+          "z/OS Repository Access",
+          "Image",
+          "DJDE/Metacode",
+          "AFP",
+          "Open Systems Repository Access",
+          "HPTS Image",
+          "Annotations",
+          "PCL",
+          "PDF",
+          "Records Management",
+          "SharePoint Repository Access",
+          "ABSNET Repository Access",
+          "Custom Adapter Repository Access",
+          "CMIS Repository Access",
+          "CMIS Client Adapter",
+          "Redaction",
+          "Viewer",
+          "REST API",
+          "Data Miner",
+          "Workflow Access",
+          "Capture Access",
+          "Postscript",
+          "Revision Control",
+          "Distribution Services",
+          "Office 365 Connectivity",
+          "OCR Services"
+        ]
+      },
+      "rmHoldsConfigSummary": {
+        "holdsEnabled": false
+      },
+      "workflowConfigSummary": null,
+      "customButtonConfigSummary": [],
+      "captureDropTargetConfigSummary": {
+        "enableCaptureFunctions": true
+      },
+      "bootstrapConfigSummary": {
+        "clearAuthenticationCache": true,
+        "vendorType": "NONE"
+      },
+      "emailConfigSummary": {
+        "asALinkInEmail": true,
+        "asAnAttachmentInEmail": false,
+        "isEncryptedLink": true,
+        "isPDFFormat": true,
+        "isOriginalFileFormat": false,
+        "zipIfMultipleFiles": true,
+        "showAllPages": true,
+        "showFromToPages": true,
+        "allowDocumentSelection": true,
+        "allowCustomizeEmailText": true,
+        "hasConfiguredServer": true
+      },
+      "manageRedactionSummary": {
+        "canManageRedaction": false
+      },
+      "metadataCorrectionSummary": {
+        "canCorrectMetadata": false,
+        "canApproveMetadata": false
+      }
+    }
+  ],
+  "required": [
+    "links",
+    "applicationServerConfigSummary",
+    "browsingConfigSummary",
+    "searchingConfigSummary",
+    "downloadConfigSummary",
+    "repositorySecurityConfigSummary",
+    "productInfoConfigSummary",
+    "rmHoldsConfigSummary",
+    "workflowConfigSummary",
+    "customButtonConfigSummary",
+    "captureDropTargetConfigSummary",
+    "bootstrapConfigSummary",
+    "emailConfigSummary",
+    "manageRedactionSummary",
+    "metadataCorrectionSummary"
+  ],
+  "properties": {
+    "links": {
+      "$id": "#/properties/links",
+      "type": "array",
+      "title": "The links schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "rel": "self",
+            "method": "GET",
+            "href": "/mobius/rest/settings"
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/links/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/links/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "rel": "self",
+                "method": "GET",
+                "href": "/mobius/rest/settings"
+              }
+            ],
+            "required": [
+              "rel",
+              "method",
+              "href"
+            ],
+            "properties": {
+              "rel": {
+                "$id": "#/properties/links/items/anyOf/0/properties/rel",
+                "type": "string",
+                "title": "The rel schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "self"
+                ]
+              },
+              "method": {
+                "$id": "#/properties/links/items/anyOf/0/properties/method",
+                "type": "string",
+                "title": "The method schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "GET"
+                ]
+              },
+              "href": {
+                "$id": "#/properties/links/items/anyOf/0/properties/href",
+                "type": "string",
+                "title": "The href schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "/mobius/rest/settings"
+                ]
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    },
+    "applicationServerConfigSummary": {
+      "$id": "#/properties/applicationServerConfigSummary",
+      "type": "object",
+      "title": "The applicationServerConfigSummary schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "homeScreenEnabled": false,
+          "clientInactivityTimeout": 120000,
+          "maxIdleTime": 300,
+          "allowSelectLanguage": true,
+          "defaultLanguage": "en-US",
+          "enabledLanguages": [
+            "en-US",
+            "fr-FR"
+          ],
+          "uploadOfAllFilesRestricted": false,
+          "keyboardShortcutsEnabled": true,
+          "disabledFeatures": [],
+          "autoSaveAnnotations": true,
+          "browserNotSupported": true,
+          "logoURL": "/assets/images/product-logo.svg",
+          "headerText": "MOBIUS",
+          "headerBkgrdColor": "#28334a",
+          "leftNavBarBkgrdColor": "#f8f8f8",
+          "headerTextColor": "#ffffff",
+          "leftNavBarIconColor": "#545454",
+          "leftNavBarActiveBkgrdColor": "#eeeeee",
+          "leftNavBarActiveBorderColor": "#008073",
+          "navigationMenuItems": []
+        }
+      ],
+      "required": [
+        "homeScreenEnabled",
+        "clientInactivityTimeout",
+        "maxIdleTime",
+        "allowSelectLanguage",
+        "defaultLanguage",
+        "enabledLanguages",
+        "uploadOfAllFilesRestricted",
+        "keyboardShortcutsEnabled",
+        "disabledFeatures",
+        "autoSaveAnnotations",
+        "browserNotSupported",
+        "logoURL",
+        "headerText",
+        "headerBkgrdColor",
+        "leftNavBarBkgrdColor",
+        "headerTextColor",
+        "leftNavBarIconColor",
+        "leftNavBarActiveBkgrdColor",
+        "leftNavBarActiveBorderColor",
+        "navigationMenuItems"
+      ],
+      "properties": {
+        "homeScreenEnabled": {
+          "$id": "#/properties/applicationServerConfigSummary/properties/homeScreenEnabled",
+          "type": "boolean",
+          "title": "The homeScreenEnabled schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "clientInactivityTimeout": {
+          "$id": "#/properties/applicationServerConfigSummary/properties/clientInactivityTimeout",
+          "type": "integer",
+          "title": "The clientInactivityTimeout schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            120000
+          ]
+        },
+        "maxIdleTime": {
+          "$id": "#/properties/applicationServerConfigSummary/properties/maxIdleTime",
+          "type": "integer",
+          "title": "The maxIdleTime schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            300
+          ]
+        },
+        "allowSelectLanguage": {
+          "$id": "#/properties/applicationServerConfigSummary/properties/allowSelectLanguage",
+          "type": "boolean",
+          "title": "The allowSelectLanguage schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "defaultLanguage": {
+          "$id": "#/properties/applicationServerConfigSummary/properties/defaultLanguage",
+          "type": "string",
+          "title": "The defaultLanguage schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "en-US"
+          ]
+        },
+        "enabledLanguages": {
+          "$id": "#/properties/applicationServerConfigSummary/properties/enabledLanguages",
+          "type": "array",
+          "title": "The enabledLanguages schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": [],
+          "examples": [
+            [
+              "en-US",
+              "fr-FR"
+            ]
+          ],
+          "additionalItems": true,
+          "items": {
+            "$id": "#/properties/applicationServerConfigSummary/properties/enabledLanguages/items",
+            "anyOf": [
+              {
+                "$id": "#/properties/applicationServerConfigSummary/properties/enabledLanguages/items/anyOf/0",
+                "type": "string",
+                "title": "The first anyOf schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "en-US",
+                  "fr-FR"
+                ]
+              }
+            ]
+          }
+        },
+        "uploadOfAllFilesRestricted": {
+          "$id": "#/properties/applicationServerConfigSummary/properties/uploadOfAllFilesRestricted",
+          "type": "boolean",
+          "title": "The uploadOfAllFilesRestricted schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "keyboardShortcutsEnabled": {
+          "$id": "#/properties/applicationServerConfigSummary/properties/keyboardShortcutsEnabled",
+          "type": "boolean",
+          "title": "The keyboardShortcutsEnabled schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "disabledFeatures": {
+          "$id": "#/properties/applicationServerConfigSummary/properties/disabledFeatures",
+          "type": "array",
+          "title": "The disabledFeatures schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": [],
+          "examples": [
+            []
+          ],
+          "additionalItems": true,
+          "items": {
+            "$id": "#/properties/applicationServerConfigSummary/properties/disabledFeatures/items"
+          }
+        },
+        "autoSaveAnnotations": {
+          "$id": "#/properties/applicationServerConfigSummary/properties/autoSaveAnnotations",
+          "type": "boolean",
+          "title": "The autoSaveAnnotations schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "browserNotSupported": {
+          "$id": "#/properties/applicationServerConfigSummary/properties/browserNotSupported",
+          "type": "boolean",
+          "title": "The browserNotSupported schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "logoURL": {
+          "$id": "#/properties/applicationServerConfigSummary/properties/logoURL",
+          "type": "string",
+          "title": "The logoURL schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "/assets/images/product-logo.svg"
+          ]
+        },
+        "headerText": {
+          "$id": "#/properties/applicationServerConfigSummary/properties/headerText",
+          "type": "string",
+          "title": "The headerText schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "MOBIUS"
+          ]
+        },
+        "headerBkgrdColor": {
+          "$id": "#/properties/applicationServerConfigSummary/properties/headerBkgrdColor",
+          "type": "string",
+          "title": "The headerBkgrdColor schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "#28334a"
+          ]
+        },
+        "leftNavBarBkgrdColor": {
+          "$id": "#/properties/applicationServerConfigSummary/properties/leftNavBarBkgrdColor",
+          "type": "string",
+          "title": "The leftNavBarBkgrdColor schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "#f8f8f8"
+          ]
+        },
+        "headerTextColor": {
+          "$id": "#/properties/applicationServerConfigSummary/properties/headerTextColor",
+          "type": "string",
+          "title": "The headerTextColor schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "#ffffff"
+          ]
+        },
+        "leftNavBarIconColor": {
+          "$id": "#/properties/applicationServerConfigSummary/properties/leftNavBarIconColor",
+          "type": "string",
+          "title": "The leftNavBarIconColor schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "#545454"
+          ]
+        },
+        "leftNavBarActiveBkgrdColor": {
+          "$id": "#/properties/applicationServerConfigSummary/properties/leftNavBarActiveBkgrdColor",
+          "type": "string",
+          "title": "The leftNavBarActiveBkgrdColor schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "#eeeeee"
+          ]
+        },
+        "leftNavBarActiveBorderColor": {
+          "$id": "#/properties/applicationServerConfigSummary/properties/leftNavBarActiveBorderColor",
+          "type": "string",
+          "title": "The leftNavBarActiveBorderColor schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "#008073"
+          ]
+        },
+        "navigationMenuItems": {
+          "$id": "#/properties/applicationServerConfigSummary/properties/navigationMenuItems",
+          "type": "array",
+          "title": "The navigationMenuItems schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": [],
+          "examples": [
+            []
+          ],
+          "additionalItems": true,
+          "items": {
+            "$id": "#/properties/applicationServerConfigSummary/properties/navigationMenuItems/items"
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "browsingConfigSummary": {
+      "$id": "#/properties/browsingConfigSummary",
+      "type": "object",
+      "title": "The browsingConfigSummary schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "itemCountPerPage": 200,
+          "navigationStrategy": "multipage",
+          "openItemIfSingle": false,
+          "quickOpen": false,
+          "openFirstItemOnEnterKey": true,
+          "resetLocateCriteriaOnLogout": false,
+          "preserveFindValueAcrossDocuments": false
+        }
+      ],
+      "required": [
+        "itemCountPerPage",
+        "navigationStrategy",
+        "openItemIfSingle",
+        "quickOpen",
+        "openFirstItemOnEnterKey",
+        "resetLocateCriteriaOnLogout",
+        "preserveFindValueAcrossDocuments"
+      ],
+      "properties": {
+        "itemCountPerPage": {
+          "$id": "#/properties/browsingConfigSummary/properties/itemCountPerPage",
+          "type": "integer",
+          "title": "The itemCountPerPage schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            200
+          ]
+        },
+        "navigationStrategy": {
+          "$id": "#/properties/browsingConfigSummary/properties/navigationStrategy",
+          "type": "string",
+          "title": "The navigationStrategy schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "multipage"
+          ]
+        },
+        "openItemIfSingle": {
+          "$id": "#/properties/browsingConfigSummary/properties/openItemIfSingle",
+          "type": "boolean",
+          "title": "The openItemIfSingle schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "quickOpen": {
+          "$id": "#/properties/browsingConfigSummary/properties/quickOpen",
+          "type": "boolean",
+          "title": "The quickOpen schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "openFirstItemOnEnterKey": {
+          "$id": "#/properties/browsingConfigSummary/properties/openFirstItemOnEnterKey",
+          "type": "boolean",
+          "title": "The openFirstItemOnEnterKey schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "resetLocateCriteriaOnLogout": {
+          "$id": "#/properties/browsingConfigSummary/properties/resetLocateCriteriaOnLogout",
+          "type": "boolean",
+          "title": "The resetLocateCriteriaOnLogout schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "preserveFindValueAcrossDocuments": {
+          "$id": "#/properties/browsingConfigSummary/properties/preserveFindValueAcrossDocuments",
+          "type": "boolean",
+          "title": "The preserveFindValueAcrossDocuments schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            false
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "searchingConfigSummary": {
+      "$id": "#/properties/searchingConfigSummary",
+      "type": "object",
+      "title": "The searchingConfigSummary schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "searchResultsLimit": 5,
+          "estimateTotalResultCount": false,
+          "prefetchBlockCount": 5,
+          "enableSimpleSearch": true,
+          "findOnPageScope": null
+        }
+      ],
+      "required": [
+        "searchResultsLimit",
+        "estimateTotalResultCount",
+        "prefetchBlockCount",
+        "enableSimpleSearch",
+        "findOnPageScope"
+      ],
+      "properties": {
+        "searchResultsLimit": {
+          "$id": "#/properties/searchingConfigSummary/properties/searchResultsLimit",
+          "type": "integer",
+          "title": "The searchResultsLimit schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            5
+          ]
+        },
+        "estimateTotalResultCount": {
+          "$id": "#/properties/searchingConfigSummary/properties/estimateTotalResultCount",
+          "type": "boolean",
+          "title": "The estimateTotalResultCount schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "prefetchBlockCount": {
+          "$id": "#/properties/searchingConfigSummary/properties/prefetchBlockCount",
+          "type": "integer",
+          "title": "The prefetchBlockCount schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            5
+          ]
+        },
+        "enableSimpleSearch": {
+          "$id": "#/properties/searchingConfigSummary/properties/enableSimpleSearch",
+          "type": "boolean",
+          "title": "The enableSimpleSearch schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "findOnPageScope": {
+          "$id": "#/properties/searchingConfigSummary/properties/findOnPageScope",
+          "type": "null",
+          "title": "The findOnPageScope schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": null,
+          "examples": [
+            null
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "downloadConfigSummary": {
+      "$id": "#/properties/downloadConfigSummary",
+      "type": "object",
+      "title": "The downloadConfigSummary schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "defaultImageDownloadFormat": "Default",
+          "allowImageDownloadFormatSelect": true,
+          "allowedImageDownloadFormats": {
+            "JPG": true,
+            "PDF": true,
+            "BMP": true,
+            "PNG": true,
+            "Default": true
+          },
+          "defaultLPFDDownloadFormat": "PDF",
+          "allowLPFDDownloadFormatSelect": true,
+          "allowedLPFDDownloadFormats": {
+            "JPG": true,
+            "PDF": true,
+            "BMP": true,
+            "PNG": true
+          },
+          "defaultTextDownloadFormat": "HTML",
+          "allowTextDownloadFormatSelect": true,
+          "allowedTextDownloadFormats": {
+            "PDF": true,
+            "HTML": true,
+            "TEXT": true
+          },
+          "savingHierarchySetting": "0"
+        }
+      ],
+      "required": [
+        "defaultImageDownloadFormat",
+        "allowImageDownloadFormatSelect",
+        "allowedImageDownloadFormats",
+        "defaultLPFDDownloadFormat",
+        "allowLPFDDownloadFormatSelect",
+        "allowedLPFDDownloadFormats",
+        "defaultTextDownloadFormat",
+        "allowTextDownloadFormatSelect",
+        "allowedTextDownloadFormats",
+        "savingHierarchySetting"
+      ],
+      "properties": {
+        "defaultImageDownloadFormat": {
+          "$id": "#/properties/downloadConfigSummary/properties/defaultImageDownloadFormat",
+          "type": "string",
+          "title": "The defaultImageDownloadFormat schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "Default"
+          ]
+        },
+        "allowImageDownloadFormatSelect": {
+          "$id": "#/properties/downloadConfigSummary/properties/allowImageDownloadFormatSelect",
+          "type": "boolean",
+          "title": "The allowImageDownloadFormatSelect schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "allowedImageDownloadFormats": {
+          "$id": "#/properties/downloadConfigSummary/properties/allowedImageDownloadFormats",
+          "type": "object",
+          "title": "The allowedImageDownloadFormats schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": {},
+          "examples": [
+            {
+              "JPG": true,
+              "PDF": true,
+              "BMP": true,
+              "PNG": true,
+              "Default": true
+            }
+          ],
+          "required": [
+            "JPG",
+            "PDF",
+            "BMP",
+            "PNG",
+            "Default"
+          ],
+          "properties": {
+            "JPG": {
+              "$id": "#/properties/downloadConfigSummary/properties/allowedImageDownloadFormats/properties/JPG",
+              "type": "boolean",
+              "title": "The JPG schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": false,
+              "examples": [
+                true
+              ]
+            },
+            "PDF": {
+              "$id": "#/properties/downloadConfigSummary/properties/allowedImageDownloadFormats/properties/PDF",
+              "type": "boolean",
+              "title": "The PDF schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": false,
+              "examples": [
+                true
+              ]
+            },
+            "BMP": {
+              "$id": "#/properties/downloadConfigSummary/properties/allowedImageDownloadFormats/properties/BMP",
+              "type": "boolean",
+              "title": "The BMP schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": false,
+              "examples": [
+                true
+              ]
+            },
+            "PNG": {
+              "$id": "#/properties/downloadConfigSummary/properties/allowedImageDownloadFormats/properties/PNG",
+              "type": "boolean",
+              "title": "The PNG schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": false,
+              "examples": [
+                true
+              ]
+            },
+            "Default": {
+              "$id": "#/properties/downloadConfigSummary/properties/allowedImageDownloadFormats/properties/Default",
+              "type": "boolean",
+              "title": "The Default schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": false,
+              "examples": [
+                true
+              ]
+            }
+          },
+          "additionalProperties": true
+        },
+        "defaultLPFDDownloadFormat": {
+          "$id": "#/properties/downloadConfigSummary/properties/defaultLPFDDownloadFormat",
+          "type": "string",
+          "title": "The defaultLPFDDownloadFormat schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "PDF"
+          ]
+        },
+        "allowLPFDDownloadFormatSelect": {
+          "$id": "#/properties/downloadConfigSummary/properties/allowLPFDDownloadFormatSelect",
+          "type": "boolean",
+          "title": "The allowLPFDDownloadFormatSelect schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "allowedLPFDDownloadFormats": {
+          "$id": "#/properties/downloadConfigSummary/properties/allowedLPFDDownloadFormats",
+          "type": "object",
+          "title": "The allowedLPFDDownloadFormats schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": {},
+          "examples": [
+            {
+              "JPG": true,
+              "PDF": true,
+              "BMP": true,
+              "PNG": true
+            }
+          ],
+          "required": [
+            "JPG",
+            "PDF",
+            "BMP",
+            "PNG"
+          ],
+          "properties": {
+            "JPG": {
+              "$id": "#/properties/downloadConfigSummary/properties/allowedLPFDDownloadFormats/properties/JPG",
+              "type": "boolean",
+              "title": "The JPG schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": false,
+              "examples": [
+                true
+              ]
+            },
+            "PDF": {
+              "$id": "#/properties/downloadConfigSummary/properties/allowedLPFDDownloadFormats/properties/PDF",
+              "type": "boolean",
+              "title": "The PDF schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": false,
+              "examples": [
+                true
+              ]
+            },
+            "BMP": {
+              "$id": "#/properties/downloadConfigSummary/properties/allowedLPFDDownloadFormats/properties/BMP",
+              "type": "boolean",
+              "title": "The BMP schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": false,
+              "examples": [
+                true
+              ]
+            },
+            "PNG": {
+              "$id": "#/properties/downloadConfigSummary/properties/allowedLPFDDownloadFormats/properties/PNG",
+              "type": "boolean",
+              "title": "The PNG schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": false,
+              "examples": [
+                true
+              ]
+            }
+          },
+          "additionalProperties": true
+        },
+        "defaultTextDownloadFormat": {
+          "$id": "#/properties/downloadConfigSummary/properties/defaultTextDownloadFormat",
+          "type": "string",
+          "title": "The defaultTextDownloadFormat schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "HTML"
+          ]
+        },
+        "allowTextDownloadFormatSelect": {
+          "$id": "#/properties/downloadConfigSummary/properties/allowTextDownloadFormatSelect",
+          "type": "boolean",
+          "title": "The allowTextDownloadFormatSelect schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "allowedTextDownloadFormats": {
+          "$id": "#/properties/downloadConfigSummary/properties/allowedTextDownloadFormats",
+          "type": "object",
+          "title": "The allowedTextDownloadFormats schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": {},
+          "examples": [
+            {
+              "PDF": true,
+              "HTML": true,
+              "TEXT": true
+            }
+          ],
+          "required": [
+            "PDF",
+            "HTML",
+            "TEXT"
+          ],
+          "properties": {
+            "PDF": {
+              "$id": "#/properties/downloadConfigSummary/properties/allowedTextDownloadFormats/properties/PDF",
+              "type": "boolean",
+              "title": "The PDF schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": false,
+              "examples": [
+                true
+              ]
+            },
+            "HTML": {
+              "$id": "#/properties/downloadConfigSummary/properties/allowedTextDownloadFormats/properties/HTML",
+              "type": "boolean",
+              "title": "The HTML schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": false,
+              "examples": [
+                true
+              ]
+            },
+            "TEXT": {
+              "$id": "#/properties/downloadConfigSummary/properties/allowedTextDownloadFormats/properties/TEXT",
+              "type": "boolean",
+              "title": "The TEXT schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": false,
+              "examples": [
+                true
+              ]
+            }
+          },
+          "additionalProperties": true
+        },
+        "savingHierarchySetting": {
+          "$id": "#/properties/downloadConfigSummary/properties/savingHierarchySetting",
+          "type": "string",
+          "title": "The savingHierarchySetting schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "0"
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "repositorySecurityConfigSummary": {
+      "$id": "#/properties/repositorySecurityConfigSummary",
+      "type": "object",
+      "title": "The repositorySecurityConfigSummary schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "showLoginLogoutButton": true,
+          "enableFederation": true,
+          "enableAlternateLogoutPage": false,
+          "logoutPage": null,
+          "enableGeoLocation": false
+        }
+      ],
+      "required": [
+        "showLoginLogoutButton",
+        "enableFederation",
+        "enableAlternateLogoutPage",
+        "logoutPage",
+        "enableGeoLocation"
+      ],
+      "properties": {
+        "showLoginLogoutButton": {
+          "$id": "#/properties/repositorySecurityConfigSummary/properties/showLoginLogoutButton",
+          "type": "boolean",
+          "title": "The showLoginLogoutButton schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "enableFederation": {
+          "$id": "#/properties/repositorySecurityConfigSummary/properties/enableFederation",
+          "type": "boolean",
+          "title": "The enableFederation schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "enableAlternateLogoutPage": {
+          "$id": "#/properties/repositorySecurityConfigSummary/properties/enableAlternateLogoutPage",
+          "type": "boolean",
+          "title": "The enableAlternateLogoutPage schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "logoutPage": {
+          "$id": "#/properties/repositorySecurityConfigSummary/properties/logoutPage",
+          "type": "null",
+          "title": "The logoutPage schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "enableGeoLocation": {
+          "$id": "#/properties/repositorySecurityConfigSummary/properties/enableGeoLocation",
+          "type": "boolean",
+          "title": "The enableGeoLocation schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            false
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "productInfoConfigSummary": {
+      "$id": "#/properties/productInfoConfigSummary",
+      "type": "object",
+      "title": "The productInfoConfigSummary schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "buildDate": "2020-08-31 15:25",
+          "buildVersion": "11.0 DEV",
+          "licenseOptions": [
+            "z/OS Repository Access",
+            "Image",
+            "DJDE/Metacode",
+            "AFP",
+            "Open Systems Repository Access",
+            "HPTS Image",
+            "Annotations",
+            "PCL",
+            "PDF",
+            "Records Management",
+            "SharePoint Repository Access",
+            "ABSNET Repository Access",
+            "Custom Adapter Repository Access",
+            "CMIS Repository Access",
+            "CMIS Client Adapter",
+            "Redaction",
+            "Viewer",
+            "REST API",
+            "Data Miner",
+            "Workflow Access",
+            "Capture Access",
+            "Postscript",
+            "Revision Control",
+            "Distribution Services",
+            "Office 365 Connectivity",
+            "OCR Services"
+          ]
+        }
+      ],
+      "required": [
+        "buildDate",
+        "buildVersion",
+        "licenseOptions"
+      ],
+      "properties": {
+        "buildDate": {
+          "$id": "#/properties/productInfoConfigSummary/properties/buildDate",
+          "type": "string",
+          "title": "The buildDate schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "2020-08-31 15:25"
+          ]
+        },
+        "buildVersion": {
+          "$id": "#/properties/productInfoConfigSummary/properties/buildVersion",
+          "type": "string",
+          "title": "The buildVersion schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "11.0 DEV"
+          ]
+        },
+        "licenseOptions": {
+          "$id": "#/properties/productInfoConfigSummary/properties/licenseOptions",
+          "type": "array",
+          "title": "The licenseOptions schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": [],
+          "examples": [
+            [
+              "z/OS Repository Access",
+              "Image"
+            ]
+          ],
+          "additionalItems": true,
+          "items": {
+            "$id": "#/properties/productInfoConfigSummary/properties/licenseOptions/items",
+            "anyOf": [
+              {
+                "$id": "#/properties/productInfoConfigSummary/properties/licenseOptions/items/anyOf/0",
+                "type": "string",
+                "title": "The first anyOf schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "z/OS Repository Access",
+                  "Image"
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "rmHoldsConfigSummary": {
+      "$id": "#/properties/rmHoldsConfigSummary",
+      "type": "object",
+      "title": "The rmHoldsConfigSummary schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "holdsEnabled": false
+        }
+      ],
+      "required": [
+        "holdsEnabled"
+      ],
+      "properties": {
+        "holdsEnabled": {
+          "$id": "#/properties/rmHoldsConfigSummary/properties/holdsEnabled",
+          "type": "boolean",
+          "title": "The holdsEnabled schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            false
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "workflowConfigSummary": {
+      "$id": "#/properties/workflowConfigSummary",
+      "type": "null",
+      "title": "The workflowConfigSummary schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "customButtonConfigSummary": {
+      "$id": "#/properties/customButtonConfigSummary",
+      "type": "array",
+      "title": "The customButtonConfigSummary schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        []
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/customButtonConfigSummary/items"
+      }
+    },
+    "captureDropTargetConfigSummary": {
+      "$id": "#/properties/captureDropTargetConfigSummary",
+      "type": "object",
+      "title": "The captureDropTargetConfigSummary schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "enableCaptureFunctions": true
+        }
+      ],
+      "required": [
+        "enableCaptureFunctions"
+      ],
+      "properties": {
+        "enableCaptureFunctions": {
+          "$id": "#/properties/captureDropTargetConfigSummary/properties/enableCaptureFunctions",
+          "type": "boolean",
+          "title": "The enableCaptureFunctions schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            true
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "bootstrapConfigSummary": {
+      "$id": "#/properties/bootstrapConfigSummary",
+      "type": "object",
+      "title": "The bootstrapConfigSummary schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "clearAuthenticationCache": true,
+          "vendorType": "NONE"
+        }
+      ],
+      "required": [
+        "clearAuthenticationCache",
+        "vendorType"
+      ],
+      "properties": {
+        "clearAuthenticationCache": {
+          "$id": "#/properties/bootstrapConfigSummary/properties/clearAuthenticationCache",
+          "type": "boolean",
+          "title": "The clearAuthenticationCache schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "vendorType": {
+          "$id": "#/properties/bootstrapConfigSummary/properties/vendorType",
+          "type": "string",
+          "title": "The vendorType schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "NONE"
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "emailConfigSummary": {
+      "$id": "#/properties/emailConfigSummary",
+      "type": "object",
+      "title": "The emailConfigSummary schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "asALinkInEmail": true,
+          "asAnAttachmentInEmail": false,
+          "isEncryptedLink": true,
+          "isPDFFormat": true,
+          "isOriginalFileFormat": false,
+          "zipIfMultipleFiles": true,
+          "showAllPages": true,
+          "showFromToPages": true,
+          "allowDocumentSelection": true,
+          "allowCustomizeEmailText": true,
+          "hasConfiguredServer": true
+        }
+      ],
+      "required": [
+        "asALinkInEmail",
+        "asAnAttachmentInEmail",
+        "isEncryptedLink",
+        "isPDFFormat",
+        "isOriginalFileFormat",
+        "zipIfMultipleFiles",
+        "showAllPages",
+        "showFromToPages",
+        "allowDocumentSelection",
+        "allowCustomizeEmailText",
+        "hasConfiguredServer"
+      ],
+      "properties": {
+        "asALinkInEmail": {
+          "$id": "#/properties/emailConfigSummary/properties/asALinkInEmail",
+          "type": "boolean",
+          "title": "The asALinkInEmail schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "asAnAttachmentInEmail": {
+          "$id": "#/properties/emailConfigSummary/properties/asAnAttachmentInEmail",
+          "type": "boolean",
+          "title": "The asAnAttachmentInEmail schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "isEncryptedLink": {
+          "$id": "#/properties/emailConfigSummary/properties/isEncryptedLink",
+          "type": "boolean",
+          "title": "The isEncryptedLink schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "isPDFFormat": {
+          "$id": "#/properties/emailConfigSummary/properties/isPDFFormat",
+          "type": "boolean",
+          "title": "The isPDFFormat schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "isOriginalFileFormat": {
+          "$id": "#/properties/emailConfigSummary/properties/isOriginalFileFormat",
+          "type": "boolean",
+          "title": "The isOriginalFileFormat schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "zipIfMultipleFiles": {
+          "$id": "#/properties/emailConfigSummary/properties/zipIfMultipleFiles",
+          "type": "boolean",
+          "title": "The zipIfMultipleFiles schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "showAllPages": {
+          "$id": "#/properties/emailConfigSummary/properties/showAllPages",
+          "type": "boolean",
+          "title": "The showAllPages schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "showFromToPages": {
+          "$id": "#/properties/emailConfigSummary/properties/showFromToPages",
+          "type": "boolean",
+          "title": "The showFromToPages schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "allowDocumentSelection": {
+          "$id": "#/properties/emailConfigSummary/properties/allowDocumentSelection",
+          "type": "boolean",
+          "title": "The allowDocumentSelection schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "allowCustomizeEmailText": {
+          "$id": "#/properties/emailConfigSummary/properties/allowCustomizeEmailText",
+          "type": "boolean",
+          "title": "The allowCustomizeEmailText schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "hasConfiguredServer": {
+          "$id": "#/properties/emailConfigSummary/properties/hasConfiguredServer",
+          "type": "boolean",
+          "title": "The hasConfiguredServer schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            true
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "manageRedactionSummary": {
+      "$id": "#/properties/manageRedactionSummary",
+      "type": "object",
+      "title": "The manageRedactionSummary schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "canManageRedaction": false
+        }
+      ],
+      "required": [
+        "canManageRedaction"
+      ],
+      "properties": {
+        "canManageRedaction": {
+          "$id": "#/properties/manageRedactionSummary/properties/canManageRedaction",
+          "type": "boolean",
+          "title": "The canManageRedaction schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            false
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "metadataCorrectionSummary": {
+      "$id": "#/properties/metadataCorrectionSummary",
+      "type": "object",
+      "title": "The metadataCorrectionSummary schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "canCorrectMetadata": false,
+          "canApproveMetadata": false
+        }
+      ],
+      "required": [
+        "canCorrectMetadata",
+        "canApproveMetadata"
+      ],
+      "properties": {
+        "canCorrectMetadata": {
+          "$id": "#/properties/metadataCorrectionSummary/properties/canCorrectMetadata",
+          "type": "boolean",
+          "title": "The canCorrectMetadata schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "canApproveMetadata": {
+          "$id": "#/properties/metadataCorrectionSummary/properties/canApproveMetadata",
+          "type": "boolean",
+          "title": "The canApproveMetadata schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            false
+          ]
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

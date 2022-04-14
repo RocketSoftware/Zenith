@@ -1,0 +1,332 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "checkoutDocument@10.1_output",
+  "type": "object",
+  "title": "Checkout Document Output V10.1",
+  "description": "The Checkout Document Output schema Version 10.1.",
+  "default": {},
+  "examples": [
+    {
+      "checkoutId": "da7fdee1-1695-48c4-b9d4-32cde7b3dadf",
+      "metadata": [
+        {
+          "dataType": null,
+          "displayName": "Document identifier",
+          "keyName": "__docid",
+          "keyValue": "ENC(OC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAxMDE5MDUxNzIwMTAucmVwb3J0c2VjdDQ1Lk5ldyBUZXh0IERvY3VtZW50LnR4dCAgICAgICAgIEFCU1BHMDAwMDAwMDAwMTEwLm9yZ3BhZ2VudW0xLjExMy5udW1iZXJvZnBhZ2VzMS4xNC5uYW1lMzAuTmV3IFRleHQgRG9jdW1lbnQudHh0ICAgICAgICAgMTAucmVwb3NpdG9yeTEyLmxzZGVtb3NlcnZlcjEyLnJlcG9zaXRvcnlpZDM2Ljg4RTk3MTM4LTlFRkQtNDMwNi1BNzJCLTRCNUM1M0QyQTlFMDkuc2lnbmF0dXJlNDMudzZPSXd0dEc1VVkyenVvOWN2YjIwMnI4Qk9xWmpJTWJSM2NuNXNUeVpJWTE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA)",
+          "keyType": null,
+          "keyOrdinal": 0
+        },
+        {
+          "dataType": null,
+          "displayName": "Unique checkout identifier",
+          "keyName": "__checkoutId",
+          "keyValue": "da7fdee1-1695-48c4-b9d4-32cde7b3dadf",
+          "keyType": null,
+          "keyOrdinal": 0
+        },
+        {
+          "dataType": null,
+          "displayName": "Checkout Status",
+          "keyName": "__checkoutStatus",
+          "keyValue": "CHECKEDOUT",
+          "keyType": null,
+          "keyOrdinal": 0
+        },
+        {
+          "dataType": null,
+          "displayName": "Checkout date time",
+          "keyName": "__checkoutDate",
+          "keyValue": "2020-10-20T04:06:00.436-04:00",
+          "keyType": null,
+          "keyOrdinal": 0
+        },
+        {
+          "dataType": null,
+          "displayName": "Checkout User",
+          "keyName": "__checkoutUser",
+          "keyValue": "ADMIN",
+          "keyType": null,
+          "keyOrdinal": 0
+        },
+        {
+          "dataType": null,
+          "displayName": "Claimed",
+          "keyName": "__claimed",
+          "keyValue": false,
+          "keyType": null,
+          "keyOrdinal": 0
+        },
+        {
+          "dataType": null,
+          "displayName": "Page Count",
+          "keyName": "__pageCount",
+          "keyValue": 1,
+          "keyType": null,
+          "keyOrdinal": 0
+        },
+        {
+          "dataType": null,
+          "displayName": "Document identifier",
+          "keyName": "__docid",
+          "keyValue": "ENC(OC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAxMDE5MDUxNzIwMTAucmVwb3J0c2VjdDQ1Lk5ldyBUZXh0IERvY3VtZW50LnR4dCAgICAgICAgIEFCU1BHMDAwMDAwMDAwMTEwLm9yZ3BhZ2VudW0xLjExMy5udW1iZXJvZnBhZ2VzMS4xNC5uYW1lMzAuTmV3IFRleHQgRG9jdW1lbnQudHh0ICAgICAgICAgMTAucmVwb3NpdG9yeTEyLmxzZGVtb3NlcnZlcjEyLnJlcG9zaXRvcnlpZDM2Ljg4RTk3MTM4LTlFRkQtNDMwNi1BNzJCLTRCNUM1M0QyQTlFMDkuc2lnbmF0dXJlNDMudzZPSXd0dEc1VVkyenVvOWN2YjIwMnI4Qk9xWmpJTWJSM2NuNXNUeVpJWTE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA)",
+          "keyType": null,
+          "keyOrdinal": 0
+        },
+        {
+          "dataType": null,
+          "displayName": "Version number",
+          "keyName": "__versionNumber",
+          "keyValue": 2,
+          "keyType": null,
+          "keyOrdinal": 0
+        }
+      ],
+      "links": [
+        {
+          "rel": "self",
+          "method": "GET",
+          "href": "/mobius/rest/checkouts/da7fdee1-1695-48c4-b9d4-32cde7b3dadf"
+        },
+        {
+          "rel": "http://www/asg/com/mobius/rel/checkouts/get",
+          "method": "GET",
+          "href": "/mobius/rest/checkouts/da7fdee1-1695-48c4-b9d4-32cde7b3dadf"
+        },
+        {
+          "rel": "http://www/asg/com/mobius/rel/checkouts/delete",
+          "method": "DELETE",
+          "href": "/mobius/rest/checkouts/da7fdee1-1695-48c4-b9d4-32cde7b3dadf"
+        },
+        {
+          "rel": "http://www/asg/com/mobius/rel/checkouts/patch",
+          "method": "PATCH",
+          "href": "/mobius/rest/checkouts/da7fdee1-1695-48c4-b9d4-32cde7b3dadf"
+        },
+        {
+          "rel": "http://www/asg/com/mobius/rel/archivingwrite",
+          "method": "POST",
+          "href": "/mobius/rest/repositories/88E97138-9EFD-4306-A72B-4B5C53D2A9E0/documents"
+        }
+      ]
+    }
+  ],
+  "required": [
+    "checkoutId",
+    "metadata",
+    "links"
+  ],
+  "properties": {
+    "checkoutId": {
+      "$id": "#/properties/checkoutId",
+      "type": "string",
+      "title": "The checkoutId schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "da7fdee1-1695-48c4-b9d4-32cde7b3dadf"
+      ]
+    },
+    "metadata": {
+      "$id": "#/properties/metadata",
+      "type": "array",
+      "title": "The metadata schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "dataType": null,
+            "displayName": "Document identifier",
+            "keyName": "__docid",
+            "keyValue": "ENC(OC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAxMDE5MDUxNzIwMTAucmVwb3J0c2VjdDQ1Lk5ldyBUZXh0IERvY3VtZW50LnR4dCAgICAgICAgIEFCU1BHMDAwMDAwMDAwMTEwLm9yZ3BhZ2VudW0xLjExMy5udW1iZXJvZnBhZ2VzMS4xNC5uYW1lMzAuTmV3IFRleHQgRG9jdW1lbnQudHh0ICAgICAgICAgMTAucmVwb3NpdG9yeTEyLmxzZGVtb3NlcnZlcjEyLnJlcG9zaXRvcnlpZDM2Ljg4RTk3MTM4LTlFRkQtNDMwNi1BNzJCLTRCNUM1M0QyQTlFMDkuc2lnbmF0dXJlNDMudzZPSXd0dEc1VVkyenVvOWN2YjIwMnI4Qk9xWmpJTWJSM2NuNXNUeVpJWTE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA)",
+            "keyType": null,
+            "keyOrdinal": 0
+          },
+          {
+            "dataType": null,
+            "displayName": "Unique checkout identifier",
+            "keyName": "__checkoutId",
+            "keyValue": "da7fdee1-1695-48c4-b9d4-32cde7b3dadf",
+            "keyType": null,
+            "keyOrdinal": 0
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/metadata/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/metadata/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "dataType": null,
+                "displayName": "Document identifier",
+                "keyName": "__docid",
+                "keyValue": "ENC(OC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAxMDE5MDUxNzIwMTAucmVwb3J0c2VjdDQ1Lk5ldyBUZXh0IERvY3VtZW50LnR4dCAgICAgICAgIEFCU1BHMDAwMDAwMDAwMTEwLm9yZ3BhZ2VudW0xLjExMy5udW1iZXJvZnBhZ2VzMS4xNC5uYW1lMzAuTmV3IFRleHQgRG9jdW1lbnQudHh0ICAgICAgICAgMTAucmVwb3NpdG9yeTEyLmxzZGVtb3NlcnZlcjEyLnJlcG9zaXRvcnlpZDM2Ljg4RTk3MTM4LTlFRkQtNDMwNi1BNzJCLTRCNUM1M0QyQTlFMDkuc2lnbmF0dXJlNDMudzZPSXd0dEc1VVkyenVvOWN2YjIwMnI4Qk9xWmpJTWJSM2NuNXNUeVpJWTE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA)",
+                "keyType": null,
+                "keyOrdinal": 0
+              }
+            ],
+            "required": [
+              "dataType",
+              "displayName",
+              "keyName",
+              "keyValue",
+              "keyType",
+              "keyOrdinal"
+            ],
+            "properties": {
+              "dataType": {
+                "$id": "#/properties/metadata/items/anyOf/0/properties/dataType",
+                "type": "null",
+                "title": "The dataType schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": null,
+                "examples": [
+                  null
+                ]
+              },
+              "displayName": {
+                "$id": "#/properties/metadata/items/anyOf/0/properties/displayName",
+                "type": "string",
+                "title": "The displayName schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "Document identifier"
+                ]
+              },
+              "keyName": {
+                "$id": "#/properties/metadata/items/anyOf/0/properties/keyName",
+                "type": "string",
+                "title": "The keyName schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "__docid"
+                ]
+              },
+              "keyValue": {
+                "$id": "#/properties/metadata/items/anyOf/0/properties/keyValue",
+                "type": "string",
+                "title": "The keyValue schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "ENC(OC5yZXBvcnRpZDUuQUMwMDE5LnJlcG9ydHZlcjE0LjIwMjAxMDE5MDUxNzIwMTAucmVwb3J0c2VjdDQ1Lk5ldyBUZXh0IERvY3VtZW50LnR4dCAgICAgICAgIEFCU1BHMDAwMDAwMDAwMTEwLm9yZ3BhZ2VudW0xLjExMy5udW1iZXJvZnBhZ2VzMS4xNC5uYW1lMzAuTmV3IFRleHQgRG9jdW1lbnQudHh0ICAgICAgICAgMTAucmVwb3NpdG9yeTEyLmxzZGVtb3NlcnZlcjEyLnJlcG9zaXRvcnlpZDM2Ljg4RTk3MTM4LTlFRkQtNDMwNi1BNzJCLTRCNUM1M0QyQTlFMDkuc2lnbmF0dXJlNDMudzZPSXd0dEc1VVkyenVvOWN2YjIwMnI4Qk9xWmpJTWJSM2NuNXNUeVpJWTE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA)"
+                ]
+              },
+              "keyType": {
+                "$id": "#/properties/metadata/items/anyOf/0/properties/keyType",
+                "type": "null",
+                "title": "The keyType schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": null,
+                "examples": [
+                  null
+                ]
+              },
+              "keyOrdinal": {
+                "$id": "#/properties/metadata/items/anyOf/0/properties/keyOrdinal",
+                "type": "integer",
+                "title": "The keyOrdinal schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0,
+                "examples": [
+                  0
+                ]
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    },
+    "links": {
+      "$id": "#/properties/links",
+      "type": "array",
+      "title": "The links schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "rel": "self",
+            "method": "GET",
+            "href": "/mobius/rest/checkouts/da7fdee1-1695-48c4-b9d4-32cde7b3dadf"
+          },
+          {
+            "rel": "http://www/asg/com/mobius/rel/checkouts/get",
+            "method": "GET",
+            "href": "/mobius/rest/checkouts/da7fdee1-1695-48c4-b9d4-32cde7b3dadf"
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/links/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/links/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "rel": "self",
+                "method": "GET",
+                "href": "/mobius/rest/checkouts/da7fdee1-1695-48c4-b9d4-32cde7b3dadf"
+              }
+            ],
+            "required": [
+              "rel",
+              "method",
+              "href"
+            ],
+            "properties": {
+              "rel": {
+                "$id": "#/properties/links/items/anyOf/0/properties/rel",
+                "type": "string",
+                "title": "The rel schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "self"
+                ]
+              },
+              "method": {
+                "$id": "#/properties/links/items/anyOf/0/properties/method",
+                "type": "string",
+                "title": "The method schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "GET"
+                ]
+              },
+              "href": {
+                "$id": "#/properties/links/items/anyOf/0/properties/href",
+                "type": "string",
+                "title": "The href schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "/mobius/rest/checkouts/da7fdee1-1695-48c4-b9d4-32cde7b3dadf"
+                ]
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,300 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "updateMetadataByDocId@10.1_output",
+  "type": "object",
+  "title": "Update Metadata By DocId Output V10.1",
+  "description": "The Update Metadata By DocId Output schema Version 10.1.",
+  "default": {},
+  "examples": [
+    {
+      "links": [
+        {
+          "rel": "self",
+          "href": "/mobius/rest/indexes",
+          "method": "POST"
+        },
+        {
+          "rel": "http://www/asg/com/mobius/rel/indexes/get",
+          "href": "/mobius/rest/indexes",
+          "method": "GET"
+        },
+        {
+          "rel": "http://www/asg/com/mobius/rel/indexes/add",
+          "href": "/mobius/rest/indexes",
+          "method": "POST"
+        },
+        {
+          "rel": "http://www/asg/com/mobius/rel/indexes/modify",
+          "href": "/mobius/rest/indexes",
+          "method": "PUT"
+        },
+        {
+          "rel": "http://www/asg/com/mobius/rel/indexes/delete",
+          "href": "/mobius/rest/indexes",
+          "method": "PUT"
+        }
+      ],
+      "statusMessage": "All requests completed without errors.",
+      "statusCode": "SUCCESS",
+      "indexEntryStatuses": [
+        {
+          "documentId": "ENC(OC5yZXBvcnRpZDEwLkFDMDAxICAgICA5LnJlcG9ydHZlcjE0LjIwMDUwMTE2MDAwMDAwMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQSAgICAgICAgICAgICAgICAgICAgICAgIDAwMDAwMDAwMDEwMDAwMDEwLm9yZ3BhZ2VudW0xLjUxMy5udW1iZXJvZnBhZ2VzMS4yMTAucmVwb3NpdG9yeTEyLk1vYml1c0RlbW84MDEyLnJlcG9zaXRvcnlpZDM2LjQ5NzUzODU0LUE3QkItNDJGRS05MjhDLTNEQ0VBQTkwNzYwQzE2LnRjaWNyeXB0b3ZlcnNpb24zLjEuMA)",
+          "indexEntries": [
+            {
+              "name": "ACCTDESC",
+              "value": "TEST DESCRIPTION"
+            }
+          ],
+          "statusMessages": []
+        }
+      ]
+    }
+  ],
+  "required": [
+    "links",
+    "statusMessage",
+    "statusCode",
+    "indexEntryStatuses"
+  ],
+  "properties": {
+    "links": {
+      "$id": "#/properties/links",
+      "type": "array",
+      "title": "The links schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "rel": "self",
+            "href": "/mobius/rest/indexes",
+            "method": "POST"
+          },
+          {
+            "rel": "http://www/asg/com/mobius/rel/indexes/get",
+            "href": "/mobius/rest/indexes",
+            "method": "GET"
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/links/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/links/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "rel": "self",
+                "href": "/mobius/rest/indexes",
+                "method": "POST"
+              }
+            ],
+            "required": [
+              "rel",
+              "href",
+              "method"
+            ],
+            "properties": {
+              "rel": {
+                "$id": "#/properties/links/items/anyOf/0/properties/rel",
+                "type": "string",
+                "title": "The rel schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "self"
+                ]
+              },
+              "href": {
+                "$id": "#/properties/links/items/anyOf/0/properties/href",
+                "type": "string",
+                "title": "The href schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "/mobius/rest/indexes"
+                ]
+              },
+              "method": {
+                "$id": "#/properties/links/items/anyOf/0/properties/method",
+                "type": "string",
+                "title": "The method schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "POST"
+                ]
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    },
+    "statusMessage": {
+      "$id": "#/properties/statusMessage",
+      "type": "string",
+      "title": "The statusMessage schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "All requests completed without errors."
+      ]
+    },
+    "statusCode": {
+      "$id": "#/properties/statusCode",
+      "type": "string",
+      "title": "The statusCode schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "SUCCESS"
+      ]
+    },
+    "indexEntryStatuses": {
+      "$id": "#/properties/indexEntryStatuses",
+      "type": "array",
+      "title": "The indexEntryStatuses schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "documentId": "ENC(OC5yZXBvcnRpZDEwLkFDMDAxICAgICA5LnJlcG9ydHZlcjE0LjIwMDUwMTE2MDAwMDAwMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQSAgICAgICAgICAgICAgICAgICAgICAgIDAwMDAwMDAwMDEwMDAwMDEwLm9yZ3BhZ2VudW0xLjUxMy5udW1iZXJvZnBhZ2VzMS4yMTAucmVwb3NpdG9yeTEyLk1vYml1c0RlbW84MDEyLnJlcG9zaXRvcnlpZDM2LjQ5NzUzODU0LUE3QkItNDJGRS05MjhDLTNEQ0VBQTkwNzYwQzE2LnRjaWNyeXB0b3ZlcnNpb24zLjEuMA)",
+            "indexEntries": [
+              {
+                "name": "ACCTDESC",
+                "value": "TEST DESCRIPTION"
+              }
+            ],
+            "statusMessages": []
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/indexEntryStatuses/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/indexEntryStatuses/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "documentId": "ENC(OC5yZXBvcnRpZDEwLkFDMDAxICAgICA5LnJlcG9ydHZlcjE0LjIwMDUwMTE2MDAwMDAwMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQSAgICAgICAgICAgICAgICAgICAgICAgIDAwMDAwMDAwMDEwMDAwMDEwLm9yZ3BhZ2VudW0xLjUxMy5udW1iZXJvZnBhZ2VzMS4yMTAucmVwb3NpdG9yeTEyLk1vYml1c0RlbW84MDEyLnJlcG9zaXRvcnlpZDM2LjQ5NzUzODU0LUE3QkItNDJGRS05MjhDLTNEQ0VBQTkwNzYwQzE2LnRjaWNyeXB0b3ZlcnNpb24zLjEuMA)",
+                "indexEntries": [
+                  {
+                    "name": "ACCTDESC",
+                    "value": "TEST DESCRIPTION"
+                  }
+                ],
+                "statusMessages": []
+              }
+            ],
+            "required": [
+              "documentId",
+              "indexEntries",
+              "statusMessages"
+            ],
+            "properties": {
+              "documentId": {
+                "$id": "#/properties/indexEntryStatuses/items/anyOf/0/properties/documentId",
+                "type": "string",
+                "title": "The documentId schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "ENC(OC5yZXBvcnRpZDEwLkFDMDAxICAgICA5LnJlcG9ydHZlcjE0LjIwMDUwMTE2MDAwMDAwMTAucmVwb3J0c2VjdDQ1Lk1BTlVFQSAgICAgICAgICAgICAgICAgICAgICAgIDAwMDAwMDAwMDEwMDAwMDEwLm9yZ3BhZ2VudW0xLjUxMy5udW1iZXJvZnBhZ2VzMS4yMTAucmVwb3NpdG9yeTEyLk1vYml1c0RlbW84MDEyLnJlcG9zaXRvcnlpZDM2LjQ5NzUzODU0LUE3QkItNDJGRS05MjhDLTNEQ0VBQTkwNzYwQzE2LnRjaWNyeXB0b3ZlcnNpb24zLjEuMA)"
+                ]
+              },
+              "indexEntries": {
+                "$id": "#/properties/indexEntryStatuses/items/anyOf/0/properties/indexEntries",
+                "type": "array",
+                "title": "The indexEntries schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": [],
+                "examples": [
+                  [
+                    {
+                      "name": "ACCTDESC",
+                      "value": "TEST DESCRIPTION"
+                    }
+                  ]
+                ],
+                "additionalItems": true,
+                "items": {
+                  "$id": "#/properties/indexEntryStatuses/items/anyOf/0/properties/indexEntries/items",
+                  "anyOf": [
+                    {
+                      "$id": "#/properties/indexEntryStatuses/items/anyOf/0/properties/indexEntries/items/anyOf/0",
+                      "type": "object",
+                      "title": "The first anyOf schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": {},
+                      "examples": [
+                        {
+                          "name": "ACCTDESC",
+                          "value": "TEST DESCRIPTION"
+                        }
+                      ],
+                      "required": [
+                        "name",
+                        "value"
+                      ],
+                      "properties": {
+                        "name": {
+                          "$id": "#/properties/indexEntryStatuses/items/anyOf/0/properties/indexEntries/items/anyOf/0/properties/name",
+                          "type": "string",
+                          "title": "The name schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "ACCTDESC"
+                          ]
+                        },
+                        "value": {
+                          "$id": "#/properties/indexEntryStatuses/items/anyOf/0/properties/indexEntries/items/anyOf/0/properties/value",
+                          "type": "string",
+                          "title": "The value schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "TEST DESCRIPTION"
+                          ]
+                        }
+                      },
+                      "additionalProperties": true
+                    }
+                  ]
+                }
+              },
+              "statusMessages": {
+                "$id": "#/properties/indexEntryStatuses/items/anyOf/0/properties/statusMessages",
+                "type": "array",
+                "title": "The statusMessages schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": [],
+                "examples": [
+                  []
+                ],
+                "additionalItems": true,
+                "items": {
+                  "$id": "#/properties/indexEntryStatuses/items/anyOf/0/properties/statusMessages/items"
+                }
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    }
+  },
+  "additionalProperties": true
+}

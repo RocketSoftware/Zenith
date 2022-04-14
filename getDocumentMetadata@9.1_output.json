@@ -1,0 +1,456 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "getDocumentMetadata@10.1_output",
+  "type": "object",
+  "title": "Get Document Metadata Output V10.1",
+  "description": "The Get Document Metadata Output schema Version 10.1.",
+  "default": {},
+  "examples": [
+    {
+      "numItems": 1,
+      "hasMoreItems": false,
+      "items": [
+        {
+          "groupName": "ls_docrevs",
+          "groupType": "DOCUMENT",
+          "fields": [
+            {
+              "name": "LS_RPTID",
+              "type": "STRING",
+              "format": null,
+              "maxLength": 30
+            },
+            {
+              "name": "LS_RPTVER",
+              "type": "STRING",
+              "format": null,
+              "maxLength": 30
+            }
+          ],
+          "values": [
+            [
+              {
+                "keyName": "LS_RPTID",
+                "keyValue": "null"
+              },
+              {
+                "keyName": "LS_RPTVER",
+                "keyValue": "null"
+              }
+            ]
+          ]
+        }
+      ],
+      "links": [
+        {
+          "rel": "self",
+          "method": "GET",
+          "href": "/mobius/rest/documents/ENC%28Ny50b3BpY2lkNy5MU19JTkRUOS50b3BpY2l0ZW0zLjEwMTgucmVwb3J0aWQxMC5BQzAwMSAgICAgOS5yZXBvcnR2ZXIxNC4yMDIwMDkwODA2NDMwMjEwLnJlcG9ydHNlY3Q0NS5Qcm9jRGVmQ3JlYXRlU2VydmljZS50eHQgICAgICBBQlNQRzAwMDAwMDAwMDE3LnBhZ2VSQkExLjExMy5udW1iZXJvZnBhZ2VzMS4xMTAucGFnZU9mZnNldDEuMDEwLm9yZ3BhZ2VudW0xLjExMC5yZXBvc2l0b3J5OC52ZHJuZXRkczEyLnJlcG9zaXRvcnlpZDM2LjRBRTZGMTJCLUNDQTUtNENFOS04Rjk4LUIxNzkxMzkwQTI0Mjkuc2lnbmF0dXJlNDMuZzB5WWYyZXM5UFFNVlQzNVNnNG50YmRkdExPUFJFN0IweW1IcXlDN0wxODE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA%29/metadata?page=1&limit=200&offset=0"
+        }
+      ]
+    }
+  ],
+  "required": [
+    "numItems",
+    "hasMoreItems",
+    "items",
+    "links"
+  ],
+  "properties": {
+    "numItems": {
+      "$id": "#/properties/numItems",
+      "type": "integer",
+      "title": "The numItems schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [
+        1
+      ]
+    },
+    "hasMoreItems": {
+      "$id": "#/properties/hasMoreItems",
+      "type": "boolean",
+      "title": "The hasMoreItems schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": false,
+      "examples": [
+        false
+      ]
+    },
+    "items": {
+      "$id": "#/properties/items",
+      "type": "array",
+      "title": "The items schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "groupName": "ls_docrevs",
+            "groupType": "DOCUMENT",
+            "fields": [
+              {
+                "name": "LS_RPTID",
+                "type": "STRING",
+                "format": null,
+                "maxLength": 30
+              },
+              {
+                "name": "LS_RPTVER",
+                "type": "STRING",
+                "format": null,
+                "maxLength": 30
+              }
+            ],
+            "values": [
+              [
+                {
+                  "keyName": "LS_RPTID",
+                  "keyValue": "null"
+                },
+                {
+                  "keyName": "LS_RPTVER",
+                  "keyValue": "null"
+                }
+              ]
+            ]
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/items/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/items/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "groupName": "ls_docrevs",
+                "groupType": "DOCUMENT",
+                "fields": [
+                  {
+                    "name": "LS_RPTID",
+                    "type": "STRING",
+                    "format": null,
+                    "maxLength": 30
+                  },
+                  {
+                    "name": "LS_RPTVER",
+                    "type": "STRING",
+                    "format": null,
+                    "maxLength": 30
+                  }
+                ],
+                "values": [
+                  [
+                    {
+                      "keyName": "LS_RPTID",
+                      "keyValue": "null"
+                    },
+                    {
+                      "keyName": "LS_RPTVER",
+                      "keyValue": "null"
+                    }
+                  ]
+                ]
+              }
+            ],
+            "required": [
+              "groupName",
+              "groupType",
+              "fields",
+              "values"
+            ],
+            "properties": {
+              "groupName": {
+                "$id": "#/properties/items/items/anyOf/0/properties/groupName",
+                "type": "string",
+                "title": "The groupName schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "ls_docrevs"
+                ]
+              },
+              "groupType": {
+                "$id": "#/properties/items/items/anyOf/0/properties/groupType",
+                "type": "string",
+                "title": "The groupType schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "DOCUMENT"
+                ]
+              },
+              "fields": {
+                "$id": "#/properties/items/items/anyOf/0/properties/fields",
+                "type": "array",
+                "title": "The fields schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": [],
+                "examples": [
+                  [
+                    {
+                      "name": "LS_RPTID",
+                      "type": "STRING",
+                      "format": null,
+                      "maxLength": 30
+                    },
+                    {
+                      "name": "LS_RPTVER",
+                      "type": "STRING",
+                      "format": null,
+                      "maxLength": 30
+                    }
+                  ]
+                ],
+                "additionalItems": true,
+                "items": {
+                  "$id": "#/properties/items/items/anyOf/0/properties/fields/items",
+                  "anyOf": [
+                    {
+                      "$id": "#/properties/items/items/anyOf/0/properties/fields/items/anyOf/0",
+                      "type": "object",
+                      "title": "The first anyOf schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": {},
+                      "examples": [
+                        {
+                          "name": "LS_RPTID",
+                          "type": "STRING",
+                          "format": null,
+                          "maxLength": 30
+                        }
+                      ],
+                      "required": [
+                        "name",
+                        "type",
+                        "format",
+                        "maxLength"
+                      ],
+                      "properties": {
+                        "name": {
+                          "$id": "#/properties/items/items/anyOf/0/properties/fields/items/anyOf/0/properties/name",
+                          "type": "string",
+                          "title": "The name schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "LS_RPTID"
+                          ]
+                        },
+                        "type": {
+                          "$id": "#/properties/items/items/anyOf/0/properties/fields/items/anyOf/0/properties/type",
+                          "type": "string",
+                          "title": "The type schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "STRING"
+                          ]
+                        },
+                        "format": {
+                          "$id": "#/properties/items/items/anyOf/0/properties/fields/items/anyOf/0/properties/format",
+                          "type": "null",
+                          "title": "The format schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": null,
+                          "examples": [
+                            null
+                          ]
+                        },
+                        "maxLength": {
+                          "$id": "#/properties/items/items/anyOf/0/properties/fields/items/anyOf/0/properties/maxLength",
+                          "type": "integer",
+                          "title": "The maxLength schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": 0,
+                          "examples": [
+                            30
+                          ]
+                        }
+                      },
+                      "additionalProperties": true
+                    }
+                  ]
+                }
+              },
+              "values": {
+                "$id": "#/properties/items/items/anyOf/0/properties/values",
+                "type": "array",
+                "title": "The values schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": [],
+                "examples": [
+                  [
+                    [
+                      {
+                        "keyName": "LS_RPTID",
+                        "keyValue": "null"
+                      },
+                      {
+                        "keyName": "LS_RPTVER",
+                        "keyValue": "null"
+                      }
+                    ]
+                  ]
+                ],
+                "additionalItems": true,
+                "items": {
+                  "$id": "#/properties/items/items/anyOf/0/properties/values/items",
+                  "anyOf": [
+                    {
+                      "$id": "#/properties/items/items/anyOf/0/properties/values/items/anyOf/0",
+                      "type": "array",
+                      "title": "The first anyOf schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": [],
+                      "examples": [
+                        [
+                          {
+                            "keyName": "LS_RPTID",
+                            "keyValue": "null"
+                          },
+                          {
+                            "keyName": "LS_RPTVER",
+                            "keyValue": "null"
+                          }
+                        ]
+                      ],
+                      "additionalItems": true,
+                      "items": {
+                        "$id": "#/properties/items/items/anyOf/0/properties/values/items/anyOf/0/items",
+                        "anyOf": [
+                          {
+                            "$id": "#/properties/items/items/anyOf/0/properties/values/items/anyOf/0/items/anyOf/0",
+                            "type": "object",
+                            "title": "The first anyOf schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": {},
+                            "examples": [
+                              {
+                                "keyName": "LS_RPTID",
+                                "keyValue": "null"
+                              }
+                            ],
+                            "required": [
+                              "keyName",
+                              "keyValue"
+                            ],
+                            "properties": {
+                              "keyName": {
+                                "$id": "#/properties/items/items/anyOf/0/properties/values/items/anyOf/0/items/anyOf/0/properties/keyName",
+                                "type": "string",
+                                "title": "The keyName schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                  "LS_RPTID"
+                                ]
+                              },
+                              "keyValue": {
+                                "$id": "#/properties/items/items/anyOf/0/properties/values/items/anyOf/0/items/anyOf/0/properties/keyValue",
+                                "type": "string",
+                                "title": "The keyValue schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                  "null"
+                                ]
+                              }
+                            },
+                            "additionalProperties": true
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    },
+    "links": {
+      "$id": "#/properties/links",
+      "type": "array",
+      "title": "The links schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "rel": "self",
+            "method": "GET",
+            "href": "/mobius/rest/documents/ENC%28Ny50b3BpY2lkNy5MU19JTkRUOS50b3BpY2l0ZW0zLjEwMTgucmVwb3J0aWQxMC5BQzAwMSAgICAgOS5yZXBvcnR2ZXIxNC4yMDIwMDkwODA2NDMwMjEwLnJlcG9ydHNlY3Q0NS5Qcm9jRGVmQ3JlYXRlU2VydmljZS50eHQgICAgICBBQlNQRzAwMDAwMDAwMDE3LnBhZ2VSQkExLjExMy5udW1iZXJvZnBhZ2VzMS4xMTAucGFnZU9mZnNldDEuMDEwLm9yZ3BhZ2VudW0xLjExMC5yZXBvc2l0b3J5OC52ZHJuZXRkczEyLnJlcG9zaXRvcnlpZDM2LjRBRTZGMTJCLUNDQTUtNENFOS04Rjk4LUIxNzkxMzkwQTI0Mjkuc2lnbmF0dXJlNDMuZzB5WWYyZXM5UFFNVlQzNVNnNG50YmRkdExPUFJFN0IweW1IcXlDN0wxODE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA%29/metadata?page=1&limit=200&offset=0"
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/links/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/links/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "rel": "self",
+                "method": "GET",
+                "href": "/mobius/rest/documents/ENC%28Ny50b3BpY2lkNy5MU19JTkRUOS50b3BpY2l0ZW0zLjEwMTgucmVwb3J0aWQxMC5BQzAwMSAgICAgOS5yZXBvcnR2ZXIxNC4yMDIwMDkwODA2NDMwMjEwLnJlcG9ydHNlY3Q0NS5Qcm9jRGVmQ3JlYXRlU2VydmljZS50eHQgICAgICBBQlNQRzAwMDAwMDAwMDE3LnBhZ2VSQkExLjExMy5udW1iZXJvZnBhZ2VzMS4xMTAucGFnZU9mZnNldDEuMDEwLm9yZ3BhZ2VudW0xLjExMC5yZXBvc2l0b3J5OC52ZHJuZXRkczEyLnJlcG9zaXRvcnlpZDM2LjRBRTZGMTJCLUNDQTUtNENFOS04Rjk4LUIxNzkxMzkwQTI0Mjkuc2lnbmF0dXJlNDMuZzB5WWYyZXM5UFFNVlQzNVNnNG50YmRkdExPUFJFN0IweW1IcXlDN0wxODE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA%29/metadata?page=1&limit=200&offset=0"
+              }
+            ],
+            "required": [
+              "rel",
+              "method",
+              "href"
+            ],
+            "properties": {
+              "rel": {
+                "$id": "#/properties/links/items/anyOf/0/properties/rel",
+                "type": "string",
+                "title": "The rel schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "self"
+                ]
+              },
+              "method": {
+                "$id": "#/properties/links/items/anyOf/0/properties/method",
+                "type": "string",
+                "title": "The method schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "GET"
+                ]
+              },
+              "href": {
+                "$id": "#/properties/links/items/anyOf/0/properties/href",
+                "type": "string",
+                "title": "The href schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "/mobius/rest/documents/ENC%28Ny50b3BpY2lkNy5MU19JTkRUOS50b3BpY2l0ZW0zLjEwMTgucmVwb3J0aWQxMC5BQzAwMSAgICAgOS5yZXBvcnR2ZXIxNC4yMDIwMDkwODA2NDMwMjEwLnJlcG9ydHNlY3Q0NS5Qcm9jRGVmQ3JlYXRlU2VydmljZS50eHQgICAgICBBQlNQRzAwMDAwMDAwMDE3LnBhZ2VSQkExLjExMy5udW1iZXJvZnBhZ2VzMS4xMTAucGFnZU9mZnNldDEuMDEwLm9yZ3BhZ2VudW0xLjExMC5yZXBvc2l0b3J5OC52ZHJuZXRkczEyLnJlcG9zaXRvcnlpZDM2LjRBRTZGMTJCLUNDQTUtNENFOS04Rjk4LUIxNzkxMzkwQTI0Mjkuc2lnbmF0dXJlNDMuZzB5WWYyZXM5UFFNVlQzNVNnNG50YmRkdExPUFJFN0IweW1IcXlDN0wxODE2LnRjaWNyeXB0b3ZlcnNpb24zLjguMA%29/metadata?page=1&limit=200&offset=0"
+                ]
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    }
+  },
+  "additionalProperties": true
+}

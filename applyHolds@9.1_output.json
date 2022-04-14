@@ -1,0 +1,458 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "applyHolds@9.1_output",
+  "type": "object",
+  "title": "Apply Holds Output V9.1",
+  "description": "The Apply Holds Output schema Version 9.1.",
+  "default": {},
+  "examples": [
+    {
+      "hits": 1,
+      "finishTime": 1602575264463,
+      "repositories": [
+        {
+          "finishTime": 1602575264463,
+          "jobs": {
+            "jobsCount": 1,
+            "statuses": {
+              "single": {
+                "hits": 1,
+                "progress": 100,
+                "status": "SUCCESS"
+              }
+            }
+          },
+          "repositoryId": "736672BD-8ADE-4F17-AB03-9BC1DC9D7CCD",
+          "details": null,
+          "startTime": 1602575264198,
+          "message": null
+        }
+      ],
+      "progress": 100,
+      "links": [
+        {
+          "method": "GET",
+          "rel": "self",
+          "href": "/mobius/rest/rm/events/514ea1d5-486e-46b3-9ad0-a5033983d6dc/status"
+        }
+      ],
+      "details": null,
+      "startTime": 1602575264198,
+      "message": "Event processed successfully for all repositories",
+      "type": "REPOSITORIES_PROCESSING_STATUS",
+      "value": "SUCCESS",
+      "processingTime": 265
+    }
+  ],
+  "required": [
+    "hits",
+    "finishTime",
+    "repositories",
+    "progress",
+    "links",
+    "details",
+    "startTime",
+    "message",
+    "type",
+    "value",
+    "processingTime"
+  ],
+  "properties": {
+    "hits": {
+      "$id": "#/properties/hits",
+      "type": "integer",
+      "title": "The hits schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [
+        1
+      ]
+    },
+    "finishTime": {
+      "$id": "#/properties/finishTime",
+      "type": "integer",
+      "title": "The finishTime schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [
+        1602575264463
+      ]
+    },
+    "repositories": {
+      "$id": "#/properties/repositories",
+      "type": "array",
+      "title": "The repositories schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "finishTime": 1602575264463,
+            "jobs": {
+              "jobsCount": 1,
+              "statuses": {
+                "single": {
+                  "hits": 1,
+                  "progress": 100,
+                  "status": "SUCCESS"
+                }
+              }
+            },
+            "repositoryId": "736672BD-8ADE-4F17-AB03-9BC1DC9D7CCD",
+            "details": null,
+            "startTime": 1602575264198,
+            "message": null
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/repositories/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/repositories/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "finishTime": 1602575264463,
+                "jobs": {
+                  "jobsCount": 1,
+                  "statuses": {
+                    "single": {
+                      "hits": 1,
+                      "progress": 100,
+                      "status": "SUCCESS"
+                    }
+                  }
+                },
+                "repositoryId": "736672BD-8ADE-4F17-AB03-9BC1DC9D7CCD",
+                "details": null,
+                "startTime": 1602575264198,
+                "message": null
+              }
+            ],
+            "required": [
+              "finishTime",
+              "jobs",
+              "repositoryId",
+              "details",
+              "startTime",
+              "message"
+            ],
+            "properties": {
+              "finishTime": {
+                "$id": "#/properties/repositories/items/anyOf/0/properties/finishTime",
+                "type": "integer",
+                "title": "The finishTime schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0,
+                "examples": [
+                  1602575264463
+                ]
+              },
+              "jobs": {
+                "$id": "#/properties/repositories/items/anyOf/0/properties/jobs",
+                "type": "object",
+                "title": "The jobs schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                  {
+                    "jobsCount": 1,
+                    "statuses": {
+                      "single": {
+                        "hits": 1,
+                        "progress": 100,
+                        "status": "SUCCESS"
+                      }
+                    }
+                  }
+                ],
+                "required": [
+                  "jobsCount",
+                  "statuses"
+                ],
+                "properties": {
+                  "jobsCount": {
+                    "$id": "#/properties/repositories/items/anyOf/0/properties/jobs/properties/jobsCount",
+                    "type": "integer",
+                    "title": "The jobsCount schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                      1
+                    ]
+                  },
+                  "statuses": {
+                    "$id": "#/properties/repositories/items/anyOf/0/properties/jobs/properties/statuses",
+                    "type": "object",
+                    "title": "The statuses schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                      {
+                        "single": {
+                          "hits": 1,
+                          "progress": 100,
+                          "status": "SUCCESS"
+                        }
+                      }
+                    ],
+                    "required": [
+                      "single"
+                    ],
+                    "properties": {
+                      "single": {
+                        "$id": "#/properties/repositories/items/anyOf/0/properties/jobs/properties/statuses/properties/single",
+                        "type": "object",
+                        "title": "The single schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": {},
+                        "examples": [
+                          {
+                            "hits": 1,
+                            "progress": 100,
+                            "status": "SUCCESS"
+                          }
+                        ],
+                        "required": [
+                          "hits",
+                          "progress",
+                          "status"
+                        ],
+                        "properties": {
+                          "hits": {
+                            "$id": "#/properties/repositories/items/anyOf/0/properties/jobs/properties/statuses/properties/single/properties/hits",
+                            "type": "integer",
+                            "title": "The hits schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                              1
+                            ]
+                          },
+                          "progress": {
+                            "$id": "#/properties/repositories/items/anyOf/0/properties/jobs/properties/statuses/properties/single/properties/progress",
+                            "type": "integer",
+                            "title": "The progress schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": 0,
+                            "examples": [
+                              100
+                            ]
+                          },
+                          "status": {
+                            "$id": "#/properties/repositories/items/anyOf/0/properties/jobs/properties/statuses/properties/single/properties/status",
+                            "type": "string",
+                            "title": "The status schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                              "SUCCESS"
+                            ]
+                          }
+                        },
+                        "additionalProperties": true
+                      }
+                    },
+                    "additionalProperties": true
+                  }
+                },
+                "additionalProperties": true
+              },
+              "repositoryId": {
+                "$id": "#/properties/repositories/items/anyOf/0/properties/repositoryId",
+                "type": "string",
+                "title": "The repositoryId schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "736672BD-8ADE-4F17-AB03-9BC1DC9D7CCD"
+                ]
+              },
+              "details": {
+                "$id": "#/properties/repositories/items/anyOf/0/properties/details",
+                "type": "null",
+                "title": "The details schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": null,
+                "examples": [
+                  null
+                ]
+              },
+              "startTime": {
+                "$id": "#/properties/repositories/items/anyOf/0/properties/startTime",
+                "type": "integer",
+                "title": "The startTime schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0,
+                "examples": [
+                  1602575264198
+                ]
+              },
+              "message": {
+                "$id": "#/properties/repositories/items/anyOf/0/properties/message",
+                "type": "null",
+                "title": "The message schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": null,
+                "examples": [
+                  null
+                ]
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    },
+    "progress": {
+      "$id": "#/properties/progress",
+      "type": "integer",
+      "title": "The progress schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [
+        100
+      ]
+    },
+    "links": {
+      "$id": "#/properties/links",
+      "type": "array",
+      "title": "The links schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "method": "GET",
+            "rel": "self",
+            "href": "/mobius/rest/rm/events/514ea1d5-486e-46b3-9ad0-a5033983d6dc/status"
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/links/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/links/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "method": "GET",
+                "rel": "self",
+                "href": "/mobius/rest/rm/events/514ea1d5-486e-46b3-9ad0-a5033983d6dc/status"
+              }
+            ],
+            "required": [
+              "method",
+              "rel",
+              "href"
+            ],
+            "properties": {
+              "method": {
+                "$id": "#/properties/links/items/anyOf/0/properties/method",
+                "type": "string",
+                "title": "The method schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "GET"
+                ]
+              },
+              "rel": {
+                "$id": "#/properties/links/items/anyOf/0/properties/rel",
+                "type": "string",
+                "title": "The rel schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "self"
+                ]
+              },
+              "href": {
+                "$id": "#/properties/links/items/anyOf/0/properties/href",
+                "type": "string",
+                "title": "The href schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "/mobius/rest/rm/events/514ea1d5-486e-46b3-9ad0-a5033983d6dc/status"
+                ]
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    },
+    "details": {
+      "$id": "#/properties/details",
+      "type": "null",
+      "title": "The details schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "startTime": {
+      "$id": "#/properties/startTime",
+      "type": "integer",
+      "title": "The startTime schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [
+        1602575264198
+      ]
+    },
+    "message": {
+      "$id": "#/properties/message",
+      "type": "string",
+      "title": "The message schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "Event processed successfully for all repositories"
+      ]
+    },
+    "type": {
+      "$id": "#/properties/type",
+      "type": "string",
+      "title": "The type schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "REPOSITORIES_PROCESSING_STATUS"
+      ]
+    },
+    "value": {
+      "$id": "#/properties/value",
+      "type": "string",
+      "title": "The value schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "SUCCESS"
+      ]
+    },
+    "processingTime": {
+      "$id": "#/properties/processingTime",
+      "type": "integer",
+      "title": "The processingTime schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [
+        265
+      ]
+    }
+  },
+  "additionalProperties": true
+}

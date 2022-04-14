@@ -1,0 +1,253 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "getDocumentProperties@9.1_output",
+  "type": "object",
+  "title": "Get Document Propreties Output V9.1",
+  "description": "The Get Document Propreties Output schema Version 9.1.",
+  "default": {},
+  "examples": [
+    {
+      "subrange": {
+        "pageNumber": "12,",
+        "numberOfPages": 12
+      },
+      "supportedFormats": [],
+      "pageCapabilities": [
+        "canResize",
+        "canRotate",
+        "canRenderUsingPresentation",
+        "canSuppressPDFToolbar",
+        "canRenderWithColorDepth",
+        "canRenderAsGrayScale",
+        "canRenderWithJPEGParameters",
+        "canRenderScaled",
+        "canRenderSubPage"
+      ],
+      "pageProperties": [
+        {
+          "keyName": "pageClassName",
+          "keyValue": "TIF"
+        },
+        {
+          "keyName": "pageClassVersion",
+          "keyValue": "0"
+        },
+        {
+          "keyName": "pageNumber",
+          "keyValue": "1"
+        },
+        {
+          "keyName": "originalPageHeightInPixels",
+          "keyValue": "0"
+        },
+        {
+          "keyName": "originalPageWidthInPixels",
+          "keyValue": "0"
+        }
+      ],
+      "documentFormat": {
+        "mimeType": "image/tiff",
+        "extension": "tif"
+      }
+    }
+  ],
+  "required": [
+    "subrange",
+    "supportedFormats",
+    "pageCapabilities",
+    "pageProperties",
+    "documentFormat"
+  ],
+  "properties": {
+    "subrange": {
+      "$id": "#/properties/subrange",
+      "type": "object",
+      "title": "The subrange schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "pageNumber": "12,",
+          "numberOfPages": 12
+        }
+      ],
+      "required": [
+        "pageNumber",
+        "numberOfPages"
+      ],
+      "properties": {
+        "pageNumber": {
+          "$id": "#/properties/subrange/properties/pageNumber",
+          "type": "string",
+          "title": "The pageNumber schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "12,"
+          ]
+        },
+        "numberOfPages": {
+          "$id": "#/properties/subrange/properties/numberOfPages",
+          "type": "integer",
+          "title": "The numberOfPages schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            12
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "supportedFormats": {
+      "$id": "#/properties/supportedFormats",
+      "type": "array",
+      "title": "The supportedFormats schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        []
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/supportedFormats/items"
+      }
+    },
+    "pageCapabilities": {
+      "$id": "#/properties/pageCapabilities",
+      "type": "array",
+      "title": "The pageCapabilities schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          "canResize",
+          "canRotate"
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/pageCapabilities/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/pageCapabilities/items/anyOf/0",
+            "type": "string",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "canResize",
+              "canRotate"
+            ]
+          }
+        ]
+      }
+    },
+    "pageProperties": {
+      "$id": "#/properties/pageProperties",
+      "type": "array",
+      "title": "The pageProperties schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "keyName": "pageClassName",
+            "keyValue": "TIF"
+          },
+          {
+            "keyName": "pageClassVersion",
+            "keyValue": "0"
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/pageProperties/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/pageProperties/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "keyName": "pageClassName",
+                "keyValue": "TIF"
+              }
+            ],
+            "required": [
+              "keyName",
+              "keyValue"
+            ],
+            "properties": {
+              "keyName": {
+                "$id": "#/properties/pageProperties/items/anyOf/0/properties/keyName",
+                "type": "string",
+                "title": "The keyName schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "pageClassName"
+                ]
+              },
+              "keyValue": {
+                "$id": "#/properties/pageProperties/items/anyOf/0/properties/keyValue",
+                "type": "string",
+                "title": "The keyValue schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "TIF"
+                ]
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    },
+    "documentFormat": {
+      "$id": "#/properties/documentFormat",
+      "type": "object",
+      "title": "The documentFormat schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "mimeType": "image/tiff",
+          "extension": "tif"
+        }
+      ],
+      "required": [
+        "mimeType",
+        "extension"
+      ],
+      "properties": {
+        "mimeType": {
+          "$id": "#/properties/documentFormat/properties/mimeType",
+          "type": "string",
+          "title": "The mimeType schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "image/tiff"
+          ]
+        },
+        "extension": {
+          "$id": "#/properties/documentFormat/properties/extension",
+          "type": "string",
+          "title": "The extension schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "tif"
+          ]
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

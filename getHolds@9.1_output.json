@@ -1,0 +1,405 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "getHolds@9.1_output",
+  "type": "object",
+  "title": "Get Holds Output V9.1",
+  "description": "The Get Holds Output schema Version 9.1.",
+  "default": {},
+  "examples": [
+    {
+      "links": [
+        {
+          "rel": "self",
+          "href": "/mobius/rest/rm/holds",
+          "method": "POST"
+        },
+        {
+          "rel": "http://www/asg/com/mobius/rel/rm/holds/add",
+          "href": "/mobius/rest/rm/events",
+          "method": "POST"
+        },
+        {
+          "rel": "http://www/asg/com/mobius/rel/rm/holds/remove",
+          "href": "/mobius/rest/rm/events",
+          "method": "POST"
+        }
+      ],
+      "content": {
+        "items": [
+          {
+            "repository": "E97F2321-0B29-48A2-9D2B-A270A8C52BED",
+            "report": "_INTRO    ",
+            "version": "2014-02-06T13:26:04.000-05:00",
+            "sections": [
+              {
+                "name": "Welcome to Mobius Luminist!   ",
+                "hold": true,
+                "reason": "test"
+              },
+              {
+                "name": "Welcome to Mobius Luminist!   ",
+                "hold": true,
+                "reason": "test1"
+              },
+              {
+                "name": "Welcome to Mobius Luminist!   ",
+                "hold": true,
+                "reason": "Testing"
+              }
+            ]
+          }
+        ],
+        "repositories": {
+          "E97F2321-0B29-48A2-9D2B-A270A8C52BED": true
+        }
+      }
+    }
+  ],
+  "required": [
+    "links",
+    "content"
+  ],
+  "properties": {
+    "links": {
+      "$id": "#/properties/links",
+      "type": "array",
+      "title": "The links schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "rel": "self",
+            "href": "/mobius/rest/rm/holds",
+            "method": "POST"
+          },
+          {
+            "rel": "http://www/asg/com/mobius/rel/rm/holds/add",
+            "href": "/mobius/rest/rm/events",
+            "method": "POST"
+          }
+        ]
+      ],
+      "additionalItems": true,
+      "items": {
+        "$id": "#/properties/links/items",
+        "anyOf": [
+          {
+            "$id": "#/properties/links/items/anyOf/0",
+            "type": "object",
+            "title": "The first anyOf schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "rel": "self",
+                "href": "/mobius/rest/rm/holds",
+                "method": "POST"
+              }
+            ],
+            "required": [
+              "rel",
+              "href",
+              "method"
+            ],
+            "properties": {
+              "rel": {
+                "$id": "#/properties/links/items/anyOf/0/properties/rel",
+                "type": "string",
+                "title": "The rel schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "self"
+                ]
+              },
+              "href": {
+                "$id": "#/properties/links/items/anyOf/0/properties/href",
+                "type": "string",
+                "title": "The href schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "/mobius/rest/rm/holds"
+                ]
+              },
+              "method": {
+                "$id": "#/properties/links/items/anyOf/0/properties/method",
+                "type": "string",
+                "title": "The method schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "POST"
+                ]
+              }
+            },
+            "additionalProperties": true
+          }
+        ]
+      }
+    },
+    "content": {
+      "$id": "#/properties/content",
+      "type": "object",
+      "title": "The content schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "items": [
+            {
+              "repository": "E97F2321-0B29-48A2-9D2B-A270A8C52BED",
+              "report": "_INTRO    ",
+              "version": "2014-02-06T13:26:04.000-05:00",
+              "sections": [
+                {
+                  "name": "Welcome to Mobius Luminist!   ",
+                  "hold": true,
+                  "reason": "test"
+                },
+                {
+                  "name": "Welcome to Mobius Luminist!   ",
+                  "hold": true,
+                  "reason": "test1"
+                },
+                {
+                  "name": "Welcome to Mobius Luminist!   ",
+                  "hold": true,
+                  "reason": "Testing"
+                }
+              ]
+            }
+          ],
+          "repositories": {
+            "E97F2321-0B29-48A2-9D2B-A270A8C52BED": true
+          }
+        }
+      ],
+      "required": [
+        "items",
+        "repositories"
+      ],
+      "properties": {
+        "items": {
+          "$id": "#/properties/content/properties/items",
+          "type": "array",
+          "title": "The items schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": [],
+          "examples": [
+            [
+              {
+                "repository": "E97F2321-0B29-48A2-9D2B-A270A8C52BED",
+                "report": "_INTRO    ",
+                "version": "2014-02-06T13:26:04.000-05:00",
+                "sections": [
+                  {
+                    "name": "Welcome to Mobius Luminist!   ",
+                    "hold": true,
+                    "reason": "test"
+                  },
+                  {
+                    "name": "Welcome to Mobius Luminist!   ",
+                    "hold": true,
+                    "reason": "test1"
+                  },
+                  {
+                    "name": "Welcome to Mobius Luminist!   ",
+                    "hold": true,
+                    "reason": "Testing"
+                  }
+                ]
+              }
+            ]
+          ],
+          "additionalItems": true,
+          "items": {
+            "$id": "#/properties/content/properties/items/items",
+            "anyOf": [
+              {
+                "$id": "#/properties/content/properties/items/items/anyOf/0",
+                "type": "object",
+                "title": "The first anyOf schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                  {
+                    "repository": "E97F2321-0B29-48A2-9D2B-A270A8C52BED",
+                    "report": "_INTRO    ",
+                    "version": "2014-02-06T13:26:04.000-05:00",
+                    "sections": [
+                      {
+                        "name": "Welcome to Mobius Luminist!   ",
+                        "hold": true,
+                        "reason": "test"
+                      },
+                      {
+                        "name": "Welcome to Mobius Luminist!   ",
+                        "hold": true,
+                        "reason": "test1"
+                      },
+                      {
+                        "name": "Welcome to Mobius Luminist!   ",
+                        "hold": true,
+                        "reason": "Testing"
+                      }
+                    ]
+                  }
+                ],
+                "required": [
+                  "repository",
+                  "report",
+                  "version",
+                  "sections"
+                ],
+                "properties": {
+                  "repository": {
+                    "$id": "#/properties/content/properties/items/items/anyOf/0/properties/repository",
+                    "type": "string",
+                    "title": "The repository schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "E97F2321-0B29-48A2-9D2B-A270A8C52BED"
+                    ]
+                  },
+                  "report": {
+                    "$id": "#/properties/content/properties/items/items/anyOf/0/properties/report",
+                    "type": "string",
+                    "title": "The report schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "_INTRO    "
+                    ]
+                  },
+                  "version": {
+                    "$id": "#/properties/content/properties/items/items/anyOf/0/properties/version",
+                    "type": "string",
+                    "title": "The version schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "2014-02-06T13:26:04.000-05:00"
+                    ]
+                  },
+                  "sections": {
+                    "$id": "#/properties/content/properties/items/items/anyOf/0/properties/sections",
+                    "type": "array",
+                    "title": "The sections schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                      [
+                        {
+                          "name": "Welcome to Mobius Luminist!   ",
+                          "hold": true,
+                          "reason": "test"
+                        },
+                        {
+                          "name": "Welcome to Mobius Luminist!   ",
+                          "hold": true,
+                          "reason": "test1"
+                        }
+                      ]
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                      "$id": "#/properties/content/properties/items/items/anyOf/0/properties/sections/items",
+                      "anyOf": [
+                        {
+                          "$id": "#/properties/content/properties/items/items/anyOf/0/properties/sections/items/anyOf/0",
+                          "type": "object",
+                          "title": "The first anyOf schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": {},
+                          "examples": [
+                            {
+                              "name": "Welcome to Mobius Luminist!   ",
+                              "hold": true,
+                              "reason": "test"
+                            }
+                          ],
+                          "required": [
+                            "name",
+                            "hold",
+                            "reason"
+                          ],
+                          "properties": {
+                            "name": {
+                              "$id": "#/properties/content/properties/items/items/anyOf/0/properties/sections/items/anyOf/0/properties/name",
+                              "type": "string",
+                              "title": "The name schema",
+                              "description": "An explanation about the purpose of this instance.",
+                              "default": "",
+                              "examples": [
+                                "Welcome to Mobius Luminist!   "
+                              ]
+                            },
+                            "hold": {
+                              "$id": "#/properties/content/properties/items/items/anyOf/0/properties/sections/items/anyOf/0/properties/hold",
+                              "type": "boolean",
+                              "title": "The hold schema",
+                              "description": "An explanation about the purpose of this instance.",
+                              "default": false,
+                              "examples": [
+                                true
+                              ]
+                            },
+                            "reason": {
+                              "$id": "#/properties/content/properties/items/items/anyOf/0/properties/sections/items/anyOf/0/properties/reason",
+                              "type": "string",
+                              "title": "The reason schema",
+                              "description": "An explanation about the purpose of this instance.",
+                              "default": "",
+                              "examples": [
+                                "test"
+                              ]
+                            }
+                          },
+                          "additionalProperties": true
+                        }
+                      ]
+                    }
+                  }
+                },
+                "additionalProperties": true
+              }
+            ]
+          }
+        },
+        "repositories": {
+          "$id": "#/properties/content/properties/repositories",
+          "type": "object",
+          "title": "The repositories schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": {},
+          "examples": [
+            {
+              "E97F2321-0B29-48A2-9D2B-A270A8C52BED": true
+            }
+          ],
+          "required": [
+            "E97F2321-0B29-48A2-9D2B-A270A8C52BED"
+          ],
+          "properties": {
+            "E97F2321-0B29-48A2-9D2B-A270A8C52BED": {
+              "$id": "#/properties/content/properties/repositories/properties/E97F2321-0B29-48A2-9D2B-A270A8C52BED",
+              "type": "boolean",
+              "title": "The E97F2321-0B29-48A2-9D2B-A270A8C52BED schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": false,
+              "examples": [
+                true
+              ]
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}
